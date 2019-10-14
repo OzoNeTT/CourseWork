@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlaterStats : MonoBehaviour
 {
     // Use this for initialization
-   // public int health = 6;
-   // public int lives = 3;
+    public int health = 6;
+    public int lives = 3;
     public float flickerDuration = 0.1f;
     private float flickerTime = 0f;
     private SpriteRenderer spriteRenderer;
@@ -49,4 +49,39 @@ public class PlaterStats : MonoBehaviour
             this.flickerTime = 0;
         }
     }
+    public void TakeDamage(int damage)
+    {
+        if (this.isImmune == false)
+        {
+            GetComponent<Animator>().Play("TakeDamage");
+            this.health = this.health - damage;
+            if (this.health < 0f)
+                this.health = 0;
+            if (this.lives > 0f && this.health == 0f)
+            {
+                // FindObjectOfType<LevelManger>().Respawnplayer();
+                this.health = 6;
+                this.lives--;
+            }
+            //else if (this.lives == 0 && this.health == 0)
+            //{
+            //    Debug.Log("GAMEOVER!!");
+            //    Destroy(this.gameObject);
+            //    GameOverMenu.levelnumber = Application.loadedLevel;
+            //    Application.LoadLevel("GameOverScene");
+            //}
+            PlayHitReaction();
+        }
+
+
+    }
+    void PlayHitReaction()
+    {
+        this.isImmune = true;
+        this.immunityTime = 0f;
+    }
+    //public void CollectCoin(int coinValue)
+    //{
+    //    this.collectedCoins = this.collectedCoins + coinValue;
+    //}
 }
