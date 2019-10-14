@@ -5,16 +5,16 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     public float moveSpeed;
-   // public bool canDoubleJump;
+    public bool canDoubleJump;
     public KeyCode R;
     public KeyCode L;
-   // public KeyCode spacebar;
-   // public float jumpheight;
+    public KeyCode spacebar;
+    public float jumpheight;
     public bool isFacingRight;
-   // public Transform groundCheck;
-   // public float groundCheckRadius;
-    //public LayerMask whatIsGround;
-   // private bool grounded;
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask whatIsGround;
+    private bool grounded;
     //public int collectedCoins = 0;
     float fx, fy, fz;
     public float KnockBackDist;
@@ -44,6 +44,8 @@ public class PlayerControl : MonoBehaviour
         else if (Input.GetKey(L))
             moveVelocity = -moveSpeed;
 
+
+        //knockback
         if (KnockBackCount <= 0)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
@@ -58,11 +60,31 @@ public class PlayerControl : MonoBehaviour
             KnockBackCount -= Time.deltaTime;
         }
 
-        GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
-    }
-   
+        //jump
+        if (Input.GetKeyDown(spacebar))
+        {
+            if (grounded)
+            {
+                GetComponent<Animator>().Play("Jump");
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpheight));
+                canDoubleJump = true;
+            }
+            else if (canDoubleJump)
+            {
+                GetComponent<Animator>().Play("Jump");
+                GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, 0);
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpheight));
+                canDoubleJump = false;
+            }
 
-     void flip()
+           
+
+        }
+
+        GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
+        GetComponent<Animator>().SetBool("Grounded", grounded);
+    }
+    void flip()
     {
         if (GetComponent<Rigidbody2D>().velocity.x > 0)
         {
@@ -75,5 +97,9 @@ public class PlayerControl : MonoBehaviour
 
         }
     }
-    
+    void FixedUpdate()
+    {
+        grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+    }
+
 }
