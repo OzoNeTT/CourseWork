@@ -22,9 +22,9 @@ public class PlayerControl : MonoBehaviour
     public bool KnockFromRight;
     private float moveVelocity;
     public KeyCode Return;
-    //public Transform firePoint;
-   // public GameObject Bullet;
-   public double nextFire = -1.0f;
+    public Transform firePoint;
+    public GameObject Bullet;
+    public double nextFire = -1.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -81,6 +81,16 @@ public class PlayerControl : MonoBehaviour
 
         }
 
+        //shoot
+        if (Input.GetKeyDown(Return))
+        {
+            if (Time.time >= nextFire)
+            {
+                nextFire = Time.time + 0.5;
+                Shoot();
+            }
+        }
+
         GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
         GetComponent<Animator>().SetBool("Grounded", grounded);
     }
@@ -100,6 +110,25 @@ public class PlayerControl : MonoBehaviour
     void FixedUpdate()
     {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+    }
+
+    public void Shoot()
+    {
+        GetComponent<Animator>().Play("Fire");
+        GameObject bullet = (GameObject)Instantiate(Bullet, firePoint.position, firePoint.rotation);
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+
+            if (Input.GetKey(L) || Input.GetKey(R))
+                bullet.GetComponent<BulletController>().speedy = (bullet.GetComponent<BulletController>().speedx / 4);
+            else
+            {
+                bullet.GetComponent<BulletController>().speedy = (bullet.GetComponent<BulletController>().speedx);
+                bullet.GetComponent<BulletController>().speedx = 0;
+            }
+        }
+
+
     }
 
 }
