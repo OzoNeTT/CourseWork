@@ -28,8 +28,8 @@
 - [ ] Уровень 4
 - [ ] Уровень Босс
 - [ ] Объект Пила
-- [ ] Объект Шипы
-- [ ] Объект Подвижная дверь
+- [X] Объект Шипы
+- [X] Объект Подвижная дверь
 - [ ] Переход между локациями
 - [ ] Батут
 - [X] Анимации 
@@ -75,6 +75,7 @@ https://habr.com/ru/post/328700/
 https://www.youtube.com/watch?v=560AKXsVuh8
 
 https://www.youtube.com/watch?v=cLBRcWRP4V0
+https://www.youtube.com/watch?v=r5VrBu_FaPw
 
 
 ### Меню
@@ -106,6 +107,8 @@ https://www.youtube.com/watch?v=Qn8tJhnY3eI
 https://www.youtube.com/watch?v=jvtFUfJ6CP8
 
 https://www.youtube.com/watch?v=rhoQd6IAtDo
+
+https://www.youtube.com/watch?v=NyhWNWqFEVw
 
 ### Утилиты
 
