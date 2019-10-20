@@ -21,18 +21,24 @@ public class Enemy1 : MonoBehaviour {
         fx = transform.localScale.x;
         fy = transform.localScale.y;
         fz = transform.localScale.z;
-        
+        GetComponent<Animator>().Play("Enemy1_idle");
 
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
+        if (Vector2.Distance(transform.position, target.position) > radius)
+        {
+            GetComponent<Animator>().Play("Enemy1_idle");
+        }
         if (Vector2.Distance(transform.position, target.position) < radius)
         {
+            GetComponent<Animator>().Play("Enemy1_walk");
             //transform.position = new Vector3(Vector3.MoveTowards(transform.position, Player.transform.position, MoveSpeed * Time.deltaTime).x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, target.position, MoveSpeed * Time.deltaTime);
             Flip();
+            
         }
 	}
     void OnTriggerEnter2D(Collider2D other)

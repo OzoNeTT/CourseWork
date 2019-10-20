@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Tools\Coin.cs" />
     <Compile Include="Assets\Scripts\Tools\DeathLevel.cs" />
+    <Compile Include="Assets\Scripts\Tools\HingeButtonController.cs" />
     <Compile Include="Assets\Scripts\Tools\SpikesController.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
