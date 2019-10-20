@@ -13,6 +13,7 @@ public class Enemy2 : MonoBehaviour {
     float fx, fy, fz;
     public double nextFire = -1.0f;
     public AudioSource ShootSound;
+    Animator DeathAnim;
 
     void Start () {
         //  InvokeRepeating("Shoot", 0f, RepeatRate);
@@ -24,13 +25,14 @@ public class Enemy2 : MonoBehaviour {
         fy = transform.localScale.y;
         fz = transform.localScale.z;
         GetComponent<Animator>().Play("Enemy2_Idle");
+        DeathAnim = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
 	void Update () {
         if (Vector2.Distance(transform.position, target.position) > radius)
         {
-            GetComponent<Animator>().Play("Enemy2_Idle");
+            //GetComponent<Animator>().Play("Enemy2_Idle");
         }
         if (Vector2.Distance(transform.position, target.position) < radius)
         {
@@ -72,6 +74,10 @@ public class Enemy2 : MonoBehaviour {
                 Player.KnockFromRight = true;
             else
                 Player.KnockFromRight = false;
+        }
+        if(other.tag == "PlayerBullet")
+        {
+            GetComponent<Animator>().Play("Enemy2_Dies");
         }
 
     }
