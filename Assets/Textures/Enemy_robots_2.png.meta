@@ -1,0 +1,739 @@
+fileFormatVersion: 2
+guid: 8f063adf6ff721f469e680d967c84dc9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7375813683096201638
+    second: Enemy_robots_2_0
+  - first:
+      213: -4421538056307814859
+    second: Enemy_robots_2_1
+  - first:
+      213: -7898439920393701256
+    second: Enemy_robots_2_2
+  - first:
+      213: -5853936107536589449
+    second: Enemy_robots_2_3
+  - first:
+      213: 8823195242402396691
+    second: Enemy_robots_2_4
+  - first:
+      213: 4040677950771467551
+    second: Enemy_robots_2_5
+  - first:
+      213: 467546654394012197
+    second: Enemy_robots_2_6
+  - first:
+      213: 446168934821055889
+    second: Enemy_robots_2_7
+  - first:
+      213: -7722702194334785772
+    second: Enemy_robots_2_8
+  - first:
+      213: -3657227839349962375
+    second: Enemy_robots_2_9
+  - first:
+      213: -7978582487153905193
+    second: Enemy_robots_2_10
+  - first:
+      213: 1375169187818052878
+    second: Enemy_robots_2_11
+  - first:
+      213: -6769839918263296238
+    second: Enemy_robots_2_12
+  - first:
+      213: 498390495297018516
+    second: Enemy_robots_2_13
+  - first:
+      213: 6989294783614520928
+    second: Enemy_robots_2_14
+  - first:
+      213: 7096092152168200156
+    second: Enemy_robots_2_15
+  - first:
+      213: 7437145463035390512
+    second: Enemy_robots_2_16
+  - first:
+      213: -1661293115170501781
+    second: Enemy_robots_2_17
+  - first:
+      213: 1538202545446843324
+    second: Enemy_robots_2_18
+  - first:
+      213: 6767573372610111719
+    second: Enemy_robots_2_19
+  - first:
+      213: -5319763933819099837
+    second: Enemy_robots_2_20
+  - first:
+      213: 3986660146343053347
+    second: Enemy_robots_2_21
+  - first:
+      213: 8881151629679786536
+    second: Enemy_robots_2_22
+  - first:
+      213: 2814772056284558324
+    second: Enemy_robots_2_23
+  - first:
+      213: -586478542759200283
+    second: Enemy_robots_2_24
+  - first:
+      213: 4331314872506118085
+    second: Enemy_robots_2_25
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 16
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_robots_2_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 397
+        width: 41
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffb51ee058129e4bbd0ea4efa2aa3f6
+      internalID: 7375813683096201638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 397
+        width: 41
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235cbe2e22f76bc46b706559a816c187
+      internalID: -4421538056307814859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 397
+        width: 41
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c915780fca21835428a6e27e9960390f
+      internalID: -7898439920393701256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_3
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 397
+        width: 41
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474c7c6ef17a5014bb8f875f0f886ba5
+      internalID: -5853936107536589449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 288
+        width: 49
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7316ecec105e85b499a7dda685818bb0
+      internalID: 8823195242402396691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 288
+        width: 54
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09071c792ebf6e44498d2e9c191722c7
+      internalID: 4040677950771467551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 288
+        width: 52
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c8d93ee38154c42870c0c01b44e2f8
+      internalID: 467546654394012197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_7
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 288
+        width: 49
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0070084c87e3045946ee59d6b2a5d6
+      internalID: 446168934821055889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_8
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 288
+        width: 45
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce05061db3072d4ba352e6e2546b5ee
+      internalID: -7722702194334785772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_9
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 301
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb7ff0e28c4fd244802c7c29a750d79
+      internalID: -3657227839349962375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 301
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a33704d9aa9da478a99db8dc8359de
+      internalID: -7978582487153905193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_11
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 301
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80da0580369aad468c519c192156c7d
+      internalID: 1375169187818052878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_12
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 301
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328ffed44c2c1b842a99620409f78f2f
+      internalID: -6769839918263296238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_13
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 188
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3cdf299b6351c4bba549d6ecb88b71
+      internalID: 498390495297018516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 188
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f982eb846a513334cb06be98bf5b622a
+      internalID: 6989294783614520928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_15
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 188
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6052e4e3b180a36478ef9f3b96138e1c
+      internalID: 7096092152168200156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_16
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 189
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad9c6fa42b671b4b9ff68b699a180be
+      internalID: 7437145463035390512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_17
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 190
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ecbbe56e606ec42b65d1d9654efac2
+      internalID: -1661293115170501781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 81
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d6d51282172464cacc3705b0eaa5a1
+      internalID: 1538202545446843324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_19
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 75
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835aae3d6a352fc4cba61cecde523870
+      internalID: 6767573372610111719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 71
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d1f356baab1cc46b702a7d451d5dfd
+      internalID: -5319763933819099837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 71
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468a6642c729c6948a7fd19cc0558d22
+      internalID: 3986660146343053347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_22
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 71
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ce993a3722df2419f272b50ace52a6
+      internalID: 8881151629679786536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_23
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 70
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de37637072c7c44f825329cc46b0129
+      internalID: 2814772056284558324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_24
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 70
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09730d624706ae4da72ac60847dd61e
+      internalID: -586478542759200283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_2_25
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 67
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12e75b620bbd1e46a15bf50e23b66c6
+      internalID: 4331314872506118085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

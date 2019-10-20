@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\Background\BackgroundLoop.cs" />
     <Compile Include="Assets\Scripts\Background\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy1.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemy2.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemy2BulletController.cs" />
     <Compile Include="Assets\Scripts\Menu\GameOverMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Player\BulletController.cs" />
@@ -75,6 +77,7 @@
     <Compile Include="Assets\Scripts\Tools\Coin.cs" />
     <Compile Include="Assets\Scripts\Tools\DeathLevel.cs" />
     <Compile Include="Assets\Scripts\Tools\HingeButtonController.cs" />
+    <Compile Include="Assets\Scripts\Tools\SawController.cs" />
     <Compile Include="Assets\Scripts\Tools\SpikesController.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />

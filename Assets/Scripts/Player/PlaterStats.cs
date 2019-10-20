@@ -18,6 +18,8 @@ public class PlaterStats : MonoBehaviour
     public Text scoreUI;
     public Text LiveUI;
     public Slider healthUI;
+    [SerializeField] Transform spawnPoint;
+
     // Use this for initialization
     void Start()
     {
@@ -64,8 +66,10 @@ public class PlaterStats : MonoBehaviour
             if (this.lives > 0f && this.health == 0f)
             {
                 // FindObjectOfType<LevelManger>().Respawnplayer();
+                SoundManager.sndMan.PlayDeathSound();
                 this.health = 6;
                 this.lives--;
+                transform.position = spawnPoint.position;
             }
             else if (this.lives == 0 && this.health == 0)
             {
