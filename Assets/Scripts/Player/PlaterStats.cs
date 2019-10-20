@@ -27,7 +27,7 @@ public class PlaterStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //scoreUI.text = "" + this.collectedCoins.ToString();
+        scoreUI.text = "" + this.collectedCoins.ToString();
         LiveUI.text = "" + this.lives.ToString();
         healthUI.value = health;
         if (this.isImmune == true)

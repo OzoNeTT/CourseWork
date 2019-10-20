@@ -7,6 +7,9 @@ TagManager:
   - Fire
   - Borders
   - Enemy
+  - DeathLevel
+  - PlayerBullet
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - 
   - Ground
   - Borders
-  - 
+  - Bullet
   - 
   - 
   - 
@@ -52,4 +55,7 @@ TagManager:
     locked: 0
   - name: Charecters
     uniqueID: 278640877
+    locked: 0
+  - name: Bullet
+    uniqueID: 1587869185
     locked: 0

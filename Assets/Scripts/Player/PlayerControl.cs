@@ -25,7 +25,7 @@ public class PlayerControl : MonoBehaviour
     public Transform firePoint;
     public GameObject Bullet;
     public double nextFire = -1.0f;
-
+    private PlaterStats Player;
     public AudioSource ShootSound;
     public AudioSource JumpSound;
 
@@ -34,6 +34,7 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         nextFire = Time.time;
+        Player = FindObjectOfType<PlaterStats>();
         fx = transform.localScale.x;
         fy = transform.localScale.y;
         fz = transform.localScale.z;
@@ -72,6 +73,7 @@ public class PlayerControl : MonoBehaviour
                 GetComponent<Animator>().Play("Jump");
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpheight));
                 canDoubleJump = true;
+                JumpSound.pitch = Random.Range(0.9f, 1.1f);
                 JumpSound.Play();
             }
             else if (canDoubleJump)
@@ -80,6 +82,7 @@ public class PlayerControl : MonoBehaviour
                 GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, 0);
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpheight));
                 canDoubleJump = false;
+                JumpSound.pitch = Random.Range(0.9f, 1.1f);
                 JumpSound.Play();
             }
 
@@ -136,6 +139,15 @@ public class PlayerControl : MonoBehaviour
         }
 
 
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.GetComponent<Coin>())
+        {
+            Player.CollectCoin(1);
+            Destroy(other.gameObject);
+            SoundManager.sndMan.PlayCoinSound();
+        }
     }
 
 }
