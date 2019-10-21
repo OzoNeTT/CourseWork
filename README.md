@@ -31,15 +31,15 @@
 - [X] Объект Шипы
 - [X] Объект Подвижная дверь
 - [X] Кнопка
-- [ ] Переход между локациями
-- [ ] Батут
+- [X] Переход между локациями
 - [X] Анимации 
 - [X] Звуки (Всего)
 - [X] Меню проигрыша
 - [X] Респаун
 - [X] Пропасти
-- [X] Меню победы
+- [ ] Меню победы
 - [X] Объект монета
+- [ ] Не баги, а фичи =)
 - [ ] ...
 
 ### Написать 
@@ -112,6 +112,10 @@ https://www.youtube.com/watch?v=rhoQd6IAtDo
 https://www.youtube.com/watch?v=NyhWNWqFEVw
 
 https://www.youtube.com/watch?v=5BLwAMzy24w
+
+http://www.cyberforum.ru/unity/thread2261014.html
+
+http://www.unity3d.ru/distribution/viewtopic.php?f=5&t=38530
 
 ### Утилиты
 
