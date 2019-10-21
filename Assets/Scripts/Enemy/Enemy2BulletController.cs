@@ -53,7 +53,7 @@ public class Enemy2BulletController : MonoBehaviour {
             if (other.transform.position.x < this.transform.position.x)
                 Player.KnockFromRight = true;
         }
-        if (other.tag == "Borders")
+        if (other.tag == "Borders" || other.tag == "Door")
         {
             SoundManager.sndMan.PlayEnemy2hitSound();
             Destroy(this.gameObject);

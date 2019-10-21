@@ -6,6 +6,7 @@ public class PlayerControl : MonoBehaviour
 {
     public float moveSpeed;
     public bool canDoubleJump;
+    private float pixelSize = 0.02f;
     public KeyCode R;
     public KeyCode L;
     public KeyCode spacebar;
@@ -29,6 +30,8 @@ public class PlayerControl : MonoBehaviour
     public AudioSource ShootSound;
     public AudioSource JumpSound;
 
+    private bool CanMoveRight;
+    private bool CanMoveLeft;
 
     // Start is called before the first frame update
     void Start()
@@ -38,18 +41,23 @@ public class PlayerControl : MonoBehaviour
         fx = transform.localScale.x;
         fy = transform.localScale.y;
         fz = transform.localScale.z;
+        CanMoveLeft = true;
+        CanMoveRight = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         moveVelocity = 0;
-        if (Input.GetKey(R))
+        //if (Input.GetKey(R))
+        //    moveVelocity = moveSpeed;
+        //else if (Input.GetKey(L))
+        //    moveVelocity = -moveSpeed;
+        if (Input.GetKey(R) && CanMoveRight)
             moveVelocity = moveSpeed;
-        else if (Input.GetKey(L))
+        else if (Input.GetKey(L) && CanMoveLeft)
             moveVelocity = -moveSpeed;
-
-
         //knockback
         if (KnockBackCount <= 0)
         {
@@ -147,6 +155,55 @@ public class PlayerControl : MonoBehaviour
             Player.CollectCoin(1);
             Destroy(other.gameObject);
             SoundManager.sndMan.PlayCoinSound();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Borders")
+        {
+            if (collision.transform.localScale.x <= transform.localScale.x)
+            {
+                CanMoveLeft = true;
+                CanMoveRight = false;
+    
+            }
+            else if (collision.transform.localScale.x >= transform.localScale.x)
+            {
+                CanMoveRight = true;
+                CanMoveLeft = false;
+    
+            }
+        }
+        if (collision.gameObject.tag == "Door")
+        {
+            if (collision.transform.localScale.x >= transform.localScale.x)
+            {
+                CanMoveLeft = true;
+                CanMoveRight = false;
+
+            }
+            else if (collision.transform.localScale.x <= transform.localScale.x)
+            {
+                CanMoveRight = true;
+                CanMoveLeft = false;
+
+            }
+        }
+
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Borders")
+        {
+            CanMoveRight = true;
+            CanMoveLeft = true;
+        }
+        if (collision.gameObject.tag == "Door")
+        {
+            CanMoveRight = true;
+            CanMoveLeft = true;
         }
     }
 

@@ -12,6 +12,7 @@ TagManager:
   - Coin
   - EnemyBullet
   - Enemy2
+  - Door
   layers:
   - Default
   - TransparentFX

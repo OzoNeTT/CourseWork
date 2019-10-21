@@ -37,7 +37,7 @@ public class BulletController : MonoBehaviour {
             Destroy(other.gameObject, 0.25f);
             Destroy(this.gameObject);
         }
-        if (other.tag == "Borders" || other.tag == "Button")
+        if (other.tag == "Borders" || other.tag == "Button" || other.tag == "Door")
         {
             SoundManager.sndMan.PlayHitSound();
             Destroy(this.gameObject);
