@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class PlaterStats : MonoBehaviour
 {
     // Use this for initialization
-    public int health = 6;
-    public int lives = 3;
+    public static int  health = 6;
+    public static int lives = 5;
     public float flickerDuration = 0.1f;
     private float flickerTime = 0f;
     private SpriteRenderer spriteRenderer;
     public bool isImmune = false;
     public float immunityDuraction = 1.5f;
     private float immunityTime = 0f;
-    public int collectedCoins = 0;
+    public static  int collectedCoins = 0;
     public Text scoreUI;
     public Text LiveUI;
     public Slider healthUI;
@@ -29,8 +29,8 @@ public class PlaterStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreUI.text = "" + this.collectedCoins.ToString();
-        LiveUI.text = "" + this.lives.ToString();
+        scoreUI.text = "" + PlaterStats.collectedCoins.ToString();
+        LiveUI.text = "" + PlaterStats.lives.ToString();
         healthUI.value = health;
         if (this.isImmune == true)
         {
@@ -60,18 +60,18 @@ public class PlaterStats : MonoBehaviour
         if (this.isImmune == false)
         {
             GetComponent<Animator>().Play("TakeDamage");
-            this.health = this.health - damage;
-            if (this.health < 0f)
-                this.health = 0;
-            if (this.lives > 0f && this.health == 0f)
+            PlaterStats.health = PlaterStats.health - damage;
+            if (PlaterStats.health < 0f)
+                PlaterStats.health = 0;
+            if (PlaterStats.lives > 0f && PlaterStats.health == 0f)
             {
                 // FindObjectOfType<LevelManger>().Respawnplayer();
                 SoundManager.sndMan.PlayDeathSound();
-                this.health = 6;
-                this.lives--;
+                PlaterStats.health = 6;
+                PlaterStats.lives--;
                 transform.position = spawnPoint.position;
             }
-            else if (this.lives == 0 && this.health == 0)
+            else if (PlaterStats.lives == 0 && PlaterStats.health == 0)
             {
                 Debug.Log("GAMEOVER!!");
                 GameOverMenu.levelnumber = Application.loadedLevel;
@@ -90,6 +90,6 @@ public class PlaterStats : MonoBehaviour
     }
     public void CollectCoin(int coinValue)
     {
-        this.collectedCoins = this.collectedCoins + coinValue;
+        PlaterStats.collectedCoins = PlaterStats.collectedCoins + coinValue;
     }
 }

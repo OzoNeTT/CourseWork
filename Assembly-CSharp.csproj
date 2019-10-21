@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Tools\HingeButtonController.cs" />
     <Compile Include="Assets\Scripts\Tools\SawController.cs" />
     <Compile Include="Assets\Scripts\Tools\SpikesController.cs" />
+    <Compile Include="Assets\Scripts\Tools\TeleporterScript.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GPUInstancing.cs" />

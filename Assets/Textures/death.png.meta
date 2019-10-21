@@ -29,6 +29,12 @@ TextureImporter:
   - first:
       213: 2602597460433512539
     second: death_8
+  - first:
+      213: -2134515381725696932
+    second: death_9
+  - first:
+      213: -270028788923616002
+    second: death_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -309,6 +315,48 @@ TextureImporter:
       bones: []
       spriteID: 348c429e8830d1c409ddcc627450de63
       internalID: 2602597460433512539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_9
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1036
+        width: 239
+        height: 617
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cec0a01bbcc574f8758d49721c3e38
+      internalID: -2134515381725696932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_10
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1041
+        width: 72
+        height: 586
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d45e519c5141c4ead9e4b2ceb48cdc
+      internalID: -270028788923616002
       vertices: []
       indices: 
       edges: []
