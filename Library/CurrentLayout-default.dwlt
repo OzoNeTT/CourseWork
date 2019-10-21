@@ -487,19 +487,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Resources
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets
+  - Assets/Resources
   m_LastFoldersGridSize: 67
   m_LastProjectPath: C:\Users\Alexe\Desktop\MyGame2d
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 73}
-    m_SelectedIDs: e42d0000
-    m_LastClickedID: 11748
+    scrollPos: {x: 0, y: 57}
+    m_SelectedIDs: 08390000
+    m_LastClickedID: 14600
     m_ExpandedIDs: 00000000e42d00002a2e0000602e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -651,9 +651,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6afbffff
+      m_SelectedIDs: 4cfbffff
+      m_LastClickedID: -1204
+      m_ExpandedIDs: 40fbffff48fbffff4cfbffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -713,9 +713,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 42.99192, y: 445.91565, z: -17137.477}
+    m_Target: {x: 79.88254, y: 9.622038, z: -17493.904}
     speed: 2
-    m_Value: {x: 40.952663, y: 429.28293, z: -17130.064}
+    m_Value: {x: 80.81203, y: 12.420391, z: -17492.986}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -748,9 +748,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1719.4448
+    m_Target: 243.60013
     speed: 2
-    m_Value: 1645.4017
+    m_Value: 255.07867
   m_Ortho:
     m_Target: 1
     speed: 2

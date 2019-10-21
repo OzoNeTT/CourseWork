@@ -18,6 +18,7 @@ public class HingeButtonController : MonoBehaviour {
     {
         if (other.tag == "PlayerBullet")
         {
+            SoundManager.sndMan.PlayDoorOpening();
             hinge.GetComponent<Rigidbody2D>().isKinematic = false;
             transform.Translate(x, transform.position.y, transform.position.z);
         }

@@ -13,7 +13,7 @@ public class Enemy2 : MonoBehaviour {
     float fx, fy, fz;
     public double nextFire = -1.0f;
     public AudioSource ShootSound;
-    Animator DeathAnim;
+   
 
     void Start () {
         //  InvokeRepeating("Shoot", 0f, RepeatRate);
@@ -25,7 +25,6 @@ public class Enemy2 : MonoBehaviour {
         fy = transform.localScale.y;
         fz = transform.localScale.z;
         GetComponent<Animator>().Play("Enemy2_Idle");
-        DeathAnim = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -41,7 +40,7 @@ public class Enemy2 : MonoBehaviour {
             Flip();
             if (Time.time >= nextFire)
             {
-                nextFire = Time.time + 1;
+                nextFire = Time.time + 2;
                 Shoot();
             }
 
@@ -49,10 +48,11 @@ public class Enemy2 : MonoBehaviour {
     }
     public void Shoot()
     {
+        GetComponent<Animator>().Play("Enemy2_Shoot");
         ShootSound.pitch = 2f;
         ShootSound.Play();
         GameObject bullet = (GameObject)Instantiate(Bullet, firePoint.position, firePoint.rotation);
-        GetComponent<Animator>().Play("Enemy2_Shoot");
+        
         //if (this.transform.rotation.y == 0)
         //    bullet.GetComponent<Enemy2BulletController>().speed = 20;
         //else
@@ -76,7 +76,7 @@ public class Enemy2 : MonoBehaviour {
                 Player.KnockFromRight = false;
         }
         if(other.tag == "PlayerBullet")
-        {
+        { 
             GetComponent<Animator>().Play("Enemy2_Dies");
         }
 
