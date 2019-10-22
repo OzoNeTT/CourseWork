@@ -73,6 +73,9 @@ https://www.youtube.com/watch?v=PRZFArVoZj0
 
 https://habr.com/ru/post/328700/
 
+http://www.unity3d.ru/distribution/viewtopic.php?f=5&t=44478
+
+
 ### Звук 
 
 https://www.youtube.com/watch?v=560AKXsVuh8
