@@ -26,8 +26,9 @@ public class TeleporterScript : MonoBehaviour
 
         if (collision.tag == "Player")
         {
+            FadeInOut.sceneEnd = true;
             GetComponent<Animator>().Play("Teleporter_Boom");
-            Invoke("loadLevel", .5f);
+            Invoke("loadLevel", 1f);
 
         }
     }

@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Enemy\Enemy1.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy2.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy2BulletController.cs" />
+    <Compile Include="Assets\Scripts\FadeInOut.cs" />
     <Compile Include="Assets\Scripts\Menu\GameOverMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Player\BulletController.cs" />
