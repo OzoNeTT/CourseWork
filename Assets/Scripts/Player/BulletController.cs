@@ -5,12 +5,16 @@ public class BulletController : MonoBehaviour {
     public float speedx,speedy;
     private PlayerControl player;
     public float damage=10;
-
+    float fx, fy, fz;
     public AudioSource HitSound;
 	// Use this for initialization
 	void Start () {
         player = FindObjectOfType<PlayerControl>();
-        if(player.transform.localScale.x<0)
+        fx = transform.localScale.x;
+        fy = transform.localScale.y;
+        fz = transform.localScale.z;
+        flip();
+        if (player.transform.localScale.x<0)
         {
             speedx = -speedx;
         }
@@ -44,5 +48,13 @@ public class BulletController : MonoBehaviour {
             
         }
 
+    }
+    public void flip()
+    {
+
+        if (player.transform.position.x < transform.position.x)
+            transform.localScale = new Vector3( fx, fy, fz);
+        else if (player.transform.position.x > transform.position.x)
+            transform.localScale = new Vector3(-1 * fx, fy, fz);
     }
 }

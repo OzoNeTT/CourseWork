@@ -24,13 +24,13 @@ public class Enemy2BulletController : MonoBehaviour {
         fy = transform.localScale.y;
         fz = transform.localScale.z;
         Flip();
-        if (Player.transform.localScale.x < transform.localScale.x)
-        {
-            speedx = 20;
-        }
-        if (Player.transform.localScale.x > transform.localScale.x)
+        if (Player.transform.position.x < transform.position.x)
         {
             speedx = -20;
+        }
+        if (Player.transform.position.x > transform.position.x)
+        {
+            speedx = 20;
         }
 
     }

@@ -12,6 +12,7 @@ public class SoundManager : MonoBehaviour
     private AudioClip deathSound;
     private AudioClip doorOpen;
     private AudioClip explosion;
+    private AudioClip runningSteps;
     void Start()
     {
         sndMan = this;
@@ -22,6 +23,7 @@ public class SoundManager : MonoBehaviour
         deathSound = Resources.Load<AudioClip>("Death");
         doorOpen = Resources.Load<AudioClip>("DoorOpen");
         explosion = Resources.Load<AudioClip>("Explosion");
+        runningSteps = Resources.Load<AudioClip>("Step");
     }
 
     // Update is called once per frame
@@ -52,4 +54,10 @@ public class SoundManager : MonoBehaviour
     {
         audioSrc.PlayOneShot(explosion);
     }
+    public void PlayRunning()
+    {
+        audioSrc.pitch = Random.Range(0.8f, 1.2f);
+        audioSrc.PlayOneShot(runningSteps);
+    }
+
 }

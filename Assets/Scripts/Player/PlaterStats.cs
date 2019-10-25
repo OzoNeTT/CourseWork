@@ -18,7 +18,7 @@ public class PlaterStats : MonoBehaviour
     public Text scoreUI;
     public Text LiveUI;
     public Slider healthUI;
-    [SerializeField] Transform spawnPoint;
+   [SerializeField] Transform spawnPoint;
 
     // Use this for initialization
     void Start()
@@ -74,6 +74,9 @@ public class PlaterStats : MonoBehaviour
             else if (PlaterStats.lives == 0 && PlaterStats.health == 0)
             {
                 Debug.Log("GAMEOVER!!");
+                PlaterStats.collectedCoins = 0;
+                PlaterStats.lives = 5;
+                PlaterStats.health = 6;
                 GameOverMenu.levelnumber = Application.loadedLevel;
                 Destroy(this.gameObject);
                 Application.LoadLevel("GameOverScene");

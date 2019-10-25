@@ -26,6 +26,7 @@ public class PlayerControl : MonoBehaviour
     public Transform firePoint;
     public GameObject Bullet;
     public double nextFire = -1.0f;
+    double nextStep = -1.0f;
     private PlaterStats Player;
     public AudioSource ShootSound;
     public AudioSource JumpSound;
@@ -59,6 +60,16 @@ public class PlayerControl : MonoBehaviour
         else if (Input.GetKey(L) && CanMoveLeft)
             moveVelocity = -moveSpeed;
         //knockback
+        if (moveVelocity != 0 && grounded)
+        {
+            if (Time.time >= nextStep)
+            {
+                nextStep = Time.time + 0.25;
+                SoundManager.sndMan.PlayRunning();
+            }
+            
+        }
+
         if (KnockBackCount <= 0)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
@@ -66,6 +77,7 @@ public class PlayerControl : MonoBehaviour
         }
         else
         {
+            
             if (KnockFromRight)
                 GetComponent<Rigidbody2D>().velocity = new Vector2(-KnockBackDist, GetComponent<Rigidbody2D>().velocity.y);
             if (!KnockFromRight)
@@ -134,17 +146,17 @@ public class PlayerControl : MonoBehaviour
         GetComponent<Animator>().Play("Fire");
         ShootSound.Play();
         GameObject bullet = (GameObject)Instantiate(Bullet, firePoint.position, firePoint.rotation);
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-
-            if (Input.GetKey(L) || Input.GetKey(R))
-                bullet.GetComponent<BulletController>().speedy = (bullet.GetComponent<BulletController>().speedx / 4);
-            else
-            {
-                bullet.GetComponent<BulletController>().speedy = (bullet.GetComponent<BulletController>().speedx);
-                bullet.GetComponent<BulletController>().speedx = 0;
-            }
-        }
+        //if (Input.GetKey(KeyCode.UpArrow))
+        //{
+        //
+        //    if (Input.GetKey(L) || Input.GetKey(R))
+        //        bullet.GetComponent<BulletController>().speedy = (bullet.GetComponent<BulletController>().speedx / 4);
+        //    else
+        //    {
+        //        bullet.GetComponent<BulletController>().speedy = (bullet.GetComponent<BulletController>().speedx);
+        //        bullet.GetComponent<BulletController>().speedx = 0;
+        //    }
+        //}
 
 
     }

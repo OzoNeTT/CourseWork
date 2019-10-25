@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: 2538560597682598928
     second: Enemy_robots_1_5
+  - first:
+      213: -2742214416463228080
+    second: Enemy_robots_1_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -237,6 +240,27 @@ TextureImporter:
       bones: []
       spriteID: 6e63a158ede2c874cad417dd8626c3da
       internalID: 2538560597682598928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_robots_1_6
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 413
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff1075d1e74d3b4fba74d0dd501a905
+      internalID: -2742214416463228080
       vertices: []
       indices: 
       edges: []

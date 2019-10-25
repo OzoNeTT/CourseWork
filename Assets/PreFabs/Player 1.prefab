@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9054062843525211879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.67, z: 0}
+  m_LocalPosition: {x: 0.07, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9054062844345928290}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9054062844204066161}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.17, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1686362, y: 0.1686363, z: 0.1686363}
   m_Children: []
   m_Father: {fileID: 9054062844345928290}
@@ -92,7 +92,7 @@ Transform:
   m_GameObject: {fileID: 9054062844345928295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8, y: -4.9, z: 0}
-  m_LocalScale: {x: 5.929924, y: 5.929922, z: 5.929922}
+  m_LocalScale: {x: 37.414814, y: 37.414803, z: 37.414803}
   m_Children:
   - {fileID: 9054062844204066160}
   - {fileID: 9054062843525211878}
@@ -139,7 +139,7 @@ SpriteRenderer:
   m_SortingLayerID: 278640877
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6419586348222261097, guid: dcb823c37d3c3aa498403aae9d5c5399,
+  m_Sprite: {fileID: 6383829623208413572, guid: 039c209f335f3ea47bea591664cca8e8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -164,18 +164,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.7}
+  m_Offset: {x: 0, y: 0.115}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.06, y: 1.4005433}
+    oldSize: {x: 0.12, y: 0.24}
     newSize: {x: 1.06, y: 1.4005433}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.21, y: 1.31}
+  m_Size: {x: 0.12, y: 0.23}
   m_EdgeRadius: 0
 --- !u!50 &9054062844345928293
 Rigidbody2D:
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f734310d8c1371a4895fd964fdb0f1d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
+  moveSpeed: 30
   canDoubleJump: 0
   R: 275
   L: 276
@@ -244,12 +244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2027fa540d1314c88e6322310bc892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 6
-  lives: 5
   flickerDuration: 0.1
   isImmune: 0
   immunityDuraction: 1.5
-  collectedCoins: 0
   scoreUI: {fileID: 0}
   LiveUI: {fileID: 0}
   healthUI: {fileID: 0}
@@ -575,7 +572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9054062845210713753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.19298966, y: 0.6683352, z: -386.54214}
+  m_LocalPosition: {x: 0.01, y: 0.13, z: -386.54214}
   m_LocalScale: {x: 0.16863623, y: 0.16863628, z: 0.16863628}
   m_Children: []
   m_Father: {fileID: 9054062844345928290}
