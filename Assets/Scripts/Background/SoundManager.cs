@@ -13,6 +13,7 @@ public class SoundManager : MonoBehaviour
     private AudioClip doorOpen;
     private AudioClip explosion;
     private AudioClip runningSteps;
+    private AudioClip LaserSound;
     public CameraShake camShake;
     
    
@@ -28,6 +29,7 @@ public class SoundManager : MonoBehaviour
         doorOpen = Resources.Load<AudioClip>("DoorOpen");
         explosion = Resources.Load<AudioClip>("Explosion");
         runningSteps = Resources.Load<AudioClip>("Step");
+        LaserSound = Resources.Load<AudioClip>("laser");
     }
 
     // Update is called once per frame
@@ -65,5 +67,9 @@ public class SoundManager : MonoBehaviour
         audioSrc.pitch = Random.Range(0.8f, 1.2f);
         audioSrc.PlayOneShot(runningSteps);
     }
-
+    public void PlayLaser()
+    {
+        StartCoroutine(camShake.Shake(.2f, .3f));
+        audioSrc.PlayOneShot(LaserSound);
+    }
 }

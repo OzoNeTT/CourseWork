@@ -1,28 +1,16 @@
 fileFormatVersion: 2
-guid: 1ec14e84f46c5a044a3b7fbcb3892e4f
+guid: 420319ea79ace164fac6a97a5bc2421f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4890524860049749789
-    second: laser-turn-off_0
+      213: 1555561470246447792
+    second: ui_lite_nyknck 1_0
   - first:
-      213: 4088618560554541629
-    second: laser-turn-off_1
+      213: 6411694408618116306
+    second: ui_lite_nyknck 1_1
   - first:
-      213: 728587595320479130
-    second: laser-turn-off_2
-  - first:
-      213: 6704676352646128292
-    second: laser-turn-off_3
-  - first:
-      213: 7922926105108378066
-    second: laser-turn-off_4
-  - first:
-      213: -3998603460781384364
-    second: laser-turn-off_5
-  - first:
-      213: 7437505357683747491
-    second: laser-turn-off_6
+      213: -7883151702837173920
+    second: ui_lite_nyknck 1_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -119,148 +107,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: laser-turn-off_0
+      name: ui_lite_nyknck 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 53
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 54
+        y: 415
+        width: 128
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 721a28a8bda59a443a95c2523b872645
-      internalID: 4890524860049749789
+      spriteID: 8c78c17d67af9da46a55f2e216228859
+      internalID: 1555561470246447792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laser-turn-off_1
+      name: ui_lite_nyknck 1_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 53
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 54
+        y: 356
+        width: 128
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3ca9e99df12ec34ebcac38040ee361b
-      internalID: 4088618560554541629
+      spriteID: e80ee942a5b0b6d4bb7083ba347855cc
+      internalID: 6411694408618116306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laser-turn-off_2
+      name: ui_lite_nyknck 1_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 53
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 54
+        y: 297
+        width: 128
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e15aa8ccf249ef458a1de2777a514fd
-      internalID: 728587595320479130
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laser-turn-off_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 53
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ceeea5850f75354ca695c2838cc3ea3
-      internalID: 6704676352646128292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laser-turn-off_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 53
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bc2b9c35cce97e42bace67ff96f54c0
-      internalID: 7922926105108378066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laser-turn-off_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 53
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f28ca3ece3bdba4e91b2e0779585970
-      internalID: -3998603460781384364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: laser-turn-off_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 53
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ae836252b17792419b9f5135260ec5c
-      internalID: 7437505357683747491
+      spriteID: 9fd32aafad5b6574fae14486ec84916a
+      internalID: -7883151702837173920
       vertices: []
       indices: 
       edges: []

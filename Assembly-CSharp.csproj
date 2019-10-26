@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Tools\DeathLevel.cs" />
     <Compile Include="Assets\Scripts\Tools\FadeInOut.cs" />
     <Compile Include="Assets\Scripts\Tools\HingeButtonController.cs" />
+    <Compile Include="Assets\Scripts\Tools\LaserScript.cs" />
     <Compile Include="Assets\Scripts\Tools\SawController.cs" />
     <Compile Include="Assets\Scripts\Tools\SpikesController.cs" />
     <Compile Include="Assets\Scripts\Tools\TeleporterScript.cs" />
