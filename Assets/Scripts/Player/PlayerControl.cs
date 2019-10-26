@@ -30,6 +30,7 @@ public class PlayerControl : MonoBehaviour
     private PlaterStats Player;
     public AudioSource ShootSound;
     public AudioSource JumpSound;
+    
 
     private bool CanMoveRight;
     private bool CanMoveLeft;
@@ -115,7 +116,7 @@ public class PlayerControl : MonoBehaviour
         {
             if (Time.time >= nextFire)
             {
-                nextFire = Time.time + 0.5;
+                nextFire = Time.time + 0.4;
                 Shoot();
             }
         }
@@ -143,6 +144,8 @@ public class PlayerControl : MonoBehaviour
 
     public void Shoot()
     {
+        
+
         GetComponent<Animator>().Play("Fire");
         ShootSound.Play();
         GameObject bullet = (GameObject)Instantiate(Bullet, firePoint.position, firePoint.rotation);

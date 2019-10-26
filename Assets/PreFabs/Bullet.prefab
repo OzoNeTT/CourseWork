@@ -67,6 +67,8 @@ MonoBehaviour:
   speedy: 0
   damage: 10
   HitSound: {fileID: 0}
+  camShake: {fileID: 1489655382329005987, guid: de41f462cf1757d42b5d4910855ec7d3,
+    type: 3}
 --- !u!212 &2591478183619789616
 SpriteRenderer:
   m_ObjectHideFlags: 0

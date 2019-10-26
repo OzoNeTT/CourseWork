@@ -13,9 +13,13 @@ public class SoundManager : MonoBehaviour
     private AudioClip doorOpen;
     private AudioClip explosion;
     private AudioClip runningSteps;
+    public CameraShake camShake;
+    
+   
     void Start()
     {
         sndMan = this;
+        camShake = FindObjectOfType<CameraShake>();
         audioSrc = GetComponent<AudioSource>();
         coinSound = Resources.Load<AudioClip>("CoinPickup");
         hitSound = Resources.Load<AudioClip>("Shoot");
@@ -34,6 +38,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayHitSound()
     {
+        StartCoroutine(camShake.Shake(.2f, .6f));
         audioSrc.PlayOneShot(hitSound);
     }
 
@@ -52,6 +57,7 @@ public class SoundManager : MonoBehaviour
     }
     public void PlayExplosion()
     {
+        StartCoroutine(camShake.Shake(.2f, .6f));
         audioSrc.PlayOneShot(explosion);
     }
     public void PlayRunning()

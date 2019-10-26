@@ -7,8 +7,9 @@ public class BulletController : MonoBehaviour {
     public float damage=10;
     float fx, fy, fz;
     public AudioSource HitSound;
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         player = FindObjectOfType<PlayerControl>();
         fx = transform.localScale.x;
         fy = transform.localScale.y;
