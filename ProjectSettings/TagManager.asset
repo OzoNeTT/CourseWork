@@ -14,6 +14,9 @@ TagManager:
   - Enemy2
   - Door
   - Teleporter
+  - Boss
+  - BossBullet
+  - Dog
   layers:
   - Default
   - TransparentFX
@@ -26,7 +29,7 @@ TagManager:
   - Ground
   - Borders
   - Bullet
-  - 
+  - Player
   - 
   - 
   - 

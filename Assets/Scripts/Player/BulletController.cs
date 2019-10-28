@@ -29,8 +29,19 @@ public class BulletController : MonoBehaviour {
 	}
     void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if(other.tag == "Dog")
+        {
+            SoundManager.sndMan.PlayHitSound();
+            other.GetComponent<DogScript>().takeDamage(3);
+            Destroy(this.gameObject);
+        }
         if (other.tag == "Enemy")
+        {
+            SoundManager.sndMan.PlayHitSound();
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
+        if (other.tag == "BossBullet")
         {
             SoundManager.sndMan.PlayHitSound();
             Destroy(other.gameObject);
@@ -41,6 +52,11 @@ public class BulletController : MonoBehaviour {
             SoundManager.sndMan.PlayExplosion();
             Destroy(other.gameObject, 0.25f);
             Destroy(this.gameObject);
+        }
+        if (other.tag == "Boss")
+        {
+            SoundManager.sndMan.PlayHitSound();
+          
         }
         if (other.tag == "Borders" || other.tag == "Button" || other.tag == "Door")
         {

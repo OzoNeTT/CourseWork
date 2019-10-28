@@ -95,4 +95,8 @@ public class PlaterStats : MonoBehaviour
     {
         PlaterStats.collectedCoins = PlaterStats.collectedCoins + coinValue;
     }
+    public int get_health()
+    {
+        return health;
+    }
 }

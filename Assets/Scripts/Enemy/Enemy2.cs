@@ -29,21 +29,24 @@ public class Enemy2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Vector2.Distance(transform.position, target.position) > radius)
+        if (GameObject.Find("Player 1") != null)
         {
-            //GetComponent<Animator>().Play("Enemy2_Idle");
-        }
-        if (Vector2.Distance(transform.position, target.position) < radius)
-        {
-
-            //transform.position = new Vector3(Vector3.MoveTowards(transform.position, Player.transform.position, MoveSpeed * Time.deltaTime).x, transform.position.y);
-            Flip();
-            if (Time.time >= nextFire)
+            if (Vector2.Distance(transform.position, target.position) > radius )
             {
-                nextFire = Time.time + 2;
-                Shoot();
+                //GetComponent<Animator>().Play("Enemy2_Idle");
             }
+            if (Vector2.Distance(transform.position, target.position) < radius )
+            {
 
+                //transform.position = new Vector3(Vector3.MoveTowards(transform.position, Player.transform.position, MoveSpeed * Time.deltaTime).x, transform.position.y);
+                Flip();
+                if (Time.time >= nextFire)
+                {
+                    nextFire = Time.time + 2;
+                    Shoot();
+                }
+
+            }
         }
     }
     public void Shoot()

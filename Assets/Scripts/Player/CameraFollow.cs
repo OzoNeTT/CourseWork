@@ -26,9 +26,11 @@ public class CameraFollow : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
-        Vector3 targetcampos = target.position + offset;
-        transform.position = Vector3.Lerp(transform.position, targetcampos, smothing * Time.deltaTime);
+        if (GameObject.Find("Player 1") != null)
+        {
+            Vector3 targetcampos = target.position + offset;
+            transform.position = Vector3.Lerp(transform.position, targetcampos, smothing * Time.deltaTime);
+        }
     }
     //void FixedUpdate()
     //{
