@@ -7,14 +7,14 @@ public class LaserScript : MonoBehaviour
     float dtime = 0;
     private Transform target;
     public float radius;
-    // Start is called before the first frame update
+    
     void Start()
     {
         GetComponent<Animator>().Play("LaserIdle");
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         if (Vector2.Distance(transform.position, target.position) < radius)
@@ -38,7 +38,7 @@ public class LaserScript : MonoBehaviour
     {
         if (collision.tag == "Player" && dtime >= 3.4)
         {
-            //FindObjectOfType<LevelManger>().Respawnplayer();
+            
             FindObjectOfType<PlaterStats>().TakeDamage(4);
             collision.GetComponent<PlayerControl>().KnockBackCount = 0.2f;
             if (collision.transform.position.x < this.transform.position.x)
@@ -50,7 +50,7 @@ public class LaserScript : MonoBehaviour
     {
         if (collision.tag == "Player" && dtime >= 3.4)
         {
-            //FindObjectOfType<LevelManger>().Respawnplayer();
+            
             FindObjectOfType<PlaterStats>().TakeDamage(4);
             collision.GetComponent<PlayerControl>().KnockBackCount = 0.2f;
             if (collision.transform.position.x < this.transform.position.x)
@@ -62,7 +62,7 @@ public class LaserScript : MonoBehaviour
     {
         if (collision.tag == "Player" && dtime >= 3.4)
         {
-            //FindObjectOfType<LevelManger>().Respawnplayer();
+            
             FindObjectOfType<PlaterStats>().TakeDamage(4);
             collision.GetComponent<PlayerControl>().KnockBackCount = 0.2f;
             if (collision.transform.position.x < this.transform.position.x)

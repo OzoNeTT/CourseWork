@@ -37,15 +37,21 @@ public class Enemy1 : MonoBehaviour
         
 
     }
-
+    public void Dies()
+    {
+        
+        StartCoroutine("waitAttack");
+        
+    }
     // Update is called once per frame
     void Update()
     {
         
         if (attack)
         {
+            SoundManager.sndMan.PlaySword();
             _anim.SetBool("attack", true);
-            
+            attack = false;
             //_anim.SetBool("walking", false);
 
             //GetComponent<Animator>().Play("Enemy1_Attack");
@@ -57,7 +63,7 @@ public class Enemy1 : MonoBehaviour
             //_anim.SetBool("attack", false);
 
             //GetComponent<Animator>().Play("Enemy1_idle");
-            //stay = false;
+            stay = false;
         }
 
         
@@ -65,6 +71,7 @@ public class Enemy1 : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) > radius)
         {
             //GetComponent<Animator>().Play("Enemy1_idle");
+            _anim.SetBool("walking", false);
         }
         if (Vector2.Distance(transform.position, target.position) < radius && MoveSpeed != 0 && stay == false)
         {
@@ -85,13 +92,14 @@ public class Enemy1 : MonoBehaviour
         if (collision.tag == "Player")
         {
             MoveSpeed = 0f;
+            stay = true;
             //GetComponent<Animator>().Play("Enemy1_Attack");
             if (Time.time >= dtime)
             {
                 //GetComponent<Animator>().Play("Enemy1_Attack");
                 attack = true;
                 dtime = Time.time + 1f;
-
+                
                 FindObjectOfType<PlaterStats>().TakeDamage(damage);
                 collision.GetComponent<AudioSource>().Play();
                 //Player.KnockBackCount = 0.2f;
@@ -110,12 +118,14 @@ public class Enemy1 : MonoBehaviour
         if (collision.tag == "Player")
         {
             MoveSpeed = 0f;
+            stay = true;
             //GetComponent<Animator>().Play("Enemy1_Attack");
             if (Time.time >= dtime)
             {
+               
                 //GetComponent<Animator>().Play("Enemy1_Attack");
                 //attack = true;
-                SoundManager.sndMan.PlaySword();
+                attack = true;
                 dtime = Time.time + 1f;
 
                 FindObjectOfType<PlaterStats>().TakeDamage(damage);
@@ -147,11 +157,14 @@ public class Enemy1 : MonoBehaviour
         {
             if (collision.GetComponent<PlaterStats>().get_health() == 6)
             {
-                //_anim.SetBool("attack", true);
+                _anim.SetBool("attack", false);
+                _anim.SetBool("walking", false);
+                stay = false;
+                attack = false;
                 //GetComponent<Animator>().Play("Enemy1_Attack");
             }
             StartCoroutine("wait");
-
+    
         }
       
     }
@@ -166,6 +179,16 @@ public class Enemy1 : MonoBehaviour
     private IEnumerator wait()
     {
         MoveSpeed = moveSorig;
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1f);
+        
+    }
+    private IEnumerator waitAttack()
+    {
+        MoveSpeed = 0f;
+        _anim.SetBool("attack", false);
+        _anim.SetBool("walking", false);
+        _anim.SetBool("dies", true);
+        yield return new WaitForSeconds(1f);
+        Destroy(this.gameObject);
     }
 }

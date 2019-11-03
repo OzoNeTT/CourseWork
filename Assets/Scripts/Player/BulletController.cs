@@ -38,7 +38,8 @@ public class BulletController : MonoBehaviour {
         if (other.tag == "Enemy")
         {
             SoundManager.sndMan.PlayHitSound();
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            other.GetComponent<Enemy1>().Dies();
             Destroy(this.gameObject);
         }
         if (other.tag == "BossBullet")
@@ -50,7 +51,7 @@ public class BulletController : MonoBehaviour {
         if (other.tag == "Enemy2")
         {
             SoundManager.sndMan.PlayExplosion();
-            Destroy(other.gameObject, 0.25f);
+            other.GetComponent<Enemy2>().Dies();
             Destroy(this.gameObject);
         }
         if (other.tag == "Boss")

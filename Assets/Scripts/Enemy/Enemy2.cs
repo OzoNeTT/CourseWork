@@ -13,11 +13,12 @@ public class Enemy2 : MonoBehaviour {
     float fx, fy, fz;
     public double nextFire = -1.0f;
     public AudioSource ShootSound;
-   
+    Animator _anim;
 
     void Start () {
         //  InvokeRepeating("Shoot", 0f, RepeatRate);
         //  InvokeRepeating("Move", 0f, 0.1F);
+        _anim = GetComponent<Animator>();
         nextFire = Time.time;
         Player = FindObjectOfType<PlayerControl>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -26,23 +27,30 @@ public class Enemy2 : MonoBehaviour {
         fz = transform.localScale.z;
         GetComponent<Animator>().Play("Enemy2_Idle");
     }
-	
-	// Update is called once per frame
-	void Update () {
+    public void Dies()
+    {
+
+        StartCoroutine("waitDies");
+
+    }
+    // Update is called once per frame
+    void Update () {
         if (GameObject.Find("Player 1") != null)
         {
             if (Vector2.Distance(transform.position, target.position) > radius )
             {
                 //GetComponent<Animator>().Play("Enemy2_Idle");
+                //_anim.SetBool("shooting", false);
             }
             if (Vector2.Distance(transform.position, target.position) < radius )
             {
-
+                
                 //transform.position = new Vector3(Vector3.MoveTowards(transform.position, Player.transform.position, MoveSpeed * Time.deltaTime).x, transform.position.y);
                 Flip();
-                if (Time.time >= nextFire)
+                if (Time.time >= nextFire && !_anim.GetBool("dies"))
                 {
                     nextFire = Time.time + 2;
+                    
                     Shoot();
                 }
 
@@ -51,9 +59,10 @@ public class Enemy2 : MonoBehaviour {
     }
     public void Shoot()
     {
-        GetComponent<Animator>().Play("Enemy2_Shoot");
+        //GetComponent<Animator>().Play("Enemy2_Shoot");
         ShootSound.pitch = 2f;
         ShootSound.Play();
+        GetComponent<Animator>().Play("Enemy2_Shoot");
         GameObject bullet = (GameObject)Instantiate(Bullet, firePoint.position, firePoint.rotation);
         
         //if (this.transform.rotation.y == 0)
@@ -78,11 +87,6 @@ public class Enemy2 : MonoBehaviour {
             else
                 Player.KnockFromRight = false;
         }
-        if(other.tag == "PlayerBullet")
-        { 
-            GetComponent<Animator>().Play("Enemy2_Dies");
-        }
-
     }
     public void Flip()
     {
@@ -91,6 +95,13 @@ public class Enemy2 : MonoBehaviour {
             transform.localScale = new Vector3(-1 * fx, fy, fz);
         else if (Player.transform.position.x > transform.position.x)
             transform.localScale = new Vector3(fx, fy, fz);
+    }
+    private IEnumerator waitDies()
+    {
+        _anim.SetBool("dies", true);
+        
+        yield return new WaitForSeconds(.3f);
+        Destroy(this.gameObject);
     }
 
 }

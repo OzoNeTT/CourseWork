@@ -14,7 +14,7 @@ public class SoundManager : MonoBehaviour
     private AudioClip explosion;
     private AudioClip runningSteps;
     private AudioClip LaserSound;
-    private AudioClip BossScream;
+    
     private AudioClip SwordSound;
     private AudioClip Bark;
     private AudioClip DogDeath;
@@ -34,7 +34,7 @@ public class SoundManager : MonoBehaviour
         explosion = Resources.Load<AudioClip>("Explosion");
         runningSteps = Resources.Load<AudioClip>("Step");
         LaserSound = Resources.Load<AudioClip>("laser");
-        BossScream = Resources.Load<AudioClip>("BossSound");
+        
         SwordSound = Resources.Load<AudioClip>("Sword");
         Bark = Resources.Load<AudioClip>("Bark");
         DogDeath = Resources.Load<AudioClip>("DogHert");
@@ -92,9 +92,5 @@ public class SoundManager : MonoBehaviour
         StartCoroutine(camShake.Shake(.2f, .3f));
         audioSrc.PlayOneShot(LaserSound);
     }
-    public void PlayScreamBoss()
-    {
-        audioSrc.pitch = Random.Range(1f, 1f);
-        audioSrc.PlayOneShot(BossScream);
-    }
+
 }

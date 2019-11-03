@@ -12,7 +12,7 @@ public class PlaterStats : MonoBehaviour
     private float flickerTime = 0f;
     private SpriteRenderer spriteRenderer;
     public bool isImmune = false;
-    public float immunityDuraction = 1.5f;
+    public float immunityDuraction = 1f;
     private float immunityTime = 0f;
     public static  int collectedCoins = 0;
     public Text scoreUI;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class BossScript : MonoBehaviour
 {
@@ -13,10 +14,15 @@ public class BossScript : MonoBehaviour
     public GameObject Bullet;
     public GameObject Enemies;
     public GameObject Enemies2;
+    private AudioClip BossSound;
+    public AudioSource sndM;
     float fx, fy, fz;
     public int health;
     bool enter = true;
+    int point = 0;
+    int currentPoint = 0;
     public Slider healthUI;
+    System.Random rnd;
 
     void Start()
     {
@@ -24,12 +30,13 @@ public class BossScript : MonoBehaviour
         //InvokeRepeating("SpawnEnemies", 1f, 8);
         Player = FindObjectOfType<PlayerControl>();
         health = 100;
-       
+        BossSound = Resources.Load<AudioClip>("BossSound");
         StartCoroutine("boss");
         fx = transform.localScale.x;
         fy = transform.localScale.y;
         fz = transform.localScale.z;
         Speed = 1f;
+        rnd = new System.Random();
     }
    // public void takedamage(float damage)
    // {
@@ -47,7 +54,7 @@ public class BossScript : MonoBehaviour
    // }
     public void SpawnEnemies()
     {
-        SoundManager.sndMan.PlayScreamBoss();
+        sndM.PlayOneShot(BossSound);
         GetComponent<Animator>().Play("Boss_Skill");
 
         if (health <= 50)
@@ -110,7 +117,7 @@ public class BossScript : MonoBehaviour
         if (health < 0)
         {
             GetComponent<Animator>().Play("Boss_Dies");
-            health = 100;
+            //health = 100;
             Die();
         }
     }
@@ -139,62 +146,104 @@ public class BossScript : MonoBehaviour
         //First
         while (true)
         {
-
-            while (this.transform.position.x != points[0].position.x)
+            if (health >= 50)
             {
+                while (this.transform.position.x != points[0].position.x)
+                {
 
-                this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(points[0].position.x, this.transform.position.y), Speed);
+                    this.transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(points[0].position.x, this.transform.position.y), Speed);
+                    currentPoint = 0;
+                    yield return null;
+                }
+                //transform.localScale = new Vector3(-1 * fx, fy, fz);
+                int i = 0;
+                yield return new WaitForSeconds(1);
+                while (i < 10)
+                {
 
-                yield return null;
+                    Instantiate(Bullet, firepoint.position, firepoint.rotation);
+                    i++;
+                    yield return new WaitForSeconds(.5f);
+                }
+                //second
+                while (this.transform.position != points[2].position)
+                {
+
+                    this.transform.position = Vector2.MoveTowards(this.transform.position, points[2].position, Speed);
+                    currentPoint = 2;
+
+                    yield return null;
+                }
+                i = 0;
+
+
+                SpawnEnemies();
+
+                yield return new WaitForSeconds(1);
+                while (i < 10)
+                {
+
+                    Instantiate(Bullet, firepoint.position, firepoint.rotation);
+                    i++;
+                    yield return new WaitForSeconds(.5f);
+                }
+                //third
+                while (this.transform.position.x != points[1].position.x)
+                {
+
+                    this.transform.position = Vector2.MoveTowards(this.transform.position, points[1].position, Speed);
+                    currentPoint = 1;
+                    yield return null;
+                }
+                //transform.localScale = new Vector3(fx, fy, fz);
+                i = 0;
+                yield return new WaitForSeconds(1);
+                while (i < 10)
+                {
+
+                    Instantiate(Bullet, firepoint.position, firepoint.rotation);
+                    i++;
+                    yield return new WaitForSeconds(.5f);
+                }
             }
-            transform.localScale = new Vector3(-1 * fx, fy, fz);
-            int i = 0;
-            yield return new WaitForSeconds(1);
-            while (i < 10)
+            else
             {
-                
-                Instantiate(Bullet, firepoint.position, firepoint.rotation);
-                i++;
-                yield return new WaitForSeconds(.5f);
-            }
-            //second
-            while (this.transform.position != points[2].position)
-            {
+                int i = 0;
+                int randnum = rnd.Next(0, 1);
+                if (currentPoint == 0)
+                {
+                    point = (randnum == 0) ? 1 : 2;
+                }
+                else if (currentPoint == 1)
+                {
+                    point = (randnum == 0) ? 2 : 0;
+                }
+                else if (currentPoint == 2)
+                {
+                    point = (randnum == 0) ? 0 : 1;
+                }
 
-                this.transform.position = Vector2.MoveTowards(this.transform.position, points[2].position, Speed);
-                
-                yield return null;
-            }
-            i = 0;
+                while (this.transform.position != points[point].position)
+                {
 
-            
-            SpawnEnemies();
+                    this.transform.position = Vector2.MoveTowards(this.transform.position, points[point].position, Speed);
+                    currentPoint = point;
 
-            yield return new WaitForSeconds(1);
-            while (i < 10)
-            {
-                
-                Instantiate(Bullet, firepoint.position, firepoint.rotation);
-                i++;
-                yield return new WaitForSeconds(.5f);
-            }
-            //third
-            while (this.transform.position.x != points[1].position.x)
-            {
+                    yield return null;
+                }
+                i = 0;
 
-                this.transform.position = Vector2.MoveTowards(this.transform.position, points[1].position, Speed);
 
-                yield return null;
-            }
-            transform.localScale = new Vector3(fx, fy, fz);
-            i = 0;
-            yield return new WaitForSeconds(1);
-            while (i < 10)
-            {
-               
-                Instantiate(Bullet, firepoint.position, firepoint.rotation);
-                i++;
-                yield return new WaitForSeconds(.5f);
+                SpawnEnemies();
+
+                yield return new WaitForSeconds(1);
+                while (i < 10)
+                {
+
+                    Instantiate(Bullet, firepoint.position, firepoint.rotation);
+                    i++;
+                    yield return new WaitForSeconds(.5f);
+                }
             }
             //4
 
