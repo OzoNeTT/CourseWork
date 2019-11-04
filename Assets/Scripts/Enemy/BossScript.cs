@@ -23,6 +23,9 @@ public class BossScript : MonoBehaviour
     int currentPoint = 0;
     public Slider healthUI;
     System.Random rnd;
+    public GameObject[] target_2;
+    bool dies = false;
+    Animator _anim;
 
     void Start()
     {
@@ -37,6 +40,7 @@ public class BossScript : MonoBehaviour
         fz = transform.localScale.z;
         Speed = 1f;
         rnd = new System.Random();
+        _anim = GetComponent<Animator>();
     }
    // public void takedamage(float damage)
    // {
@@ -56,16 +60,17 @@ public class BossScript : MonoBehaviour
     {
         sndM.PlayOneShot(BossSound);
         GetComponent<Animator>().Play("Boss_Skill");
-
+        _anim.SetBool("Spawn", true);
         if (health <= 50)
         {
-            points[0].GetComponent<Animator>().Play("PointSpawn");
-            points[1].GetComponent<Animator>().Play("PointSpawn");
-           
-           
-            Instantiate(Enemies2, points[0].position, points[0].rotation);
-            Instantiate(Enemies2, points[1].position, points[1].rotation);
 
+            if (target_2.Length <= 2)
+            {
+                points[0].GetComponent<Animator>().Play("PointSpawn");
+                points[1].GetComponent<Animator>().Play("PointSpawn");
+                Instantiate(Enemies2, points[0].position, points[0].rotation);
+                Instantiate(Enemies2, points[1].position, points[1].rotation);
+            }
             if (points[3].GetComponent<PositionCheck>().GetPosition() == false)
             {
                 points[3].GetComponent<Animator>().Play("PointSpawn");
@@ -79,19 +84,31 @@ public class BossScript : MonoBehaviour
         }
         else
         {
-            points[0].GetComponent<Animator>().Play("PointSpawn");
-            points[1].GetComponent<Animator>().Play("PointSpawn");
-            Instantiate(Enemies2, points[0].position, points[0].rotation);
-            Instantiate(Enemies2, points[1].position, points[1].rotation);
+            if (target_2.Length <= 2) {
+                points[0].GetComponent<Animator>().Play("PointSpawn");
+                points[1].GetComponent<Animator>().Play("PointSpawn");
+                Instantiate(Enemies2, points[0].position, points[0].rotation);
+                Instantiate(Enemies2, points[1].position, points[1].rotation);
+            }
         }
     }
     
     void Die()
     {
-        Destroy(this.gameObject, 1f);
+        dies = true;
+        StartCoroutine("waitDies");
+    }
+    private IEnumerator waitDies()
+    {
+        _anim.SetBool("Dies", true);
+
+        yield return new WaitForSeconds(.5f);
+        Destroy(this.gameObject);
     }
     void Update()
     {
+        _anim.SetBool("Spawn", false);
+        target_2 = GameObject.FindGameObjectsWithTag("Enemy");
         //healthUI.value = health;
         healthUI.value = health;
         if (GameObject.Find("Player 1") != null)
@@ -116,8 +133,9 @@ public class BossScript : MonoBehaviour
         }
         if (health < 0)
         {
-            GetComponent<Animator>().Play("Boss_Dies");
+            //GetComponent<Animator>().Play("Boss_Dies");
             //health = 100;
+
             Die();
         }
     }
@@ -144,7 +162,7 @@ public class BossScript : MonoBehaviour
     IEnumerator boss()
     {
         //First
-        while (true)
+        while (!dies)
         {
             if (health >= 50)
             {

@@ -42,6 +42,13 @@ public class BulletController : MonoBehaviour {
             other.GetComponent<Enemy1>().Dies();
             Destroy(this.gameObject);
         }
+        if (other.tag == "Ghost")
+        {
+            SoundManager.sndMan.PlayHitSound();
+            //Destroy(other.gameObject);
+            other.GetComponent<EnemyGhostGFX>().Dies();
+            Destroy(this.gameObject);
+        }
         if (other.tag == "BossBullet")
         {
             SoundManager.sndMan.PlayHitSound();

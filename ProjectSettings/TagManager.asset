@@ -17,6 +17,7 @@ TagManager:
   - Boss
   - BossBullet
   - Dog
+  - Ghost
   layers:
   - Default
   - TransparentFX
@@ -30,7 +31,7 @@ TagManager:
   - Borders
   - Bullet
   - Player
-  - 
+  - Enemy
   - 
   - 
   - 

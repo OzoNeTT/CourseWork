@@ -19,6 +19,7 @@ public class Enemy1 : MonoBehaviour
     bool attack = false;
     bool stay = false;
     float moveSorig;
+    bool dies = false;
     Animator _anim;
     void Start()
     {
@@ -39,7 +40,7 @@ public class Enemy1 : MonoBehaviour
     }
     public void Dies()
     {
-        
+        dies = true;
         StartCoroutine("waitAttack");
         
     }
@@ -47,7 +48,7 @@ public class Enemy1 : MonoBehaviour
     void Update()
     {
         
-        if (attack)
+        if (attack && !dies)
         {
             SoundManager.sndMan.PlaySword();
             _anim.SetBool("attack", true);
@@ -57,15 +58,14 @@ public class Enemy1 : MonoBehaviour
             //GetComponent<Animator>().Play("Enemy1_Attack");
             //attack = false;
         }
-        if (stay)
+        if (stay && !dies)
         {
             _anim.SetBool("walking", false);
+            stay = false;
             //_anim.SetBool("attack", false);
 
             //GetComponent<Animator>().Play("Enemy1_idle");
-            stay = false;
         }
-
         
 
         if (Vector2.Distance(transform.position, target.position) > radius)
@@ -73,7 +73,7 @@ public class Enemy1 : MonoBehaviour
             //GetComponent<Animator>().Play("Enemy1_idle");
             _anim.SetBool("walking", false);
         }
-        if (Vector2.Distance(transform.position, target.position) < radius && MoveSpeed != 0 && stay == false)
+        if (Vector2.Distance(transform.position, target.position) < radius && MoveSpeed != 0 && !stay && !dies)
         {
 
             //transform.position = new Vector3(Vector3.MoveTowards(transform.position, Player.transform.position, MoveSpeed * Time.deltaTime).x, transform.position.y);
@@ -94,7 +94,7 @@ public class Enemy1 : MonoBehaviour
             MoveSpeed = 0f;
             stay = true;
             //GetComponent<Animator>().Play("Enemy1_Attack");
-            if (Time.time >= dtime)
+            if (Time.time >= dtime && !dies)
             {
                 //GetComponent<Animator>().Play("Enemy1_Attack");
                 attack = true;
@@ -120,7 +120,7 @@ public class Enemy1 : MonoBehaviour
             MoveSpeed = 0f;
             stay = true;
             //GetComponent<Animator>().Play("Enemy1_Attack");
-            if (Time.time >= dtime)
+            if (Time.time >= dtime && !dies)
             {
                
                 //GetComponent<Animator>().Play("Enemy1_Attack");
@@ -138,15 +138,18 @@ public class Enemy1 : MonoBehaviour
             }
         }
         if(collision.tag == "Borders")
-        {      
+        {
+            MoveSpeed = 0f;
             stay = true;
             if(transform.position.x > collision.transform.position.x && target.position.x > collision.transform.position.x)
             {
-                stay = false;
+               stay = false;
+                StartCoroutine("wait");
             }
             else if (transform.position.x < collision.transform.position.x && target.position.x < collision.transform.position.x)
             {
                 stay = false;
+                StartCoroutine("wait");
             }
         }
         

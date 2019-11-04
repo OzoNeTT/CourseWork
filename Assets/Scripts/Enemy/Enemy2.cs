@@ -14,7 +14,7 @@ public class Enemy2 : MonoBehaviour {
     public double nextFire = -1.0f;
     public AudioSource ShootSound;
     Animator _anim;
-
+    bool dies = false;
     void Start () {
         //  InvokeRepeating("Shoot", 0f, RepeatRate);
         //  InvokeRepeating("Move", 0f, 0.1F);
@@ -29,7 +29,7 @@ public class Enemy2 : MonoBehaviour {
     }
     public void Dies()
     {
-
+        dies = true;
         StartCoroutine("waitDies");
 
     }
@@ -42,7 +42,7 @@ public class Enemy2 : MonoBehaviour {
                 //GetComponent<Animator>().Play("Enemy2_Idle");
                 //_anim.SetBool("shooting", false);
             }
-            if (Vector2.Distance(transform.position, target.position) < radius )
+            if (Vector2.Distance(transform.position, target.position) < radius && !dies)
             {
                 
                 //transform.position = new Vector3(Vector3.MoveTowards(transform.position, Player.transform.position, MoveSpeed * Time.deltaTime).x, transform.position.y);
@@ -77,7 +77,7 @@ public class Enemy2 : MonoBehaviour {
     //}
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !dies)
         {
             
             FindObjectOfType<PlaterStats>().TakeDamage(10);
