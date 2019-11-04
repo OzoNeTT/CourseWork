@@ -33,6 +33,7 @@ public class DogScript : MonoBehaviour
 
     float OrigMoveSpeed;
 
+    bool dies = false;
     bool canEnter = true;
     void Start()
     {
@@ -48,6 +49,14 @@ public class DogScript : MonoBehaviour
     void Die()
     {
         SoundManager.sndMan.PlayDogDeath();
+        dies = true;
+        StartCoroutine("waitAttack");
+    }
+    private IEnumerator waitAttack()
+    {
+        moveSpeed = 0f;
+        _anim.SetBool("Dies", true);
+        yield return new WaitForSeconds(.8f);
         Destroy(this.gameObject);
     }
     public void takeDamage(int a)
@@ -61,7 +70,7 @@ public class DogScript : MonoBehaviour
         notAtEdge = Physics2D.OverlapCircle(egdeCheck.position, wallCheckRadius, whatIsWall);
 
         playered = Physics2D.OverlapCircle(playerCheck.position, playerCheckRadius, whatIsPlayer);
-        if (Vector2.Distance(transform.position, Player.transform.position) > Radius)
+        if (Vector2.Distance(transform.position, Player.transform.position) > Radius && !dies)
         {
             moveSpeed = OrigMoveSpeed;
             canEnter = true;
@@ -82,7 +91,7 @@ public class DogScript : MonoBehaviour
             }    
             // Патруль
         }
-        else
+        else if(Vector2.Distance(transform.position, Player.transform.position) <= Radius && !dies)
         {
             // Атака игрока 
             if (canEnter)
@@ -151,7 +160,7 @@ public class DogScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player" && !dies)
         {
 
             moveSpeed = 0f;
@@ -165,7 +174,7 @@ public class DogScript : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && !dies)
         {
             moveSpeed = 0f;
             if (Time.time >= dtime)
@@ -178,7 +187,7 @@ public class DogScript : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player" && !dies)
         {
             moveSpeed = OrigMoveSpeed;
             canEnter = true;
