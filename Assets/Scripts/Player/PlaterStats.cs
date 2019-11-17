@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlaterStats : MonoBehaviour
 {
-    // Use this for initialization
+
     public static int  health = 6;
     public static int lives = 5;
     public float flickerDuration = 0.1f;
@@ -20,13 +20,12 @@ public class PlaterStats : MonoBehaviour
     public Slider healthUI;
    [SerializeField] Transform spawnPoint;
 
-    // Use this for initialization
     void Start()
     {
         spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         scoreUI.text = "" + PlaterStats.collectedCoins.ToString();
@@ -65,7 +64,6 @@ public class PlaterStats : MonoBehaviour
                 PlaterStats.health = 0;
             if (PlaterStats.lives > 0f && PlaterStats.health == 0f)
             {
-                // FindObjectOfType<LevelManger>().Respawnplayer();
                 SoundManager.sndMan.PlayDeathSound();
                 PlaterStats.health = 6;
                 PlaterStats.lives--;

@@ -35,7 +35,6 @@ public class PlayerControl : MonoBehaviour
     private bool CanMoveRight;
     private bool CanMoveLeft;
 
-    // Start is called before the first frame update
     void Start()
     {
         nextFire = Time.time;
@@ -47,15 +46,10 @@ public class PlayerControl : MonoBehaviour
         CanMoveRight = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
         moveVelocity = 0;
-        //if (Input.GetKey(R))
-        //    moveVelocity = moveSpeed;
-        //else if (Input.GetKey(L))
-        //    moveVelocity = -moveSpeed;
         if (Input.GetKey(R) && CanMoveRight)
             moveVelocity = moveSpeed;
         else if (Input.GetKey(L) && CanMoveLeft)
@@ -124,6 +118,7 @@ public class PlayerControl : MonoBehaviour
         GetComponent<Animator>().SetFloat("Velocity", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
         GetComponent<Animator>().SetBool("Grounded", grounded);
     }
+
     void flip()
     {
         if (GetComponent<Rigidbody2D>().velocity.x > 0)
@@ -144,25 +139,13 @@ public class PlayerControl : MonoBehaviour
 
     public void Shoot()
     {
-        
 
         GetComponent<Animator>().Play("Fire");
         ShootSound.Play();
         GameObject bullet = (GameObject)Instantiate(Bullet, firePoint.position, firePoint.rotation);
-        //if (Input.GetKey(KeyCode.UpArrow))
-        //{
-        //
-        //    if (Input.GetKey(L) || Input.GetKey(R))
-        //        bullet.GetComponent<BulletController>().speedy = (bullet.GetComponent<BulletController>().speedx / 4);
-        //    else
-        //    {
-        //        bullet.GetComponent<BulletController>().speedy = (bullet.GetComponent<BulletController>().speedx);
-        //        bullet.GetComponent<BulletController>().speedx = 0;
-        //    }
-        //}
-
 
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<Coin>())
