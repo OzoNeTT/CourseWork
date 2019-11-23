@@ -1,29 +1,17 @@
 ﻿# Tiled2Unity generated file. Do not modify by hand.
 # Wavefront file for 'Level2_mesh_0145.obj'
 
-# Vertices (Count = 12)
-v 0 -224 0
-v -16 -224 0
-v -16 -208 0
-v 0 -208 0
-v -16 -224 0
-v -32 -224 0
-v -32 -208 0
-v -16 -208 0
-v -32 -224 0
-v -48 -224 0
-v -48 -208 0
-v -32 -208 0
+# Vertices (Count = 4)
+v -240 -256 0
+v -256 -256 0
+v -256 -240 0
+v -240 -240 0
 
-# Texture cooridinates (Count = 8)
-vt 0.1538462 0.76
-vt 0.2307692 0.76
-vt 0.2307692 0.8
-vt 0.1538462 0.8
-vt 0.3076923 0.76
-vt 0.3076923 0.8
-vt 0.3846154 0.76
-vt 0.3846154 0.8
+# Texture cooridinates (Count = 4)
+vt 0.06803685 0.5588235
+vt 0.07937633 0.5588235
+vt 0.07937633 0.5882353
+vt 0.06803685 0.5882353
 
 # Normal
 vn 0 0 -1
@@ -33,6 +21,4 @@ g Level2_mesh_0145
 
 # Faces
 f 1/1/1 2/2/1 3/3/1 4/4/1
-f 5/2/1 6/5/1 7/6/1 8/3/1
-f 9/5/1 10/7/1 11/8/1 12/6/1
 

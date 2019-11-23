@@ -14,7 +14,8 @@ public class SoundManager : MonoBehaviour
     private AudioClip explosion;
     private AudioClip runningSteps;
     private AudioClip LaserSound;
-    
+    private AudioClip drinkHP;
+
     private AudioClip SwordSound;
     private AudioClip Bark;
     private AudioClip DogDeath;
@@ -34,13 +35,17 @@ public class SoundManager : MonoBehaviour
         explosion = Resources.Load<AudioClip>("Explosion");
         runningSteps = Resources.Load<AudioClip>("Step");
         LaserSound = Resources.Load<AudioClip>("laser");
-        
+        drinkHP = Resources.Load<AudioClip>("DrinkHP");
         SwordSound = Resources.Load<AudioClip>("Sword");
         Bark = Resources.Load<AudioClip>("Bark");
         DogDeath = Resources.Load<AudioClip>("DogHert");
     }
 
     // Update is called once per frame
+    public void PlayDrinkHP()
+    {
+        audioSrc.PlayOneShot(drinkHP);
+    }
     public void PlayDogDeath()
     {
         audioSrc.PlayOneShot(DogDeath);

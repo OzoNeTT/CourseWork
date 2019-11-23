@@ -18,6 +18,7 @@ TagManager:
   - BossBullet
   - Dog
   - Ghost
+  - MovePlatform
   layers:
   - Default
   - TransparentFX

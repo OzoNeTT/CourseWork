@@ -1545,6 +1545,41 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8d241bf600eea9f44bc38c1cc5ba568f, type: 2}
+    - target: {fileID: 1512484552546938923, guid: 85513fc57e39a1d458a2c1d6f34b6a07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d241bf600eea9f44bc38c1cc5ba568f, type: 2}
+    - target: {fileID: 2285659429876123667, guid: 85513fc57e39a1d458a2c1d6f34b6a07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d241bf600eea9f44bc38c1cc5ba568f, type: 2}
+    - target: {fileID: 7775340613575103816, guid: 85513fc57e39a1d458a2c1d6f34b6a07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d241bf600eea9f44bc38c1cc5ba568f, type: 2}
+    - target: {fileID: 8479485333318687135, guid: 85513fc57e39a1d458a2c1d6f34b6a07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d241bf600eea9f44bc38c1cc5ba568f, type: 2}
+    - target: {fileID: 1759777381904102598, guid: 85513fc57e39a1d458a2c1d6f34b6a07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d241bf600eea9f44bc38c1cc5ba568f, type: 2}
+    - target: {fileID: 3746360081336654910, guid: 85513fc57e39a1d458a2c1d6f34b6a07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d241bf600eea9f44bc38c1cc5ba568f, type: 2}
+    - target: {fileID: 9195788247115177451, guid: 85513fc57e39a1d458a2c1d6f34b6a07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d241bf600eea9f44bc38c1cc5ba568f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85513fc57e39a1d458a2c1d6f34b6a07, type: 3}
 --- !u!1 &205763818
@@ -2429,6 +2464,7 @@ MonoBehaviour:
   sndM: {fileID: 416607164}
   health: 0
   healthUI: {fileID: 166083110}
+  target_2: []
 --- !u!95 &416607163
 Animator:
   serializedVersion: 3

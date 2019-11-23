@@ -191,6 +191,7 @@ public class PlayerControl : MonoBehaviour
 
     }
 
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Borders")
