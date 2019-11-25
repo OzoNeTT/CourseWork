@@ -7,11 +7,17 @@ public class TeleporterScript : MonoBehaviour
 {
     private PlaterStats Player;
     string lname;
+    bool notAnim;
     // Start is called before the first frame update
     void Start()
     {
+        if(GetComponent<Animator>() == null)
+        {
+            notAnim = true;
+        }
         Player = FindObjectOfType<PlaterStats>();
-        GetComponent<Animator>().Play("Teleporter_Idle");
+        if(!notAnim)
+            GetComponent<Animator>().Play("Teleporter_Idle");
         lname = SceneManager.GetActiveScene().name;
     }
 
@@ -27,7 +33,9 @@ public class TeleporterScript : MonoBehaviour
         if (collision.tag == "Player")
         {
             FadeInOut.sceneEnd = true;
-            GetComponent<Animator>().Play("Teleporter_Boom");
+            if(!notAnim)
+                GetComponent<Animator>().Play("Teleporter_Boom");
+
             Invoke("loadLevel", 1f);
 
         }

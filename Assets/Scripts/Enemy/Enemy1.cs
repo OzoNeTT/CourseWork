@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class Enemy1 : MonoBehaviour
 {
 
     // Use this for initialization
     private PlayerControl Player;
-
+    public GameObject hill;
     private Transform target;
     public float radius;
     float rad2;
@@ -42,7 +43,13 @@ public class Enemy1 : MonoBehaviour
     {
         dies = true;
         StartCoroutine("waitAttack");
-        
+        System.Random rnd = new System.Random();
+        float a = rnd.Next(0, 2);
+        if (a <= 0.25)
+        {
+            Instantiate(hill, transform.position, transform.rotation);
+        }
+
     }
     // Update is called once per frame
     void Update()

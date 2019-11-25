@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlatformMovable.cs" />
     <Compile Include="Assets\Scripts\Background\Background.cs" />
     <Compile Include="Assets\Scripts\Background\BackgroundLoop.cs" />
     <Compile Include="Assets\Scripts\Background\ScrollingBG1.cs" />
@@ -88,7 +87,9 @@
     <Compile Include="Assets\Scripts\Tools\FadeInOut.cs" />
     <Compile Include="Assets\Scripts\Tools\HingeButtonController.cs" />
     <Compile Include="Assets\Scripts\Tools\HP.cs" />
+    <Compile Include="Assets\Scripts\Tools\keyToGate.cs" />
     <Compile Include="Assets\Scripts\Tools\LaserScript.cs" />
+    <Compile Include="Assets\Scripts\Tools\PlatformMovable.cs" />
     <Compile Include="Assets\Scripts\Tools\PositionCheck.cs" />
     <Compile Include="Assets\Scripts\Tools\SawController.cs" />
     <Compile Include="Assets\Scripts\Tools\SpikesController.cs" />
@@ -120,6 +121,7 @@
     <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth.shader" />
     <None Include="Assets\Tiled2Unity\Imported\bossmap.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\Level3.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\myMap.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\Map1.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />

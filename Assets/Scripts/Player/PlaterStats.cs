@@ -41,6 +41,10 @@ public class PlaterStats : MonoBehaviour
                 this.spriteRenderer.enabled = true;
             }
         }
+        if(health > 6)
+        {
+            health = 6;
+        }
     }
     void SpriteFlicker()
     {

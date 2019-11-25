@@ -19,6 +19,8 @@ TagManager:
   - Dog
   - Ghost
   - MovePlatform
+  - Key
+  - Gate
   layers:
   - Default
   - TransparentFX

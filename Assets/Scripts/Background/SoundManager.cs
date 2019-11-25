@@ -15,7 +15,7 @@ public class SoundManager : MonoBehaviour
     private AudioClip runningSteps;
     private AudioClip LaserSound;
     private AudioClip drinkHP;
-
+    private AudioClip keywav;
     private AudioClip SwordSound;
     private AudioClip Bark;
     private AudioClip DogDeath;
@@ -39,9 +39,14 @@ public class SoundManager : MonoBehaviour
         SwordSound = Resources.Load<AudioClip>("Sword");
         Bark = Resources.Load<AudioClip>("Bark");
         DogDeath = Resources.Load<AudioClip>("DogHert");
+        keywav = Resources.Load<AudioClip>("key");
     }
 
     // Update is called once per frame
+    public void PlayKeyWav()
+    {
+        audioSrc.PlayOneShot(keywav);
+    }
     public void PlayDrinkHP()
     {
         audioSrc.PlayOneShot(drinkHP);

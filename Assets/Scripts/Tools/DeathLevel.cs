@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DeathLevel : MonoBehaviour
 {
-    [SerializeField] Transform spawnPoint;
+    public Transform spawnPoint;
     private PlayerControl Player;
     public AudioSource DeathSound;
 

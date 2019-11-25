@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class DogScript : MonoBehaviour
 {
     public float moveSpeed;
     public bool moveRight;
     int health;
 
-
+    public GameObject hill;
     //wall
     public Transform wallCheck;
     public float wallCheckRadius;
@@ -51,6 +51,12 @@ public class DogScript : MonoBehaviour
         SoundManager.sndMan.PlayDogDeath();
         dies = true;
         StartCoroutine("waitAttack");
+        System.Random rnd = new System.Random();
+        float a = rnd.Next(0, 2);
+        if (a <= 0.25)
+        {
+            Instantiate(hill, transform.position, transform.rotation);
+        }
     }
     private IEnumerator waitAttack()
     {

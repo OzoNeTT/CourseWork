@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System;
 public class Enemy2 : MonoBehaviour {
 
-	// Use this for initialization
+    // Use this for initialization
+    public GameObject hill;
     public Transform firePoint;
     private PlayerControl Player;
     public float RepeatRate; 
@@ -31,6 +32,12 @@ public class Enemy2 : MonoBehaviour {
     {
         dies = true;
         StartCoroutine("waitDies");
+        System.Random rnd = new System.Random();
+        float a = rnd.Next(0, 2);
+        if (a <= 0.25)
+        {
+            Instantiate(hill, transform.position, transform.rotation);
+        }
 
     }
     // Update is called once per frame

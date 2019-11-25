@@ -7,7 +7,7 @@ public class FadeInOut : MonoBehaviour
 
     public static bool sceneEnd;
     public float fadeSpeed = 1.5f;
-    public int nextLevel;
+    //public int nextLevel;
     private Image _image;
     private bool sceneStarting;
 
@@ -48,7 +48,7 @@ public class FadeInOut : MonoBehaviour
         {
             Cursor.visible = false;
             _image.color = Color.black;
-            Application.LoadLevel(nextLevel);
+            //Application.LoadLevel(nextLevel);
         }
     }
 }

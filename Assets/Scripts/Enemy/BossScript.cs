@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class BossScript : MonoBehaviour
 {
@@ -97,6 +98,7 @@ public class BossScript : MonoBehaviour
     {
         dies = true;
         StartCoroutine("waitDies");
+        SceneManager.LoadScene("WinScene");
     }
     private IEnumerator waitDies()
     {
