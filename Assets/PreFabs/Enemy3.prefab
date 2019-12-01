@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcda8f52ed74e6e44ba0a6ec8544ad3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hill: {fileID: 8100393169643788076, guid: 1cdcfb12f116cd044bfabc9a269f1fe6, type: 3}
   radius: 100
   damage: 2
   MoveSpeed: 15

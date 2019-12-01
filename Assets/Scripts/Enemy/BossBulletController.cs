@@ -24,9 +24,9 @@ public class BossBulletController : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         this.transform.position = Vector3.MoveTowards(this.transform.position, oldplayerpos, MoveSpeed * Time.deltaTime);
+
         if (this.transform.position == oldplayerpos)
             Destroy(this.gameObject);
-        //this.transform.position = 
 
         //TODO : ПОЛЕТ НЕ ДО ЦЕЛИ А ПОД УГЛОМ ДО ПРЕПЯТСТВИЯ 
 
@@ -45,10 +45,16 @@ public class BossBulletController : MonoBehaviour {
             Player.KnockBackCount = 0.2f;
             if (other.transform.position.x < this.transform.position.x)
                 Player.KnockFromRight = true;
+            
         }
-        if (other.tag == "Borders")
+        if(other.tag == "Borders")
         {
             Destroy(this.gameObject);
         }
+        if(other.gameObject.layer == 8)
+        {
+            Destroy(this.gameObject);
+        }
+        
     }
 }

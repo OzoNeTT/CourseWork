@@ -30,8 +30,8 @@ public class PlayerControl : MonoBehaviour
     private PlaterStats Player;
     public AudioSource ShootSound;
     public AudioSource JumpSound;
-    
 
+    
     private bool CanMoveRight;
     private bool CanMoveLeft;
 
@@ -123,13 +123,25 @@ public class PlayerControl : MonoBehaviour
     {
         if (GetComponent<Rigidbody2D>().velocity.x > 0)
         {
-            transform.localScale = new Vector3(fx, fy, fz);
-
+            if (transform.localScale.x < 0)
+            {
+                transform.localScale = new Vector3(-1 * transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            }
+            else if (transform.localScale.x > 0)
+            {
+                transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            }
         }
         else if (GetComponent<Rigidbody2D>().velocity.x < 0)
         {
-            transform.localScale = new Vector3(-1 * fx, fy, fz);
-
+            if (transform.localScale.x > 0)
+            {
+                transform.localScale = new Vector3(-1 * transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            }
+            else if (transform.localScale.x < 0)
+            {
+                transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            }
         }
     }
     void FixedUpdate()
@@ -155,6 +167,16 @@ public class PlayerControl : MonoBehaviour
             SoundManager.sndMan.PlayCoinSound();
         }
     }
+
+   private void OnCollisionStay2D(Collision2D collision)
+   {
+       if(collision.gameObject.tag == "MovePlatform")
+       {
+          //Transform cur = collision.transform;
+          //cur.localScale = this.transform.localScale;
+           transform.parent = collision.transform;
+       }
+   }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -188,6 +210,14 @@ public class PlayerControl : MonoBehaviour
 
             }
         }
+       //if (collision.gameObject.tag == "MovePlatform")
+       //{
+       //    //Transform cur = collision.transform;
+       //  
+       //    //cur.localScale = new Vector3(1,1,1);
+       //    transform.parent = collision.transform;
+       //    
+       //}
 
     }
 
@@ -203,6 +233,10 @@ public class PlayerControl : MonoBehaviour
         {
             CanMoveRight = true;
             CanMoveLeft = true;
+        }
+        if (collision.gameObject.tag == "MovePlatform")
+        {
+            transform.parent = null;
         }
     }
 
