@@ -1,0 +1,119 @@
+\hypertarget{class_free_parallax}{}\doxysection{Free\+Parallax Class Reference}
+\label{class_free_parallax}\index{FreeParallax@{FreeParallax}}
+Inheritance diagram for Free\+Parallax\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_free_parallax}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_free_parallax_a63e4108e93895434c8086a97250e6b3c}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the parallax to default state \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_free_parallax_a51820b353d78150ed41d00ae262ae169}{Setup\+Elements}} ()
+\begin{DoxyCompactList}\small\item\em Initialize each element \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_free_parallax_aa4d09e2808fe0b865ed6bededc65bc13}{Add\+Element}} (\mbox{\hyperlink{class_free_parallax_element}{Free\+Parallax\+Element}} e)
+\begin{DoxyCompactList}\small\item\em Add a new element to the parallax \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_free_parallax_a0f858570229aed9f5ac6a6afe06cd512}{Set\+Position}} (Game\+Object obj, Renderer r, float x, float y)
+\begin{DoxyCompactList}\small\item\em Set the position of an object such that the bottom left of the object ends up being x and y \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_free_parallax_a4eac3efb90ce3262681171c90c672436}\label{class_free_parallax_a4eac3efb90ce3262681171c90c672436}} 
+Camera {\bfseries parallax\+Camera}
+\item 
+\mbox{\Hypertarget{class_free_parallax_a7434fa366429c0ac4d84dc38f256229c}\label{class_free_parallax_a7434fa366429c0ac4d84dc38f256229c}} 
+float {\bfseries Speed} = 2.\+0f
+\item 
+\mbox{\Hypertarget{class_free_parallax_ab4dfefcf64563cf16b54fb961ed5f9fe}\label{class_free_parallax_ab4dfefcf64563cf16b54fb961ed5f9fe}} 
+List$<$ \mbox{\hyperlink{class_free_parallax_element}{Free\+Parallax\+Element}} $>$ {\bfseries Elements}
+\item 
+\mbox{\Hypertarget{class_free_parallax_addc1335489e13c64e3e9209932091c06}\label{class_free_parallax_addc1335489e13c64e3e9209932091c06}} 
+bool {\bfseries Is\+Horizontal} = true
+\item 
+\mbox{\Hypertarget{class_free_parallax_a2ce293a2a962660aa689759995f1e8e1}\label{class_free_parallax_a2ce293a2a962660aa689759995f1e8e1}} 
+float {\bfseries Wrap\+Overlap} = 0.\+0f
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_free_parallax_ac344355e308d90081910f5d222dcb2bd}\label{class_free_parallax_ac344355e308d90081910f5d222dcb2bd}} 
+void {\bfseries Setup\+Element\+At\+Index} (int i)
+\item 
+\mbox{\Hypertarget{class_free_parallax_af639b698b0d1ba652113b62ab0bbd268}\label{class_free_parallax_af639b698b0d1ba652113b62ab0bbd268}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_free_parallax_ae6676210d0800cc59c06c0c38ade3156}\label{class_free_parallax_ae6676210d0800cc59c06c0c38ade3156}} 
+I\+Enumerator {\bfseries Initialize\+After\+Slight\+Delay} ()
+\item 
+\mbox{\Hypertarget{class_free_parallax_a6aeb8135d001ea66402e43b255995067}\label{class_free_parallax_a6aeb8135d001ea66402e43b255995067}} 
+void {\bfseries Update} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_free_parallax_aa4d09e2808fe0b865ed6bededc65bc13}\label{class_free_parallax_aa4d09e2808fe0b865ed6bededc65bc13}} 
+\index{FreeParallax@{FreeParallax}!AddElement@{AddElement}}
+\index{AddElement@{AddElement}!FreeParallax@{FreeParallax}}
+\doxysubsubsection{\texorpdfstring{AddElement()}{AddElement()}}
+{\footnotesize\ttfamily void Free\+Parallax.\+Add\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_free_parallax_element}{Free\+Parallax\+Element}}}]{e }\end{DoxyParamCaption})}
+
+
+
+Add a new element to the parallax 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Element to add\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_free_parallax_a63e4108e93895434c8086a97250e6b3c}\label{class_free_parallax_a63e4108e93895434c8086a97250e6b3c}} 
+\index{FreeParallax@{FreeParallax}!Reset@{Reset}}
+\index{Reset@{Reset}!FreeParallax@{FreeParallax}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Free\+Parallax.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the parallax to default state 
+
+\mbox{\Hypertarget{class_free_parallax_a0f858570229aed9f5ac6a6afe06cd512}\label{class_free_parallax_a0f858570229aed9f5ac6a6afe06cd512}} 
+\index{FreeParallax@{FreeParallax}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!FreeParallax@{FreeParallax}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily static void Free\+Parallax.\+Set\+Position (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj,  }\item[{Renderer}]{r,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the position of an object such that the bottom left of the object ends up being x and y 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Object\\
+\hline
+{\em r} & Renderer\\
+\hline
+{\em x} & x bottom left\\
+\hline
+{\em y} & y bottom left\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_free_parallax_a51820b353d78150ed41d00ae262ae169}\label{class_free_parallax_a51820b353d78150ed41d00ae262ae169}} 
+\index{FreeParallax@{FreeParallax}!SetupElements@{SetupElements}}
+\index{SetupElements@{SetupElements}!FreeParallax@{FreeParallax}}
+\doxysubsubsection{\texorpdfstring{SetupElements()}{SetupElements()}}
+{\footnotesize\ttfamily void Free\+Parallax.\+Setup\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize each element 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Parallax/Free\+Parallax.\+cs\end{DoxyCompactItemize}

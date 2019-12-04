@@ -1,0 +1,484 @@
+\hypertarget{class_dog_script}{}\doxysection{Dog\+Script Class Reference}
+\label{class_dog_script}\index{DogScript@{DogScript}}
+
+
+Класс моба \char`\"{}Собака\char`\"{}.  
+
+
+Inheritance diagram for Dog\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dog_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dog_script_a82d8329db8baf998230db5160a92b16b}{take\+Damage}} (int a)
+\begin{DoxyCompactList}\small\item\em Функция получения урона. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dog_script_a315072b85a2c577a4648f1a0e9215f40}{Flip}} ()
+\begin{DoxyCompactList}\small\item\em Функция отражения модели моба по вертикали в зависимости от позиции игрока. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dog_script_a94ea489526ae569f134f76a63886c437}{Flip2}} ()
+\begin{DoxyCompactList}\small\item\em Функция отражения модели моба по вертикали в зависимости от достижения стенок. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_dog_script_aa15132a699259cec10926659b82e9dae}{move\+Speed}}
+\begin{DoxyCompactList}\small\item\em Скорость передвижения. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dog_script_aa798f00c26cae772c192eea4bf1170dc}{move\+Right}}
+\begin{DoxyCompactList}\small\item\em Направление движения. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_dog_script_acc4bd3a31b9974a52228ca01bb447b5d}{hill}}
+\begin{DoxyCompactList}\small\item\em Объект здоровье. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_dog_script_a15c2b06db130ea3710d2615ec28fdaea}{wall\+Check}}
+\begin{DoxyCompactList}\small\item\em Координаты точки для проверки стенок. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_dog_script_a97523636fff111da587e4dc7c43249e6}{wall\+Check\+Radius}}
+\begin{DoxyCompactList}\small\item\em Радиус проверки стенок. \end{DoxyCompactList}\item 
+Layer\+Mask \mbox{\hyperlink{class_dog_script_aaceba896d76f4f5fa53990838575c0d9}{what\+Is\+Wall}}
+\begin{DoxyCompactList}\small\item\em Слой, отвечающий за то, чем является стена. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dog_script_af1ff1177c7552ccf4053cd3c5ae8e1a6}{walled}}
+\begin{DoxyCompactList}\small\item\em Переменная, показывающая, достиг ли моб стены или нет. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_dog_script_ad7543c3bd30e0205900b6dd7461699a3}{egde\+Check}}
+\begin{DoxyCompactList}\small\item\em Координаты точки для проверки на углы. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_dog_script_ac09a9ab9481379a8e2b9f2755bbbac96}{Radius}}
+\begin{DoxyCompactList}\small\item\em Радиус поиска игрока. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_dog_script_ad5e1428ef40ab9f8ded881f1343a54bf}{player\+Check}}
+\begin{DoxyCompactList}\small\item\em Координаты точки для отрисовки радиуса для проверки на нахождение в нем игрока. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_dog_script_aa42b3290a2329074b997a67f197f8c56}{player\+Check\+Radius}}
+\begin{DoxyCompactList}\small\item\em Радиус проверки. \end{DoxyCompactList}\item 
+Layer\+Mask \mbox{\hyperlink{class_dog_script_a1270524d75241b9311d38caea7e069f6}{what\+Is\+Player}}
+\begin{DoxyCompactList}\small\item\em Слой, показывающий, чем является объект \char`\"{}Игрок\char`\"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dog_script_afce048f73f7823d7572f3abd9047e93e}{playered}}
+\begin{DoxyCompactList}\small\item\em Переменная, показывающая, достиг ли моб игрока. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_dog_script_a184f773f30d125352fcf8a08c7ad2f91}{is\+Attacking}} = false
+\begin{DoxyCompactList}\small\item\em Переменная, отвечающая за атаку моба. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dog_script_a232795be176a3f4d9319e634204ef732}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция для придания первоначального сотояния. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dog_script_aaec4851d9babb2b868b544f2bd5662a2}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Функция обработки смерти моба. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_dog_script_a562758b7f51628df4890f6d90603d146}{wait\+Attack}} ()
+\begin{DoxyCompactList}\small\item\em Корутина ожидания смерти. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dog_script_aa775bffb105cf9a4df8c5478ec78631d}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция покадрового обновления, в ней происходит передвижения моба, поиск игрока, его атака и обработка звуков с анимациями. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dog_script_a57cedc7ae6f5eb2617d0496603565414}{On\+Trigger\+Enter2D}} (Collider2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на попадание в тригерзону моба некоторого объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dog_script_abd44f6f4f3c6b10497de2c0d9baaad99}{On\+Trigger\+Stay2D}} (Collider2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на нахождение в тригерзоне моба некоторого объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dog_script_a5664cff813d93c24953546bb8f534078}{On\+Trigger\+Exit2D}} (Collider2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на выход из тригерзоны некоторого объекта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_dog_script_a6663f8f033c3a4edaa96df45c5fd0984}{health}}
+\begin{DoxyCompactList}\small\item\em Количество здоровья. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dog_script_a7b519348fd9d3d06bd6af77a9979d1c3}{not\+At\+Edge}}
+\begin{DoxyCompactList}\small\item\em Проверка на нахождения на угле. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_dog_script_ad9805e451a7c1938135940b17bb1dba6}{dtime}}
+\begin{DoxyCompactList}\small\item\em Разница времени для атаки. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_control}{Player\+Control}} \mbox{\hyperlink{class_dog_script_a406caf915f615b71859616fc59201d5f}{Player}}
+\begin{DoxyCompactList}\small\item\em Переменная класса управления игроком. \end{DoxyCompactList}\item 
+Animator \mbox{\hyperlink{class_dog_script_a3682731987a3fb753bf49b3221faaf8a}{\+\_\+anim}}
+\begin{DoxyCompactList}\small\item\em Аниматор моба. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_dog_script_ab3dcdee4ab8ee42275240ab41cf1878b}{fx}}
+\begin{DoxyCompactList}\small\item\em Координата Х. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_dog_script_a7752d90cd2a587b02d1b1342120c447f}{fy}}
+\begin{DoxyCompactList}\small\item\em Координата У. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_dog_script_aac7aef3e45aeb84c02a44c0b588aec19}{fz}}
+\begin{DoxyCompactList}\small\item\em Координата Z. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_dog_script_a20c669df90a886acee19c097a167e961}{Orig\+Move\+Speed}}
+\begin{DoxyCompactList}\small\item\em Первоначальная скорость моба \char`\"{}Собака\char`\"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dog_script_a1ecf29b0c3460bc4f8e89f9b43a91516}{dies}} = false
+\begin{DoxyCompactList}\small\item\em Переменная показывающая состояния моба, жив или нет. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dog_script_abeac572721ea66e361640ae6773aba1e}{can\+Enter}} = true
+\begin{DoxyCompactList}\small\item\em Вспомогательная переменная, для атаки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс моба \char`\"{}Собака\char`\"{}. 
+
+Данный класс описывает поведение моба \char`\"{}Собака\char`\"{} его патрулирование, поиск игрока и атаку.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dog_script_aaec4851d9babb2b868b544f2bd5662a2}\label{class_dog_script_aaec4851d9babb2b868b544f2bd5662a2}} 
+\index{DogScript@{DogScript}!Die@{Die}}
+\index{Die@{Die}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily void Dog\+Script.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция обработки смерти моба. 
+
+\mbox{\Hypertarget{class_dog_script_a315072b85a2c577a4648f1a0e9215f40}\label{class_dog_script_a315072b85a2c577a4648f1a0e9215f40}} 
+\index{DogScript@{DogScript}!Flip@{Flip}}
+\index{Flip@{Flip}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{Flip()}{Flip()}}
+{\footnotesize\ttfamily void Dog\+Script.\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция отражения модели моба по вертикали в зависимости от позиции игрока. 
+
+\mbox{\Hypertarget{class_dog_script_a94ea489526ae569f134f76a63886c437}\label{class_dog_script_a94ea489526ae569f134f76a63886c437}} 
+\index{DogScript@{DogScript}!Flip2@{Flip2}}
+\index{Flip2@{Flip2}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{Flip2()}{Flip2()}}
+{\footnotesize\ttfamily void Dog\+Script.\+Flip2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция отражения модели моба по вертикали в зависимости от достижения стенок. 
+
+\mbox{\Hypertarget{class_dog_script_a57cedc7ae6f5eb2617d0496603565414}\label{class_dog_script_a57cedc7ae6f5eb2617d0496603565414}} 
+\index{DogScript@{DogScript}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily void Dog\+Script.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на попадание в тригерзону моба некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dog_script_a5664cff813d93c24953546bb8f534078}\label{class_dog_script_a5664cff813d93c24953546bb8f534078}} 
+\index{DogScript@{DogScript}!OnTriggerExit2D@{OnTriggerExit2D}}
+\index{OnTriggerExit2D@{OnTriggerExit2D}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{OnTriggerExit2D()}{OnTriggerExit2D()}}
+{\footnotesize\ttfamily void Dog\+Script.\+On\+Trigger\+Exit2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на выход из тригерзоны некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dog_script_abd44f6f4f3c6b10497de2c0d9baaad99}\label{class_dog_script_abd44f6f4f3c6b10497de2c0d9baaad99}} 
+\index{DogScript@{DogScript}!OnTriggerStay2D@{OnTriggerStay2D}}
+\index{OnTriggerStay2D@{OnTriggerStay2D}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{OnTriggerStay2D()}{OnTriggerStay2D()}}
+{\footnotesize\ttfamily void Dog\+Script.\+On\+Trigger\+Stay2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на нахождение в тригерзоне моба некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоорого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dog_script_a232795be176a3f4d9319e634204ef732}\label{class_dog_script_a232795be176a3f4d9319e634204ef732}} 
+\index{DogScript@{DogScript}!Start@{Start}}
+\index{Start@{Start}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Dog\+Script.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция для придания первоначального сотояния. 
+
+\mbox{\Hypertarget{class_dog_script_a82d8329db8baf998230db5160a92b16b}\label{class_dog_script_a82d8329db8baf998230db5160a92b16b}} 
+\index{DogScript@{DogScript}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Dog\+Script.\+take\+Damage (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+Функция получения урона. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Количество урона.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dog_script_aa775bffb105cf9a4df8c5478ec78631d}\label{class_dog_script_aa775bffb105cf9a4df8c5478ec78631d}} 
+\index{DogScript@{DogScript}!Update@{Update}}
+\index{Update@{Update}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Dog\+Script.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция покадрового обновления, в ней происходит передвижения моба, поиск игрока, его атака и обработка звуков с анимациями. 
+
+\mbox{\Hypertarget{class_dog_script_a562758b7f51628df4890f6d90603d146}\label{class_dog_script_a562758b7f51628df4890f6d90603d146}} 
+\index{DogScript@{DogScript}!waitAttack@{waitAttack}}
+\index{waitAttack@{waitAttack}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{waitAttack()}{waitAttack()}}
+{\footnotesize\ttfamily I\+Enumerator Dog\+Script.\+wait\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Корутина ожидания смерти. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dog_script_a3682731987a3fb753bf49b3221faaf8a}\label{class_dog_script_a3682731987a3fb753bf49b3221faaf8a}} 
+\index{DogScript@{DogScript}!\_anim@{\_anim}}
+\index{\_anim@{\_anim}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{\_anim}{\_anim}}
+{\footnotesize\ttfamily Animator Dog\+Script.\+\_\+anim\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Аниматор моба. 
+
+\mbox{\Hypertarget{class_dog_script_abeac572721ea66e361640ae6773aba1e}\label{class_dog_script_abeac572721ea66e361640ae6773aba1e}} 
+\index{DogScript@{DogScript}!canEnter@{canEnter}}
+\index{canEnter@{canEnter}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{canEnter}{canEnter}}
+{\footnotesize\ttfamily bool Dog\+Script.\+can\+Enter = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Вспомогательная переменная, для атаки. 
+
+\mbox{\Hypertarget{class_dog_script_a1ecf29b0c3460bc4f8e89f9b43a91516}\label{class_dog_script_a1ecf29b0c3460bc4f8e89f9b43a91516}} 
+\index{DogScript@{DogScript}!dies@{dies}}
+\index{dies@{dies}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{dies}{dies}}
+{\footnotesize\ttfamily bool Dog\+Script.\+dies = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная показывающая состояния моба, жив или нет. 
+
+\mbox{\Hypertarget{class_dog_script_ad9805e451a7c1938135940b17bb1dba6}\label{class_dog_script_ad9805e451a7c1938135940b17bb1dba6}} 
+\index{DogScript@{DogScript}!dtime@{dtime}}
+\index{dtime@{dtime}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{dtime}{dtime}}
+{\footnotesize\ttfamily float Dog\+Script.\+dtime\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Разница времени для атаки. 
+
+\mbox{\Hypertarget{class_dog_script_ad7543c3bd30e0205900b6dd7461699a3}\label{class_dog_script_ad7543c3bd30e0205900b6dd7461699a3}} 
+\index{DogScript@{DogScript}!egdeCheck@{egdeCheck}}
+\index{egdeCheck@{egdeCheck}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{egdeCheck}{egdeCheck}}
+{\footnotesize\ttfamily Transform Dog\+Script.\+egde\+Check}
+
+
+
+Координаты точки для проверки на углы. 
+
+\mbox{\Hypertarget{class_dog_script_ab3dcdee4ab8ee42275240ab41cf1878b}\label{class_dog_script_ab3dcdee4ab8ee42275240ab41cf1878b}} 
+\index{DogScript@{DogScript}!fx@{fx}}
+\index{fx@{fx}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{fx}{fx}}
+{\footnotesize\ttfamily float Dog\+Script.\+fx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата Х. 
+
+\mbox{\Hypertarget{class_dog_script_a7752d90cd2a587b02d1b1342120c447f}\label{class_dog_script_a7752d90cd2a587b02d1b1342120c447f}} 
+\index{DogScript@{DogScript}!fy@{fy}}
+\index{fy@{fy}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{fy}{fy}}
+{\footnotesize\ttfamily float Dog\+Script.\+fy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата У. 
+
+\mbox{\Hypertarget{class_dog_script_aac7aef3e45aeb84c02a44c0b588aec19}\label{class_dog_script_aac7aef3e45aeb84c02a44c0b588aec19}} 
+\index{DogScript@{DogScript}!fz@{fz}}
+\index{fz@{fz}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{fz}{fz}}
+{\footnotesize\ttfamily float Dog\+Script.\+fz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата Z. 
+
+\mbox{\Hypertarget{class_dog_script_a6663f8f033c3a4edaa96df45c5fd0984}\label{class_dog_script_a6663f8f033c3a4edaa96df45c5fd0984}} 
+\index{DogScript@{DogScript}!health@{health}}
+\index{health@{health}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int Dog\+Script.\+health\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Количество здоровья. 
+
+\mbox{\Hypertarget{class_dog_script_acc4bd3a31b9974a52228ca01bb447b5d}\label{class_dog_script_acc4bd3a31b9974a52228ca01bb447b5d}} 
+\index{DogScript@{DogScript}!hill@{hill}}
+\index{hill@{hill}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{hill}{hill}}
+{\footnotesize\ttfamily Game\+Object Dog\+Script.\+hill}
+
+
+
+Объект здоровье. 
+
+\mbox{\Hypertarget{class_dog_script_a184f773f30d125352fcf8a08c7ad2f91}\label{class_dog_script_a184f773f30d125352fcf8a08c7ad2f91}} 
+\index{DogScript@{DogScript}!isAttacking@{isAttacking}}
+\index{isAttacking@{isAttacking}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{isAttacking}{isAttacking}}
+{\footnotesize\ttfamily bool Dog\+Script.\+is\+Attacking = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Переменная, отвечающая за атаку моба. 
+
+\mbox{\Hypertarget{class_dog_script_aa798f00c26cae772c192eea4bf1170dc}\label{class_dog_script_aa798f00c26cae772c192eea4bf1170dc}} 
+\index{DogScript@{DogScript}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{moveRight}{moveRight}}
+{\footnotesize\ttfamily bool Dog\+Script.\+move\+Right}
+
+
+
+Направление движения. 
+
+\mbox{\Hypertarget{class_dog_script_aa15132a699259cec10926659b82e9dae}\label{class_dog_script_aa15132a699259cec10926659b82e9dae}} 
+\index{DogScript@{DogScript}!moveSpeed@{moveSpeed}}
+\index{moveSpeed@{moveSpeed}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{moveSpeed}{moveSpeed}}
+{\footnotesize\ttfamily float Dog\+Script.\+move\+Speed}
+
+
+
+Скорость передвижения. 
+
+\mbox{\Hypertarget{class_dog_script_a7b519348fd9d3d06bd6af77a9979d1c3}\label{class_dog_script_a7b519348fd9d3d06bd6af77a9979d1c3}} 
+\index{DogScript@{DogScript}!notAtEdge@{notAtEdge}}
+\index{notAtEdge@{notAtEdge}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{notAtEdge}{notAtEdge}}
+{\footnotesize\ttfamily bool Dog\+Script.\+not\+At\+Edge\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на нахождения на угле. 
+
+\mbox{\Hypertarget{class_dog_script_a20c669df90a886acee19c097a167e961}\label{class_dog_script_a20c669df90a886acee19c097a167e961}} 
+\index{DogScript@{DogScript}!OrigMoveSpeed@{OrigMoveSpeed}}
+\index{OrigMoveSpeed@{OrigMoveSpeed}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{OrigMoveSpeed}{OrigMoveSpeed}}
+{\footnotesize\ttfamily float Dog\+Script.\+Orig\+Move\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Первоначальная скорость моба \char`\"{}Собака\char`\"{}. 
+
+\mbox{\Hypertarget{class_dog_script_a406caf915f615b71859616fc59201d5f}\label{class_dog_script_a406caf915f615b71859616fc59201d5f}} 
+\index{DogScript@{DogScript}!Player@{Player}}
+\index{Player@{Player}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_control}{Player\+Control}} Dog\+Script.\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная класса управления игроком. 
+
+\mbox{\Hypertarget{class_dog_script_ad5e1428ef40ab9f8ded881f1343a54bf}\label{class_dog_script_ad5e1428ef40ab9f8ded881f1343a54bf}} 
+\index{DogScript@{DogScript}!playerCheck@{playerCheck}}
+\index{playerCheck@{playerCheck}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{playerCheck}{playerCheck}}
+{\footnotesize\ttfamily Transform Dog\+Script.\+player\+Check}
+
+
+
+Координаты точки для отрисовки радиуса для проверки на нахождение в нем игрока. 
+
+\mbox{\Hypertarget{class_dog_script_aa42b3290a2329074b997a67f197f8c56}\label{class_dog_script_aa42b3290a2329074b997a67f197f8c56}} 
+\index{DogScript@{DogScript}!playerCheckRadius@{playerCheckRadius}}
+\index{playerCheckRadius@{playerCheckRadius}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{playerCheckRadius}{playerCheckRadius}}
+{\footnotesize\ttfamily float Dog\+Script.\+player\+Check\+Radius}
+
+
+
+Радиус проверки. 
+
+\mbox{\Hypertarget{class_dog_script_afce048f73f7823d7572f3abd9047e93e}\label{class_dog_script_afce048f73f7823d7572f3abd9047e93e}} 
+\index{DogScript@{DogScript}!playered@{playered}}
+\index{playered@{playered}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{playered}{playered}}
+{\footnotesize\ttfamily bool Dog\+Script.\+playered}
+
+
+
+Переменная, показывающая, достиг ли моб игрока. 
+
+\mbox{\Hypertarget{class_dog_script_ac09a9ab9481379a8e2b9f2755bbbac96}\label{class_dog_script_ac09a9ab9481379a8e2b9f2755bbbac96}} 
+\index{DogScript@{DogScript}!Radius@{Radius}}
+\index{Radius@{Radius}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{Radius}{Radius}}
+{\footnotesize\ttfamily float Dog\+Script.\+Radius}
+
+
+
+Радиус поиска игрока. 
+
+\mbox{\Hypertarget{class_dog_script_a15c2b06db130ea3710d2615ec28fdaea}\label{class_dog_script_a15c2b06db130ea3710d2615ec28fdaea}} 
+\index{DogScript@{DogScript}!wallCheck@{wallCheck}}
+\index{wallCheck@{wallCheck}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{wallCheck}{wallCheck}}
+{\footnotesize\ttfamily Transform Dog\+Script.\+wall\+Check}
+
+
+
+Координаты точки для проверки стенок. 
+
+\mbox{\Hypertarget{class_dog_script_a97523636fff111da587e4dc7c43249e6}\label{class_dog_script_a97523636fff111da587e4dc7c43249e6}} 
+\index{DogScript@{DogScript}!wallCheckRadius@{wallCheckRadius}}
+\index{wallCheckRadius@{wallCheckRadius}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{wallCheckRadius}{wallCheckRadius}}
+{\footnotesize\ttfamily float Dog\+Script.\+wall\+Check\+Radius}
+
+
+
+Радиус проверки стенок. 
+
+\mbox{\Hypertarget{class_dog_script_af1ff1177c7552ccf4053cd3c5ae8e1a6}\label{class_dog_script_af1ff1177c7552ccf4053cd3c5ae8e1a6}} 
+\index{DogScript@{DogScript}!walled@{walled}}
+\index{walled@{walled}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{walled}{walled}}
+{\footnotesize\ttfamily bool Dog\+Script.\+walled}
+
+
+
+Переменная, показывающая, достиг ли моб стены или нет. 
+
+\mbox{\Hypertarget{class_dog_script_a1270524d75241b9311d38caea7e069f6}\label{class_dog_script_a1270524d75241b9311d38caea7e069f6}} 
+\index{DogScript@{DogScript}!whatIsPlayer@{whatIsPlayer}}
+\index{whatIsPlayer@{whatIsPlayer}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{whatIsPlayer}{whatIsPlayer}}
+{\footnotesize\ttfamily Layer\+Mask Dog\+Script.\+what\+Is\+Player}
+
+
+
+Слой, показывающий, чем является объект \char`\"{}Игрок\char`\"{}. 
+
+\mbox{\Hypertarget{class_dog_script_aaceba896d76f4f5fa53990838575c0d9}\label{class_dog_script_aaceba896d76f4f5fa53990838575c0d9}} 
+\index{DogScript@{DogScript}!whatIsWall@{whatIsWall}}
+\index{whatIsWall@{whatIsWall}!DogScript@{DogScript}}
+\doxysubsubsection{\texorpdfstring{whatIsWall}{whatIsWall}}
+{\footnotesize\ttfamily Layer\+Mask Dog\+Script.\+what\+Is\+Wall}
+
+
+
+Слой, отвечающий за то, чем является стена. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Enemy/Dog\+Script.\+cs\end{DoxyCompactItemize}

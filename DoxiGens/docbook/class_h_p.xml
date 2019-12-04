@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_h_p">
+<title>HP Class Reference</title>
+<indexterm><primary>HP</primary></indexterm>
+<para>
+
+<para>Класс здоровья. </para>
+ 
+</para>
+<para>Inheritance diagram for HP:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_h_p.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_h_p_1a96810623866fe541509b6ed5ad3c59ae">OnTriggerEnter2D</link> (Collider2D collision)</para>
+
+<para>Проверка на попадание в тригерзону объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс здоровья. </para>
+
+
+
+<para>Данный класс реализует объект, при подборе которого игрок пополняет здоровье.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_h_p_1a96810623866fe541509b6ed5ad3c59ae"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>HP</secondary></indexterm>
+<indexterm><primary>HP</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void HP.OnTriggerEnter2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на попадание в тригерзону объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__h_p_8cs">HP.cs</link></section>
+</section>

@@ -1,14 +1,43 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Класс пули.
+/// <remarks> Отвечает за направление и скорость движения пули, а так же проверяет на попадание.</remarks>
+/// </summary>
 public class BulletController : MonoBehaviour {
-    public float speedx,speedy;
+    /// <summary>
+    /// Скорость по координате X.
+    /// </summary>
+    public float speedx;
+    /// <summary>
+    /// Скорость по координате Y.
+    /// </summary>
+    public float speedy;
+    /// <summary>
+    /// Объект игрок.
+    /// </summary>
     private PlayerControl player;
+    /// <summary>
+    /// Урон выстрела.
+    /// </summary>
     public float damage=10;
-    float fx, fy, fz;
-    public AudioSource HitSound;
+    /// <summary>
+    /// Координата по X.
+    /// </summary>
+    float fx;
+    /// <summary>
+    /// Координата по Y.
+    /// </summary>
+    float fy;
+    /// <summary>
+    /// Координата по Z.
+    /// </summary>
+    float fz;
 
-    // Use this for initialization
+    /// <summary>
+    /// Функция инициализации объекта "Пуля".
+    /// </summary>
     void Start () {
         player = FindObjectOfType<PlayerControl>();
         fx = transform.localScale.x;
@@ -23,10 +52,17 @@ public class BulletController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+    /// <summary>
+    /// Обновление каждый фрейм. Движения пули.
+    /// </summary>
 	void Update () {
         //GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
         GetComponent<Rigidbody2D>().velocity = new Vector2(speedx, speedy);
 	}
+    /// <summary>
+    /// Проверка на то, куда попала пуля.
+    /// </summary>
+    /// <param name="other">Коллайдер некоторого объекта.</param>
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Dog")
@@ -74,6 +110,9 @@ public class BulletController : MonoBehaviour {
         }
 
     }
+    /// <summary>
+    /// Функция отражения по вертикали, в зависимости от направления выстрела.
+    /// </summary>
     public void flip()
     {
 

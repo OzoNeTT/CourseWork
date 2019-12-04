@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_camera_shake">
+<title>CameraShake Class Reference</title>
+<indexterm><primary>CameraShake</primary></indexterm>
+<para>
+
+<para>Класс &quot;тряски&quot; камеры. </para>
+ 
+</para>
+<para>Inheritance diagram for CameraShake:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_camera_shake.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>IEnumerator <link linkend="_class_camera_shake_1ad1f4e04f5ec7a18ca01718ae011b174e">Shake</link> (float duration, float magnitude)</para>
+
+<para>Корутин, производящий тряску камеры некоторое время. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс &quot;тряски&quot; камеры. </para>
+
+
+
+<para>Данный класс реализует тряску камеры некоторое время с некоторой амплитудой.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_camera_shake_1ad1f4e04f5ec7a18ca01718ae011b174e"/>    <section>
+    <title>Shake()</title>
+<indexterm><primary>Shake</primary><secondary>CameraShake</secondary></indexterm>
+<indexterm><primary>CameraShake</primary><secondary>Shake</secondary></indexterm>
+<para><computeroutput>IEnumerator CameraShake.Shake (float duration, float magnitude)</computeroutput></para><para>
+
+<para>Корутин, производящий тряску камеры некоторое время. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>duration</entry>
+                                <entry>
+<para>Длительность тряски.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>magnitude</entry>
+                                <entry>
+<para>Амплитуда.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__camera_shake_8cs">CameraShake.cs</link></section>
+</section>

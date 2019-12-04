@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classkey_to_gate">
+<title>keyToGate Class Reference</title>
+<indexterm><primary>keyToGate</primary></indexterm>
+<para>
+
+<para>Класс ключа. </para>
+ 
+</para>
+<para>Inheritance diagram for keyToGate:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classkey_to_gate.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>GameObject <link linkend="_classkey_to_gate_1af1f3c44c34c16bcf2a5dc53df45459a0">gate</link></para>
+
+<para>Объект двери. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classkey_to_gate_1a69ba7db369cf0be1c5a9f8819233233f">OnTriggerEnter2D</link> (Collider2D collision)</para>
+
+<para>Проверка на попадание в тригерзону ключа некоторого объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс ключа. </para>
+
+
+
+<para>Данный класс реализует открытие двери при подборе ключа.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classkey_to_gate_1a69ba7db369cf0be1c5a9f8819233233f"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>keyToGate</secondary></indexterm>
+<indexterm><primary>keyToGate</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void keyToGate.OnTriggerEnter2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на попадание в тригерзону ключа некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объект.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classkey_to_gate_1af1f3c44c34c16bcf2a5dc53df45459a0"/>    <section>
+    <title>gate</title>
+<indexterm><primary>gate</primary><secondary>keyToGate</secondary></indexterm>
+<indexterm><primary>keyToGate</primary><secondary>gate</secondary></indexterm>
+<para><computeroutput>GameObject keyToGate.gate</computeroutput></para><para>
+
+<para>Объект двери. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="_key_to_gate_8cs">keyToGate.cs</link></section>
+</section>

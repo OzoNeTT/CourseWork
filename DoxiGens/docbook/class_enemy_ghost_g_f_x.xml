@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_enemy_ghost_g_f_x">
+<title>EnemyGhostGFX Class Reference</title>
+<indexterm><primary>EnemyGhostGFX</primary></indexterm>
+<para>
+
+<para>Класс моба &quot;Призрак&quot;. </para>
+ 
+</para>
+<para>Inheritance diagram for EnemyGhostGFX:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_enemy_ghost_g_f_x.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_enemy_ghost_g_f_x_1ae6bf8839901b940e8c8730b4041430e7">Dies</link> ()</para>
+
+<para>Функция смерти призрака. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Transform <link linkend="_class_enemy_ghost_g_f_x_1ae456b8eb61bb83d5764b23407c3f4652">target</link></para>
+
+<para>Координаты цели. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy_ghost_g_f_x_1a8610a1da9bc5d50ee0b3685ca1bdb808">speed</link> = 400f</para>
+
+<para>Скорость движения. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy_ghost_g_f_x_1a89e0ca5c93f5d7199d16b38d31a94276">nextWaypointDistance</link> = 3f</para>
+
+<para>Дистанция до следующей точки. </para>
+</listitem>
+            <listitem><para>Animator <link linkend="_class_enemy_ghost_g_f_x_1a6c84423036a0a2cd2774c90dbe8f1682">_anim</link></para>
+
+<para>Аниматор для призрака. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy_ghost_g_f_x_1ae1cd3db0eefdd57925eeaa1d6f11eed7">PlayerRadius</link> = 50</para>
+
+<para>Дистанция сканирования цели. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_enemy_ghost_g_f_x_1ae3b47de006d0c0d8daa5966b27c537ac">Start</link> ()</para>
+
+<para>Функция установки первоначальных состояний. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy_ghost_g_f_x_1affdb034477242a0b806c6ebe8f871584">UpdatePath</link> ()</para>
+
+<para>Обновление критического пути до цели. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy_ghost_g_f_x_1a6cf551261ad815f7c2949b165dd69f23">OnPathComplete</link> (Path p)</para>
+
+<para>Функция, вызывающаяся если достигнут конец пути. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy_ghost_g_f_x_1a5869641dd4b9de7f2d157ea305818625">FixedUpdate</link> ()</para>
+
+<para>Функция покадрового обновления для физический объектов. В ней происходит поиск наилучшего пути до цели, следование по нему и атака персонажа. </para>
+</listitem>
+            <listitem><para>IEnumerator <link linkend="_class_enemy_ghost_g_f_x_1ac351bb916c5f00462a2e0252aa3d3838">waitAttack</link> ()</para>
+
+<para>Корутина ожидания смерти после атаки персонажа. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy_ghost_g_f_x_1ad0691a7bc25ced99167ca05de19f327c">OnCollisionEnter2D</link> (Collision2D collision)</para>
+
+<para>Проверка на попадание некоторого объекта в коллайдер призрака. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Path <link linkend="_class_enemy_ghost_g_f_x_1a61a9d438c6f670161da9863e24621a5b">path</link></para>
+
+<para>Переменная пути, для определения траектории движения до цели. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_enemy_ghost_g_f_x_1a65202d8a20139daf88064786b2383f64">currentWaypoint</link> = 0</para>
+
+<para>Текущая точка. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_enemy_ghost_g_f_x_1a0dbb9265fb3d43a85353f9c4c981ac73">reachedEndOfPath</link> = false</para>
+
+<para>Переменная для проверки на достиженя конца пути. </para>
+</listitem>
+            <listitem><para>Seeker <link linkend="_class_enemy_ghost_g_f_x_1a436c42d1de48ebf01fcf90ca31ba473b">seeker</link></para>
+
+<para>Поисковик кратчайшего пути. </para>
+</listitem>
+            <listitem><para>Rigidbody2D <link linkend="_class_enemy_ghost_g_f_x_1a7cda095172a6c790026a4276c0ae16d0">rb</link></para>
+
+<para>Rigidbody2d который установлен на призраке. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy_ghost_g_f_x_1afbfcb5deca65b25664eec2f71403b129">dtime</link></para>
+
+<para>Промежуток времени для воспроизведения звука. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy_ghost_g_f_x_1adcf40f58f42e56530b1f9b62de5db3ab">deltatime</link></para>
+
+<para>Промежуток времени для атаки. </para>
+</listitem>
+            <listitem><para>AudioSource <link linkend="_class_enemy_ghost_g_f_x_1aeeaf6bdf3cb2e8a8a554602cc0b863d3">snd</link></para>
+
+<para>Источник звука призрака. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_enemy_ghost_g_f_x_1a7b34f81e1b7d4781feac30e5930415d9">GhostSound</link></para>
+
+<para>Звук призрака. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_enemy_ghost_g_f_x_1a06198f5fc3ae9a529033350d45a420bf">isAlive</link> = true</para>
+
+<para>Является ли объект живым. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_enemy_ghost_g_f_x_1a65303ca50a2b1398357f5fb6ec39622d">damage</link> = 2</para>
+
+<para>Наносимый урон. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_enemy_ghost_g_f_x_1ae6e4259544edd143d0e191d41f80248a">soundPaused</link> = false</para>
+
+<para>Пауза воспроизведения звука. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс моба &quot;Призрак&quot;. </para>
+
+
+
+<para>Данный класс реализует пведение моба &quot;Призрак&quot;, его атаку и передвижение.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_enemy_ghost_g_f_x_1ae6bf8839901b940e8c8730b4041430e7"/>    <section>
+    <title>Dies()</title>
+<indexterm><primary>Dies</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>Dies</secondary></indexterm>
+<para><computeroutput>void EnemyGhostGFX.Dies ( )</computeroutput></para><para>
+
+<para>Функция смерти призрака. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a5869641dd4b9de7f2d157ea305818625"/>    <section>
+    <title>FixedUpdate()</title>
+<indexterm><primary>FixedUpdate</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>FixedUpdate</secondary></indexterm>
+<para><computeroutput>void EnemyGhostGFX.FixedUpdate ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления для физический объектов. В ней происходит поиск наилучшего пути до цели, следование по нему и атака персонажа. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1ad0691a7bc25ced99167ca05de19f327c"/>    <section>
+    <title>OnCollisionEnter2D()</title>
+<indexterm><primary>OnCollisionEnter2D</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>OnCollisionEnter2D</secondary></indexterm>
+<para><computeroutput>void EnemyGhostGFX.OnCollisionEnter2D (Collision2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на попадание некоторого объекта в коллайдер призрака. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a6cf551261ad815f7c2949b165dd69f23"/>    <section>
+    <title>OnPathComplete()</title>
+<indexterm><primary>OnPathComplete</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>OnPathComplete</secondary></indexterm>
+<para><computeroutput>void EnemyGhostGFX.OnPathComplete (Path p)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция, вызывающаяся если достигнут конец пути. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>p</entry>
+                                <entry>
+<para>Некоторый путь.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1ae3b47de006d0c0d8daa5966b27c537ac"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void EnemyGhostGFX.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция установки первоначальных состояний. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1affdb034477242a0b806c6ebe8f871584"/>    <section>
+    <title>UpdatePath()</title>
+<indexterm><primary>UpdatePath</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>UpdatePath</secondary></indexterm>
+<para><computeroutput>void EnemyGhostGFX.UpdatePath ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Обновление критического пути до цели. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1ac351bb916c5f00462a2e0252aa3d3838"/>    <section>
+    <title>waitAttack()</title>
+<indexterm><primary>waitAttack</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>waitAttack</secondary></indexterm>
+<para><computeroutput>IEnumerator EnemyGhostGFX.waitAttack ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Корутина ожидания смерти после атаки персонажа. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_enemy_ghost_g_f_x_1a6c84423036a0a2cd2774c90dbe8f1682"/>    <section>
+    <title>_anim</title>
+<indexterm><primary>_anim</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>_anim</secondary></indexterm>
+<para><computeroutput>Animator EnemyGhostGFX._anim</computeroutput></para><para>
+
+<para>Аниматор для призрака. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a65202d8a20139daf88064786b2383f64"/>    <section>
+    <title>currentWaypoint</title>
+<indexterm><primary>currentWaypoint</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>currentWaypoint</secondary></indexterm>
+<para><computeroutput>int EnemyGhostGFX.currentWaypoint = 0<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Текущая точка. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a65303ca50a2b1398357f5fb6ec39622d"/>    <section>
+    <title>damage</title>
+<indexterm><primary>damage</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>damage</secondary></indexterm>
+<para><computeroutput>int EnemyGhostGFX.damage = 2<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Наносимый урон. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1adcf40f58f42e56530b1f9b62de5db3ab"/>    <section>
+    <title>deltatime</title>
+<indexterm><primary>deltatime</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>deltatime</secondary></indexterm>
+<para><computeroutput>float EnemyGhostGFX.deltatime<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Промежуток времени для атаки. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1afbfcb5deca65b25664eec2f71403b129"/>    <section>
+    <title>dtime</title>
+<indexterm><primary>dtime</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>dtime</secondary></indexterm>
+<para><computeroutput>float EnemyGhostGFX.dtime<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Промежуток времени для воспроизведения звука. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a7b34f81e1b7d4781feac30e5930415d9"/>    <section>
+    <title>GhostSound</title>
+<indexterm><primary>GhostSound</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>GhostSound</secondary></indexterm>
+<para><computeroutput>AudioClip EnemyGhostGFX.GhostSound<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук призрака. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a06198f5fc3ae9a529033350d45a420bf"/>    <section>
+    <title>isAlive</title>
+<indexterm><primary>isAlive</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>isAlive</secondary></indexterm>
+<para><computeroutput>bool EnemyGhostGFX.isAlive = true<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Является ли объект живым. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a89e0ca5c93f5d7199d16b38d31a94276"/>    <section>
+    <title>nextWaypointDistance</title>
+<indexterm><primary>nextWaypointDistance</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>nextWaypointDistance</secondary></indexterm>
+<para><computeroutput>float EnemyGhostGFX.nextWaypointDistance = 3f</computeroutput></para><para>
+
+<para>Дистанция до следующей точки. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a61a9d438c6f670161da9863e24621a5b"/>    <section>
+    <title>path</title>
+<indexterm><primary>path</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>path</secondary></indexterm>
+<para><computeroutput>Path EnemyGhostGFX.path<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная пути, для определения траектории движения до цели. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1ae1cd3db0eefdd57925eeaa1d6f11eed7"/>    <section>
+    <title>PlayerRadius</title>
+<indexterm><primary>PlayerRadius</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>PlayerRadius</secondary></indexterm>
+<para><computeroutput>float EnemyGhostGFX.PlayerRadius = 50</computeroutput></para><para>
+
+<para>Дистанция сканирования цели. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a7cda095172a6c790026a4276c0ae16d0"/>    <section>
+    <title>rb</title>
+<indexterm><primary>rb</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>rb</secondary></indexterm>
+<para><computeroutput>Rigidbody2D EnemyGhostGFX.rb<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Rigidbody2d который установлен на призраке. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a0dbb9265fb3d43a85353f9c4c981ac73"/>    <section>
+    <title>reachedEndOfPath</title>
+<indexterm><primary>reachedEndOfPath</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>reachedEndOfPath</secondary></indexterm>
+<para><computeroutput>bool EnemyGhostGFX.reachedEndOfPath = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная для проверки на достиженя конца пути. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a436c42d1de48ebf01fcf90ca31ba473b"/>    <section>
+    <title>seeker</title>
+<indexterm><primary>seeker</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>seeker</secondary></indexterm>
+<para><computeroutput>Seeker EnemyGhostGFX.seeker<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Поисковик кратчайшего пути. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1aeeaf6bdf3cb2e8a8a554602cc0b863d3"/>    <section>
+    <title>snd</title>
+<indexterm><primary>snd</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>snd</secondary></indexterm>
+<para><computeroutput>AudioSource EnemyGhostGFX.snd<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Источник звука призрака. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1ae6e4259544edd143d0e191d41f80248a"/>    <section>
+    <title>soundPaused</title>
+<indexterm><primary>soundPaused</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>soundPaused</secondary></indexterm>
+<para><computeroutput>bool EnemyGhostGFX.soundPaused = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Пауза воспроизведения звука. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1a8610a1da9bc5d50ee0b3685ca1bdb808"/>    <section>
+    <title>speed</title>
+<indexterm><primary>speed</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>speed</secondary></indexterm>
+<para><computeroutput>float EnemyGhostGFX.speed = 400f</computeroutput></para><para>
+
+<para>Скорость движения. </para>
+</para>
+    </section><anchor xml:id="_class_enemy_ghost_g_f_x_1ae456b8eb61bb83d5764b23407c3f4652"/>    <section>
+    <title>target</title>
+<indexterm><primary>target</primary><secondary>EnemyGhostGFX</secondary></indexterm>
+<indexterm><primary>EnemyGhostGFX</primary><secondary>target</secondary></indexterm>
+<para><computeroutput>Transform EnemyGhostGFX.target</computeroutput></para><para>
+
+<para>Координаты цели. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/<link linkend="__enemy_ghost_g_f_x_8cs">EnemyGhostGFX.cs</link></section>
+</section>

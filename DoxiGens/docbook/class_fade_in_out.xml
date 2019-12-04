@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_fade_in_out">
+<title>FadeInOut Class Reference</title>
+<indexterm><primary>FadeInOut</primary></indexterm>
+<para>
+
+<para>Класс затемнения экрана. </para>
+ 
+</para>
+<para>Inheritance diagram for FadeInOut:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_fade_in_out.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_fade_in_out_1ab33478282a881dc217707f16a5756f06">fadeSpeed</link> = 1.5f</para>
+
+<para>Скорость затемнения. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_fade_in_out_1ac7c5530b2839782ccb11ecca8c2a3a4f">sceneEnd</link></para>
+
+<para>Проверка на достижение конца сцены. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_fade_in_out_1a593efc254c45773002ae70df4d3b9fe8">Awake</link> ()</para>
+
+<para>Функция, вызывающаяся при загрузке сцены. В ней происходит затемнение. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_fade_in_out_1a3f3884f87e722e61f9df3cc388c62808">Update</link> ()</para>
+
+<para>По кадровое обновление. Проверка на начало или конец сцены. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_fade_in_out_1a0a8234a318e8eca7f4e13c9aaae45249">StartScene</link> ()</para>
+
+<para>Реализация снятия затемнения при начале сцены. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_fade_in_out_1ae8e152fc1c8187fbdf43dc9f75daa684">EndScene</link> ()</para>
+
+<para>Реализация затемнения при конце сцены. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Image <link linkend="_class_fade_in_out_1ab8982ac8880adc1d341b4a2142695ea0">_image</link></para>
+
+<para>Изображение для затемнения. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_fade_in_out_1a8095824cad876bf9395965c2301b9228">sceneStarting</link></para>
+
+<para>Проверка на начало сцены. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс затемнения экрана. </para>
+
+
+
+<para>Данный класс реализует затемнение экрана при появлении на новом уровне и при уходе с него.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_fade_in_out_1a593efc254c45773002ae70df4d3b9fe8"/>    <section>
+    <title>Awake()</title>
+<indexterm><primary>Awake</primary><secondary>FadeInOut</secondary></indexterm>
+<indexterm><primary>FadeInOut</primary><secondary>Awake</secondary></indexterm>
+<para><computeroutput>void FadeInOut.Awake ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция, вызывающаяся при загрузке сцены. В ней происходит затемнение. </para>
+</para>
+    </section><anchor xml:id="_class_fade_in_out_1ae8e152fc1c8187fbdf43dc9f75daa684"/>    <section>
+    <title>EndScene()</title>
+<indexterm><primary>EndScene</primary><secondary>FadeInOut</secondary></indexterm>
+<indexterm><primary>FadeInOut</primary><secondary>EndScene</secondary></indexterm>
+<para><computeroutput>void FadeInOut.EndScene ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Реализация затемнения при конце сцены. </para>
+</para>
+    </section><anchor xml:id="_class_fade_in_out_1a0a8234a318e8eca7f4e13c9aaae45249"/>    <section>
+    <title>StartScene()</title>
+<indexterm><primary>StartScene</primary><secondary>FadeInOut</secondary></indexterm>
+<indexterm><primary>FadeInOut</primary><secondary>StartScene</secondary></indexterm>
+<para><computeroutput>void FadeInOut.StartScene ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Реализация снятия затемнения при начале сцены. </para>
+</para>
+    </section><anchor xml:id="_class_fade_in_out_1a3f3884f87e722e61f9df3cc388c62808"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>FadeInOut</secondary></indexterm>
+<indexterm><primary>FadeInOut</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void FadeInOut.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>По кадровое обновление. Проверка на начало или конец сцены. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_fade_in_out_1ab8982ac8880adc1d341b4a2142695ea0"/>    <section>
+    <title>_image</title>
+<indexterm><primary>_image</primary><secondary>FadeInOut</secondary></indexterm>
+<indexterm><primary>FadeInOut</primary><secondary>_image</secondary></indexterm>
+<para><computeroutput>Image FadeInOut._image<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Изображение для затемнения. </para>
+</para>
+    </section><anchor xml:id="_class_fade_in_out_1ab33478282a881dc217707f16a5756f06"/>    <section>
+    <title>fadeSpeed</title>
+<indexterm><primary>fadeSpeed</primary><secondary>FadeInOut</secondary></indexterm>
+<indexterm><primary>FadeInOut</primary><secondary>fadeSpeed</secondary></indexterm>
+<para><computeroutput>float FadeInOut.fadeSpeed = 1.5f</computeroutput></para><para>
+
+<para>Скорость затемнения. </para>
+</para>
+    </section><anchor xml:id="_class_fade_in_out_1ac7c5530b2839782ccb11ecca8c2a3a4f"/>    <section>
+    <title>sceneEnd</title>
+<indexterm><primary>sceneEnd</primary><secondary>FadeInOut</secondary></indexterm>
+<indexterm><primary>FadeInOut</primary><secondary>sceneEnd</secondary></indexterm>
+<para><computeroutput>bool FadeInOut.sceneEnd<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на достижение конца сцены. </para>
+</para>
+    </section><anchor xml:id="_class_fade_in_out_1a8095824cad876bf9395965c2301b9228"/>    <section>
+    <title>sceneStarting</title>
+<indexterm><primary>sceneStarting</primary><secondary>FadeInOut</secondary></indexterm>
+<indexterm><primary>FadeInOut</primary><secondary>sceneStarting</secondary></indexterm>
+<para><computeroutput>bool FadeInOut.sceneStarting<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на начало сцены. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__fade_in_out_8cs">FadeInOut.cs</link></section>
+</section>

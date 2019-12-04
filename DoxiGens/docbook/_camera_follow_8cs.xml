@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__camera_follow_8cs">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Player/CameraFollow.cs File Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Player/CameraFollow.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_camera_follow">CameraFollow</link></para>
+
+<para>Класс камеры. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

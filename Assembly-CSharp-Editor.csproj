@@ -672,6 +672,10 @@
       <Project>{09A0CD2E-F10E-B4A5-D146-2BF98C81393A}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="GameAssembly.csproj">
+      <Project>{6DCCC2B1-0E4C-4379-56FB-3529E31F7235}</Project>
+      <Name>GameAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="AstarPathfindingProject.csproj">
       <Project>{A43A9FA8-834F-8C21-FD64-55CB2E2F5698}</Project>
       <Name>AstarPathfindingProject</Name>

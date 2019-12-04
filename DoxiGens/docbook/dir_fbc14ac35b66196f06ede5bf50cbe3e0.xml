@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_fbc14ac35b66196f06ede5bf50cbe3e0">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools Directory Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__camera_shake_8cs">CameraShake.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__coin_8cs">Coin.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__death_level_8cs">DeathLevel.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__fade_in_out_8cs">FadeInOut.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__hinge_button_controller_8cs">HingeButtonController.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__h_p_8cs">HP.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_key_to_gate_8cs">keyToGate.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__laser_script_8cs">LaserScript.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__platform_movable_8cs">PlatformMovable.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__position_check_8cs">PositionCheck.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__saw_controller_8cs">SawController.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__spikes_controller_8cs">SpikesController.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__teleporter_script_8cs">TeleporterScript.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

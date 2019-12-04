@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_teleporter_script">
+<title>TeleporterScript Class Reference</title>
+<indexterm><primary>TeleporterScript</primary></indexterm>
+<para>
+
+<para>Класс телепорта. </para>
+ 
+</para>
+<para>Inheritance diagram for TeleporterScript:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_teleporter_script.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_teleporter_script_1a1fe7ffebc251f0d0c7191233bcfc2496">Start</link> ()</para>
+
+<para>Функция установки первоначального состояния, в зависимости от ситации обработка текстур. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_teleporter_script_1a1116f3ea9b0d5c20e3be71ec86d373ac">OnTriggerEnter2D</link> (Collider2D collision)</para>
+
+<para>Проверка на заход в тригерзону телепорта некоторого объекта. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_teleporter_script_1a746cec0e990440bda766910fbef907f8">loadLevel</link> ()</para>
+
+<para>Функция загрузки следующего уровня. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_plater_stats">PlaterStats</link> <link linkend="_class_teleporter_script_1ae7cd5c857a706d87ad02161eebb4b37a">Player</link></para>
+
+<para>Переменная класса статистики игрока. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_teleporter_script_1a398a81c9445a1df2c111180a918013cd">lname</link></para>
+
+<para>Название текущего уровня. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_teleporter_script_1abd10a6fcac05497a4f815f588bb655e1">notAnim</link></para>
+
+<para>Необходимость анимации. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс телепорта. </para>
+
+
+
+<para>Данный класс реализует &quot;телепорт&quot; или возможность перемещаться между уровнями.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_teleporter_script_1a746cec0e990440bda766910fbef907f8"/>    <section>
+    <title>loadLevel()</title>
+<indexterm><primary>loadLevel</primary><secondary>TeleporterScript</secondary></indexterm>
+<indexterm><primary>TeleporterScript</primary><secondary>loadLevel</secondary></indexterm>
+<para><computeroutput>void TeleporterScript.loadLevel ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция загрузки следующего уровня. </para>
+</para>
+    </section><anchor xml:id="_class_teleporter_script_1a1116f3ea9b0d5c20e3be71ec86d373ac"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>TeleporterScript</secondary></indexterm>
+<indexterm><primary>TeleporterScript</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void TeleporterScript.OnTriggerEnter2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на заход в тригерзону телепорта некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_teleporter_script_1a1fe7ffebc251f0d0c7191233bcfc2496"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>TeleporterScript</secondary></indexterm>
+<indexterm><primary>TeleporterScript</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void TeleporterScript.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция установки первоначального состояния, в зависимости от ситации обработка текстур. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_teleporter_script_1a398a81c9445a1df2c111180a918013cd"/>    <section>
+    <title>lname</title>
+<indexterm><primary>lname</primary><secondary>TeleporterScript</secondary></indexterm>
+<indexterm><primary>TeleporterScript</primary><secondary>lname</secondary></indexterm>
+<para><computeroutput>string TeleporterScript.lname<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Название текущего уровня. </para>
+</para>
+    </section><anchor xml:id="_class_teleporter_script_1abd10a6fcac05497a4f815f588bb655e1"/>    <section>
+    <title>notAnim</title>
+<indexterm><primary>notAnim</primary><secondary>TeleporterScript</secondary></indexterm>
+<indexterm><primary>TeleporterScript</primary><secondary>notAnim</secondary></indexterm>
+<para><computeroutput>bool TeleporterScript.notAnim<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Необходимость анимации. </para>
+</para>
+    </section><anchor xml:id="_class_teleporter_script_1ae7cd5c857a706d87ad02161eebb4b37a"/>    <section>
+    <title>Player</title>
+<indexterm><primary>Player</primary><secondary>TeleporterScript</secondary></indexterm>
+<indexterm><primary>TeleporterScript</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_plater_stats">PlaterStats</link> TeleporterScript.Player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная класса статистики игрока. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__teleporter_script_8cs">TeleporterScript.cs</link></section>
+</section>

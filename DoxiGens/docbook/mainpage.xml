@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mainpage">
+
+<para><itemizedlist>
+<listitem>
+<para><link xlink:href="#introduction">Introduction</link><itemizedlist>
+<listitem>
+<para><link xlink:href="#getting-started">Getting Started</link></para>
+</listitem><listitem>
+<para><link xlink:href="#controls">Controls</link></para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<section xml:id="_index_1autotoc_md1">
+<title>Introduction</title>
+
+<para>Жанр данной игры: Платформер-шутер.</para>
+
+<para>Реализована игра на версии Unity 2019.2.6f1 .</para>
+<section xml:id="_index_1autotoc_md2">
+<title>Getting Started</title>
+
+<para>Для запуска игры необходимо открыть приложение MyGame.exe и выбрать подходящие настройки разрешения.</para>
+</section>
+<section xml:id="_index_1autotoc_md3">
+<title>Controls</title>
+
+<para>left_arrow - Двигаться влево.</para>
+
+<para>right_arrow - Двигаться вправо.</para>
+
+<para>ctrl - Стрельба.</para>
+
+<para>space - Прыжок.</para>
+
+<para>space + space - Двойной прыжок. </para>
+</section>
+</section>
+</chapter>

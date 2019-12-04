@@ -1,0 +1,149 @@
+\hypertarget{class_laser_script}{}\doxysection{Laser\+Script Class Reference}
+\label{class_laser_script}\index{LaserScript@{LaserScript}}
+
+
+Скрипт лазера.  
+
+
+Inheritance diagram for Laser\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_laser_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_laser_script_a59cc576d6aa67b756022c5366ae7eb0f}{radius}}
+\begin{DoxyCompactList}\small\item\em Радиус обнаружения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_laser_script_a1ed5e2e08452555bf2932ad2753b5d13}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция задания првоначального состояния, установка анимации и обнаружение цели. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_laser_script_a8e25599ee157047ceb68774195798811}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция покадрового обновления. Проверка на попадание в радиус действия и после попадания начало срабатывания. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_laser_script_a031439a2218730c0714ce83a7a06846e}{On\+Trigger\+Exit2D}} (Collider2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на выход из тригерзоны лазера некоторого объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_laser_script_acd99fbb973de821241c3b4cfb9496da5}{On\+Trigger\+Stay2D}} (Collider2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на нахождение в тригерзоне лазера некоторого объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_laser_script_ac93cedf25714f89ba42e5729f4fed486}{On\+Trigger\+Enter2D}} (Collider2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на попадание в тригерзону лазера некоторого объекта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_laser_script_a364c3e9fa3c6aae19f09b6c9c39c00ab}{dtime}} = 0
+\begin{DoxyCompactList}\small\item\em Временной интервал между атакой лазера. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_laser_script_a133e587249f5111c17650810e83997fa}{target}}
+\begin{DoxyCompactList}\small\item\em Координаты цели. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Скрипт лазера. 
+
+Данный класс реализует лазер, его переодическое срабатывание и нанесение урона игроку.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_laser_script_ac93cedf25714f89ba42e5729f4fed486}\label{class_laser_script_ac93cedf25714f89ba42e5729f4fed486}} 
+\index{LaserScript@{LaserScript}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!LaserScript@{LaserScript}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily void Laser\+Script.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на попадание в тригерзону лазера некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_laser_script_a031439a2218730c0714ce83a7a06846e}\label{class_laser_script_a031439a2218730c0714ce83a7a06846e}} 
+\index{LaserScript@{LaserScript}!OnTriggerExit2D@{OnTriggerExit2D}}
+\index{OnTriggerExit2D@{OnTriggerExit2D}!LaserScript@{LaserScript}}
+\doxysubsubsection{\texorpdfstring{OnTriggerExit2D()}{OnTriggerExit2D()}}
+{\footnotesize\ttfamily void Laser\+Script.\+On\+Trigger\+Exit2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на выход из тригерзоны лазера некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_laser_script_acd99fbb973de821241c3b4cfb9496da5}\label{class_laser_script_acd99fbb973de821241c3b4cfb9496da5}} 
+\index{LaserScript@{LaserScript}!OnTriggerStay2D@{OnTriggerStay2D}}
+\index{OnTriggerStay2D@{OnTriggerStay2D}!LaserScript@{LaserScript}}
+\doxysubsubsection{\texorpdfstring{OnTriggerStay2D()}{OnTriggerStay2D()}}
+{\footnotesize\ttfamily void Laser\+Script.\+On\+Trigger\+Stay2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на нахождение в тригерзоне лазера некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_laser_script_a1ed5e2e08452555bf2932ad2753b5d13}\label{class_laser_script_a1ed5e2e08452555bf2932ad2753b5d13}} 
+\index{LaserScript@{LaserScript}!Start@{Start}}
+\index{Start@{Start}!LaserScript@{LaserScript}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Laser\+Script.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция задания првоначального состояния, установка анимации и обнаружение цели. 
+
+\mbox{\Hypertarget{class_laser_script_a8e25599ee157047ceb68774195798811}\label{class_laser_script_a8e25599ee157047ceb68774195798811}} 
+\index{LaserScript@{LaserScript}!Update@{Update}}
+\index{Update@{Update}!LaserScript@{LaserScript}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Laser\+Script.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция покадрового обновления. Проверка на попадание в радиус действия и после попадания начало срабатывания. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_laser_script_a364c3e9fa3c6aae19f09b6c9c39c00ab}\label{class_laser_script_a364c3e9fa3c6aae19f09b6c9c39c00ab}} 
+\index{LaserScript@{LaserScript}!dtime@{dtime}}
+\index{dtime@{dtime}!LaserScript@{LaserScript}}
+\doxysubsubsection{\texorpdfstring{dtime}{dtime}}
+{\footnotesize\ttfamily float Laser\+Script.\+dtime = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Временной интервал между атакой лазера. 
+
+\mbox{\Hypertarget{class_laser_script_a59cc576d6aa67b756022c5366ae7eb0f}\label{class_laser_script_a59cc576d6aa67b756022c5366ae7eb0f}} 
+\index{LaserScript@{LaserScript}!radius@{radius}}
+\index{radius@{radius}!LaserScript@{LaserScript}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily float Laser\+Script.\+radius}
+
+
+
+Радиус обнаружения. 
+
+\mbox{\Hypertarget{class_laser_script_a133e587249f5111c17650810e83997fa}\label{class_laser_script_a133e587249f5111c17650810e83997fa}} 
+\index{LaserScript@{LaserScript}!target@{target}}
+\index{target@{target}!LaserScript@{LaserScript}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily Transform Laser\+Script.\+target\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координаты цели. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Tools/Laser\+Script.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,140 @@
+\hypertarget{class_platform_movable}{}\doxysection{Platform\+Movable Class Reference}
+\label{class_platform_movable}\index{PlatformMovable@{PlatformMovable}}
+
+
+Класс движения платформы.  
+
+
+Inheritance diagram for Platform\+Movable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_platform_movable}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_platform_movable_a01e408566172b902f7e317c6488579c5}{get\+\_\+\+Global\+\_\+speed}} ()
+\begin{DoxyCompactList}\small\item\em Функция возвращающая скорость движения платформы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_platform_movable_a6fe47e6f7f33faf8caf3b0c298bf79f6}{speed}}
+\begin{DoxyCompactList}\small\item\em Скорость передвижения. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_platform_movable_a925d5f346227517f68f9f831ae731f26}{left}}
+\begin{DoxyCompactList}\small\item\em Координаты левой точки. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_platform_movable_a747e9b8d44e706d24c4699b1ce153203}{right}}
+\begin{DoxyCompactList}\small\item\em Координаты правой точки. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_platform_movable_a0e9727df117889ba8fc6b421cb07d068}{is\+Horizontal}}
+\begin{DoxyCompactList}\small\item\em Направление движения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_platform_movable_a21159033b53e9abb14d2a679159f9551}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция задания первоначального состояния. Задается скорость движения платформы. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_platform_movable_a8949c4b4545de62e7418af57f9e026e4}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция покадрового обновления. Реализация движения к точкам. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_platform_movable_a7257932efbfb6ae53352820718745732}{Move\+Speed}}
+\begin{DoxyCompactList}\small\item\em Текущая скорость движения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс движения платформы. 
+
+Данный класс реализует движение платформы в вертикальном или горизонтальном направлениях с определенной скоростью.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_platform_movable_a01e408566172b902f7e317c6488579c5}\label{class_platform_movable_a01e408566172b902f7e317c6488579c5}} 
+\index{PlatformMovable@{PlatformMovable}!get\_Global\_speed@{get\_Global\_speed}}
+\index{get\_Global\_speed@{get\_Global\_speed}!PlatformMovable@{PlatformMovable}}
+\doxysubsubsection{\texorpdfstring{get\_Global\_speed()}{get\_Global\_speed()}}
+{\footnotesize\ttfamily float Platform\+Movable.\+get\+\_\+\+Global\+\_\+speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция возвращающая скорость движения платформы. 
+
+\begin{DoxyReturn}{Returns}
+Текущая скорость.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_platform_movable_a21159033b53e9abb14d2a679159f9551}\label{class_platform_movable_a21159033b53e9abb14d2a679159f9551}} 
+\index{PlatformMovable@{PlatformMovable}!Start@{Start}}
+\index{Start@{Start}!PlatformMovable@{PlatformMovable}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Platform\+Movable.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция задания первоначального состояния. Задается скорость движения платформы. 
+
+\mbox{\Hypertarget{class_platform_movable_a8949c4b4545de62e7418af57f9e026e4}\label{class_platform_movable_a8949c4b4545de62e7418af57f9e026e4}} 
+\index{PlatformMovable@{PlatformMovable}!Update@{Update}}
+\index{Update@{Update}!PlatformMovable@{PlatformMovable}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Platform\+Movable.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция покадрового обновления. Реализация движения к точкам. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_platform_movable_a0e9727df117889ba8fc6b421cb07d068}\label{class_platform_movable_a0e9727df117889ba8fc6b421cb07d068}} 
+\index{PlatformMovable@{PlatformMovable}!isHorizontal@{isHorizontal}}
+\index{isHorizontal@{isHorizontal}!PlatformMovable@{PlatformMovable}}
+\doxysubsubsection{\texorpdfstring{isHorizontal}{isHorizontal}}
+{\footnotesize\ttfamily bool Platform\+Movable.\+is\+Horizontal}
+
+
+
+Направление движения. 
+
+\mbox{\Hypertarget{class_platform_movable_a925d5f346227517f68f9f831ae731f26}\label{class_platform_movable_a925d5f346227517f68f9f831ae731f26}} 
+\index{PlatformMovable@{PlatformMovable}!left@{left}}
+\index{left@{left}!PlatformMovable@{PlatformMovable}}
+\doxysubsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily Transform Platform\+Movable.\+left}
+
+
+
+Координаты левой точки. 
+
+\mbox{\Hypertarget{class_platform_movable_a7257932efbfb6ae53352820718745732}\label{class_platform_movable_a7257932efbfb6ae53352820718745732}} 
+\index{PlatformMovable@{PlatformMovable}!MoveSpeed@{MoveSpeed}}
+\index{MoveSpeed@{MoveSpeed}!PlatformMovable@{PlatformMovable}}
+\doxysubsubsection{\texorpdfstring{MoveSpeed}{MoveSpeed}}
+{\footnotesize\ttfamily float Platform\+Movable.\+Move\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Текущая скорость движения. 
+
+\mbox{\Hypertarget{class_platform_movable_a747e9b8d44e706d24c4699b1ce153203}\label{class_platform_movable_a747e9b8d44e706d24c4699b1ce153203}} 
+\index{PlatformMovable@{PlatformMovable}!right@{right}}
+\index{right@{right}!PlatformMovable@{PlatformMovable}}
+\doxysubsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily Transform Platform\+Movable.\+right}
+
+
+
+Координаты правой точки. 
+
+\mbox{\Hypertarget{class_platform_movable_a6fe47e6f7f33faf8caf3b0c298bf79f6}\label{class_platform_movable_a6fe47e6f7f33faf8caf3b0c298bf79f6}} 
+\index{PlatformMovable@{PlatformMovable}!speed@{speed}}
+\index{speed@{speed}!PlatformMovable@{PlatformMovable}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Platform\+Movable.\+speed}
+
+
+
+Скорость передвижения. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Tools/Platform\+Movable.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\hypertarget{class_fade_in_out}{}\doxysection{Fade\+In\+Out Class Reference}
+\label{class_fade_in_out}\index{FadeInOut@{FadeInOut}}
+
+
+Класс затемнения экрана.  
+
+
+Inheritance diagram for Fade\+In\+Out\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fade_in_out}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_fade_in_out_ab33478282a881dc217707f16a5756f06}{fade\+Speed}} = 1.\+5f
+\begin{DoxyCompactList}\small\item\em Скорость затемнения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_fade_in_out_ac7c5530b2839782ccb11ecca8c2a3a4f}{scene\+End}}
+\begin{DoxyCompactList}\small\item\em Проверка на достижение конца сцены. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_fade_in_out_a593efc254c45773002ae70df4d3b9fe8}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Функция, вызывающаяся при загрузке сцены. В ней происходит затемнение. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fade_in_out_a3f3884f87e722e61f9df3cc388c62808}{Update}} ()
+\begin{DoxyCompactList}\small\item\em По кадровое обновление. Проверка на начало или конец сцены. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fade_in_out_a0a8234a318e8eca7f4e13c9aaae45249}{Start\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Реализация снятия затемнения при начале сцены. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fade_in_out_ae8e152fc1c8187fbdf43dc9f75daa684}{End\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Реализация затемнения при конце сцены. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Image \mbox{\hyperlink{class_fade_in_out_ab8982ac8880adc1d341b4a2142695ea0}{\+\_\+image}}
+\begin{DoxyCompactList}\small\item\em Изображение для затемнения. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fade_in_out_a8095824cad876bf9395965c2301b9228}{scene\+Starting}}
+\begin{DoxyCompactList}\small\item\em Проверка на начало сцены. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс затемнения экрана. 
+
+Данный класс реализует затемнение экрана при появлении на новом уровне и при уходе с него.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fade_in_out_a593efc254c45773002ae70df4d3b9fe8}\label{class_fade_in_out_a593efc254c45773002ae70df4d3b9fe8}} 
+\index{FadeInOut@{FadeInOut}!Awake@{Awake}}
+\index{Awake@{Awake}!FadeInOut@{FadeInOut}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Fade\+In\+Out.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция, вызывающаяся при загрузке сцены. В ней происходит затемнение. 
+
+\mbox{\Hypertarget{class_fade_in_out_ae8e152fc1c8187fbdf43dc9f75daa684}\label{class_fade_in_out_ae8e152fc1c8187fbdf43dc9f75daa684}} 
+\index{FadeInOut@{FadeInOut}!EndScene@{EndScene}}
+\index{EndScene@{EndScene}!FadeInOut@{FadeInOut}}
+\doxysubsubsection{\texorpdfstring{EndScene()}{EndScene()}}
+{\footnotesize\ttfamily void Fade\+In\+Out.\+End\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Реализация затемнения при конце сцены. 
+
+\mbox{\Hypertarget{class_fade_in_out_a0a8234a318e8eca7f4e13c9aaae45249}\label{class_fade_in_out_a0a8234a318e8eca7f4e13c9aaae45249}} 
+\index{FadeInOut@{FadeInOut}!StartScene@{StartScene}}
+\index{StartScene@{StartScene}!FadeInOut@{FadeInOut}}
+\doxysubsubsection{\texorpdfstring{StartScene()}{StartScene()}}
+{\footnotesize\ttfamily void Fade\+In\+Out.\+Start\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Реализация снятия затемнения при начале сцены. 
+
+\mbox{\Hypertarget{class_fade_in_out_a3f3884f87e722e61f9df3cc388c62808}\label{class_fade_in_out_a3f3884f87e722e61f9df3cc388c62808}} 
+\index{FadeInOut@{FadeInOut}!Update@{Update}}
+\index{Update@{Update}!FadeInOut@{FadeInOut}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Fade\+In\+Out.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+По кадровое обновление. Проверка на начало или конец сцены. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fade_in_out_ab8982ac8880adc1d341b4a2142695ea0}\label{class_fade_in_out_ab8982ac8880adc1d341b4a2142695ea0}} 
+\index{FadeInOut@{FadeInOut}!\_image@{\_image}}
+\index{\_image@{\_image}!FadeInOut@{FadeInOut}}
+\doxysubsubsection{\texorpdfstring{\_image}{\_image}}
+{\footnotesize\ttfamily Image Fade\+In\+Out.\+\_\+image\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Изображение для затемнения. 
+
+\mbox{\Hypertarget{class_fade_in_out_ab33478282a881dc217707f16a5756f06}\label{class_fade_in_out_ab33478282a881dc217707f16a5756f06}} 
+\index{FadeInOut@{FadeInOut}!fadeSpeed@{fadeSpeed}}
+\index{fadeSpeed@{fadeSpeed}!FadeInOut@{FadeInOut}}
+\doxysubsubsection{\texorpdfstring{fadeSpeed}{fadeSpeed}}
+{\footnotesize\ttfamily float Fade\+In\+Out.\+fade\+Speed = 1.\+5f}
+
+
+
+Скорость затемнения. 
+
+\mbox{\Hypertarget{class_fade_in_out_ac7c5530b2839782ccb11ecca8c2a3a4f}\label{class_fade_in_out_ac7c5530b2839782ccb11ecca8c2a3a4f}} 
+\index{FadeInOut@{FadeInOut}!sceneEnd@{sceneEnd}}
+\index{sceneEnd@{sceneEnd}!FadeInOut@{FadeInOut}}
+\doxysubsubsection{\texorpdfstring{sceneEnd}{sceneEnd}}
+{\footnotesize\ttfamily bool Fade\+In\+Out.\+scene\+End\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Проверка на достижение конца сцены. 
+
+\mbox{\Hypertarget{class_fade_in_out_a8095824cad876bf9395965c2301b9228}\label{class_fade_in_out_a8095824cad876bf9395965c2301b9228}} 
+\index{FadeInOut@{FadeInOut}!sceneStarting@{sceneStarting}}
+\index{sceneStarting@{sceneStarting}!FadeInOut@{FadeInOut}}
+\doxysubsubsection{\texorpdfstring{sceneStarting}{sceneStarting}}
+{\footnotesize\ttfamily bool Fade\+In\+Out.\+scene\+Starting\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на начало сцены. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Tools/Fade\+In\+Out.\+cs\end{DoxyCompactItemize}

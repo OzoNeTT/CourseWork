@@ -1,0 +1,158 @@
+\hypertarget{class_scrolling_b_g1}{}\doxysection{Scrolling\+B\+G1 Class Reference}
+\label{class_scrolling_b_g1}\index{ScrollingBG1@{ScrollingBG1}}
+
+
+Класс движения фоновых изображений.  
+
+
+Inheritance diagram for Scrolling\+B\+G1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scrolling_b_g1}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_scrolling_b_g1_a99d972878c87899015505ce3d5c8dd1e}{background\+Size}}
+\begin{DoxyCompactList}\small\item\em Размер фонового изображения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scrolling_b_g1_af39a754c81d40ccefd4d348e05f92645}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция придает первоначальное состояние. Установка координат, трансформирование и задание индексов для фоновых изображений. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scrolling_b_g1_af2441fdb9395eead61d6f62d5a9c6eb3}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция покадрового обновления. Перемещение фоновых изображений в зависимости от движения камеры. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scrolling_b_g1_a0e7311e551347ee8527d40fd42c4c936}{Scroll\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Функция перемещения фоновых изображений влево. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scrolling_b_g1_aef57273f1eabc80fece9e26dc6093fb7}{Scroll\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Функция перемещения фоновых изображений вправо. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_scrolling_b_g1_a46b0bf259450da5f7a634ec2abd63fe6}{camera\+Transform}}
+\begin{DoxyCompactList}\small\item\em Координаты камеры. \end{DoxyCompactList}\item 
+Transform\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_scrolling_b_g1_a387e7f1f260bd199426de76dfc94ba4f}{layers}}
+\begin{DoxyCompactList}\small\item\em Массив координат фоновых изображений \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_scrolling_b_g1_acf8056afed4331d1c4ab7ac4b317e20e}{view\+Zone}} = 10
+\begin{DoxyCompactList}\small\item\em Область видимости. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scrolling_b_g1_a53586469ff8f84fc8f16b8a617b3f83e}{left\+Index}}
+\begin{DoxyCompactList}\small\item\em Левый индекс (крайне левое изображение). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_scrolling_b_g1_a7cf2cf55a2982dce732a9ec539f2dca1}{right\+Index}}
+\begin{DoxyCompactList}\small\item\em Правый индекс (крайне правое изображение). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс движения фоновых изображений. 
+
+Данный класс реализует плавное движение фоновых изображений путем их склейки и трансформирования.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scrolling_b_g1_a0e7311e551347ee8527d40fd42c4c936}\label{class_scrolling_b_g1_a0e7311e551347ee8527d40fd42c4c936}} 
+\index{ScrollingBG1@{ScrollingBG1}!ScrollLeft@{ScrollLeft}}
+\index{ScrollLeft@{ScrollLeft}!ScrollingBG1@{ScrollingBG1}}
+\doxysubsubsection{\texorpdfstring{ScrollLeft()}{ScrollLeft()}}
+{\footnotesize\ttfamily void Scrolling\+B\+G1.\+Scroll\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция перемещения фоновых изображений влево. 
+
+\mbox{\Hypertarget{class_scrolling_b_g1_aef57273f1eabc80fece9e26dc6093fb7}\label{class_scrolling_b_g1_aef57273f1eabc80fece9e26dc6093fb7}} 
+\index{ScrollingBG1@{ScrollingBG1}!ScrollRight@{ScrollRight}}
+\index{ScrollRight@{ScrollRight}!ScrollingBG1@{ScrollingBG1}}
+\doxysubsubsection{\texorpdfstring{ScrollRight()}{ScrollRight()}}
+{\footnotesize\ttfamily void Scrolling\+B\+G1.\+Scroll\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция перемещения фоновых изображений вправо. 
+
+\mbox{\Hypertarget{class_scrolling_b_g1_af39a754c81d40ccefd4d348e05f92645}\label{class_scrolling_b_g1_af39a754c81d40ccefd4d348e05f92645}} 
+\index{ScrollingBG1@{ScrollingBG1}!Start@{Start}}
+\index{Start@{Start}!ScrollingBG1@{ScrollingBG1}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Scrolling\+B\+G1.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция придает первоначальное состояние. Установка координат, трансформирование и задание индексов для фоновых изображений. 
+
+\mbox{\Hypertarget{class_scrolling_b_g1_af2441fdb9395eead61d6f62d5a9c6eb3}\label{class_scrolling_b_g1_af2441fdb9395eead61d6f62d5a9c6eb3}} 
+\index{ScrollingBG1@{ScrollingBG1}!Update@{Update}}
+\index{Update@{Update}!ScrollingBG1@{ScrollingBG1}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scrolling\+B\+G1.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция покадрового обновления. Перемещение фоновых изображений в зависимости от движения камеры. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_scrolling_b_g1_a99d972878c87899015505ce3d5c8dd1e}\label{class_scrolling_b_g1_a99d972878c87899015505ce3d5c8dd1e}} 
+\index{ScrollingBG1@{ScrollingBG1}!backgroundSize@{backgroundSize}}
+\index{backgroundSize@{backgroundSize}!ScrollingBG1@{ScrollingBG1}}
+\doxysubsubsection{\texorpdfstring{backgroundSize}{backgroundSize}}
+{\footnotesize\ttfamily float Scrolling\+B\+G1.\+background\+Size}
+
+
+
+Размер фонового изображения. 
+
+\mbox{\Hypertarget{class_scrolling_b_g1_a46b0bf259450da5f7a634ec2abd63fe6}\label{class_scrolling_b_g1_a46b0bf259450da5f7a634ec2abd63fe6}} 
+\index{ScrollingBG1@{ScrollingBG1}!cameraTransform@{cameraTransform}}
+\index{cameraTransform@{cameraTransform}!ScrollingBG1@{ScrollingBG1}}
+\doxysubsubsection{\texorpdfstring{cameraTransform}{cameraTransform}}
+{\footnotesize\ttfamily Transform Scrolling\+B\+G1.\+camera\+Transform\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координаты камеры. 
+
+\mbox{\Hypertarget{class_scrolling_b_g1_a387e7f1f260bd199426de76dfc94ba4f}\label{class_scrolling_b_g1_a387e7f1f260bd199426de76dfc94ba4f}} 
+\index{ScrollingBG1@{ScrollingBG1}!layers@{layers}}
+\index{layers@{layers}!ScrollingBG1@{ScrollingBG1}}
+\doxysubsubsection{\texorpdfstring{layers}{layers}}
+{\footnotesize\ttfamily Transform \mbox{[}$\,$\mbox{]} Scrolling\+B\+G1.\+layers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Массив координат фоновых изображений 
+
+\mbox{\Hypertarget{class_scrolling_b_g1_a53586469ff8f84fc8f16b8a617b3f83e}\label{class_scrolling_b_g1_a53586469ff8f84fc8f16b8a617b3f83e}} 
+\index{ScrollingBG1@{ScrollingBG1}!leftIndex@{leftIndex}}
+\index{leftIndex@{leftIndex}!ScrollingBG1@{ScrollingBG1}}
+\doxysubsubsection{\texorpdfstring{leftIndex}{leftIndex}}
+{\footnotesize\ttfamily int Scrolling\+B\+G1.\+left\+Index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Левый индекс (крайне левое изображение). 
+
+\mbox{\Hypertarget{class_scrolling_b_g1_a7cf2cf55a2982dce732a9ec539f2dca1}\label{class_scrolling_b_g1_a7cf2cf55a2982dce732a9ec539f2dca1}} 
+\index{ScrollingBG1@{ScrollingBG1}!rightIndex@{rightIndex}}
+\index{rightIndex@{rightIndex}!ScrollingBG1@{ScrollingBG1}}
+\doxysubsubsection{\texorpdfstring{rightIndex}{rightIndex}}
+{\footnotesize\ttfamily int Scrolling\+B\+G1.\+right\+Index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Правый индекс (крайне правое изображение). 
+
+\mbox{\Hypertarget{class_scrolling_b_g1_acf8056afed4331d1c4ab7ac4b317e20e}\label{class_scrolling_b_g1_acf8056afed4331d1c4ab7ac4b317e20e}} 
+\index{ScrollingBG1@{ScrollingBG1}!viewZone@{viewZone}}
+\index{viewZone@{viewZone}!ScrollingBG1@{ScrollingBG1}}
+\doxysubsubsection{\texorpdfstring{viewZone}{viewZone}}
+{\footnotesize\ttfamily float Scrolling\+B\+G1.\+view\+Zone = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Область видимости. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Background/Scrolling\+B\+G1.\+cs\end{DoxyCompactItemize}

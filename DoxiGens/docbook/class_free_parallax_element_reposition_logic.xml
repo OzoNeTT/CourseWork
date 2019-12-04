@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_free_parallax_element_reposition_logic">
+<title>FreeParallaxElementRepositionLogic Class Reference</title>
+<indexterm><primary>FreeParallaxElementRepositionLogic</primary></indexterm>
+<para>
+
+<para>Contains parameters that repositions an object when it leaves the screen </para>
+ 
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4ce">FreeParallaxPositionMode</link> <link linkend="_class_free_parallax_element_reposition_logic_1a602e3e4260ca218f2f16037638f7b1ab">PositionMode</link> = <link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4cea348f533801aa954f0de46fa30894b6da">FreeParallaxPositionMode.WrapAnchorBottom</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_free_parallax_element_reposition_logic_1ab350fa73949fc60f69a90efc5b1133b3">ScaleHeight</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_free_parallax_element_reposition_logic_1a51ca99bf2957c9e1e6708e51d42a62a4">SortingOrder</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_free_parallax_element_reposition_logic_1afb668c5bfbaf82e4b30dba37cc56b0ab">MinYPercent</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_free_parallax_element_reposition_logic_1abc44189eae753c7802b9fbf09ae54f48">MaxYPercent</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_free_parallax_element_reposition_logic_1a39468456936f64fb084deb12583962cb">MinXPercent</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_free_parallax_element_reposition_logic_1a6542121fe409734d1a363742c27c3d15">MaxXPercent</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Contains parameters that repositions an object when it leaves the screen </para>
+
+
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_free_parallax_element_reposition_logic_1a6542121fe409734d1a363742c27c3d15"/>    <section>
+    <title>MaxXPercent</title>
+<indexterm><primary>MaxXPercent</primary><secondary>FreeParallaxElementRepositionLogic</secondary></indexterm>
+<indexterm><primary>FreeParallaxElementRepositionLogic</primary><secondary>MaxXPercent</secondary></indexterm>
+<para><computeroutput>float FreeParallaxElementRepositionLogic.MaxXPercent</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_reposition_logic_1abc44189eae753c7802b9fbf09ae54f48"/>    <section>
+    <title>MaxYPercent</title>
+<indexterm><primary>MaxYPercent</primary><secondary>FreeParallaxElementRepositionLogic</secondary></indexterm>
+<indexterm><primary>FreeParallaxElementRepositionLogic</primary><secondary>MaxYPercent</secondary></indexterm>
+<para><computeroutput>float FreeParallaxElementRepositionLogic.MaxYPercent</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_reposition_logic_1a39468456936f64fb084deb12583962cb"/>    <section>
+    <title>MinXPercent</title>
+<indexterm><primary>MinXPercent</primary><secondary>FreeParallaxElementRepositionLogic</secondary></indexterm>
+<indexterm><primary>FreeParallaxElementRepositionLogic</primary><secondary>MinXPercent</secondary></indexterm>
+<para><computeroutput>float FreeParallaxElementRepositionLogic.MinXPercent</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_reposition_logic_1afb668c5bfbaf82e4b30dba37cc56b0ab"/>    <section>
+    <title>MinYPercent</title>
+<indexterm><primary>MinYPercent</primary><secondary>FreeParallaxElementRepositionLogic</secondary></indexterm>
+<indexterm><primary>FreeParallaxElementRepositionLogic</primary><secondary>MinYPercent</secondary></indexterm>
+<para><computeroutput>float FreeParallaxElementRepositionLogic.MinYPercent</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_reposition_logic_1a602e3e4260ca218f2f16037638f7b1ab"/>    <section>
+    <title>PositionMode</title>
+<indexterm><primary>PositionMode</primary><secondary>FreeParallaxElementRepositionLogic</secondary></indexterm>
+<indexterm><primary>FreeParallaxElementRepositionLogic</primary><secondary>PositionMode</secondary></indexterm>
+<para><computeroutput><link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4ce">FreeParallaxPositionMode</link> FreeParallaxElementRepositionLogic.PositionMode = <link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4cea348f533801aa954f0de46fa30894b6da">FreeParallaxPositionMode.WrapAnchorBottom</link></computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_reposition_logic_1ab350fa73949fc60f69a90efc5b1133b3"/>    <section>
+    <title>ScaleHeight</title>
+<indexterm><primary>ScaleHeight</primary><secondary>FreeParallaxElementRepositionLogic</secondary></indexterm>
+<indexterm><primary>FreeParallaxElementRepositionLogic</primary><secondary>ScaleHeight</secondary></indexterm>
+<para><computeroutput>float FreeParallaxElementRepositionLogic.ScaleHeight</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_reposition_logic_1a51ca99bf2957c9e1e6708e51d42a62a4"/>    <section>
+    <title>SortingOrder</title>
+<indexterm><primary>SortingOrder</primary><secondary>FreeParallaxElementRepositionLogic</secondary></indexterm>
+<indexterm><primary>FreeParallaxElementRepositionLogic</primary><secondary>SortingOrder</secondary></indexterm>
+<para><computeroutput>int FreeParallaxElementRepositionLogic.SortingOrder</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Parallax/<link linkend="__free_parallax_8cs">FreeParallax.cs</link></section>
+</section>

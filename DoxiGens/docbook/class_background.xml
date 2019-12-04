@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_background">
+<title>Background Class Reference</title>
+<indexterm><primary>Background</primary></indexterm>
+<para>
+
+<para>Класс трансформирования фона. </para>
+ 
+</para>
+<para>Inheritance diagram for Background:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_background.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_background_1ad60534f1105428bb3b212dba7306f4c8">Start</link> ()</para>
+
+<para>Функция покадрового обновления для трансформирования объекта &quot;Background&quot;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс трансформирования фона. </para>
+
+
+
+<para>Класс трансформирует фоновое изображение к масштабу камеры.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_background_1ad60534f1105428bb3b212dba7306f4c8"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>Background</secondary></indexterm>
+<indexterm><primary>Background</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void Background.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления для трансформирования объекта &quot;Background&quot;. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Background/<link linkend="__background_8cs">Background.cs</link></section>
+</section>

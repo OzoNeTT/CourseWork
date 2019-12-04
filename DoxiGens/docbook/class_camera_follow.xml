@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_camera_follow">
+<title>CameraFollow Class Reference</title>
+<indexterm><primary>CameraFollow</primary></indexterm>
+<para>
+
+<para>Класс камеры. </para>
+ 
+</para>
+<para>Inheritance diagram for CameraFollow:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_camera_follow.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Transform <link linkend="_class_camera_follow_1a2ef2d3655fd0cb86d18e6324b75c0a59">target</link></para>
+
+<para>Координаты некоторой цели. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_camera_follow_1a25a47c75138c75bf72ad6943150faa68">smothing</link></para>
+
+<para>Плавность движения. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_camera_follow_1adbbbae516b9d54ffc9afe287dcb72cd5">Start</link> ()</para>
+
+<para>Функция инициализации смещения. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_camera_follow_1a623c485e39b82f268a356463829fd8b9">Update</link> ()</para>
+
+<para>Обновления каждый фрейм. Плавное следование за целью. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Vector3 <link linkend="_class_camera_follow_1ae4f97609d08d1933161b1c4da36b2018">offset</link></para>
+
+<para>Координаты смещения. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс камеры. </para>
+
+
+
+<para>Устанавливает плавное движение камеры за объектом.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_camera_follow_1adbbbae516b9d54ffc9afe287dcb72cd5"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>CameraFollow</secondary></indexterm>
+<indexterm><primary>CameraFollow</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void CameraFollow.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция инициализации смещения. </para>
+</para>
+    </section><anchor xml:id="_class_camera_follow_1a623c485e39b82f268a356463829fd8b9"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>CameraFollow</secondary></indexterm>
+<indexterm><primary>CameraFollow</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void CameraFollow.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Обновления каждый фрейм. Плавное следование за целью. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_camera_follow_1ae4f97609d08d1933161b1c4da36b2018"/>    <section>
+    <title>offset</title>
+<indexterm><primary>offset</primary><secondary>CameraFollow</secondary></indexterm>
+<indexterm><primary>CameraFollow</primary><secondary>offset</secondary></indexterm>
+<para><computeroutput>Vector3 CameraFollow.offset<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координаты смещения. </para>
+</para>
+    </section><anchor xml:id="_class_camera_follow_1a25a47c75138c75bf72ad6943150faa68"/>    <section>
+    <title>smothing</title>
+<indexterm><primary>smothing</primary><secondary>CameraFollow</secondary></indexterm>
+<indexterm><primary>CameraFollow</primary><secondary>smothing</secondary></indexterm>
+<para><computeroutput>float CameraFollow.smothing</computeroutput></para><para>
+
+<para>Плавность движения. </para>
+</para>
+    </section><anchor xml:id="_class_camera_follow_1a2ef2d3655fd0cb86d18e6324b75c0a59"/>    <section>
+    <title>target</title>
+<indexterm><primary>target</primary><secondary>CameraFollow</secondary></indexterm>
+<indexterm><primary>CameraFollow</primary><secondary>target</secondary></indexterm>
+<para><computeroutput>Transform CameraFollow.target</computeroutput></para><para>
+
+<para>Координаты некоторой цели. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Player/<link linkend="__camera_follow_8cs">CameraFollow.cs</link></section>
+</section>

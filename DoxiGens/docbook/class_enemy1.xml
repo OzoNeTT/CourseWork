@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_enemy1">
+<title>Enemy1 Class Reference</title>
+<indexterm><primary>Enemy1</primary></indexterm>
+<para>
+
+<para>Класс моба &quot;Рыцарь&quot;. </para>
+ 
+</para>
+<para>Inheritance diagram for Enemy1:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_enemy1.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_enemy1_1a16e27144bbb45fa144b018dd8593be75">Dies</link> ()</para>
+
+<para>Функция смерти. Уничтожение объекта и выпадание жизней с некоторым шансом. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy1_1a40aa75cab75cfa66b874ed172f5ed3d3">Flip</link> ()</para>
+
+<para>Функция отражения по вертикали в зависимости от позиции игрока. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>GameObject <link linkend="_class_enemy1_1abc942833e971927b89e22a088b9b400b">hill</link></para>
+
+<para>Объект здоровье. Может с некоторым шансом выпасть после смерти моба. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy1_1a2f48eed1efb5f2cd922b373ed7eb9120">radius</link></para>
+
+<para>Радиус поиска цели. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_enemy1_1ae5a6100c64bfaa8dd3e236beb253313d">damage</link> = 3</para>
+
+<para>Наносимый урон. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy1_1a5afff3a7083401d765ebea50150aa207">MoveSpeed</link></para>
+
+<para>Скорость передвижения. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_enemy1_1adb3d7539245925769a744a6b49512b1d">Start</link> ()</para>
+
+<para>Функция установки первоначального состояния. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy1_1a73eb8d44bc03710f0c8a4feedc204d06">Update</link> ()</para>
+
+<para>Функция покадрового обновления. Поиск цели и движение к ней, в случае достижения ее начало атаки. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy1_1ae8dadb0210f4fe0b48cfd52ac1fe7c82">OnTriggerEnter2D</link> (Collider2D collision)</para>
+
+<para>Функция проверки захода в коллайдер моба &quot;Рыцарь&quot; некоторого объекта. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy1_1a02ad5e3dc1310f4093c13da2522494ab">OnTriggerStay2D</link> (Collider2D collision)</para>
+
+<para>Функция проверки нахождения в тригерзоне моба. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy1_1a34a56c7d33f62a4c141f670dca3d24ba">OnTriggerExit2D</link> (Collider2D collision)</para>
+
+<para>Функция проверки на выход с коллайдера моба. </para>
+</listitem>
+            <listitem><para>IEnumerator <link linkend="_class_enemy1_1a94375d97ea7120f9cbb8b353c1466316">wait</link> ()</para>
+
+<para>Корутина, реализующая простой. </para>
+</listitem>
+            <listitem><para>IEnumerator <link linkend="_class_enemy1_1a21bf3a059cd99484b246807391d860cf">waitAttack</link> ()</para>
+
+<para>Корутина ожидания смерти. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_player_control">PlayerControl</link> <link linkend="_class_enemy1_1a1c4fcdb2512201d3c3176fe7acad34c3">Player</link></para>
+
+<para>Переменная класса управления персонажем. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_enemy1_1adda6926c2c026509468e4f7ef708c9a4">target</link></para>
+
+<para>Координаты цели. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy1_1af8b0592d06b2b772afe5add9ec3dc60c">fx</link></para>
+
+<para>Координата Х. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy1_1a0c546bddc56560cad2297f88ea4cf26d">fy</link></para>
+
+<para>Координата У. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy1_1ad101ef32738a3b1e2bc841faea112a3e">fz</link></para>
+
+<para>Координата Z. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy1_1acffaedb26c096d65004564de2d27048b">dtime</link></para>
+
+<para>Промежуток времени для атаки. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_enemy1_1ab4e27e6b76f2c6074b911f4dbeeb1982">attack</link> = false</para>
+
+<para>Необходимость анимации атаки. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_enemy1_1ac699ccd8813024f67c64f82995de2f43">stay</link> = false</para>
+
+<para>Необходимость анимации состояния покоя. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy1_1aaf2144d952cab6f5b70638d940d0a0b7">moveSorig</link></para>
+
+<para>Скорость передвижения первоначальная. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_enemy1_1a0f2fcdd96cc81ac325280310bf1b5dd7">dies</link> = false</para>
+
+<para>Проверка на смерть объекта. </para>
+</listitem>
+            <listitem><para>Animator <link linkend="_class_enemy1_1a4eaca81ea59e071c7d92b9b810759652">_anim</link></para>
+
+<para>Аниматор моба &quot;Рыцарь&quot;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс моба &quot;Рыцарь&quot;. </para>
+
+
+
+<para>В данном классе описано поведения моба &quot;Рыцарь&quot;, его атака, движение, анимации и поиск игрока.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_enemy1_1a16e27144bbb45fa144b018dd8593be75"/>    <section>
+    <title>Dies()</title>
+<indexterm><primary>Dies</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>Dies</secondary></indexterm>
+<para><computeroutput>void Enemy1.Dies ( )</computeroutput></para><para>
+
+<para>Функция смерти. Уничтожение объекта и выпадание жизней с некоторым шансом. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1a40aa75cab75cfa66b874ed172f5ed3d3"/>    <section>
+    <title>Flip()</title>
+<indexterm><primary>Flip</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>Flip</secondary></indexterm>
+<para><computeroutput>void Enemy1.Flip ( )</computeroutput></para><para>
+
+<para>Функция отражения по вертикали в зависимости от позиции игрока. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1ae8dadb0210f4fe0b48cfd52ac1fe7c82"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void Enemy1.OnTriggerEnter2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция проверки захода в коллайдер моба &quot;Рыцарь&quot; некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_enemy1_1a34a56c7d33f62a4c141f670dca3d24ba"/>    <section>
+    <title>OnTriggerExit2D()</title>
+<indexterm><primary>OnTriggerExit2D</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>OnTriggerExit2D</secondary></indexterm>
+<para><computeroutput>void Enemy1.OnTriggerExit2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция проверки на выход с коллайдера моба. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_enemy1_1a02ad5e3dc1310f4093c13da2522494ab"/>    <section>
+    <title>OnTriggerStay2D()</title>
+<indexterm><primary>OnTriggerStay2D</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>OnTriggerStay2D</secondary></indexterm>
+<para><computeroutput>void Enemy1.OnTriggerStay2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция проверки нахождения в тригерзоне моба. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_enemy1_1adb3d7539245925769a744a6b49512b1d"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void Enemy1.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция установки первоначального состояния. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1a73eb8d44bc03710f0c8a4feedc204d06"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void Enemy1.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления. Поиск цели и движение к ней, в случае достижения ее начало атаки. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1a94375d97ea7120f9cbb8b353c1466316"/>    <section>
+    <title>wait()</title>
+<indexterm><primary>wait</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>wait</secondary></indexterm>
+<para><computeroutput>IEnumerator Enemy1.wait ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Корутина, реализующая простой. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1a21bf3a059cd99484b246807391d860cf"/>    <section>
+    <title>waitAttack()</title>
+<indexterm><primary>waitAttack</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>waitAttack</secondary></indexterm>
+<para><computeroutput>IEnumerator Enemy1.waitAttack ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Корутина ожидания смерти. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_enemy1_1a4eaca81ea59e071c7d92b9b810759652"/>    <section>
+    <title>_anim</title>
+<indexterm><primary>_anim</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>_anim</secondary></indexterm>
+<para><computeroutput>Animator Enemy1._anim<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Аниматор моба &quot;Рыцарь&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1ab4e27e6b76f2c6074b911f4dbeeb1982"/>    <section>
+    <title>attack</title>
+<indexterm><primary>attack</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>attack</secondary></indexterm>
+<para><computeroutput>bool Enemy1.attack = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Необходимость анимации атаки. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1ae5a6100c64bfaa8dd3e236beb253313d"/>    <section>
+    <title>damage</title>
+<indexterm><primary>damage</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>damage</secondary></indexterm>
+<para><computeroutput>int Enemy1.damage = 3</computeroutput></para><para>
+
+<para>Наносимый урон. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1a0f2fcdd96cc81ac325280310bf1b5dd7"/>    <section>
+    <title>dies</title>
+<indexterm><primary>dies</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>dies</secondary></indexterm>
+<para><computeroutput>bool Enemy1.dies = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на смерть объекта. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1acffaedb26c096d65004564de2d27048b"/>    <section>
+    <title>dtime</title>
+<indexterm><primary>dtime</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>dtime</secondary></indexterm>
+<para><computeroutput>float Enemy1.dtime<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Промежуток времени для атаки. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1af8b0592d06b2b772afe5add9ec3dc60c"/>    <section>
+    <title>fx</title>
+<indexterm><primary>fx</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>fx</secondary></indexterm>
+<para><computeroutput>float Enemy1.fx<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата Х. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1a0c546bddc56560cad2297f88ea4cf26d"/>    <section>
+    <title>fy</title>
+<indexterm><primary>fy</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>fy</secondary></indexterm>
+<para><computeroutput>float Enemy1.fy<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата У. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1ad101ef32738a3b1e2bc841faea112a3e"/>    <section>
+    <title>fz</title>
+<indexterm><primary>fz</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>fz</secondary></indexterm>
+<para><computeroutput>float Enemy1.fz<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата Z. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1abc942833e971927b89e22a088b9b400b"/>    <section>
+    <title>hill</title>
+<indexterm><primary>hill</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>hill</secondary></indexterm>
+<para><computeroutput>GameObject Enemy1.hill</computeroutput></para><para>
+
+<para>Объект здоровье. Может с некоторым шансом выпасть после смерти моба. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1aaf2144d952cab6f5b70638d940d0a0b7"/>    <section>
+    <title>moveSorig</title>
+<indexterm><primary>moveSorig</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>moveSorig</secondary></indexterm>
+<para><computeroutput>float Enemy1.moveSorig<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Скорость передвижения первоначальная. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1a5afff3a7083401d765ebea50150aa207"/>    <section>
+    <title>MoveSpeed</title>
+<indexterm><primary>MoveSpeed</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>MoveSpeed</secondary></indexterm>
+<para><computeroutput>float Enemy1.MoveSpeed</computeroutput></para><para>
+
+<para>Скорость передвижения. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1a1c4fcdb2512201d3c3176fe7acad34c3"/>    <section>
+    <title>Player</title>
+<indexterm><primary>Player</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_player_control">PlayerControl</link> Enemy1.Player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная класса управления персонажем. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1a2f48eed1efb5f2cd922b373ed7eb9120"/>    <section>
+    <title>radius</title>
+<indexterm><primary>radius</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>radius</secondary></indexterm>
+<para><computeroutput>float Enemy1.radius</computeroutput></para><para>
+
+<para>Радиус поиска цели. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1ac699ccd8813024f67c64f82995de2f43"/>    <section>
+    <title>stay</title>
+<indexterm><primary>stay</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>stay</secondary></indexterm>
+<para><computeroutput>bool Enemy1.stay = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Необходимость анимации состояния покоя. </para>
+</para>
+    </section><anchor xml:id="_class_enemy1_1adda6926c2c026509468e4f7ef708c9a4"/>    <section>
+    <title>target</title>
+<indexterm><primary>target</primary><secondary>Enemy1</secondary></indexterm>
+<indexterm><primary>Enemy1</primary><secondary>target</secondary></indexterm>
+<para><computeroutput>Transform Enemy1.target<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координаты цели. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/<link linkend="__enemy1_8cs">Enemy1.cs</link></section>
+</section>

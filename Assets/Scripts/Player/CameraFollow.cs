@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// Класс камеры.
+/// <remarks>Устанавливает плавное движение камеры за объектом.</remarks>
+/// </summary>
 public class CameraFollow : MonoBehaviour {
 
 	// Use this for initialization
@@ -9,13 +12,25 @@ public class CameraFollow : MonoBehaviour {
     //public float smoothTimeX;
     //public GameObject player;
     // Use this for initialization
+    /// <summary>
+    /// Координаты некоторой цели.
+    /// </summary>
     public Transform target;
+    /// <summary>
+    /// Плавность движения.
+    /// </summary>
     public float smothing;
+    /// <summary>
+    /// Координаты смещения.
+    /// </summary>
     private Vector3 offset;
 
     //public bool bounds;
     //public Vector3 minCamerapos;
     //public Vector3 maxCamerapos;
+    /// <summary>
+    /// Функция инициализации смещения.
+    /// </summary>
     void Start()
     {
         offset = transform.position - target.position;
@@ -24,6 +39,9 @@ public class CameraFollow : MonoBehaviour {
     }
 
     // Update is called once per frame
+    /// <summary>
+    /// Обновления каждый фрейм. Плавное следование за целью.
+    /// </summary>
     void Update()
     {
         if (GameObject.Find("Player 1") != null)

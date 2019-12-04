@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_coin">
+<title>Coin Class Reference</title>
+<indexterm><primary>Coin</primary></indexterm>
+<para>
+
+<para>Класс монеты. </para>
+ 
+</para>
+<para>Inheritance diagram for Coin:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_coin.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_coin_1a2b8eb271460dadfa9b2afec35a812a70">Start</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_coin_1a1964d7ad9c017916fca129cb6dab8318">Update</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс монеты. </para>
+
+
+
+<para>Данный класс нужен для обозначения объекта &quot;монета&quot;, но не выполняет ничего большего.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_coin_1a2b8eb271460dadfa9b2afec35a812a70"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>Coin</secondary></indexterm>
+<indexterm><primary>Coin</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void Coin.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_coin_1a1964d7ad9c017916fca129cb6dab8318"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>Coin</secondary></indexterm>
+<indexterm><primary>Coin</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void Coin.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__coin_8cs">Coin.cs</link></section>
+</section>

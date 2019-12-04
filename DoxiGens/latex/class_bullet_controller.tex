@@ -1,0 +1,190 @@
+\hypertarget{class_bullet_controller}{}\doxysection{Bullet\+Controller Class Reference}
+\label{class_bullet_controller}\index{BulletController@{BulletController}}
+
+
+Класс пули.  
+
+
+Inheritance diagram for Bullet\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bullet_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bullet_controller_af49391a8df3ae6a043049883ec1a5ec3}{flip}} ()
+\begin{DoxyCompactList}\small\item\em Функция отражения по вертикали, в зависимости от направления выстрела. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_bullet_controller_a346a30c03fb8a585727600de5e51d1e1}{speedx}}
+\begin{DoxyCompactList}\small\item\em Скорость по координате X. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bullet_controller_a27fbfe3683c791f50f9d7847a6ad4d25}{speedy}}
+\begin{DoxyCompactList}\small\item\em Скорость по координате Y. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bullet_controller_a6232fa2a9b72c23036c8bf0ff1db6f77}{damage}} =10
+\begin{DoxyCompactList}\small\item\em Урон выстрела. \end{DoxyCompactList}\item 
+Audio\+Source \mbox{\hyperlink{class_bullet_controller_aae4ce01807f730f55e9792a3df3e3965}{Hit\+Sound}}
+\begin{DoxyCompactList}\small\item\em Звук попадания в препятствие. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bullet_controller_ac6875ec4b1137753dc1e44cba00faec7}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция инициализации объекта \char`\"{}Пуля\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_controller_ac796fca5f5c7655ce09a43a6891d89a1}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Обновление каждый фрейм. Движения пули. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_controller_adf9caae04663ec1a70d4e5a543b95b50}{On\+Trigger\+Enter2D}} (Collider2D other)
+\begin{DoxyCompactList}\small\item\em Проверка на то, куда попала пуля. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_control}{Player\+Control}} \mbox{\hyperlink{class_bullet_controller_aa677ca1263b52bf14ce49c170cdf80e4}{player}}
+\begin{DoxyCompactList}\small\item\em Объект игрок. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bullet_controller_a617c61322808009f80f7434996f64797}{fx}}
+\begin{DoxyCompactList}\small\item\em Координата по X. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bullet_controller_a191911515b749c5ba0312a9a47dc6ceb}{fy}}
+\begin{DoxyCompactList}\small\item\em Координата по Y. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bullet_controller_a87a85f05ea606d7ff4dcef4d8e8fadfc}{fz}}
+\begin{DoxyCompactList}\small\item\em Координата по Z. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс пули. 
+
+Отвечает за направление и скорость движения пули, а так же проверяет на попадание.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bullet_controller_af49391a8df3ae6a043049883ec1a5ec3}\label{class_bullet_controller_af49391a8df3ae6a043049883ec1a5ec3}} 
+\index{BulletController@{BulletController}!flip@{flip}}
+\index{flip@{flip}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{flip()}{flip()}}
+{\footnotesize\ttfamily void Bullet\+Controller.\+flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция отражения по вертикали, в зависимости от направления выстрела. 
+
+\mbox{\Hypertarget{class_bullet_controller_adf9caae04663ec1a70d4e5a543b95b50}\label{class_bullet_controller_adf9caae04663ec1a70d4e5a543b95b50}} 
+\index{BulletController@{BulletController}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily void Bullet\+Controller.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на то, куда попала пуля. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bullet_controller_ac6875ec4b1137753dc1e44cba00faec7}\label{class_bullet_controller_ac6875ec4b1137753dc1e44cba00faec7}} 
+\index{BulletController@{BulletController}!Start@{Start}}
+\index{Start@{Start}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Bullet\+Controller.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция инициализации объекта \char`\"{}Пуля\char`\"{}. 
+
+\mbox{\Hypertarget{class_bullet_controller_ac796fca5f5c7655ce09a43a6891d89a1}\label{class_bullet_controller_ac796fca5f5c7655ce09a43a6891d89a1}} 
+\index{BulletController@{BulletController}!Update@{Update}}
+\index{Update@{Update}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Bullet\+Controller.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обновление каждый фрейм. Движения пули. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_bullet_controller_a6232fa2a9b72c23036c8bf0ff1db6f77}\label{class_bullet_controller_a6232fa2a9b72c23036c8bf0ff1db6f77}} 
+\index{BulletController@{BulletController}!damage@{damage}}
+\index{damage@{damage}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily float Bullet\+Controller.\+damage =10}
+
+
+
+Урон выстрела. 
+
+\mbox{\Hypertarget{class_bullet_controller_a617c61322808009f80f7434996f64797}\label{class_bullet_controller_a617c61322808009f80f7434996f64797}} 
+\index{BulletController@{BulletController}!fx@{fx}}
+\index{fx@{fx}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{fx}{fx}}
+{\footnotesize\ttfamily float Bullet\+Controller.\+fx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата по X. 
+
+\mbox{\Hypertarget{class_bullet_controller_a191911515b749c5ba0312a9a47dc6ceb}\label{class_bullet_controller_a191911515b749c5ba0312a9a47dc6ceb}} 
+\index{BulletController@{BulletController}!fy@{fy}}
+\index{fy@{fy}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{fy}{fy}}
+{\footnotesize\ttfamily float Bullet\+Controller.\+fy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата по Y. 
+
+\mbox{\Hypertarget{class_bullet_controller_a87a85f05ea606d7ff4dcef4d8e8fadfc}\label{class_bullet_controller_a87a85f05ea606d7ff4dcef4d8e8fadfc}} 
+\index{BulletController@{BulletController}!fz@{fz}}
+\index{fz@{fz}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{fz}{fz}}
+{\footnotesize\ttfamily float Bullet\+Controller.\+fz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата по Z. 
+
+\mbox{\Hypertarget{class_bullet_controller_aae4ce01807f730f55e9792a3df3e3965}\label{class_bullet_controller_aae4ce01807f730f55e9792a3df3e3965}} 
+\index{BulletController@{BulletController}!HitSound@{HitSound}}
+\index{HitSound@{HitSound}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{HitSound}{HitSound}}
+{\footnotesize\ttfamily Audio\+Source Bullet\+Controller.\+Hit\+Sound}
+
+
+
+Звук попадания в препятствие. 
+
+\mbox{\Hypertarget{class_bullet_controller_aa677ca1263b52bf14ce49c170cdf80e4}\label{class_bullet_controller_aa677ca1263b52bf14ce49c170cdf80e4}} 
+\index{BulletController@{BulletController}!player@{player}}
+\index{player@{player}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_control}{Player\+Control}} Bullet\+Controller.\+player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объект игрок. 
+
+\mbox{\Hypertarget{class_bullet_controller_a346a30c03fb8a585727600de5e51d1e1}\label{class_bullet_controller_a346a30c03fb8a585727600de5e51d1e1}} 
+\index{BulletController@{BulletController}!speedx@{speedx}}
+\index{speedx@{speedx}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{speedx}{speedx}}
+{\footnotesize\ttfamily float Bullet\+Controller.\+speedx}
+
+
+
+Скорость по координате X. 
+
+\mbox{\Hypertarget{class_bullet_controller_a27fbfe3683c791f50f9d7847a6ad4d25}\label{class_bullet_controller_a27fbfe3683c791f50f9d7847a6ad4d25}} 
+\index{BulletController@{BulletController}!speedy@{speedy}}
+\index{speedy@{speedy}!BulletController@{BulletController}}
+\doxysubsubsection{\texorpdfstring{speedy}{speedy}}
+{\footnotesize\ttfamily float Bullet\+Controller.\+speedy}
+
+
+
+Скорость по координате Y. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Player/Bullet\+Controller.\+cs\end{DoxyCompactItemize}

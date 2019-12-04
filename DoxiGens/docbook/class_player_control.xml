@@ -1,0 +1,617 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_player_control">
+<title>PlayerControl Class Reference</title>
+<indexterm><primary>PlayerControl</primary></indexterm>
+<para>
+
+<para>Класс управления персонажем. </para>
+ 
+</para>
+<para>Inheritance diagram for PlayerControl:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_control.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_player_control_1aa43141a0256740c84e7485732dec3357">Shoot</link> ()</para>
+
+<para>Функция стрельбы. Генерирует пулю. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_player_control_1a8e9424a47b392f020f59ff034a835f61">moveSpeed</link></para>
+
+<para>Переменная, отвечающая за скорость движения. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_control_1a63f62b26c6112e4e53ba49faec37dd63">canDoubleJump</link></para>
+
+<para>Проверка на возможность совершить прыжок. </para>
+</listitem>
+            <listitem><para>KeyCode <link linkend="_class_player_control_1afbfa2c85dc284123f007775b3dbddfde">R</link></para>
+
+<para>Клавиша &quot;Движения вправо&quot;. </para>
+</listitem>
+            <listitem><para>KeyCode <link linkend="_class_player_control_1a7e2da9c044870b82c92d32318c8575f5">L</link></para>
+
+<para>Клавиша &quot;Движения влево&quot;. </para>
+</listitem>
+            <listitem><para>KeyCode <link linkend="_class_player_control_1a04c1e64eaa080de63547679e0f4e62a6">spacebar</link></para>
+
+<para>Клавиша &quot;Прыжок&quot;. </para>
+</listitem>
+            <listitem><para>KeyCode <link linkend="_class_player_control_1a8bf91be68cd46aa1fe942a1d326da057">Return</link></para>
+
+<para>Клавиша &quot;Выстрел&quot;. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_player_control_1a30ed1196cba67a56b3548b579da13449">jumpheight</link></para>
+
+<para>Высота прыжка. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_control_1a7342f9948fc1532ab8348d29c1ef0d25">isFacingRight</link></para>
+
+<para>Направление взгляда персонажа. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_player_control_1aaa51a2ac5b637a6186cff15f6fcce049">groundCheck</link></para>
+
+<para>Координаты точки для проверки нахождения на земле. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_player_control_1a4240a37c8e0946c86eccd2b91e175776">groundCheckRadius</link></para>
+
+<para>Радиус для проверки нахождения на земле. </para>
+</listitem>
+            <listitem><para>LayerMask <link linkend="_class_player_control_1a106c533f1521289d8cb000fca2e5e29e">whatIsGround</link></para>
+
+<para>Слой, отвечающий за то, чем является земля. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_control_1a1fdd3b11bad2c2301614bd7e738b715d">collectedCoins</link> = 0</para>
+
+<para>Количество собранных монет </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_player_control_1abadce3f0f49ccebce236889bd8b7f916">KnockBackDist</link></para>
+
+<para>Расстояние отбрасывания. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_player_control_1a171179c16ed567795c50ec065cb7e26d">KnockBackCount</link></para>
+
+<para>Количество отбрасываний. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_control_1a43dfc75a2aad9a52290cc2afdea68b58">KnockFromRight</link></para>
+
+<para>Направление, от куда совершается отбрасывание. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_player_control_1a884cf63868cb776caf2dd4dc68ac5d80">firePoint</link></para>
+
+<para>Координаты точки, от куда будет выполняться выстрел. </para>
+</listitem>
+            <listitem><para>GameObject <link linkend="_class_player_control_1a7dbb95a1de979f33cffa33d5b9813738">Bullet</link></para>
+
+<para>Объект &quot;Пуля&quot;. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_player_control_1a58a5cfcdce6c2fe0695b3a5c6a19165f">nextFire</link> = -1.0f</para>
+
+<para>Время следующего выстрела. </para>
+</listitem>
+            <listitem><para>AudioSource <link linkend="_class_player_control_1a0876ceb59b672632f063a09c5d73c00b">ShootSound</link></para>
+
+<para>Звук выстрела. </para>
+</listitem>
+            <listitem><para>AudioSource <link linkend="_class_player_control_1a3909a33a02afb52f047a29c80a6d7852">JumpSound</link></para>
+
+<para>Звук прыжка. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_player_control_1aada0aa26ced08a253dfb12f7f1b8bd06">Start</link> ()</para>
+
+<para>Функция, вызывающаяся при инициализации объекта на сцене. Придает первоначальное состояние. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_control_1aa030b14f9c0fe12153375f5f2bbe5b60">Update</link> ()</para>
+
+<para>Функция обновления каждый фрейм. В ней определены проверки на перемещение игрока и прыжок, а так же стрельба. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_control_1a6a3379820dc83c3643a6d0c804fc9360">flip</link> ()</para>
+
+<para>Функция инвертирования. Трансформирует направление пресонажа в зависимости от направления перемещения. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_control_1a1061cf9f09ea7c2e3f1502a641500b9a">FixedUpdate</link> ()</para>
+
+<para>Обновление каждый фрейм для физичиеских объектов. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_control_1ab9af114c4eb6f67d37cf8902163119fe">OnTriggerEnter2D</link> (Collider2D other)</para>
+
+<para>Заход в тригер зону персонажа. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_control_1aab2939f87a244e116143453413bd73b8">OnCollisionStay2D</link> (Collision2D collision)</para>
+
+<para>Нахождение в некотором коллайдере. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_control_1aa88e16243633144bed2dd5114a300ce8">OnCollisionEnter2D</link> (Collision2D collision)</para>
+
+<para>Заход на некоторый коллайдер. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_control_1aa7439d13a002395fafaf51c36efc02ae">OnCollisionExit2D</link> (Collision2D collision)</para>
+
+<para>Выход с некоторого колайдера. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_player_control_1a09132d3f2a15498600dd5ab70c10a8f5">pixelSize</link> = 0.02f</para>
+
+<para>Размер пикселя. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_control_1aef77212319e42801db16d420c473b900">grounded</link></para>
+
+<para>Переменная для проверки находится ли персонаж на земле или нет. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_player_control_1a71ad1c08cee36fdc9d61caab6796dedf">fx</link></para>
+
+<para>Кордината X персонажа. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_player_control_1a978d46c169daedeb65fdd9b6cba554bb">fy</link></para>
+
+<para>Кордината Y персонажа. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_player_control_1adecc3bf13780e9a0f504e976a07a4141">fz</link></para>
+
+<para>Кордината Z персонажа. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_player_control_1a923671fe4b6435969adac1ca79cdb4a2">moveVelocity</link></para>
+
+<para>Настоящая скорость движения персонажа. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_player_control_1aee272bc842860f25bd38a18f0ce321bc">nextStep</link> = -1.0f</para>
+
+<para>Время следующео шага. </para>
+</listitem>
+            <listitem><para><link linkend="_class_plater_stats">PlaterStats</link> <link linkend="_class_player_control_1ad3317e2642a65c38470b1b7e2b507a09">Player</link></para>
+
+<para>Переменная класса статистики персонажа. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_control_1ab89458fdd368b532f33690a9d1a5846e">CanMoveRight</link></para>
+
+<para>Проверка на возможность движения вправо. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_control_1ad75d2b13bdad8c2860215713b2d615cf">CanMoveLeft</link></para>
+
+<para>Проверка на возможность движения влево. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс управления персонажем. </para>
+
+
+
+<para>Данный класс реализует управление персонажем в игре, проверяет на возможность совершения прыжка и движения в разных направлениях, а также реализует выстрел пулей. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_player_control_1a1061cf9f09ea7c2e3f1502a641500b9a"/>    <section>
+    <title>FixedUpdate()</title>
+<indexterm><primary>FixedUpdate</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>FixedUpdate</secondary></indexterm>
+<para><computeroutput>void PlayerControl.FixedUpdate ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Обновление каждый фрейм для физичиеских объектов. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a6a3379820dc83c3643a6d0c804fc9360"/>    <section>
+    <title>flip()</title>
+<indexterm><primary>flip</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>flip</secondary></indexterm>
+<para><computeroutput>void PlayerControl.flip ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция инвертирования. Трансформирует направление пресонажа в зависимости от направления перемещения. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1aa88e16243633144bed2dd5114a300ce8"/>    <section>
+    <title>OnCollisionEnter2D()</title>
+<indexterm><primary>OnCollisionEnter2D</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>OnCollisionEnter2D</secondary></indexterm>
+<para><computeroutput>void PlayerControl.OnCollisionEnter2D (Collision2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Заход на некоторый коллайдер. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер другого объетка.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_player_control_1aa7439d13a002395fafaf51c36efc02ae"/>    <section>
+    <title>OnCollisionExit2D()</title>
+<indexterm><primary>OnCollisionExit2D</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>OnCollisionExit2D</secondary></indexterm>
+<para><computeroutput>void PlayerControl.OnCollisionExit2D (Collision2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Выход с некоторого колайдера. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер другого объетка.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_player_control_1aab2939f87a244e116143453413bd73b8"/>    <section>
+    <title>OnCollisionStay2D()</title>
+<indexterm><primary>OnCollisionStay2D</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>OnCollisionStay2D</secondary></indexterm>
+<para><computeroutput>void PlayerControl.OnCollisionStay2D (Collision2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Нахождение в некотором коллайдере. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер другого объетка.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_player_control_1ab9af114c4eb6f67d37cf8902163119fe"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void PlayerControl.OnTriggerEnter2D (Collider2D other)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Заход в тригер зону персонажа. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>other</entry>
+                                <entry>
+<para>Коллайдер объекта, попавшего в тригерзону.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_player_control_1aa43141a0256740c84e7485732dec3357"/>    <section>
+    <title>Shoot()</title>
+<indexterm><primary>Shoot</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>Shoot</secondary></indexterm>
+<para><computeroutput>void PlayerControl.Shoot ( )</computeroutput></para><para>
+
+<para>Функция стрельбы. Генерирует пулю. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1aada0aa26ced08a253dfb12f7f1b8bd06"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void PlayerControl.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция, вызывающаяся при инициализации объекта на сцене. Придает первоначальное состояние. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1aa030b14f9c0fe12153375f5f2bbe5b60"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void PlayerControl.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция обновления каждый фрейм. В ней определены проверки на перемещение игрока и прыжок, а так же стрельба. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_player_control_1a7dbb95a1de979f33cffa33d5b9813738"/>    <section>
+    <title>Bullet</title>
+<indexterm><primary>Bullet</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>Bullet</secondary></indexterm>
+<para><computeroutput>GameObject PlayerControl.Bullet</computeroutput></para><para>
+
+<para>Объект &quot;Пуля&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a63f62b26c6112e4e53ba49faec37dd63"/>    <section>
+    <title>canDoubleJump</title>
+<indexterm><primary>canDoubleJump</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>canDoubleJump</secondary></indexterm>
+<para><computeroutput>bool PlayerControl.canDoubleJump</computeroutput></para><para>
+
+<para>Проверка на возможность совершить прыжок. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1ad75d2b13bdad8c2860215713b2d615cf"/>    <section>
+    <title>CanMoveLeft</title>
+<indexterm><primary>CanMoveLeft</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>CanMoveLeft</secondary></indexterm>
+<para><computeroutput>bool PlayerControl.CanMoveLeft<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на возможность движения влево. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1ab89458fdd368b532f33690a9d1a5846e"/>    <section>
+    <title>CanMoveRight</title>
+<indexterm><primary>CanMoveRight</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>CanMoveRight</secondary></indexterm>
+<para><computeroutput>bool PlayerControl.CanMoveRight<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на возможность движения вправо. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a1fdd3b11bad2c2301614bd7e738b715d"/>    <section>
+    <title>collectedCoins</title>
+<indexterm><primary>collectedCoins</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>collectedCoins</secondary></indexterm>
+<para><computeroutput>int PlayerControl.collectedCoins = 0</computeroutput></para><para>
+
+<para>Количество собранных монет </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a884cf63868cb776caf2dd4dc68ac5d80"/>    <section>
+    <title>firePoint</title>
+<indexterm><primary>firePoint</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>firePoint</secondary></indexterm>
+<para><computeroutput>Transform PlayerControl.firePoint</computeroutput></para><para>
+
+<para>Координаты точки, от куда будет выполняться выстрел. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a71ad1c08cee36fdc9d61caab6796dedf"/>    <section>
+    <title>fx</title>
+<indexterm><primary>fx</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>fx</secondary></indexterm>
+<para><computeroutput>float PlayerControl.fx<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Кордината X персонажа. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a978d46c169daedeb65fdd9b6cba554bb"/>    <section>
+    <title>fy</title>
+<indexterm><primary>fy</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>fy</secondary></indexterm>
+<para><computeroutput>float PlayerControl.fy<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Кордината Y персонажа. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1adecc3bf13780e9a0f504e976a07a4141"/>    <section>
+    <title>fz</title>
+<indexterm><primary>fz</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>fz</secondary></indexterm>
+<para><computeroutput>float PlayerControl.fz<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Кордината Z персонажа. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1aaa51a2ac5b637a6186cff15f6fcce049"/>    <section>
+    <title>groundCheck</title>
+<indexterm><primary>groundCheck</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>groundCheck</secondary></indexterm>
+<para><computeroutput>Transform PlayerControl.groundCheck</computeroutput></para><para>
+
+<para>Координаты точки для проверки нахождения на земле. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a4240a37c8e0946c86eccd2b91e175776"/>    <section>
+    <title>groundCheckRadius</title>
+<indexterm><primary>groundCheckRadius</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>groundCheckRadius</secondary></indexterm>
+<para><computeroutput>float PlayerControl.groundCheckRadius</computeroutput></para><para>
+
+<para>Радиус для проверки нахождения на земле. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1aef77212319e42801db16d420c473b900"/>    <section>
+    <title>grounded</title>
+<indexterm><primary>grounded</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>grounded</secondary></indexterm>
+<para><computeroutput>bool PlayerControl.grounded<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная для проверки находится ли персонаж на земле или нет. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a7342f9948fc1532ab8348d29c1ef0d25"/>    <section>
+    <title>isFacingRight</title>
+<indexterm><primary>isFacingRight</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>isFacingRight</secondary></indexterm>
+<para><computeroutput>bool PlayerControl.isFacingRight</computeroutput></para><para>
+
+<para>Направление взгляда персонажа. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a30ed1196cba67a56b3548b579da13449"/>    <section>
+    <title>jumpheight</title>
+<indexterm><primary>jumpheight</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>jumpheight</secondary></indexterm>
+<para><computeroutput>float PlayerControl.jumpheight</computeroutput></para><para>
+
+<para>Высота прыжка. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a3909a33a02afb52f047a29c80a6d7852"/>    <section>
+    <title>JumpSound</title>
+<indexterm><primary>JumpSound</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>JumpSound</secondary></indexterm>
+<para><computeroutput>AudioSource PlayerControl.JumpSound</computeroutput></para><para>
+
+<para>Звук прыжка. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a171179c16ed567795c50ec065cb7e26d"/>    <section>
+    <title>KnockBackCount</title>
+<indexterm><primary>KnockBackCount</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>KnockBackCount</secondary></indexterm>
+<para><computeroutput>float PlayerControl.KnockBackCount</computeroutput></para><para>
+
+<para>Количество отбрасываний. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1abadce3f0f49ccebce236889bd8b7f916"/>    <section>
+    <title>KnockBackDist</title>
+<indexterm><primary>KnockBackDist</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>KnockBackDist</secondary></indexterm>
+<para><computeroutput>float PlayerControl.KnockBackDist</computeroutput></para><para>
+
+<para>Расстояние отбрасывания. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a43dfc75a2aad9a52290cc2afdea68b58"/>    <section>
+    <title>KnockFromRight</title>
+<indexterm><primary>KnockFromRight</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>KnockFromRight</secondary></indexterm>
+<para><computeroutput>bool PlayerControl.KnockFromRight</computeroutput></para><para>
+
+<para>Направление, от куда совершается отбрасывание. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a7e2da9c044870b82c92d32318c8575f5"/>    <section>
+    <title>L</title>
+<indexterm><primary>L</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>L</secondary></indexterm>
+<para><computeroutput>KeyCode PlayerControl.L</computeroutput></para><para>
+
+<para>Клавиша &quot;Движения влево&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a8e9424a47b392f020f59ff034a835f61"/>    <section>
+    <title>moveSpeed</title>
+<indexterm><primary>moveSpeed</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>moveSpeed</secondary></indexterm>
+<para><computeroutput>float PlayerControl.moveSpeed</computeroutput></para><para>
+
+<para>Переменная, отвечающая за скорость движения. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a923671fe4b6435969adac1ca79cdb4a2"/>    <section>
+    <title>moveVelocity</title>
+<indexterm><primary>moveVelocity</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>moveVelocity</secondary></indexterm>
+<para><computeroutput>float PlayerControl.moveVelocity<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Настоящая скорость движения персонажа. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a58a5cfcdce6c2fe0695b3a5c6a19165f"/>    <section>
+    <title>nextFire</title>
+<indexterm><primary>nextFire</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>nextFire</secondary></indexterm>
+<para><computeroutput>double PlayerControl.nextFire = -1.0f</computeroutput></para><para>
+
+<para>Время следующего выстрела. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1aee272bc842860f25bd38a18f0ce321bc"/>    <section>
+    <title>nextStep</title>
+<indexterm><primary>nextStep</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>nextStep</secondary></indexterm>
+<para><computeroutput>double PlayerControl.nextStep = -1.0f<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Время следующео шага. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a09132d3f2a15498600dd5ab70c10a8f5"/>    <section>
+    <title>pixelSize</title>
+<indexterm><primary>pixelSize</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>pixelSize</secondary></indexterm>
+<para><computeroutput>float PlayerControl.pixelSize = 0.02f<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Размер пикселя. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1ad3317e2642a65c38470b1b7e2b507a09"/>    <section>
+    <title>Player</title>
+<indexterm><primary>Player</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_plater_stats">PlaterStats</link> PlayerControl.Player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная класса статистики персонажа. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1afbfa2c85dc284123f007775b3dbddfde"/>    <section>
+    <title>R</title>
+<indexterm><primary>R</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>R</secondary></indexterm>
+<para><computeroutput>KeyCode PlayerControl.R</computeroutput></para><para>
+
+<para>Клавиша &quot;Движения вправо&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a8bf91be68cd46aa1fe942a1d326da057"/>    <section>
+    <title>Return</title>
+<indexterm><primary>Return</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>Return</secondary></indexterm>
+<para><computeroutput>KeyCode PlayerControl.Return</computeroutput></para><para>
+
+<para>Клавиша &quot;Выстрел&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a0876ceb59b672632f063a09c5d73c00b"/>    <section>
+    <title>ShootSound</title>
+<indexterm><primary>ShootSound</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>ShootSound</secondary></indexterm>
+<para><computeroutput>AudioSource PlayerControl.ShootSound</computeroutput></para><para>
+
+<para>Звук выстрела. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a04c1e64eaa080de63547679e0f4e62a6"/>    <section>
+    <title>spacebar</title>
+<indexterm><primary>spacebar</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>spacebar</secondary></indexterm>
+<para><computeroutput>KeyCode PlayerControl.spacebar</computeroutput></para><para>
+
+<para>Клавиша &quot;Прыжок&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_player_control_1a106c533f1521289d8cb000fca2e5e29e"/>    <section>
+    <title>whatIsGround</title>
+<indexterm><primary>whatIsGround</primary><secondary>PlayerControl</secondary></indexterm>
+<indexterm><primary>PlayerControl</primary><secondary>whatIsGround</secondary></indexterm>
+<para><computeroutput>LayerMask PlayerControl.whatIsGround</computeroutput></para><para>
+
+<para>Слой, отвечающий за то, чем является земля. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Player/<link linkend="__player_control_8cs">PlayerControl.cs</link></section>
+</section>

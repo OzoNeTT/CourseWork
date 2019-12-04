@@ -1,0 +1,139 @@
+\hypertarget{class_boss_bullet_controller}{}\doxysection{Boss\+Bullet\+Controller Class Reference}
+\label{class_boss_bullet_controller}\index{BossBulletController@{BossBulletController}}
+
+
+Класс управления пулей босса.  
+
+
+Inheritance diagram for Boss\+Bullet\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boss_bullet_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_boss_bullet_controller_a9ebef34dcb5a2a0c55783a524d0aa89f}{Move\+Speed}} = 50
+\begin{DoxyCompactList}\small\item\em Скорость движения пули. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_boss_bullet_controller_a961a11da843882951ef7dec35d1f37ed}{damage}} = 5
+\begin{DoxyCompactList}\small\item\em Урон от пули. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_boss_bullet_controller_a5f04b6b74c0abf25653cd4e53627a01c}{oldplayerpos}}
+\begin{DoxyCompactList}\small\item\em Одноразовая позиция игрока. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_boss_bullet_controller_ac49a0d5fea582fa190bc88e7a2685f78}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция установки первоначальных значений. Определяет позицию игрока. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_bullet_controller_af98ac2c13db474773e6a09a328e0e4dc}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция покадрового обновления. Описывает движения пули в направлении игрока, а по достижению координат уничтожает объект \char`\"{}Пуля\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_bullet_controller_a4119517113443f4643b3dde206637e3c}{On\+Trigger\+Enter2D}} (Collider2D other)
+\begin{DoxyCompactList}\small\item\em Проверка на попадание в тригерзону пули некоторого объекта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_control}{Player\+Control}} \mbox{\hyperlink{class_boss_bullet_controller_adc6c4217cec1e89d99741a19a5585b9c}{Player}}
+\begin{DoxyCompactList}\small\item\em Переменная класса статистики игрока. \end{DoxyCompactList}\item 
+Rigidbody2D \mbox{\hyperlink{class_boss_bullet_controller_a534401643273fd53650fe18ddddda690}{rb}}
+\begin{DoxyCompactList}\small\item\em Физический Rigidbody2D для описания движения объекта \char`\"{}пуля\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс управления пулей босса. 
+
+Данный класс описывает движение пули, выпущенной атакой босса, ее наносимый урон и направление движения.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_boss_bullet_controller_a4119517113443f4643b3dde206637e3c}\label{class_boss_bullet_controller_a4119517113443f4643b3dde206637e3c}} 
+\index{BossBulletController@{BossBulletController}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!BossBulletController@{BossBulletController}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily void Boss\+Bullet\+Controller.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на попадание в тригерзону пули некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_boss_bullet_controller_ac49a0d5fea582fa190bc88e7a2685f78}\label{class_boss_bullet_controller_ac49a0d5fea582fa190bc88e7a2685f78}} 
+\index{BossBulletController@{BossBulletController}!Start@{Start}}
+\index{Start@{Start}!BossBulletController@{BossBulletController}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Boss\+Bullet\+Controller.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция установки первоначальных значений. Определяет позицию игрока. 
+
+\mbox{\Hypertarget{class_boss_bullet_controller_af98ac2c13db474773e6a09a328e0e4dc}\label{class_boss_bullet_controller_af98ac2c13db474773e6a09a328e0e4dc}} 
+\index{BossBulletController@{BossBulletController}!Update@{Update}}
+\index{Update@{Update}!BossBulletController@{BossBulletController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Boss\+Bullet\+Controller.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция покадрового обновления. Описывает движения пули в направлении игрока, а по достижению координат уничтожает объект \char`\"{}Пуля\char`\"{}. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_boss_bullet_controller_a961a11da843882951ef7dec35d1f37ed}\label{class_boss_bullet_controller_a961a11da843882951ef7dec35d1f37ed}} 
+\index{BossBulletController@{BossBulletController}!damage@{damage}}
+\index{damage@{damage}!BossBulletController@{BossBulletController}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily int Boss\+Bullet\+Controller.\+damage = 5}
+
+
+
+Урон от пули. 
+
+\mbox{\Hypertarget{class_boss_bullet_controller_a9ebef34dcb5a2a0c55783a524d0aa89f}\label{class_boss_bullet_controller_a9ebef34dcb5a2a0c55783a524d0aa89f}} 
+\index{BossBulletController@{BossBulletController}!MoveSpeed@{MoveSpeed}}
+\index{MoveSpeed@{MoveSpeed}!BossBulletController@{BossBulletController}}
+\doxysubsubsection{\texorpdfstring{MoveSpeed}{MoveSpeed}}
+{\footnotesize\ttfamily float Boss\+Bullet\+Controller.\+Move\+Speed = 50}
+
+
+
+Скорость движения пули. 
+
+\mbox{\Hypertarget{class_boss_bullet_controller_a5f04b6b74c0abf25653cd4e53627a01c}\label{class_boss_bullet_controller_a5f04b6b74c0abf25653cd4e53627a01c}} 
+\index{BossBulletController@{BossBulletController}!oldplayerpos@{oldplayerpos}}
+\index{oldplayerpos@{oldplayerpos}!BossBulletController@{BossBulletController}}
+\doxysubsubsection{\texorpdfstring{oldplayerpos}{oldplayerpos}}
+{\footnotesize\ttfamily Vector3 Boss\+Bullet\+Controller.\+oldplayerpos}
+
+
+
+Одноразовая позиция игрока. 
+
+\mbox{\Hypertarget{class_boss_bullet_controller_adc6c4217cec1e89d99741a19a5585b9c}\label{class_boss_bullet_controller_adc6c4217cec1e89d99741a19a5585b9c}} 
+\index{BossBulletController@{BossBulletController}!Player@{Player}}
+\index{Player@{Player}!BossBulletController@{BossBulletController}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_control}{Player\+Control}} Boss\+Bullet\+Controller.\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная класса статистики игрока. 
+
+\mbox{\Hypertarget{class_boss_bullet_controller_a534401643273fd53650fe18ddddda690}\label{class_boss_bullet_controller_a534401643273fd53650fe18ddddda690}} 
+\index{BossBulletController@{BossBulletController}!rb@{rb}}
+\index{rb@{rb}!BossBulletController@{BossBulletController}}
+\doxysubsubsection{\texorpdfstring{rb}{rb}}
+{\footnotesize\ttfamily Rigidbody2D Boss\+Bullet\+Controller.\+rb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Физический Rigidbody2D для описания движения объекта \char`\"{}пуля\char`\"{}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Enemy/Boss\+Bullet\+Controller.\+cs\end{DoxyCompactItemize}

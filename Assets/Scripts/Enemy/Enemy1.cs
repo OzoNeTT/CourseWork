@@ -3,42 +3,95 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
+/// <summary>
+/// Класс моба "Рыцарь".
+/// <remarks>В данном классе описано поведения моба "Рыцарь", его атака, движение, анимации и поиск игрока.</remarks>
+/// </summary>
 public class Enemy1 : MonoBehaviour
 {
-
-    // Use this for initialization
+    /// <summary>
+    /// Переменная класса управления персонажем.
+    /// </summary>
     private PlayerControl Player;
+    /// <summary>
+    /// Объект здоровье. Может с некоторым шансом выпасть после смерти моба.
+    /// </summary>
     public GameObject hill;
+    /// <summary>
+    /// Координаты цели.
+    /// </summary>
     private Transform target;
+    /// <summary>
+    /// Радиус поиска цели.
+    /// </summary>
     public float radius;
-    float rad2;
+    /// <summary>
+    /// Наносимый урон.
+    /// </summary>
     public int damage = 3;
-    bool attackanime;
+
+
+    /// <summary>
+    /// Скорость передвижения.
+    /// </summary>
     public float MoveSpeed;
-    float fx, fy, fz;
+    /// <summary>
+    /// Координата Х.
+    /// </summary>
+    float fx;
+    /// <summary>
+    /// Координата У.
+    /// </summary>
+    float fy;
+    /// <summary>
+    /// Координата Z.
+    /// </summary>
+    float fz;
+    /// <summary>
+    /// Промежуток времени для атаки.
+    /// </summary>
     float dtime;
+    /// <summary>
+    /// Необходимость анимации атаки.
+    /// </summary>
     bool attack = false;
+    /// <summary>
+    /// Необходимость анимации состояния покоя.
+    /// </summary>
     bool stay = false;
+    /// <summary>
+    /// Скорость передвижения первоначальная.
+    /// </summary>
     float moveSorig;
+    /// <summary>
+    /// Проверка на смерть объекта.
+    /// </summary>
     bool dies = false;
+    /// <summary>
+    /// Аниматор моба "Рыцарь".
+    /// </summary>
     Animator _anim;
+    /// <summary>
+    /// Функция установки первоначального состояния.
+    /// </summary>
     void Start()
     {
         _anim = GetComponent<Animator>();
         Player = FindObjectOfType<PlayerControl>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         dtime = Time.time;
-        rad2 = 8;
         fx = transform.localScale.x;
         fy = transform.localScale.y;
         fz = transform.localScale.z;
         _anim.SetBool("attack", false);
         _anim.SetBool("walking", false);
-        //GetComponent<Animator>().Play("Enemy1_idle");
         moveSorig = MoveSpeed;
         
 
     }
+    /// <summary>
+    /// Функция смерти. Уничтожение объекта и выпадание жизней с некоторым шансом.
+    /// </summary>
     public void Dies()
     {
         dies = true;
@@ -51,7 +104,9 @@ public class Enemy1 : MonoBehaviour
         }
 
     }
-    // Update is called once per frame
+    /// <summary>
+    /// Функция покадрового обновления. Поиск цели и движение к ней, в случае достижения ее начало атаки.
+    /// </summary>
     void Update()
     {
         
@@ -60,39 +115,33 @@ public class Enemy1 : MonoBehaviour
             SoundManager.sndMan.PlaySword();
             _anim.SetBool("attack", true);
             attack = false;
-            //_anim.SetBool("walking", false);
-
-            //GetComponent<Animator>().Play("Enemy1_Attack");
-            //attack = false;
         }
         if (stay && !dies)
         {
             _anim.SetBool("walking", false);
             stay = false;
-            //_anim.SetBool("attack", false);
-
-            //GetComponent<Animator>().Play("Enemy1_idle");
         }
-        
 
-        if (Vector2.Distance(transform.position, target.position) > radius)
+        if (this.gameObject != null)
         {
-            //GetComponent<Animator>().Play("Enemy1_idle");
-            _anim.SetBool("walking", false);
-        }
-        if (Vector2.Distance(transform.position, target.position) < radius && MoveSpeed != 0 && !stay && !dies)
-        {
+            if (Vector2.Distance(transform.position, target.position) > radius)
+            {
+                _anim.SetBool("walking", false);
+            }
+            if (Vector2.Distance(transform.position, target.position) < radius && MoveSpeed != 0 && !stay && !dies)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, target.position, MoveSpeed * Time.deltaTime);
 
-            //transform.position = new Vector3(Vector3.MoveTowards(transform.position, Player.transform.position, MoveSpeed * Time.deltaTime).x, transform.position.y);
-            transform.position = Vector2.MoveTowards(transform.position, target.position, MoveSpeed * Time.deltaTime);
-            
-            _anim.SetBool("attack", false);
-            _anim.SetBool("walking", true);
-            //GetComponent<Animator>().Play("Enemy1_walk");
-            Flip();
+                _anim.SetBool("attack", false);
+                _anim.SetBool("walking", true);
+                Flip();
+            }
         }
-
     }
+    /// <summary>
+    /// Функция проверки захода в коллайдер моба "Рыцарь" некоторого объекта.
+    /// </summary>
+    /// <param name="collision">Коллайдер некоторого объекта.</param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -100,25 +149,24 @@ public class Enemy1 : MonoBehaviour
         {
             MoveSpeed = 0f;
             stay = true;
-            //GetComponent<Animator>().Play("Enemy1_Attack");
+
             if (Time.time >= dtime && !dies)
             {
-                //GetComponent<Animator>().Play("Enemy1_Attack");
+
                 attack = true;
                 dtime = Time.time + 1f;
                 
                 FindObjectOfType<PlaterStats>().TakeDamage(damage);
                 collision.GetComponent<AudioSource>().Play();
-                //Player.KnockBackCount = 0.2f;
-                //if (collision.transform.position.x < transform.position.x)
-                //    Player.KnockFromRight = true;
-                //else
-                //    Player.KnockFromRight = false;
             }
         }
 
 
     }
+    /// <summary>
+    /// Функция проверки нахождения в тригерзоне моба.
+    /// </summary>
+    /// <param name="collision">Коллайдер некоторого объекта.</param>
     private void OnTriggerStay2D(Collider2D collision)
     {
 
@@ -126,22 +174,13 @@ public class Enemy1 : MonoBehaviour
         {
             MoveSpeed = 0f;
             stay = true;
-            //GetComponent<Animator>().Play("Enemy1_Attack");
             if (Time.time >= dtime && !dies)
             {
-               
-                //GetComponent<Animator>().Play("Enemy1_Attack");
-                //attack = true;
                 attack = true;
                 dtime = Time.time + 1f;
 
                 FindObjectOfType<PlaterStats>().TakeDamage(damage);
                 collision.GetComponent<AudioSource>().Play();
-                //Player.KnockBackCount = 0.2f;
-                //if (collision.transform.position.x < transform.position.x)
-                //    Player.KnockFromRight = true;
-                //else
-                //    Player.KnockFromRight = false;
             }
         }
         if(collision.tag == "Borders")
@@ -161,6 +200,10 @@ public class Enemy1 : MonoBehaviour
         }
         
     }
+    /// <summary>
+    /// Функция проверки на выход с коллайдера моба.
+    /// </summary>
+    /// <param name="collision">Коллайдер некоторого объекта.</param>
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -171,13 +214,15 @@ public class Enemy1 : MonoBehaviour
                 _anim.SetBool("walking", false);
                 stay = false;
                 attack = false;
-                //GetComponent<Animator>().Play("Enemy1_Attack");
             }
             StartCoroutine("wait");
     
         }
       
     }
+    /// <summary>
+    /// Функция отражения по вертикали в зависимости от позиции игрока.
+    /// </summary>
     public void Flip()
     {
 
@@ -186,12 +231,17 @@ public class Enemy1 : MonoBehaviour
         else if (Player.transform.position.x > transform.position.x)
             transform.localScale = new Vector3(fx, fy, fz);
     }
+    /// <summary>
+    /// Корутина, реализующая простой.
+    /// </summary>
     private IEnumerator wait()
     {
         MoveSpeed = moveSorig;
         yield return new WaitForSeconds(1f);
-        
     }
+    /// <summary>
+    /// Корутина ожидания смерти.
+    /// </summary>
     private IEnumerator waitAttack()
     {
         MoveSpeed = 0f;

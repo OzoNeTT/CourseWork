@@ -4,30 +4,100 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// Класс босса.
+/// <remarks>Данный класс описывают движение босса, его атаку и взаимодействие с игроком.</remarks>
+/// </summary>
 public class BossScript : MonoBehaviour
 {
     //points for moving
+    /// <summary>
+    /// Массив координат точек перемещения босса.
+    /// </summary>
     public Transform[] points;
+    /// <summary>
+    /// Скорость перемещения.
+    /// </summary>
     float Speed;
+    /// <summary>
+    /// Переменная класса управления игроком.
+    /// </summary>
     private PlayerControl Player;
+    /// <summary>
+    /// Координата точки выстрела.
+    /// </summary>
     public Transform firepoint;
+    /// <summary>
+    /// Объект пуля.
+    /// </summary>
     public GameObject Bullet;
+    /// <summary>
+    /// Объект моб "Рыцарь".
+    /// </summary>
     public GameObject Enemies;
+    /// <summary>
+    /// Объект моб "Робот".
+    /// </summary>
     public GameObject Enemies2;
+    /// <summary>
+    /// Звук атаки босса.
+    /// </summary>
     private AudioClip BossSound;
+    /// <summary>
+    /// Источник звука для воспроизведения клипов.
+    /// </summary>
     public AudioSource sndM;
-    float fx, fy, fz;
+    /// <summary>
+    /// Координата Х.
+    /// </summary>
+    float fx;
+    /// <summary>
+    /// Координата У.
+    /// </summary>
+    float fy;
+    /// <summary>
+    /// Координата Z.
+    /// </summary>
+    float fz;
+    /// <summary>
+    /// Количество здоровья босса.
+    /// </summary>
     public int health;
+    /// <summary>
+    /// Пременная, показывающая зашел ли босс в одну из позиций или нет.
+    /// </summary>
     bool enter = true;
+    /// <summary>
+    /// Следующая позиция босса.
+    /// </summary>
     int point = 0;
+    /// <summary>
+    /// Текущая позиция босса.
+    /// </summary>
     int currentPoint = 0;
+    /// <summary>
+    /// Отображение здоровья босса в худе.
+    /// </summary>
     public Slider healthUI;
+    /// <summary>
+    /// Рандомайзер для определения следующей позиции.
+    /// </summary>
     System.Random rnd;
+    /// <summary>
+    /// Массив позиций для босса.
+    /// </summary>
     public GameObject[] target_2;
+    /// <summary>
+    /// Переменная показывающая состояния босса, жив или нет.
+    /// </summary>
     bool dies = false;
+    /// <summary>
+    /// Аниматор текстур.
+    /// </summary>
     Animator _anim;
-
+    /// <summary>
+    /// Функция для придания первоначального сотояния.
+    /// </summary>
     void Start()
     {
         GetComponent<Animator>().Play("Boss_Appear");
@@ -43,20 +113,9 @@ public class BossScript : MonoBehaviour
         rnd = new System.Random();
         _anim = GetComponent<Animator>();
     }
-   // public void takedamage(float damage)
-   // {
-   //     health -= damage;
-   //     if(health < 50)
-   //     {
-   //         Speed = 3f;
-   //     }
-   //     if (health < 0)
-   //     {
-   //         GetComponent<Animator>().Play("Boss_Dies");
-   //         Die();
-   //     }
-   //         
-   // }
+    /// <summary>
+    /// Функция, отвечающая за спавн врагов в разных позициях.
+    /// </summary>
     public void SpawnEnemies()
     {
         sndM.PlayOneShot(BossSound);
@@ -93,25 +152,44 @@ public class BossScript : MonoBehaviour
             }
         }
     }
-    
+    /// <summary>
+    /// Функция обработки смерти босса.
+    /// </summary>
     void Die()
     {
         dies = true;
-        StartCoroutine("waitDies");
         SceneManager.LoadScene("WinScene");
+        StartCoroutine("waitDies");
+        
     }
+    /// <summary>
+    /// Корутина для ожидания смерти.
+    /// </summary>
     private IEnumerator waitDies()
     {
         _anim.SetBool("Dies", true);
 
-        yield return new WaitForSeconds(.5f);
+        
+        GameObject[] Enemys1 = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] Enemys2 = GameObject.FindGameObjectsWithTag("Enemy2");
+        for(int i = 0; i < Enemys1.Length; i++)
+        {
+            Destroy(Enemys1[i].gameObject);
+        }
+        for (int i = 0; i < Enemys2.Length; i++)
+        {
+            Destroy(Enemys2[i].gameObject);
+        }
         Destroy(this.gameObject);
+        yield return new WaitForSeconds(1f);
     }
+    /// <summary>
+    /// Функция покадрового обновления, проверка на состояние и обновление показателя здоровья.
+    /// </summary>
     void Update()
     {
         _anim.SetBool("Spawn", false);
         target_2 = GameObject.FindGameObjectsWithTag("Enemy");
-        //healthUI.value = health;
         healthUI.value = health;
         if (GameObject.Find("Player 1") != null)
         {
@@ -120,14 +198,7 @@ public class BossScript : MonoBehaviour
         if (health < 50)
         {
             Speed = 3f;
-            //if(enter == true)
-            //{
-            //    //CancelInvoke();
-            //    //InvokeRepeating("SpawnEnemies", 5f, 18);
-            //    enter = false;
-            //}
-            
-            //if (GameObject.Find("BossBullet") != null)
+
             if (FindObjectOfType<BossBulletController>() != null) 
             {
                 FindObjectOfType<BossBulletController>().MoveSpeed = 40;
@@ -135,12 +206,13 @@ public class BossScript : MonoBehaviour
         }
         if (health < 0)
         {
-            //GetComponent<Animator>().Play("Boss_Dies");
-            //health = 100;
-
             Die();
         }
     }
+    /// <summary>
+    /// Проверка на попадание в коллайдер босса некоторого объекта.
+    /// </summary>
+    /// <param name="other">Коллайдер некоторого объекта.</param>
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -160,7 +232,9 @@ public class BossScript : MonoBehaviour
         }
 
     }
-
+    /// <summary>
+    /// Корутина для обработки движения босса и вызова его атаки.
+    /// </summary>
     IEnumerator boss()
     {
         //First
@@ -270,6 +344,9 @@ public class BossScript : MonoBehaviour
 
         }
     }
+    /// <summary>
+    /// Функция отражения модели босса по вертикали в зависимости от позиции игрока.
+    /// </summary>
     public void Flip()
     {
 

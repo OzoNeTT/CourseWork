@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_enemy2">
+<title>Enemy2 Class Reference</title>
+<indexterm><primary>Enemy2</primary></indexterm>
+<para>
+
+<para>Класс &quot;Робота&quot;. </para>
+ 
+</para>
+<para>Inheritance diagram for Enemy2:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_enemy2.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_enemy2_1a6716567cbcd9b923ba5ff9fdb78bdeb0">Dies</link> ()</para>
+
+<para>Функция смерти. Уничтожение объекта и выпадание жизней с некоторым шансом. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy2_1a8c89628d399adcae5c8114aff8e185bc">Shoot</link> ()</para>
+
+<para>Функция стрельбы. Воспроизводит анимацию стрельбы и создает объект пулю. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy2_1aabf013047dc4681e5eb9ab9d01447054">Flip</link> ()</para>
+
+<para>Функция отражения по вертикали в зависимости от позиции игрока. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>GameObject <link linkend="_class_enemy2_1a53f6b7f626710eb59ca41631de5cf698">hill</link></para>
+
+<para>Объект здоровье. Может с некоторым шансом выпасть после смерти моба. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_enemy2_1a99bd15f638564ea1e216a703ed9d3b4b">firePoint</link></para>
+
+<para>Координаты точки выстрела. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy2_1a23c3d0f122ae945b66d4e27d10b09cd7">RepeatRate</link></para>
+
+<para>Частота выстрелов. </para>
+</listitem>
+            <listitem><para>GameObject <link linkend="_class_enemy2_1a2a27587dfa96e6558be72170956ee19b">Bullet</link></para>
+
+<para>Объект пуля. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy2_1a962f8760e81d18f2051b3a7c0a872d0b">radius</link></para>
+
+<para>Радиус поиска цели. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_enemy2_1a589783a167b1cc7a87ba734045289f0a">nextFire</link> = -1.0f</para>
+
+<para>Время следующего выстрела. </para>
+</listitem>
+            <listitem><para>AudioSource <link linkend="_class_enemy2_1a92e91d63f0c7020f0e859b8ac2fc4395">ShootSound</link></para>
+
+<para>Звук выстрела. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_enemy2_1a671cb473ab5ccc23caab2bf7f2aae3cf">Start</link> ()</para>
+
+<para>Функция установки первоначального состояния. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy2_1af4b75d4870a6674d2e596840cfdcc047">Update</link> ()</para>
+
+<para>Функция покадрового обновления. Поиск цели и в случае нахождения начало стрельбы. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy2_1aefd0ea4923800198f32be8e6578e13d1">OnTriggerEnter2D</link> (Collider2D other)</para>
+
+<para>Проверка на попадание в коллайдер &quot;Робота&quot; некоторого объекта. </para>
+</listitem>
+            <listitem><para>IEnumerator <link linkend="_class_enemy2_1add1ee9ba824c763878417f4d76f290f6">waitDies</link> ()</para>
+
+<para>Корутина ожидания смерти объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_player_control">PlayerControl</link> <link linkend="_class_enemy2_1aa9082c0515d9a20f7237b5d8ba7064ec">Player</link></para>
+
+<para>Переменная класса управления персонажем. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_enemy2_1a15533f3d1500ea9ade1f39c1067c5b42">target</link></para>
+
+<para>Координаты цели. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy2_1a220c370900472dff70c9b41da624c190">fx</link></para>
+
+<para>Координата Х. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy2_1af6cc1dc4ddcb2bcaf9e2b9e83321d597">fy</link></para>
+
+<para>Координата У. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy2_1a578b8f96b1d20cf2d36964910a7657ba">fz</link></para>
+
+<para>Координата Z. </para>
+</listitem>
+            <listitem><para>Animator <link linkend="_class_enemy2_1a3483f5c3304eb60f710e0d1a839c2896">_anim</link></para>
+
+<para>Аниматор моба &quot;Робот&quot;. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_enemy2_1a189a57849415b8cfead6ea92f8d3806c">dies</link> = false</para>
+
+<para>Проверка на смерть объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс &quot;Робота&quot;. </para>
+
+
+
+<para>Данный класс реализует поведение и стрельбу &quot;Робота&quot;.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_enemy2_1a6716567cbcd9b923ba5ff9fdb78bdeb0"/>    <section>
+    <title>Dies()</title>
+<indexterm><primary>Dies</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>Dies</secondary></indexterm>
+<para><computeroutput>void Enemy2.Dies ( )</computeroutput></para><para>
+
+<para>Функция смерти. Уничтожение объекта и выпадание жизней с некоторым шансом. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1aabf013047dc4681e5eb9ab9d01447054"/>    <section>
+    <title>Flip()</title>
+<indexterm><primary>Flip</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>Flip</secondary></indexterm>
+<para><computeroutput>void Enemy2.Flip ( )</computeroutput></para><para>
+
+<para>Функция отражения по вертикали в зависимости от позиции игрока. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1aefd0ea4923800198f32be8e6578e13d1"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void Enemy2.OnTriggerEnter2D (Collider2D other)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на попадание в коллайдер &quot;Робота&quot; некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>other</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_enemy2_1a8c89628d399adcae5c8114aff8e185bc"/>    <section>
+    <title>Shoot()</title>
+<indexterm><primary>Shoot</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>Shoot</secondary></indexterm>
+<para><computeroutput>void Enemy2.Shoot ( )</computeroutput></para><para>
+
+<para>Функция стрельбы. Воспроизводит анимацию стрельбы и создает объект пулю. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a671cb473ab5ccc23caab2bf7f2aae3cf"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void Enemy2.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция установки первоначального состояния. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1af4b75d4870a6674d2e596840cfdcc047"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void Enemy2.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления. Поиск цели и в случае нахождения начало стрельбы. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1add1ee9ba824c763878417f4d76f290f6"/>    <section>
+    <title>waitDies()</title>
+<indexterm><primary>waitDies</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>waitDies</secondary></indexterm>
+<para><computeroutput>IEnumerator Enemy2.waitDies ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Корутина ожидания смерти объекта. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_enemy2_1a3483f5c3304eb60f710e0d1a839c2896"/>    <section>
+    <title>_anim</title>
+<indexterm><primary>_anim</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>_anim</secondary></indexterm>
+<para><computeroutput>Animator Enemy2._anim<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Аниматор моба &quot;Робот&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a2a27587dfa96e6558be72170956ee19b"/>    <section>
+    <title>Bullet</title>
+<indexterm><primary>Bullet</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>Bullet</secondary></indexterm>
+<para><computeroutput>GameObject Enemy2.Bullet</computeroutput></para><para>
+
+<para>Объект пуля. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a189a57849415b8cfead6ea92f8d3806c"/>    <section>
+    <title>dies</title>
+<indexterm><primary>dies</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>dies</secondary></indexterm>
+<para><computeroutput>bool Enemy2.dies = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на смерть объекта. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a99bd15f638564ea1e216a703ed9d3b4b"/>    <section>
+    <title>firePoint</title>
+<indexterm><primary>firePoint</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>firePoint</secondary></indexterm>
+<para><computeroutput>Transform Enemy2.firePoint</computeroutput></para><para>
+
+<para>Координаты точки выстрела. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a220c370900472dff70c9b41da624c190"/>    <section>
+    <title>fx</title>
+<indexterm><primary>fx</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>fx</secondary></indexterm>
+<para><computeroutput>float Enemy2.fx<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата Х. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1af6cc1dc4ddcb2bcaf9e2b9e83321d597"/>    <section>
+    <title>fy</title>
+<indexterm><primary>fy</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>fy</secondary></indexterm>
+<para><computeroutput>float Enemy2.fy<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата У. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a578b8f96b1d20cf2d36964910a7657ba"/>    <section>
+    <title>fz</title>
+<indexterm><primary>fz</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>fz</secondary></indexterm>
+<para><computeroutput>float Enemy2.fz<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата Z. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a53f6b7f626710eb59ca41631de5cf698"/>    <section>
+    <title>hill</title>
+<indexterm><primary>hill</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>hill</secondary></indexterm>
+<para><computeroutput>GameObject Enemy2.hill</computeroutput></para><para>
+
+<para>Объект здоровье. Может с некоторым шансом выпасть после смерти моба. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a589783a167b1cc7a87ba734045289f0a"/>    <section>
+    <title>nextFire</title>
+<indexterm><primary>nextFire</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>nextFire</secondary></indexterm>
+<para><computeroutput>double Enemy2.nextFire = -1.0f</computeroutput></para><para>
+
+<para>Время следующего выстрела. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1aa9082c0515d9a20f7237b5d8ba7064ec"/>    <section>
+    <title>Player</title>
+<indexterm><primary>Player</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_player_control">PlayerControl</link> Enemy2.Player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная класса управления персонажем. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a962f8760e81d18f2051b3a7c0a872d0b"/>    <section>
+    <title>radius</title>
+<indexterm><primary>radius</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>radius</secondary></indexterm>
+<para><computeroutput>float Enemy2.radius</computeroutput></para><para>
+
+<para>Радиус поиска цели. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a23c3d0f122ae945b66d4e27d10b09cd7"/>    <section>
+    <title>RepeatRate</title>
+<indexterm><primary>RepeatRate</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>RepeatRate</secondary></indexterm>
+<para><computeroutput>float Enemy2.RepeatRate</computeroutput></para><para>
+
+<para>Частота выстрелов. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a92e91d63f0c7020f0e859b8ac2fc4395"/>    <section>
+    <title>ShootSound</title>
+<indexterm><primary>ShootSound</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>ShootSound</secondary></indexterm>
+<para><computeroutput>AudioSource Enemy2.ShootSound</computeroutput></para><para>
+
+<para>Звук выстрела. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_1a15533f3d1500ea9ade1f39c1067c5b42"/>    <section>
+    <title>target</title>
+<indexterm><primary>target</primary><secondary>Enemy2</secondary></indexterm>
+<indexterm><primary>Enemy2</primary><secondary>target</secondary></indexterm>
+<para><computeroutput>Transform Enemy2.target<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координаты цели. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/<link linkend="__enemy2_8cs">Enemy2.cs</link></section>
+</section>

@@ -2,39 +2,120 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+/// <summary>
+/// Класс моба "Собака".
+/// <remarks>Данный класс описывает поведение моба "Собака" его патрулирование, поиск игрока и атаку.</remarks>
+/// </summary>
 public class DogScript : MonoBehaviour
 {
+    /// <summary>
+    /// Скорость передвижения.
+    /// </summary>
     public float moveSpeed;
+    /// <summary>
+    /// Направление движения.
+    /// </summary>
     public bool moveRight;
+    /// <summary>
+    /// Количество здоровья.
+    /// </summary>
     int health;
-
+    /// <summary>
+    /// Объект здоровье.
+    /// </summary>
     public GameObject hill;
     //wall
+    /// <summary>
+    /// Координаты точки для проверки стенок.
+    /// </summary>
     public Transform wallCheck;
+    /// <summary>
+    /// Радиус проверки стенок.
+    /// </summary>
     public float wallCheckRadius;
+    /// <summary>
+    /// Слой, отвечающий за то, чем является стена.
+    /// </summary>
     public LayerMask whatIsWall;
+    /// <summary>
+    /// Переменная, показывающая, достиг ли моб стены или нет.
+    /// </summary>
     public bool walled;
 
     //edge check
+    /// <summary>
+    /// Проверка на нахождения на угле.
+    /// </summary>
     private bool notAtEdge;
+    /// <summary>
+    /// Координаты точки для проверки на углы.
+    /// </summary>
     public Transform egdeCheck;
+    /// <summary>
+    /// Разница времени для атаки.
+    /// </summary>
     float dtime;
 
     //player
+    /// <summary>
+    /// Радиус поиска игрока.
+    /// </summary>
     public float Radius;
+    /// <summary>
+    /// Переменная класса управления игроком.
+    /// </summary>
     private PlayerControl Player;
+    /// <summary>
+    /// Аниматор моба.
+    /// </summary>
     private Animator _anim;
+    /// <summary>
+    /// Координаты точки для отрисовки радиуса для проверки на нахождение в нем игрока.
+    /// </summary>
     public Transform playerCheck;
+    /// <summary>
+    /// Радиус проверки.
+    /// </summary>
     public float playerCheckRadius;
+    /// <summary>
+    /// Слой, показывающий, чем является объект "Игрок".
+    /// </summary>
     public LayerMask whatIsPlayer;
+    /// <summary>
+    /// Переменная, показывающая, достиг ли моб игрока.
+    /// </summary>
     public bool playered;
+    /// <summary>
+    /// Переменная, отвечающая за атаку моба.
+    /// </summary>
     public static bool isAttacking = false;
-    float fx, fy, fz;
-
+    /// <summary>
+    /// Координата Х.
+    /// </summary>
+    float fx;
+    /// <summary>
+    /// Координата У.
+    /// </summary>
+    float fy;
+    /// <summary>
+    /// Координата Z.
+    /// </summary>
+    float fz;
+    /// <summary>
+    /// Первоначальная скорость моба "Собака".
+    /// </summary>
     float OrigMoveSpeed;
-
+    /// <summary>
+    /// Переменная показывающая состояния моба, жив или нет.
+    /// </summary>
     bool dies = false;
+    /// <summary>
+    /// Вспомогательная переменная, для атаки.
+    /// </summary>
     bool canEnter = true;
+    /// <summary>
+    /// Функция для придания первоначального сотояния.
+    /// </summary>
     void Start()
     {
         health = 6;
@@ -46,6 +127,9 @@ public class DogScript : MonoBehaviour
         OrigMoveSpeed = moveSpeed;
         dtime = Time.time;
     }
+    /// <summary>
+    /// Функция обработки смерти моба.
+    /// </summary>
     void Die()
     {
         SoundManager.sndMan.PlayDogDeath();
@@ -58,6 +142,9 @@ public class DogScript : MonoBehaviour
             Instantiate(hill, transform.position, transform.rotation);
         }
     }
+    /// <summary>
+    /// Корутина ожидания смерти.
+    /// </summary>
     private IEnumerator waitAttack()
     {
         moveSpeed = 0f;
@@ -65,10 +152,17 @@ public class DogScript : MonoBehaviour
         yield return new WaitForSeconds(.8f);
         Destroy(this.gameObject);
     }
+    /// <summary>
+    /// Функция получения урона.
+    /// </summary>
+    /// <param name="a">Количество урона.</param>
     public void takeDamage(int a)
     {
         health -= a;
     }
+    /// <summary>
+    /// Функция покадрового обновления, в ней происходит передвижения моба, поиск игрока, его атака и обработка звуков с анимациями.
+    /// </summary>
     void Update()
     {
         walled = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
@@ -136,6 +230,9 @@ public class DogScript : MonoBehaviour
             Die();
         }
     }
+    /// <summary>
+    /// Функция отражения модели моба по вертикали в зависимости от позиции игрока.
+    /// </summary>
     public void Flip()
     {
 
@@ -150,6 +247,9 @@ public class DogScript : MonoBehaviour
             transform.localScale = new Vector3(fx, fy, fz);
         }
     }
+    /// <summary>
+    /// Функция отражения модели моба по вертикали в зависимости от достижения стенок.
+    /// </summary>
     public void Flip2()
     {
 
@@ -164,6 +264,10 @@ public class DogScript : MonoBehaviour
             transform.localScale = new Vector3(fx, fy, fz);
         }
     }
+    /// <summary>
+    /// Проверка на попадание в тригерзону моба некоторого объекта.
+    /// </summary>
+    /// <param name="collision">Коллайдер некоторого объекта.</param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player" && !dies)
@@ -178,6 +282,10 @@ public class DogScript : MonoBehaviour
             }
         }
     }
+    /// <summary>
+    /// Проверка на нахождение в тригерзоне моба некоторого объекта.
+    /// </summary>
+    /// <param name="collision">Коллайдер некоорого объекта.</param>
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Player" && !dies)
@@ -191,6 +299,10 @@ public class DogScript : MonoBehaviour
             }
         }
     }
+    /// <summary>
+    /// Проверка на выход из тригерзоны некоторого объекта.
+    /// </summary>
+    /// <param name="collision">Коллайдер некоторого объекта.</param>
     private void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.tag == "Player" && !dies)

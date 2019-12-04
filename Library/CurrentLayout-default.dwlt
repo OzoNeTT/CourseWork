@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 522}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 406
     height: 957
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -70,10 +70,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 957
-  m_MinSize: {x: 683, y: 494}
-  m_MaxSize: {x: 14004, y: 14044}
+  m_MinSize: {x: 579, y: 472}
+  m_MaxSize: {x: 14002, y: 14044}
   vertical: 0
-  controlID: 33
+  controlID: 78
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,9 +92,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 317
-    height: 685
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+    height: 680
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -116,9 +116,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 685
+    y: 680
     width: 1514
-    height: 272
+    height: 277
   m_MinSize: {x: 232, y: 272}
   m_MaxSize: {x: 10002, y: 10022}
   m_ActualView: {fileID: 16}
@@ -149,7 +149,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1007
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 522}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -215,10 +215,10 @@ MonoBehaviour:
     y: 0
     width: 1514
     height: 957
-  m_MinSize: {x: 406, y: 494}
+  m_MinSize: {x: 304, y: 472}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 34
+  controlID: 79
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,11 +239,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1514
-    height: 685
-  m_MinSize: {x: 406, y: 222}
-  m_MaxSize: {x: 8006, y: 4022}
+    height: 680
+  m_MinSize: {x: 304, y: 200}
+  m_MaxSize: {x: 8004, y: 4022}
   vertical: 0
-  controlID: 35
+  controlID: 80
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -262,18 +262,18 @@ MonoBehaviour:
     x: 317
     y: 0
     width: 1197
-    height: 685
-  m_MinSize: {x: 204, y: 222}
+    height: 680
+  m_MinSize: {x: 104, y: 122}
   m_MaxSize: {x: 4004, y: 4022}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 19}
   - {fileID: 13}
   - {fileID: 15}
   - {fileID: 14}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,9 +294,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 329
+    x: 317
     y: 73
-    width: 1239
+    width: 1195
     height: 661
   m_ViewDataDictionary: {fileID: 0}
   m_TestTypeToolbarIndex: 0
@@ -308,7 +308,7 @@ MonoBehaviour:
       name: MyGame2d
       fullName: MyGame2d
       resultStatus: 1
-      duration: 0.1462315
+      duration: 14.73305
       messages: 
       output: 
       stacktrace: 
@@ -324,7 +324,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: "C:/Users/Alexe/Desktop/MyGame2d \u2014 \u043A\u043E\u043F\u0438\u044F/Library/ScriptAssemblies/Tests.dll"
       resultStatus: 1
-      duration: 0.1154284
+      duration: 14.679887
       messages: 
       output: 
       stacktrace: 
@@ -340,7 +340,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.0992383
+      duration: 14.647148
       messages: 
       output: 
       stacktrace: 
@@ -352,27 +352,63 @@ MonoBehaviour:
       parentId: 1004
       parentUniqueId: "[C:/Users/Alexe/Desktop/MyGame2d \u2014 \u043A\u043E\u043F\u0438\u044F/Library/ScriptAssemblies/Tests.dll][suite]"
     - id: 1001
-      uniqueId: Tests.dll/Tests/[Tests][Tests.Test1][suite]
-      name: Test1
-      fullName: Tests.Test1
+      uniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
+      name: PlayerTest
+      fullName: Tests.PlayerTest
       resultStatus: 1
-      duration: 0.079055
+      duration: 14.613015
       messages: 
-      output: 
+      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
+        is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+        your script can inherit from ScriptableObject or no base class at all\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 1
       categories: []
-      parentId: 1005
+      parentId: 1006
       parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1006
+      uniqueId: Tests.dll/Tests/PlayerTest/[Tests][Tests.PlayerTest.CanKill]
+      name: CanKill
+      fullName: Tests.PlayerTest.CanKill
+      resultStatus: 1
+      duration: 6.247411
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
+    - id: 1005
+      uniqueId: Tests.dll/Tests/PlayerTest/[Tests][Tests.PlayerTest.CanShoot]
+      name: CanShoot
+      fullName: Tests.PlayerTest.CanShoot
+      resultStatus: 1
+      duration: 2.0642402
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
     - id: 1002
-      uniqueId: Tests.dll/Tests/Test1/[Tests][Tests.Test1.Test1SimplePasses]
-      name: Test1SimplePasses
-      fullName: Tests.Test1.Test1SimplePasses
+      uniqueId: Tests.dll/Tests/PlayerTest/[Tests][Tests.PlayerTest.EditorTest]
+      name: EditorTest
+      fullName: Tests.PlayerTest.EditorTest
       resultStatus: 1
-      duration: 0.008514
+      duration: 2.0749357
       messages: 
       output: 
       stacktrace: 
@@ -383,13 +419,13 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.Test1][suite]
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
     - id: 1003
-      uniqueId: Tests.dll/Tests/Test1/[Tests][Tests.Test1.Test1WithEnumeratorPasses]
-      name: Test1WithEnumeratorPasses
-      fullName: Tests.Test1.Test1WithEnumeratorPasses
+      uniqueId: Tests.dll/Tests/PlayerTest/[Tests][Tests.PlayerTest.FacingDirectionTest]
+      name: FacingDirectionTest
+      fullName: Tests.PlayerTest.FacingDirectionTest
       resultStatus: 1
-      duration: 0.040211
+      duration: 2.1019971
       messages: 
       output: 
       stacktrace: 
@@ -400,14 +436,37 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.Test1][suite]
-    m_ResultText: 
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/PlayerTest/[Tests][Tests.PlayerTest.HealthAfterDamage]
+      name: HealthAfterDamage
+      fullName: Tests.PlayerTest.HealthAfterDamage
+      resultStatus: 1
+      duration: 2.0805404
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
+    m_ResultText: 'PlayerTest (14,613s)
+
+      ---
+
+      You are trying to create a MonoBehaviour using the ''new'' keyword.  This is
+      not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+      your script can inherit from ScriptableObject or no base class at all'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: faeaccfcffffff7f
+      m_SelectedIDs: fd4c0deb
+      m_LastClickedID: -351449859
+      m_ExpandedIDs: f389ac9b460bc39cfd4c0debfaeaccfc8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -508,7 +567,7 @@ MonoBehaviour:
     x: 317
     y: 73
     width: 1195
-    height: 666
+    height: 661
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 0
@@ -523,8 +582,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -597.5
     m_HBaseRangeMax: 597.5
-    m_VBaseRangeMin: -324.5
-    m_VBaseRangeMax: 324.5
+    m_VBaseRangeMin: -322
+    m_VBaseRangeMax: 322
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -533,7 +592,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -543,9 +602,9 @@ MonoBehaviour:
       x: 0
       y: 17
       width: 1195
-      height: 649
+      height: 644
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 597.5, y: 324.5}
+    m_Translation: {x: 597.5, y: 322}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -553,14 +612,14 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -597.5
-      y: -324.5
+      y: -322
       width: 1195
-      height: 649
+      height: 644
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1195, y: 666}
+  m_LastWindowPixelSize: {x: 1195, y: 661}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -833,10 +892,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 02d41a5499ab0f94abd92880c6ddbe56,
+  m_AnimatorController: {fileID: 9100000, guid: b2ec57ce309eebe4fb5d651023773c1a,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 474946926913173457, guid: 02d41a5499ab0f94abd92880c6ddbe56,
+  - m_Target: {fileID: 9165646597947914353, guid: b2ec57ce309eebe4fb5d651023773c1a,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -898,9 +957,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 758
+    y: 753
     width: 1514
-    height: 253
+    height: 258
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -915,20 +974,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Textures/another-world
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/Textures/another-world
+  - Assets/Scenes
   m_LastFoldersGridSize: 67
   m_LastProjectPath: "C:\\Users\\Alexe\\Desktop\\MyGame2d \u2014 \u043A\u043E\u043F\u0438\u044F"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 131}
-    m_SelectedIDs: 2a580000
-    m_LastClickedID: 22570
-    m_ExpandedIDs: 00000000582f00008e2f00009e3100006a340000e444000000550000e0560000a65a0000d8680000da68000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 465c0000
+    m_LastClickedID: 23622
+    m_ExpandedIDs: 00000000582f00008e2f0000a631000072340000ee4400000a550000ea560000b05a0000cc750000ce75000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -956,7 +1015,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000582f00008e2f00009e3100006a340000e444000000550000e0560000a65a0000d8680000da680000
+    m_ExpandedIDs: 00000000582f00008e2f0000a631000072340000ee4400000a550000ea560000b05a0000cc750000ce750000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -984,7 +1043,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000050310000de2f0000862f0000c62d0000b83300002c2d0000c634000078350000ec390000302e0000003b0000be3200004c2e00002e350000a66d0300f2310000662f000052160200404f0000d23a0000fc390000f03a00001232000014320000e8400100e2300000143900007c38000020330000c840000026300000925f0000965f000036fc000048fc000076fc000008fc000012fc0000e8060200826400007c330000244e0000584e000000000000e84f00008e5600000c350000d0630000c4630000c8630000cc630000384b0000c45e0000383f00003a350000a84900005c59000058590000605900009e4b0000ce910100f0910100c6910100b4b5020096720000c04800001c59000058910000944d00004a030100
+    m_ExpandedInstanceIDs: c623000050310000de2f0000862f0000c62d0000b83300002c2d0000c634000078350000ec390000302e0000003b0000be3200004c2e00002e350000a66d0300f2310000662f000052160200404f0000d23a0000fc390000f03a00001232000014320000e8400100e2300000143900007c38000020330000c840000026300000925f0000965f000036fc000048fc000076fc000008fc000012fc0000e8060200826400007c330000244e0000584e000000000000e84f00008e5600000c350000d0630000c4630000c8630000cc630000384b0000c45e0000383f00003a350000a84900005c59000058590000605900009e4b0000ce910100f0910100c6910100b4b5020096720000c04800001c59000058910000944d00004a0301009ef60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1074,14 +1133,14 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 317
-    height: 666
+    height: 661
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 3168}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: dc9bfffff0a7fffff0a8fffff4a8fffff4aafffffaaafffff8acfffffeacffffdaf7ffffe4f7ffff3cf8ffff98f8ffffa4f8ffffeaf8ffff00f9ffff78f9fffffef9ffff04faffff1cfaffff6afbffff
+      m_ExpandedIDs: 8cccf9ff3ccdf9ff62cdf9ff20d1f9ffe0d1f9ff06d2f9ff90d5f9ffcad7f9ff7cf1f9ff440cfaff0628faffe429faffac45faff6a54faff7454faff9a54faff0657faff8859faffae59faff525cfaff365dfaff5c5dfaff0e60faffec60faff1261faffc463faffae64faffd464faff7867faff6c68faff9268faff366bfaff146cfaff3a6cfaffde6efaff9e6ffaffc46ffaff6c70faff429bfaff3ea0faff1ec2faff02c3faffa8c3faff54c4faff6ccffaff8ecffafffed3faffced6faff0ef3faff6cfcfaff0402fbffaa02fbff4e03fbff7003fbff9203fbffca05fbff8a7cfcff927efcffaa7efcffc27efcfff87ffcffead4fdffae08feff601efeff361ffeff2235ffffa039ffff2842ffff1643ffff2c44ffff0c54ffffd454ffff866affffaa6dffff9aa4ffffa8cbffff88dbffffa0e3ffff6afbfffff4ffffff1e7600000cd00000709e0100889e0100929f01005e2202006e220200e422020048280200b82f0200e42f0200ee2f02005630020094660200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1129,7 +1188,7 @@ MonoBehaviour:
     x: 317
     y: 73
     width: 1195
-    height: 666
+    height: 661
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8bfa8c23457f637469a64dcb39399ba7
@@ -1141,9 +1200,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -21.574476, y: 23.97217, z: -3468.4375}
+    m_Target: {x: 70.9124, y: 4.3329444, z: -307.57687}
     speed: 2
-    m_Value: {x: -21.574476, y: 23.97217, z: -3468.4375}
+    m_Value: {x: 70.9124, y: 4.3329444, z: -307.57687}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1176,9 +1235,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 394.12656
+    m_Target: 92.62593
     speed: 2
-    m_Value: 412.69797
+    m_Value: 92.62593
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1226,7 +1285,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 758
+    y: 753
     width: 1514
-    height: 253
+    height: 258
   m_ViewDataDictionary: {fileID: 0}

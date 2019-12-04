@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_background">Background</link>
+<para>Класс трансформирования фона </para>
+<link linkend="_class_background_loop">BackgroundLoop</link>
+<para>Класс зацикливания изображения </para>
+<link linkend="_class_boss_bullet_controller">BossBulletController</link>
+<para>Класс управления пулей босса </para>
+<link linkend="_class_boss_script">BossScript</link>
+<para>Класс босса </para>
+<link linkend="_class_bullet_controller">BulletController</link>
+<para>Класс пули </para>
+<link linkend="_class_camera_follow">CameraFollow</link>
+<para>Класс камеры </para>
+<link linkend="_class_camera_shake">CameraShake</link>
+<para>Класс &quot;тряски&quot; камеры </para>
+<link linkend="_class_coin">Coin</link>
+<para>Класс монеты </para>
+<link linkend="_class_death_level">DeathLevel</link>
+<para>Класс смертельной зону </para>
+<link linkend="_class_dog_script">DogScript</link>
+<para>Класс моба &quot;Собака&quot; </para>
+<link linkend="_class_enemy1">Enemy1</link>
+<para>Класс моба &quot;Рыцарь&quot; </para>
+<link linkend="_class_enemy2">Enemy2</link>
+<para>Класс &quot;Робота&quot; </para>
+<link linkend="_class_enemy2_bullet_controller">Enemy2BulletController</link>
+<para>Класс управления пули &quot;Робота&quot; </para>
+<link linkend="_class_enemy_ghost_g_f_x">EnemyGhostGFX</link>
+<para>Класс моба &quot;Призрак&quot; </para>
+<link linkend="_class_fade_in_out">FadeInOut</link>
+<para>Класс затемнения экрана </para>
+<link linkend="_class_free_parallax">FreeParallax</link><link linkend="_class_free_parallax_demo">FreeParallaxDemo</link><link linkend="_class_free_parallax_element">FreeParallaxElement</link><link linkend="_class_free_parallax_element_reposition_logic">FreeParallaxElementRepositionLogic</link>
+<para>Contains parameters that repositions an object when it leaves the screen </para>
+<link linkend="_class_game_over_menu">GameOverMenu</link>
+<para>Класс конца игры </para>
+<link linkend="_class_hinge_button_controller">HingeButtonController</link>
+<para>Класс кнопки </para>
+<link linkend="_class_h_p">HP</link>
+<para>Класс здоровья </para>
+<link linkend="_classkey_to_gate">keyToGate</link>
+<para>Класс ключа </para>
+<link linkend="_class_laser_script">LaserScript</link>
+<para>Скрипт лазера </para>
+<link linkend="_class_main_menu">MainMenu</link>
+<para>Класс Главной игры </para>
+<link linkend="_class_plater_stats">PlaterStats</link>
+<para>Класс статистики персонажа </para>
+<link linkend="_class_platform_movable">PlatformMovable</link>
+<para>Класс движения платформы </para>
+<link linkend="_class_player_control">PlayerControl</link>
+<para>Класс управления персонажем </para>
+<link linkend="_class_position_check">PositionCheck</link>
+<para>Класс проверки на нахождения объекта в точке </para>
+<link linkend="_class_saw_controller">SawController</link>
+<para>Класс Пилы </para>
+<link linkend="_class_scrolling_b_g1">ScrollingBG1</link>
+<para>Класс движения фоновых изображений </para>
+<link linkend="_class_sound_manager">SoundManager</link>
+<para>Класс воспроизведения музыки </para>
+<link linkend="_class_spikes_controller">SpikesController</link>
+<para>Класс Шипы </para>
+<link linkend="_class_teleporter_script">TeleporterScript</link>
+<para>Класс телепорта </para>
+</section>

@@ -1,0 +1,111 @@
+\hypertarget{class_position_check}{}\doxysection{Position\+Check Class Reference}
+\label{class_position_check}\index{PositionCheck@{PositionCheck}}
+
+
+Класс проверки на нахождения объекта в точке.  
+
+
+Inheritance diagram for Position\+Check\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_position_check}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_position_check_a0b350fdf921fc7546ed29f7dee4d47f9}{Get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Функция возвращающая состояние\+: установлен объект или нет. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_position_check_a9fcf0cb8cc09eea72794bbad322f6fb5}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Установка первоначального состояния. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_position_check_ae4af24aad28768e29aa49f87a302fefc}{On\+Trigger\+Stay2D}} (Collider2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на нахождение в тригерзоне некоторого объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_position_check_a2b1882de01b3e5204d23de10ff8d99a0}{On\+Trigger\+Exit2D}} (Collider2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на выход из тригерзоны некоторого объекта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_position_check_ab3acb771413eefc1bd54d78b2b76c2f3}{Is\+Placed}}
+\begin{DoxyCompactList}\small\item\em Проверка на нахождение объекта в точке. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс проверки на нахождения объекта в точке. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_position_check_a0b350fdf921fc7546ed29f7dee4d47f9}\label{class_position_check_a0b350fdf921fc7546ed29f7dee4d47f9}} 
+\index{PositionCheck@{PositionCheck}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!PositionCheck@{PositionCheck}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily bool Position\+Check.\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция возвращающая состояние\+: установлен объект или нет. 
+
+\begin{DoxyReturn}{Returns}
+Установлен/Не установлен
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_position_check_a2b1882de01b3e5204d23de10ff8d99a0}\label{class_position_check_a2b1882de01b3e5204d23de10ff8d99a0}} 
+\index{PositionCheck@{PositionCheck}!OnTriggerExit2D@{OnTriggerExit2D}}
+\index{OnTriggerExit2D@{OnTriggerExit2D}!PositionCheck@{PositionCheck}}
+\doxysubsubsection{\texorpdfstring{OnTriggerExit2D()}{OnTriggerExit2D()}}
+{\footnotesize\ttfamily void Position\+Check.\+On\+Trigger\+Exit2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на выход из тригерзоны некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_position_check_ae4af24aad28768e29aa49f87a302fefc}\label{class_position_check_ae4af24aad28768e29aa49f87a302fefc}} 
+\index{PositionCheck@{PositionCheck}!OnTriggerStay2D@{OnTriggerStay2D}}
+\index{OnTriggerStay2D@{OnTriggerStay2D}!PositionCheck@{PositionCheck}}
+\doxysubsubsection{\texorpdfstring{OnTriggerStay2D()}{OnTriggerStay2D()}}
+{\footnotesize\ttfamily void Position\+Check.\+On\+Trigger\+Stay2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на нахождение в тригерзоне некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_position_check_a9fcf0cb8cc09eea72794bbad322f6fb5}\label{class_position_check_a9fcf0cb8cc09eea72794bbad322f6fb5}} 
+\index{PositionCheck@{PositionCheck}!Start@{Start}}
+\index{Start@{Start}!PositionCheck@{PositionCheck}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Position\+Check.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Установка первоначального состояния. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_position_check_ab3acb771413eefc1bd54d78b2b76c2f3}\label{class_position_check_ab3acb771413eefc1bd54d78b2b76c2f3}} 
+\index{PositionCheck@{PositionCheck}!IsPlaced@{IsPlaced}}
+\index{IsPlaced@{IsPlaced}!PositionCheck@{PositionCheck}}
+\doxysubsubsection{\texorpdfstring{IsPlaced}{IsPlaced}}
+{\footnotesize\ttfamily bool Position\+Check.\+Is\+Placed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на нахождение объекта в точке. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Tools/Position\+Check.\+cs\end{DoxyCompactItemize}

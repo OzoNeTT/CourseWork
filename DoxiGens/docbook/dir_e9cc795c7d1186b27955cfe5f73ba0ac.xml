@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_e9cc795c7d1186b27955cfe5f73ba0ac">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Player Directory Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Player Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__bullet_controller_8cs">BulletController.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__camera_follow_8cs">CameraFollow.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__plater_stats_8cs">PlaterStats.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__player_control_8cs">PlayerControl.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

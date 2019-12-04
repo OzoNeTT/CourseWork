@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_hinge_button_controller">
+<title>HingeButtonController Class Reference</title>
+<indexterm><primary>HingeButtonController</primary></indexterm>
+<para>
+
+<para>Класс кнопки. </para>
+ 
+</para>
+<para>Inheritance diagram for HingeButtonController:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_hinge_button_controller.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>GameObject <link linkend="_class_hinge_button_controller_1a3c0a7e9b9c48304ccfa0898011d55eee">hinge</link></para>
+
+<para>Объект двери. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_hinge_button_controller_1add7fe36255950b96416db529b8d0e4db">OnTriggerEnter2D</link> (Collider2D other)</para>
+
+<para>Проверка на попадание в коллайдер некоторого объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_hinge_button_controller_1aba5688f6fb2de0004100df66094bfab3">x</link> = -5f</para>
+
+<para>Величина сдвига при нажатии. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс кнопки. </para>
+
+
+
+<para>Данный класс реализует нажатие кнопки при попадании пули игрока.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_hinge_button_controller_1add7fe36255950b96416db529b8d0e4db"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>HingeButtonController</secondary></indexterm>
+<indexterm><primary>HingeButtonController</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void HingeButtonController.OnTriggerEnter2D (Collider2D other)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на попадание в коллайдер некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>other</entry>
+                                <entry>
+<para>Коллайдер другого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_hinge_button_controller_1a3c0a7e9b9c48304ccfa0898011d55eee"/>    <section>
+    <title>hinge</title>
+<indexterm><primary>hinge</primary><secondary>HingeButtonController</secondary></indexterm>
+<indexterm><primary>HingeButtonController</primary><secondary>hinge</secondary></indexterm>
+<para><computeroutput>GameObject HingeButtonController.hinge</computeroutput></para><para>
+
+<para>Объект двери. </para>
+</para>
+    </section><anchor xml:id="_class_hinge_button_controller_1aba5688f6fb2de0004100df66094bfab3"/>    <section>
+    <title>x</title>
+<indexterm><primary>x</primary><secondary>HingeButtonController</secondary></indexterm>
+<indexterm><primary>HingeButtonController</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>float HingeButtonController.x = -5f<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Величина сдвига при нажатии. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__hinge_button_controller_8cs">HingeButtonController.cs</link></section>
+</section>

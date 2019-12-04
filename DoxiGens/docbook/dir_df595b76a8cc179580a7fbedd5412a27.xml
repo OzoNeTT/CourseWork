@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_df595b76a8cc179580a7fbedd5412a27">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy Directory Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__boss_bullet_controller_8cs">BossBulletController.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__boss_script_8cs">BossScript.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__dog_script_8cs">DogScript.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy1_8cs">Enemy1.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy2_8cs">Enemy2.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy2_bullet_controller_8cs">Enemy2BulletController.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy_ghost_g_f_x_8cs">EnemyGhostGFX.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

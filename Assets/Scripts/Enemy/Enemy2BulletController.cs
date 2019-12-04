@@ -1,25 +1,46 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// Класс управления пули "Робота". 
+/// <remarks> Данный класс реализует движение пули и ее попадание в некоторый объект.</remarks>
+/// </summary>
 public class Enemy2BulletController : MonoBehaviour {
-
-    public float speedx, speedy = 0;
+    /// <summary>
+    /// Скорость движения по координате Х.
+    /// </summary>
+    public float speedx;
+    /// <summary>
+    /// Скорость движения по координате У.
+    /// </summary>
+    public float speedy = 0;
+    /// <summary>
+    /// Наносимый урон.
+    /// </summary>
     public int damage;
+    /// <summary>
+    /// Объект игрок.
+    /// </summary>
     private PlayerControl Player;
-    float fx, fy, fz;
+    /// <summary>
+    /// Координата по Х.
+    /// </summary>
+    float fx;
+    /// <summary>
+    /// Координата по У.
+    /// </summary>
+    float fy;
+    /// <summary>
+    /// Координата по Z.
+    /// </summary>
+    float fz;
 
-    // Use this for initialization
+    /// <summary>
+    /// Функция придания первоначального состояния. Определение направления движения пули.
+    /// </summary>
     void Start()
     {
         Player = FindObjectOfType<PlayerControl>();
-        //if (transform.position.x > 0)
-        //{
-        //    speed = -speed;
-        //}
-        //if (transform.position.x < 0)
-        //{
-        //    speed = -speed;
-        //}
+
         fx = transform.localScale.x;
         fy = transform.localScale.y;
         fz = transform.localScale.z;
@@ -34,14 +55,19 @@ public class Enemy2BulletController : MonoBehaviour {
         }
 
     }
-
-    // Update is called once per frame
+    /// <summary>
+    /// Функция покадрового обновления. Движение пули.
+    /// </summary>
     void Update()
     {
 
         GetComponent<Rigidbody2D>().velocity = new Vector2(speedx, speedy);
 
     }
+    /// <summary>
+    /// Функция проверки на попадание в коллайдер пули.
+    /// </summary>
+    /// <param name="other">Коллайдер некоторого объекта.</param>
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -59,7 +85,9 @@ public class Enemy2BulletController : MonoBehaviour {
             Destroy(this.gameObject);
         }
     }
-
+    /// <summary>
+    /// Функция отражения по вертикали в зависимости от позиции игрока.
+    /// </summary>
     public void Flip()
     {
 

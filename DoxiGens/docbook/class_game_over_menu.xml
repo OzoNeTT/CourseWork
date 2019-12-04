@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_game_over_menu">
+<title>GameOverMenu Class Reference</title>
+<indexterm><primary>GameOverMenu</primary></indexterm>
+<para>
+
+<para>Класс конца игры. </para>
+ 
+</para>
+<para>Inheritance diagram for GameOverMenu:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_over_menu.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_game_over_menu_1a17595c4e350c32aa35d057608779892b">StartGame</link> ()</para>
+
+<para>Функция &quot;Перезапуска игры&quot;. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_over_menu_1ad71e2d128490589a154acf3d05911ad1">ExitGame</link> ()</para>
+
+<para>Нажатие на кнопку &quot;Выход из игры&quot;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static int <link linkend="_class_game_over_menu_1a4f1c643e76bfce84ec12922e52fb705b">levelnumber</link></para>
+
+<para>Номер уровня. </para>
+</listitem>
+            <listitem><para>static <link linkend="_class_game_over_menu">GameOverMenu</link> <link linkend="_class_game_over_menu_1aeebafea695b021659937a36e66a63803">instance</link> = null</para>
+
+<para>экземпляр класса. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_game_over_menu_1aef43211cd03a257da5b2778296273792">Awake</link> ()</para>
+
+<para>Функция вызывающаяся при запуске сцены. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс конца игры. </para>
+
+
+
+<para>Данный класс реализует </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_game_over_menu_1aef43211cd03a257da5b2778296273792"/>    <section>
+    <title>Awake()</title>
+<indexterm><primary>Awake</primary><secondary>GameOverMenu</secondary></indexterm>
+<indexterm><primary>GameOverMenu</primary><secondary>Awake</secondary></indexterm>
+<para><computeroutput>void GameOverMenu.Awake ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция вызывающаяся при запуске сцены. </para>
+</para>
+    </section><anchor xml:id="_class_game_over_menu_1ad71e2d128490589a154acf3d05911ad1"/>    <section>
+    <title>ExitGame()</title>
+<indexterm><primary>ExitGame</primary><secondary>GameOverMenu</secondary></indexterm>
+<indexterm><primary>GameOverMenu</primary><secondary>ExitGame</secondary></indexterm>
+<para><computeroutput>void GameOverMenu.ExitGame ( )</computeroutput></para><para>
+
+<para>Нажатие на кнопку &quot;Выход из игры&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_game_over_menu_1a17595c4e350c32aa35d057608779892b"/>    <section>
+    <title>StartGame()</title>
+<indexterm><primary>StartGame</primary><secondary>GameOverMenu</secondary></indexterm>
+<indexterm><primary>GameOverMenu</primary><secondary>StartGame</secondary></indexterm>
+<para><computeroutput>void GameOverMenu.StartGame ( )</computeroutput></para><para>
+
+<para>Функция &quot;Перезапуска игры&quot;. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_game_over_menu_1aeebafea695b021659937a36e66a63803"/>    <section>
+    <title>instance</title>
+<indexterm><primary>instance</primary><secondary>GameOverMenu</secondary></indexterm>
+<indexterm><primary>GameOverMenu</primary><secondary>instance</secondary></indexterm>
+<para><computeroutput><link linkend="_class_game_over_menu">GameOverMenu</link> GameOverMenu.instance = null<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>экземпляр класса. </para>
+</para>
+    </section><anchor xml:id="_class_game_over_menu_1a4f1c643e76bfce84ec12922e52fb705b"/>    <section>
+    <title>levelnumber</title>
+<indexterm><primary>levelnumber</primary><secondary>GameOverMenu</secondary></indexterm>
+<indexterm><primary>GameOverMenu</primary><secondary>levelnumber</secondary></indexterm>
+<para><computeroutput>int GameOverMenu.levelnumber<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Номер уровня. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Menu/<link linkend="__game_over_menu_8cs">GameOverMenu.cs</link></section>
+</section>

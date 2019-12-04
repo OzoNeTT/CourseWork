@@ -1,0 +1,297 @@
+\hypertarget{class_plater_stats}{}\doxysection{Plater\+Stats Class Reference}
+\label{class_plater_stats}\index{PlaterStats@{PlaterStats}}
+
+
+Класс статистики персонажа.  
+
+
+Inheritance diagram for Plater\+Stats\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_plater_stats}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_plater_stats_a115bb5dcf75f0ed27b8ba6a1438791e4}{Take\+Damage}} (int damage)
+\begin{DoxyCompactList}\small\item\em Функция получения урона \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plater_stats_a37a386676696200a5fcb0964f5b51556}{Collect\+Coin}} (int coin\+Value)
+\begin{DoxyCompactList}\small\item\em Функция сбора монеты. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_plater_stats_aef5b8c7373351da4a0aa6d3db887805c}{get\+\_\+health}} ()
+\begin{DoxyCompactList}\small\item\em Функция получения количества здоровья. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_plater_stats_ae8d3f49904db05ceaa0fac378304469e}{flicker\+Duration}} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em Время моргания персонажа. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plater_stats_a7b116fe44b6dc0b16924ba9bc3c0a0e7}{is\+Immune}} = false
+\begin{DoxyCompactList}\small\item\em Проверка на нахождение в режиме неуязвимости. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_plater_stats_a4a2b442cd27ede5bb505dda6246c8360}{immunity\+Duraction}} = 1f
+\begin{DoxyCompactList}\small\item\em Длительность режима неуязвимости. \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_plater_stats_a23d18b2ce3298092d5700fca9b724e4b}{score\+UI}}
+\begin{DoxyCompactList}\small\item\em Очки для отображения в худе. \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{class_plater_stats_a1caa00c912e67a4d22fb19cc40d71207}{Live\+UI}}
+\begin{DoxyCompactList}\small\item\em Жизни для отображения в худе. \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{class_plater_stats_a5d744291fbc9a245f98983f60c8fa47a}{health\+UI}}
+\begin{DoxyCompactList}\small\item\em Здоровье для отображения в худе. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_plater_stats_afc593979fb1b304f77c3068ff9292310}{health}} = 10
+\begin{DoxyCompactList}\small\item\em Здоровье игрока. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_plater_stats_a576e23f23c90198237eecb3b5d90e0c7}{lives}} = 3
+\begin{DoxyCompactList}\small\item\em Жизни игрока. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_plater_stats_a9e9a5ac75a67faebd2c4472a7537f328}{collected\+Coins}} = 0
+\begin{DoxyCompactList}\small\item\em Количество собранных монет. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_plater_stats_af8f6550983ffcf13a41d8e710c3b4986}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция придает первоначальное состояние. Получения объекта \char`\"{}\+Sprite\+Renderer\char`\"{} от игрока. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plater_stats_a18ede61fd39e3c2bd107bf7b881fafc9}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция обновления каждый фрейм. В ней происходит обновление худа и проверки на то, жив ли игрок или нет. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plater_stats_aaf75605304678141b811923392a2c746}{Sprite\+Flicker}} ()
+\begin{DoxyCompactList}\small\item\em Функция моргания игрока. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plater_stats_a29394c9abad3fbad0f82e12a0f5d3881}{Play\+Hit\+Reaction}} ()
+\begin{DoxyCompactList}\small\item\em Функция прорисовки получения урона. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_plater_stats_a94f62515bff3a95df6fc1ef708561d4a}{flicker\+Time}} = 0f
+\begin{DoxyCompactList}\small\item\em Время нахождения в режиме моргания. \end{DoxyCompactList}\item 
+Sprite\+Renderer \mbox{\hyperlink{class_plater_stats_af2763ef6889b57d14935d5270b5251d0}{sprite\+Renderer}}
+\begin{DoxyCompactList}\small\item\em Переменная класса рендеринга текстур. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_plater_stats_a95af0473337df00e54ee03524c5cf818}{immunity\+Time}} = 0f
+\begin{DoxyCompactList}\small\item\em Время нахождения в режиме неуязвимости. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_plater_stats_af000608e4c364414e0c3abca6fcf8580}{spawn\+Point}}
+\begin{DoxyCompactList}\small\item\em Точка спавна персонажа. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс статистики персонажа. 
+
+Класс, предназначенный для хранения информации об игроке (количество жизней, здоровье, очки, неуязвимость)
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_plater_stats_a37a386676696200a5fcb0964f5b51556}\label{class_plater_stats_a37a386676696200a5fcb0964f5b51556}} 
+\index{PlaterStats@{PlaterStats}!CollectCoin@{CollectCoin}}
+\index{CollectCoin@{CollectCoin}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{CollectCoin()}{CollectCoin()}}
+{\footnotesize\ttfamily void Plater\+Stats.\+Collect\+Coin (\begin{DoxyParamCaption}\item[{int}]{coin\+Value }\end{DoxyParamCaption})}
+
+
+
+Функция сбора монеты. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coin\+Value} & Количество монет.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plater_stats_aef5b8c7373351da4a0aa6d3db887805c}\label{class_plater_stats_aef5b8c7373351da4a0aa6d3db887805c}} 
+\index{PlaterStats@{PlaterStats}!get\_health@{get\_health}}
+\index{get\_health@{get\_health}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{get\_health()}{get\_health()}}
+{\footnotesize\ttfamily int Plater\+Stats.\+get\+\_\+health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция получения количества здоровья. 
+
+\begin{DoxyReturn}{Returns}
+Возвращает текущее здоровье.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plater_stats_a29394c9abad3fbad0f82e12a0f5d3881}\label{class_plater_stats_a29394c9abad3fbad0f82e12a0f5d3881}} 
+\index{PlaterStats@{PlaterStats}!PlayHitReaction@{PlayHitReaction}}
+\index{PlayHitReaction@{PlayHitReaction}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{PlayHitReaction()}{PlayHitReaction()}}
+{\footnotesize\ttfamily void Plater\+Stats.\+Play\+Hit\+Reaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция прорисовки получения урона. 
+
+\mbox{\Hypertarget{class_plater_stats_aaf75605304678141b811923392a2c746}\label{class_plater_stats_aaf75605304678141b811923392a2c746}} 
+\index{PlaterStats@{PlaterStats}!SpriteFlicker@{SpriteFlicker}}
+\index{SpriteFlicker@{SpriteFlicker}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{SpriteFlicker()}{SpriteFlicker()}}
+{\footnotesize\ttfamily void Plater\+Stats.\+Sprite\+Flicker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция моргания игрока. 
+
+\mbox{\Hypertarget{class_plater_stats_af8f6550983ffcf13a41d8e710c3b4986}\label{class_plater_stats_af8f6550983ffcf13a41d8e710c3b4986}} 
+\index{PlaterStats@{PlaterStats}!Start@{Start}}
+\index{Start@{Start}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Plater\+Stats.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция придает первоначальное состояние. Получения объекта \char`\"{}\+Sprite\+Renderer\char`\"{} от игрока. 
+
+\mbox{\Hypertarget{class_plater_stats_a115bb5dcf75f0ed27b8ba6a1438791e4}\label{class_plater_stats_a115bb5dcf75f0ed27b8ba6a1438791e4}} 
+\index{PlaterStats@{PlaterStats}!TakeDamage@{TakeDamage}}
+\index{TakeDamage@{TakeDamage}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{TakeDamage()}{TakeDamage()}}
+{\footnotesize\ttfamily void Plater\+Stats.\+Take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+
+
+
+Функция получения урона 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & Урон, наносимый игроку.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plater_stats_a18ede61fd39e3c2bd107bf7b881fafc9}\label{class_plater_stats_a18ede61fd39e3c2bd107bf7b881fafc9}} 
+\index{PlaterStats@{PlaterStats}!Update@{Update}}
+\index{Update@{Update}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Plater\+Stats.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция обновления каждый фрейм. В ней происходит обновление худа и проверки на то, жив ли игрок или нет. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_plater_stats_a9e9a5ac75a67faebd2c4472a7537f328}\label{class_plater_stats_a9e9a5ac75a67faebd2c4472a7537f328}} 
+\index{PlaterStats@{PlaterStats}!collectedCoins@{collectedCoins}}
+\index{collectedCoins@{collectedCoins}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{collectedCoins}{collectedCoins}}
+{\footnotesize\ttfamily int Plater\+Stats.\+collected\+Coins = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Количество собранных монет. 
+
+\mbox{\Hypertarget{class_plater_stats_ae8d3f49904db05ceaa0fac378304469e}\label{class_plater_stats_ae8d3f49904db05ceaa0fac378304469e}} 
+\index{PlaterStats@{PlaterStats}!flickerDuration@{flickerDuration}}
+\index{flickerDuration@{flickerDuration}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{flickerDuration}{flickerDuration}}
+{\footnotesize\ttfamily float Plater\+Stats.\+flicker\+Duration = 0.\+1f}
+
+
+
+Время моргания персонажа. 
+
+\mbox{\Hypertarget{class_plater_stats_a94f62515bff3a95df6fc1ef708561d4a}\label{class_plater_stats_a94f62515bff3a95df6fc1ef708561d4a}} 
+\index{PlaterStats@{PlaterStats}!flickerTime@{flickerTime}}
+\index{flickerTime@{flickerTime}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{flickerTime}{flickerTime}}
+{\footnotesize\ttfamily float Plater\+Stats.\+flicker\+Time = 0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Время нахождения в режиме моргания. 
+
+\mbox{\Hypertarget{class_plater_stats_afc593979fb1b304f77c3068ff9292310}\label{class_plater_stats_afc593979fb1b304f77c3068ff9292310}} 
+\index{PlaterStats@{PlaterStats}!health@{health}}
+\index{health@{health}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int Plater\+Stats.\+health = 10\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Здоровье игрока. 
+
+\mbox{\Hypertarget{class_plater_stats_a5d744291fbc9a245f98983f60c8fa47a}\label{class_plater_stats_a5d744291fbc9a245f98983f60c8fa47a}} 
+\index{PlaterStats@{PlaterStats}!healthUI@{healthUI}}
+\index{healthUI@{healthUI}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{healthUI}{healthUI}}
+{\footnotesize\ttfamily Slider Plater\+Stats.\+health\+UI}
+
+
+
+Здоровье для отображения в худе. 
+
+\mbox{\Hypertarget{class_plater_stats_a4a2b442cd27ede5bb505dda6246c8360}\label{class_plater_stats_a4a2b442cd27ede5bb505dda6246c8360}} 
+\index{PlaterStats@{PlaterStats}!immunityDuraction@{immunityDuraction}}
+\index{immunityDuraction@{immunityDuraction}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{immunityDuraction}{immunityDuraction}}
+{\footnotesize\ttfamily float Plater\+Stats.\+immunity\+Duraction = 1f}
+
+
+
+Длительность режима неуязвимости. 
+
+\mbox{\Hypertarget{class_plater_stats_a95af0473337df00e54ee03524c5cf818}\label{class_plater_stats_a95af0473337df00e54ee03524c5cf818}} 
+\index{PlaterStats@{PlaterStats}!immunityTime@{immunityTime}}
+\index{immunityTime@{immunityTime}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{immunityTime}{immunityTime}}
+{\footnotesize\ttfamily float Plater\+Stats.\+immunity\+Time = 0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Время нахождения в режиме неуязвимости. 
+
+\mbox{\Hypertarget{class_plater_stats_a7b116fe44b6dc0b16924ba9bc3c0a0e7}\label{class_plater_stats_a7b116fe44b6dc0b16924ba9bc3c0a0e7}} 
+\index{PlaterStats@{PlaterStats}!isImmune@{isImmune}}
+\index{isImmune@{isImmune}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{isImmune}{isImmune}}
+{\footnotesize\ttfamily bool Plater\+Stats.\+is\+Immune = false}
+
+
+
+Проверка на нахождение в режиме неуязвимости. 
+
+\mbox{\Hypertarget{class_plater_stats_a576e23f23c90198237eecb3b5d90e0c7}\label{class_plater_stats_a576e23f23c90198237eecb3b5d90e0c7}} 
+\index{PlaterStats@{PlaterStats}!lives@{lives}}
+\index{lives@{lives}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{lives}{lives}}
+{\footnotesize\ttfamily int Plater\+Stats.\+lives = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Жизни игрока. 
+
+\mbox{\Hypertarget{class_plater_stats_a1caa00c912e67a4d22fb19cc40d71207}\label{class_plater_stats_a1caa00c912e67a4d22fb19cc40d71207}} 
+\index{PlaterStats@{PlaterStats}!LiveUI@{LiveUI}}
+\index{LiveUI@{LiveUI}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{LiveUI}{LiveUI}}
+{\footnotesize\ttfamily Text Plater\+Stats.\+Live\+UI}
+
+
+
+Жизни для отображения в худе. 
+
+\mbox{\Hypertarget{class_plater_stats_a23d18b2ce3298092d5700fca9b724e4b}\label{class_plater_stats_a23d18b2ce3298092d5700fca9b724e4b}} 
+\index{PlaterStats@{PlaterStats}!scoreUI@{scoreUI}}
+\index{scoreUI@{scoreUI}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{scoreUI}{scoreUI}}
+{\footnotesize\ttfamily Text Plater\+Stats.\+score\+UI}
+
+
+
+Очки для отображения в худе. 
+
+\mbox{\Hypertarget{class_plater_stats_af000608e4c364414e0c3abca6fcf8580}\label{class_plater_stats_af000608e4c364414e0c3abca6fcf8580}} 
+\index{PlaterStats@{PlaterStats}!spawnPoint@{spawnPoint}}
+\index{spawnPoint@{spawnPoint}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{spawnPoint}{spawnPoint}}
+{\footnotesize\ttfamily Transform Plater\+Stats.\+spawn\+Point\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Точка спавна персонажа. 
+
+\mbox{\Hypertarget{class_plater_stats_af2763ef6889b57d14935d5270b5251d0}\label{class_plater_stats_af2763ef6889b57d14935d5270b5251d0}} 
+\index{PlaterStats@{PlaterStats}!spriteRenderer@{spriteRenderer}}
+\index{spriteRenderer@{spriteRenderer}!PlaterStats@{PlaterStats}}
+\doxysubsubsection{\texorpdfstring{spriteRenderer}{spriteRenderer}}
+{\footnotesize\ttfamily Sprite\+Renderer Plater\+Stats.\+sprite\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная класса рендеринга текстур. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Player/Plater\+Stats.\+cs\end{DoxyCompactItemize}

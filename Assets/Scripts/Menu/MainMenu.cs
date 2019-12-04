@@ -1,21 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
-
-public class MainMenu : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+/// <summary>
+/// Класс Главной игры.
+/// <remarks>Данный класс реализует главное меню.</remarks>
+/// </summary>
+public class MainMenu : MonoBehaviour
+{
+    /// <summary>
+    /// Функция запуска игры.
+    /// </summary>
     public void StartGame()
     {
         Application.LoadLevel("Level0");
     }
+    /// <summary>
+    /// Функция выхода из игры.
+    /// </summary>
     public void ExitGame()
     {
         Application.Quit();

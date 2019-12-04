@@ -62,38 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Background\Background.cs" />
-    <Compile Include="Assets\Scripts\Background\BackgroundLoop.cs" />
-    <Compile Include="Assets\Scripts\Background\ScrollingBG1.cs" />
-    <Compile Include="Assets\Scripts\Background\SoundManager.cs" />
-    <Compile Include="Assets\Scripts\Enemy\BossBulletController.cs" />
-    <Compile Include="Assets\Scripts\Enemy\BossScript.cs" />
-    <Compile Include="Assets\Scripts\Enemy\DogScript.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Enemy1.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Enemy2.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Enemy2BulletController.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EnemyGhostGFX.cs" />
-    <Compile Include="Assets\Scripts\Menu\GameOverMenu.cs" />
-    <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\Parallax\FreeParallax.cs" />
-    <Compile Include="Assets\Scripts\Parallax\FreeParallaxDemo.cs" />
-    <Compile Include="Assets\Scripts\Player\BulletController.cs" />
-    <Compile Include="Assets\Scripts\Player\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\Player\PlaterStats.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
-    <Compile Include="Assets\Scripts\Tools\CameraShake.cs" />
-    <Compile Include="Assets\Scripts\Tools\Coin.cs" />
-    <Compile Include="Assets\Scripts\Tools\DeathLevel.cs" />
-    <Compile Include="Assets\Scripts\Tools\FadeInOut.cs" />
-    <Compile Include="Assets\Scripts\Tools\HingeButtonController.cs" />
-    <Compile Include="Assets\Scripts\Tools\HP.cs" />
-    <Compile Include="Assets\Scripts\Tools\keyToGate.cs" />
-    <Compile Include="Assets\Scripts\Tools\LaserScript.cs" />
-    <Compile Include="Assets\Scripts\Tools\PlatformMovable.cs" />
-    <Compile Include="Assets\Scripts\Tools\PositionCheck.cs" />
-    <Compile Include="Assets\Scripts\Tools\SawController.cs" />
-    <Compile Include="Assets\Scripts\Tools\SpikesController.cs" />
-    <Compile Include="Assets\Scripts\Tools\TeleporterScript.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GPUInstancing.cs" />
@@ -704,6 +672,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="GameAssembly.csproj">
+      <Project>{6DCCC2B1-0E4C-4379-56FB-3529E31F7235}</Project>
+      <Name>GameAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="AstarPathfindingProject.csproj">
       <Project>{A43A9FA8-834F-8C21-FD64-55CB2E2F5698}</Project>
       <Name>AstarPathfindingProject</Name>

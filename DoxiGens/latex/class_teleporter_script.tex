@@ -1,0 +1,112 @@
+\hypertarget{class_teleporter_script}{}\doxysection{Teleporter\+Script Class Reference}
+\label{class_teleporter_script}\index{TeleporterScript@{TeleporterScript}}
+
+
+Класс телепорта.  
+
+
+Inheritance diagram for Teleporter\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_teleporter_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_teleporter_script_a1fe7ffebc251f0d0c7191233bcfc2496}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция установки первоначального состояния, в зависимости от ситации обработка текстур. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_teleporter_script_a1116f3ea9b0d5c20e3be71ec86d373ac}{On\+Trigger\+Enter2D}} (Collider2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на заход в тригерзону телепорта некоторого объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_teleporter_script_a746cec0e990440bda766910fbef907f8}{load\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Функция загрузки следующего уровня. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_plater_stats}{Plater\+Stats}} \mbox{\hyperlink{class_teleporter_script_ae7cd5c857a706d87ad02161eebb4b37a}{Player}}
+\begin{DoxyCompactList}\small\item\em Переменная класса статистики игрока. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_teleporter_script_a398a81c9445a1df2c111180a918013cd}{lname}}
+\begin{DoxyCompactList}\small\item\em Название текущего уровня. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_teleporter_script_abd10a6fcac05497a4f815f588bb655e1}{not\+Anim}}
+\begin{DoxyCompactList}\small\item\em Необходимость анимации. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс телепорта. 
+
+Данный класс реализует \char`\"{}телепорт\char`\"{} или возможность перемещаться между уровнями.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_teleporter_script_a746cec0e990440bda766910fbef907f8}\label{class_teleporter_script_a746cec0e990440bda766910fbef907f8}} 
+\index{TeleporterScript@{TeleporterScript}!loadLevel@{loadLevel}}
+\index{loadLevel@{loadLevel}!TeleporterScript@{TeleporterScript}}
+\doxysubsubsection{\texorpdfstring{loadLevel()}{loadLevel()}}
+{\footnotesize\ttfamily void Teleporter\+Script.\+load\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция загрузки следующего уровня. 
+
+\mbox{\Hypertarget{class_teleporter_script_a1116f3ea9b0d5c20e3be71ec86d373ac}\label{class_teleporter_script_a1116f3ea9b0d5c20e3be71ec86d373ac}} 
+\index{TeleporterScript@{TeleporterScript}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!TeleporterScript@{TeleporterScript}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily void Teleporter\+Script.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на заход в тригерзону телепорта некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_teleporter_script_a1fe7ffebc251f0d0c7191233bcfc2496}\label{class_teleporter_script_a1fe7ffebc251f0d0c7191233bcfc2496}} 
+\index{TeleporterScript@{TeleporterScript}!Start@{Start}}
+\index{Start@{Start}!TeleporterScript@{TeleporterScript}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Teleporter\+Script.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция установки первоначального состояния, в зависимости от ситации обработка текстур. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_teleporter_script_a398a81c9445a1df2c111180a918013cd}\label{class_teleporter_script_a398a81c9445a1df2c111180a918013cd}} 
+\index{TeleporterScript@{TeleporterScript}!lname@{lname}}
+\index{lname@{lname}!TeleporterScript@{TeleporterScript}}
+\doxysubsubsection{\texorpdfstring{lname}{lname}}
+{\footnotesize\ttfamily string Teleporter\+Script.\+lname\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Название текущего уровня. 
+
+\mbox{\Hypertarget{class_teleporter_script_abd10a6fcac05497a4f815f588bb655e1}\label{class_teleporter_script_abd10a6fcac05497a4f815f588bb655e1}} 
+\index{TeleporterScript@{TeleporterScript}!notAnim@{notAnim}}
+\index{notAnim@{notAnim}!TeleporterScript@{TeleporterScript}}
+\doxysubsubsection{\texorpdfstring{notAnim}{notAnim}}
+{\footnotesize\ttfamily bool Teleporter\+Script.\+not\+Anim\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Необходимость анимации. 
+
+\mbox{\Hypertarget{class_teleporter_script_ae7cd5c857a706d87ad02161eebb4b37a}\label{class_teleporter_script_ae7cd5c857a706d87ad02161eebb4b37a}} 
+\index{TeleporterScript@{TeleporterScript}!Player@{Player}}
+\index{Player@{Player}!TeleporterScript@{TeleporterScript}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_plater_stats}{Plater\+Stats}} Teleporter\+Script.\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная класса статистики игрока. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Tools/Teleporter\+Script.\+cs\end{DoxyCompactItemize}

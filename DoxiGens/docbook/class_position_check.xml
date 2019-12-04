@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_position_check">
+<title>PositionCheck Class Reference</title>
+<indexterm><primary>PositionCheck</primary></indexterm>
+<para>
+
+<para>Класс проверки на нахождения объекта в точке. </para>
+ 
+</para>
+<para>Inheritance diagram for PositionCheck:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_position_check.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_position_check_1a0b350fdf921fc7546ed29f7dee4d47f9">GetPosition</link> ()</para>
+
+<para>Функция возвращающая состояние: установлен объект или нет. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_position_check_1a9fcf0cb8cc09eea72794bbad322f6fb5">Start</link> ()</para>
+
+<para>Установка первоначального состояния. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_position_check_1ae4af24aad28768e29aa49f87a302fefc">OnTriggerStay2D</link> (Collider2D collision)</para>
+
+<para>Проверка на нахождение в тригерзоне некоторого объекта. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_position_check_1a2b1882de01b3e5204d23de10ff8d99a0">OnTriggerExit2D</link> (Collider2D collision)</para>
+
+<para>Проверка на выход из тригерзоны некоторого объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_position_check_1ab3acb771413eefc1bd54d78b2b76c2f3">IsPlaced</link></para>
+
+<para>Проверка на нахождение объекта в точке. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс проверки на нахождения объекта в точке. </para>
+
+
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_position_check_1a0b350fdf921fc7546ed29f7dee4d47f9"/>    <section>
+    <title>GetPosition()</title>
+<indexterm><primary>GetPosition</primary><secondary>PositionCheck</secondary></indexterm>
+<indexterm><primary>PositionCheck</primary><secondary>GetPosition</secondary></indexterm>
+<para><computeroutput>bool PositionCheck.GetPosition ( )</computeroutput></para><para>
+
+<para>Функция возвращающая состояние: установлен объект или нет. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Установлен/Не установлен</para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_position_check_1a2b1882de01b3e5204d23de10ff8d99a0"/>    <section>
+    <title>OnTriggerExit2D()</title>
+<indexterm><primary>OnTriggerExit2D</primary><secondary>PositionCheck</secondary></indexterm>
+<indexterm><primary>PositionCheck</primary><secondary>OnTriggerExit2D</secondary></indexterm>
+<para><computeroutput>void PositionCheck.OnTriggerExit2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на выход из тригерзоны некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_position_check_1ae4af24aad28768e29aa49f87a302fefc"/>    <section>
+    <title>OnTriggerStay2D()</title>
+<indexterm><primary>OnTriggerStay2D</primary><secondary>PositionCheck</secondary></indexterm>
+<indexterm><primary>PositionCheck</primary><secondary>OnTriggerStay2D</secondary></indexterm>
+<para><computeroutput>void PositionCheck.OnTriggerStay2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на нахождение в тригерзоне некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_position_check_1a9fcf0cb8cc09eea72794bbad322f6fb5"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>PositionCheck</secondary></indexterm>
+<indexterm><primary>PositionCheck</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void PositionCheck.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Установка первоначального состояния. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_position_check_1ab3acb771413eefc1bd54d78b2b76c2f3"/>    <section>
+    <title>IsPlaced</title>
+<indexterm><primary>IsPlaced</primary><secondary>PositionCheck</secondary></indexterm>
+<indexterm><primary>PositionCheck</primary><secondary>IsPlaced</secondary></indexterm>
+<para><computeroutput>bool PositionCheck.IsPlaced<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на нахождение объекта в точке. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__position_check_8cs">PositionCheck.cs</link></section>
+</section>

@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_enemy2_bullet_controller">
+<title>Enemy2BulletController Class Reference</title>
+<indexterm><primary>Enemy2BulletController</primary></indexterm>
+<para>
+
+<para>Класс управления пули &quot;Робота&quot;. </para>
+ 
+</para>
+<para>Inheritance diagram for Enemy2BulletController:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_enemy2_bullet_controller.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_enemy2_bullet_controller_1a70725d71e6227bbec605041a153a3f6a">Flip</link> ()</para>
+
+<para>Функция отражения по вертикали в зависимости от позиции игрока. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_enemy2_bullet_controller_1ac19884ed18dc695cf0beb9244872f7c1">speedx</link></para>
+
+<para>Скорость движения по координате Х. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy2_bullet_controller_1af28af6af1468c9d180e42a11a39b36bd">speedy</link> = 0</para>
+
+<para>Скорость движения по координате У. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_enemy2_bullet_controller_1a4f7d76fd0324f99a9e11a1eb5f020153">damage</link></para>
+
+<para>Наносимый урон. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_enemy2_bullet_controller_1a526a73c9616be321efcc9e08f4998329">Start</link> ()</para>
+
+<para>Функция придания первоначального состояния. Определение направления движения пули. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy2_bullet_controller_1ae7f060f1ec5b3997d379f8c26a29b387">Update</link> ()</para>
+
+<para>Функция покадрового обновления. Движение пули. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enemy2_bullet_controller_1af3a722f16a072d25bd191ec3488d5597">OnTriggerEnter2D</link> (Collider2D other)</para>
+
+<para>Функция проверки на попадание в коллайдер пули. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_player_control">PlayerControl</link> <link linkend="_class_enemy2_bullet_controller_1ad8c95cb057d4e55509402247dc93e10d">Player</link></para>
+
+<para>Объект игрок. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy2_bullet_controller_1adfa75e9c812c625b85be6b92121b8ade">fx</link></para>
+
+<para>Координата по Х. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy2_bullet_controller_1a0b4c8cc98370046907949527ea64f65f">fy</link></para>
+
+<para>Координата по У. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_enemy2_bullet_controller_1a01ef99a8c3f5ec63005eb5bbc7d32a15">fz</link></para>
+
+<para>Координата по Z. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс управления пули &quot;Робота&quot;. </para>
+
+
+
+<para>Данный класс реализует движение пули и ее попадание в некоторый объект.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_enemy2_bullet_controller_1a70725d71e6227bbec605041a153a3f6a"/>    <section>
+    <title>Flip()</title>
+<indexterm><primary>Flip</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>Flip</secondary></indexterm>
+<para><computeroutput>void Enemy2BulletController.Flip ( )</computeroutput></para><para>
+
+<para>Функция отражения по вертикали в зависимости от позиции игрока. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_bullet_controller_1af3a722f16a072d25bd191ec3488d5597"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void Enemy2BulletController.OnTriggerEnter2D (Collider2D other)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция проверки на попадание в коллайдер пули. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>other</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_enemy2_bullet_controller_1a526a73c9616be321efcc9e08f4998329"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void Enemy2BulletController.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция придания первоначального состояния. Определение направления движения пули. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_bullet_controller_1ae7f060f1ec5b3997d379f8c26a29b387"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void Enemy2BulletController.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления. Движение пули. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_enemy2_bullet_controller_1a4f7d76fd0324f99a9e11a1eb5f020153"/>    <section>
+    <title>damage</title>
+<indexterm><primary>damage</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>damage</secondary></indexterm>
+<para><computeroutput>int Enemy2BulletController.damage</computeroutput></para><para>
+
+<para>Наносимый урон. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_bullet_controller_1adfa75e9c812c625b85be6b92121b8ade"/>    <section>
+    <title>fx</title>
+<indexterm><primary>fx</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>fx</secondary></indexterm>
+<para><computeroutput>float Enemy2BulletController.fx<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата по Х. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_bullet_controller_1a0b4c8cc98370046907949527ea64f65f"/>    <section>
+    <title>fy</title>
+<indexterm><primary>fy</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>fy</secondary></indexterm>
+<para><computeroutput>float Enemy2BulletController.fy<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата по У. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_bullet_controller_1a01ef99a8c3f5ec63005eb5bbc7d32a15"/>    <section>
+    <title>fz</title>
+<indexterm><primary>fz</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>fz</secondary></indexterm>
+<para><computeroutput>float Enemy2BulletController.fz<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата по Z. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_bullet_controller_1ad8c95cb057d4e55509402247dc93e10d"/>    <section>
+    <title>Player</title>
+<indexterm><primary>Player</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_player_control">PlayerControl</link> Enemy2BulletController.Player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Объект игрок. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_bullet_controller_1ac19884ed18dc695cf0beb9244872f7c1"/>    <section>
+    <title>speedx</title>
+<indexterm><primary>speedx</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>speedx</secondary></indexterm>
+<para><computeroutput>float Enemy2BulletController.speedx</computeroutput></para><para>
+
+<para>Скорость движения по координате Х. </para>
+</para>
+    </section><anchor xml:id="_class_enemy2_bullet_controller_1af28af6af1468c9d180e42a11a39b36bd"/>    <section>
+    <title>speedy</title>
+<indexterm><primary>speedy</primary><secondary>Enemy2BulletController</secondary></indexterm>
+<indexterm><primary>Enemy2BulletController</primary><secondary>speedy</secondary></indexterm>
+<para><computeroutput>float Enemy2BulletController.speedy = 0</computeroutput></para><para>
+
+<para>Скорость движения по координате У. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/<link linkend="__enemy2_bullet_controller_8cs">Enemy2BulletController.cs</link></section>
+</section>

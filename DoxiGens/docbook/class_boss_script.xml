@@ -1,0 +1,428 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_boss_script">
+<title>BossScript Class Reference</title>
+<indexterm><primary>BossScript</primary></indexterm>
+<para>
+
+<para>Класс босса. </para>
+ 
+</para>
+<para>Inheritance diagram for BossScript:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_boss_script.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_boss_script_1a13f257e355e57caf311b36ca292486c8">SpawnEnemies</link> ()</para>
+
+<para>Функция, отвечающая за спавн врагов в разных позициях. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_boss_script_1a3c78bf505f27cc83719d744d83ed319d">Flip</link> ()</para>
+
+<para>Функция отражения модели босса по вертикали в зависимости от позиции игрока. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Transform[] <link linkend="_class_boss_script_1abb445779efdb5a82192ada23c2d04f80">points</link></para>
+
+<para>Массив координат точек перемещения босса. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_boss_script_1afeeb1a0dab39a7e11b5c9187820b2a9b">firepoint</link></para>
+
+<para>Координата точки выстрела. </para>
+</listitem>
+            <listitem><para>GameObject <link linkend="_class_boss_script_1a6f005cabff102ecf8d4217123f10ab8b">Bullet</link></para>
+
+<para>Объект пуля. </para>
+</listitem>
+            <listitem><para>GameObject <link linkend="_class_boss_script_1ae7de39345ce8fed356d3abb68798f825">Enemies</link></para>
+
+<para>Объект моб &quot;Рыцарь&quot;. </para>
+</listitem>
+            <listitem><para>GameObject <link linkend="_class_boss_script_1aa0f59c18eb458d43465919ef80e5549f">Enemies2</link></para>
+
+<para>Объект моб &quot;Робот&quot;. </para>
+</listitem>
+            <listitem><para>AudioSource <link linkend="_class_boss_script_1a948e6a5a86fce838fc68bed1fae7e0c4">sndM</link></para>
+
+<para>Источник звука для воспроизведения клипов. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_boss_script_1aa2c9f4cd56f94b1e6072073629fea577">health</link></para>
+
+<para>Количество здоровья босса. </para>
+</listitem>
+            <listitem><para>Slider <link linkend="_class_boss_script_1a79205ff9c977f07ffa8daf2f528ff0c0">healthUI</link></para>
+
+<para>Отображение здоровья босса в худе. </para>
+</listitem>
+            <listitem><para>GameObject[] <link linkend="_class_boss_script_1a72239a9c108103ef94c812093d0ebf5f">target_2</link></para>
+
+<para>Массив позиций для босса. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_boss_script_1a6bf157ef7e2764c6f4b064db2fd942ea">Start</link> ()</para>
+
+<para>Функция для придания первоначального сотояния. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_boss_script_1a94f67d0dc728809000ee14a85c50e7fb">Die</link> ()</para>
+
+<para>Функция обработки смерти босса. </para>
+</listitem>
+            <listitem><para>IEnumerator <link linkend="_class_boss_script_1a7983c6a29fe117591142fdb53949f888">waitDies</link> ()</para>
+
+<para>Корутина для ожидания смерти. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_boss_script_1aa398db86d10e634b6841f0b5a2c58244">Update</link> ()</para>
+
+<para>Функция покадрового обновления, проверка на состояние и обновление показателя здоровья. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_boss_script_1afcb1fbfd8f9f83fa3fd5e32bcbc3dfc7">OnTriggerEnter2D</link> (Collider2D other)</para>
+
+<para>Проверка на попадание в коллайдер босса некоторого объекта. </para>
+</listitem>
+            <listitem><para>IEnumerator <link linkend="_class_boss_script_1ad752e5c5f1d9805d23d10f33103b5c7d">boss</link> ()</para>
+
+<para>Корутина для обработки движения босса и вызова его атаки. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_boss_script_1ab76827c041ca8da0262ca50b2dce3afd">Speed</link></para>
+
+<para>Скорость перемещения. </para>
+</listitem>
+            <listitem><para><link linkend="_class_player_control">PlayerControl</link> <link linkend="_class_boss_script_1a2564db70a652a29a0acb4ea6630b73e8">Player</link></para>
+
+<para>Переменная класса управления игроком. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_boss_script_1a3fc2b8b4eac09e8f894fb8cc322ad766">BossSound</link></para>
+
+<para>Звук атаки босса. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_boss_script_1a654712f8ec2edc1eaeec2bc678132869">fx</link></para>
+
+<para>Координата Х. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_boss_script_1a483d0b4507e29277a6a07a7ed3dc2a7e">fy</link></para>
+
+<para>Координата У. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_boss_script_1a26c38204c52a193ada83108233f2b92d">fz</link></para>
+
+<para>Координата Z. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_boss_script_1ad84319b566736644d003517aaae41623">enter</link> = true</para>
+
+<para>Пременная, показывающая зашел ли босс в одну из позиций или нет. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_boss_script_1abfa40628b1bfa41ff5cfb2642547d7c1">point</link> = 0</para>
+
+<para>Следующая позиция босса. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_boss_script_1a21dfa278d0c2e32d634641871992231a">currentPoint</link> = 0</para>
+
+<para>Текущая позиция босса. </para>
+</listitem>
+            <listitem><para>System.Random <link linkend="_class_boss_script_1a13051463ad4794b6c82cd28287292c4e">rnd</link></para>
+
+<para>Рандомайзер для определения следующей позиции. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_boss_script_1aada4e0b98c6013f7ad67d2b002a7cedf">dies</link> = false</para>
+
+<para>Переменная показывающая состояния босса, жив или нет. </para>
+</listitem>
+            <listitem><para>Animator <link linkend="_class_boss_script_1ace948c2187399bed33ca50c42de46462">_anim</link></para>
+
+<para>Аниматор текстур. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс босса. </para>
+
+
+
+<para>Данный класс описывают движение босса, его атаку и взаимодействие с игроком.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_boss_script_1ad752e5c5f1d9805d23d10f33103b5c7d"/>    <section>
+    <title>boss()</title>
+<indexterm><primary>boss</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>boss</secondary></indexterm>
+<para><computeroutput>IEnumerator BossScript.boss ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Корутина для обработки движения босса и вызова его атаки. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a94f67d0dc728809000ee14a85c50e7fb"/>    <section>
+    <title>Die()</title>
+<indexterm><primary>Die</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>Die</secondary></indexterm>
+<para><computeroutput>void BossScript.Die ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция обработки смерти босса. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a3c78bf505f27cc83719d744d83ed319d"/>    <section>
+    <title>Flip()</title>
+<indexterm><primary>Flip</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>Flip</secondary></indexterm>
+<para><computeroutput>void BossScript.Flip ( )</computeroutput></para><para>
+
+<para>Функция отражения модели босса по вертикали в зависимости от позиции игрока. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1afcb1fbfd8f9f83fa3fd5e32bcbc3dfc7"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void BossScript.OnTriggerEnter2D (Collider2D other)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на попадание в коллайдер босса некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>other</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_boss_script_1a13f257e355e57caf311b36ca292486c8"/>    <section>
+    <title>SpawnEnemies()</title>
+<indexterm><primary>SpawnEnemies</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>SpawnEnemies</secondary></indexterm>
+<para><computeroutput>void BossScript.SpawnEnemies ( )</computeroutput></para><para>
+
+<para>Функция, отвечающая за спавн врагов в разных позициях. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a6bf157ef7e2764c6f4b064db2fd942ea"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void BossScript.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция для придания первоначального сотояния. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1aa398db86d10e634b6841f0b5a2c58244"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void BossScript.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления, проверка на состояние и обновление показателя здоровья. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a7983c6a29fe117591142fdb53949f888"/>    <section>
+    <title>waitDies()</title>
+<indexterm><primary>waitDies</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>waitDies</secondary></indexterm>
+<para><computeroutput>IEnumerator BossScript.waitDies ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Корутина для ожидания смерти. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_boss_script_1ace948c2187399bed33ca50c42de46462"/>    <section>
+    <title>_anim</title>
+<indexterm><primary>_anim</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>_anim</secondary></indexterm>
+<para><computeroutput>Animator BossScript._anim<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Аниматор текстур. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a3fc2b8b4eac09e8f894fb8cc322ad766"/>    <section>
+    <title>BossSound</title>
+<indexterm><primary>BossSound</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>BossSound</secondary></indexterm>
+<para><computeroutput>AudioClip BossScript.BossSound<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук атаки босса. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a6f005cabff102ecf8d4217123f10ab8b"/>    <section>
+    <title>Bullet</title>
+<indexterm><primary>Bullet</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>Bullet</secondary></indexterm>
+<para><computeroutput>GameObject BossScript.Bullet</computeroutput></para><para>
+
+<para>Объект пуля. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a21dfa278d0c2e32d634641871992231a"/>    <section>
+    <title>currentPoint</title>
+<indexterm><primary>currentPoint</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>currentPoint</secondary></indexterm>
+<para><computeroutput>int BossScript.currentPoint = 0<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Текущая позиция босса. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1aada4e0b98c6013f7ad67d2b002a7cedf"/>    <section>
+    <title>dies</title>
+<indexterm><primary>dies</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>dies</secondary></indexterm>
+<para><computeroutput>bool BossScript.dies = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная показывающая состояния босса, жив или нет. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1ae7de39345ce8fed356d3abb68798f825"/>    <section>
+    <title>Enemies</title>
+<indexterm><primary>Enemies</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>Enemies</secondary></indexterm>
+<para><computeroutput>GameObject BossScript.Enemies</computeroutput></para><para>
+
+<para>Объект моб &quot;Рыцарь&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1aa0f59c18eb458d43465919ef80e5549f"/>    <section>
+    <title>Enemies2</title>
+<indexterm><primary>Enemies2</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>Enemies2</secondary></indexterm>
+<para><computeroutput>GameObject BossScript.Enemies2</computeroutput></para><para>
+
+<para>Объект моб &quot;Робот&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1ad84319b566736644d003517aaae41623"/>    <section>
+    <title>enter</title>
+<indexterm><primary>enter</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>enter</secondary></indexterm>
+<para><computeroutput>bool BossScript.enter = true<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Пременная, показывающая зашел ли босс в одну из позиций или нет. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1afeeb1a0dab39a7e11b5c9187820b2a9b"/>    <section>
+    <title>firepoint</title>
+<indexterm><primary>firepoint</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>firepoint</secondary></indexterm>
+<para><computeroutput>Transform BossScript.firepoint</computeroutput></para><para>
+
+<para>Координата точки выстрела. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a654712f8ec2edc1eaeec2bc678132869"/>    <section>
+    <title>fx</title>
+<indexterm><primary>fx</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>fx</secondary></indexterm>
+<para><computeroutput>float BossScript.fx<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата Х. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a483d0b4507e29277a6a07a7ed3dc2a7e"/>    <section>
+    <title>fy</title>
+<indexterm><primary>fy</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>fy</secondary></indexterm>
+<para><computeroutput>float BossScript.fy<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата У. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a26c38204c52a193ada83108233f2b92d"/>    <section>
+    <title>fz</title>
+<indexterm><primary>fz</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>fz</secondary></indexterm>
+<para><computeroutput>float BossScript.fz<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата Z. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1aa2c9f4cd56f94b1e6072073629fea577"/>    <section>
+    <title>health</title>
+<indexterm><primary>health</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>health</secondary></indexterm>
+<para><computeroutput>int BossScript.health</computeroutput></para><para>
+
+<para>Количество здоровья босса. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a79205ff9c977f07ffa8daf2f528ff0c0"/>    <section>
+    <title>healthUI</title>
+<indexterm><primary>healthUI</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>healthUI</secondary></indexterm>
+<para><computeroutput>Slider BossScript.healthUI</computeroutput></para><para>
+
+<para>Отображение здоровья босса в худе. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a2564db70a652a29a0acb4ea6630b73e8"/>    <section>
+    <title>Player</title>
+<indexterm><primary>Player</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_player_control">PlayerControl</link> BossScript.Player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная класса управления игроком. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1abfa40628b1bfa41ff5cfb2642547d7c1"/>    <section>
+    <title>point</title>
+<indexterm><primary>point</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>point</secondary></indexterm>
+<para><computeroutput>int BossScript.point = 0<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Следующая позиция босса. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1abb445779efdb5a82192ada23c2d04f80"/>    <section>
+    <title>points</title>
+<indexterm><primary>points</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>points</secondary></indexterm>
+<para><computeroutput>Transform [] BossScript.points</computeroutput></para><para>
+
+<para>Массив координат точек перемещения босса. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a13051463ad4794b6c82cd28287292c4e"/>    <section>
+    <title>rnd</title>
+<indexterm><primary>rnd</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>rnd</secondary></indexterm>
+<para><computeroutput>System.Random BossScript.rnd<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Рандомайзер для определения следующей позиции. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a948e6a5a86fce838fc68bed1fae7e0c4"/>    <section>
+    <title>sndM</title>
+<indexterm><primary>sndM</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>sndM</secondary></indexterm>
+<para><computeroutput>AudioSource BossScript.sndM</computeroutput></para><para>
+
+<para>Источник звука для воспроизведения клипов. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1ab76827c041ca8da0262ca50b2dce3afd"/>    <section>
+    <title>Speed</title>
+<indexterm><primary>Speed</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>Speed</secondary></indexterm>
+<para><computeroutput>float BossScript.Speed<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Скорость перемещения. </para>
+</para>
+    </section><anchor xml:id="_class_boss_script_1a72239a9c108103ef94c812093d0ebf5f"/>    <section>
+    <title>target_2</title>
+<indexterm><primary>target_2</primary><secondary>BossScript</secondary></indexterm>
+<indexterm><primary>BossScript</primary><secondary>target_2</secondary></indexterm>
+<para><computeroutput>GameObject [] BossScript.target_2</computeroutput></para><para>
+
+<para>Массив позиций для босса. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/<link linkend="__boss_script_8cs">BossScript.cs</link></section>
+</section>

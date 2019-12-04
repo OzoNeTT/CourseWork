@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_bullet_controller">
+<title>BulletController Class Reference</title>
+<indexterm><primary>BulletController</primary></indexterm>
+<para>
+
+<para>Класс пули. </para>
+ 
+</para>
+<para>Inheritance diagram for BulletController:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_bullet_controller.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_bullet_controller_1af49391a8df3ae6a043049883ec1a5ec3">flip</link> ()</para>
+
+<para>Функция отражения по вертикали, в зависимости от направления выстрела. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_bullet_controller_1a346a30c03fb8a585727600de5e51d1e1">speedx</link></para>
+
+<para>Скорость по координате X. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_bullet_controller_1a27fbfe3683c791f50f9d7847a6ad4d25">speedy</link></para>
+
+<para>Скорость по координате Y. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_bullet_controller_1a6232fa2a9b72c23036c8bf0ff1db6f77">damage</link> =10</para>
+
+<para>Урон выстрела. </para>
+</listitem>
+            <listitem><para>AudioSource <link linkend="_class_bullet_controller_1aae4ce01807f730f55e9792a3df3e3965">HitSound</link></para>
+
+<para>Звук попадания в препятствие. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_bullet_controller_1ac6875ec4b1137753dc1e44cba00faec7">Start</link> ()</para>
+
+<para>Функция инициализации объекта &quot;Пуля&quot;. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_bullet_controller_1ac796fca5f5c7655ce09a43a6891d89a1">Update</link> ()</para>
+
+<para>Обновление каждый фрейм. Движения пули. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_bullet_controller_1adf9caae04663ec1a70d4e5a543b95b50">OnTriggerEnter2D</link> (Collider2D other)</para>
+
+<para>Проверка на то, куда попала пуля. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_player_control">PlayerControl</link> <link linkend="_class_bullet_controller_1aa677ca1263b52bf14ce49c170cdf80e4">player</link></para>
+
+<para>Объект игрок. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_bullet_controller_1a617c61322808009f80f7434996f64797">fx</link></para>
+
+<para>Координата по X. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_bullet_controller_1a191911515b749c5ba0312a9a47dc6ceb">fy</link></para>
+
+<para>Координата по Y. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_bullet_controller_1a87a85f05ea606d7ff4dcef4d8e8fadfc">fz</link></para>
+
+<para>Координата по Z. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс пули. </para>
+
+
+
+<para>Отвечает за направление и скорость движения пули, а так же проверяет на попадание.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_bullet_controller_1af49391a8df3ae6a043049883ec1a5ec3"/>    <section>
+    <title>flip()</title>
+<indexterm><primary>flip</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>flip</secondary></indexterm>
+<para><computeroutput>void BulletController.flip ( )</computeroutput></para><para>
+
+<para>Функция отражения по вертикали, в зависимости от направления выстрела. </para>
+</para>
+    </section><anchor xml:id="_class_bullet_controller_1adf9caae04663ec1a70d4e5a543b95b50"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void BulletController.OnTriggerEnter2D (Collider2D other)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на то, куда попала пуля. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>other</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_bullet_controller_1ac6875ec4b1137753dc1e44cba00faec7"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void BulletController.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция инициализации объекта &quot;Пуля&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_bullet_controller_1ac796fca5f5c7655ce09a43a6891d89a1"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void BulletController.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Обновление каждый фрейм. Движения пули. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_bullet_controller_1a6232fa2a9b72c23036c8bf0ff1db6f77"/>    <section>
+    <title>damage</title>
+<indexterm><primary>damage</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>damage</secondary></indexterm>
+<para><computeroutput>float BulletController.damage =10</computeroutput></para><para>
+
+<para>Урон выстрела. </para>
+</para>
+    </section><anchor xml:id="_class_bullet_controller_1a617c61322808009f80f7434996f64797"/>    <section>
+    <title>fx</title>
+<indexterm><primary>fx</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>fx</secondary></indexterm>
+<para><computeroutput>float BulletController.fx<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата по X. </para>
+</para>
+    </section><anchor xml:id="_class_bullet_controller_1a191911515b749c5ba0312a9a47dc6ceb"/>    <section>
+    <title>fy</title>
+<indexterm><primary>fy</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>fy</secondary></indexterm>
+<para><computeroutput>float BulletController.fy<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата по Y. </para>
+</para>
+    </section><anchor xml:id="_class_bullet_controller_1a87a85f05ea606d7ff4dcef4d8e8fadfc"/>    <section>
+    <title>fz</title>
+<indexterm><primary>fz</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>fz</secondary></indexterm>
+<para><computeroutput>float BulletController.fz<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата по Z. </para>
+</para>
+    </section><anchor xml:id="_class_bullet_controller_1aae4ce01807f730f55e9792a3df3e3965"/>    <section>
+    <title>HitSound</title>
+<indexterm><primary>HitSound</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>HitSound</secondary></indexterm>
+<para><computeroutput>AudioSource BulletController.HitSound</computeroutput></para><para>
+
+<para>Звук попадания в препятствие. </para>
+</para>
+    </section><anchor xml:id="_class_bullet_controller_1aa677ca1263b52bf14ce49c170cdf80e4"/>    <section>
+    <title>player</title>
+<indexterm><primary>player</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_player_control">PlayerControl</link> BulletController.player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Объект игрок. </para>
+</para>
+    </section><anchor xml:id="_class_bullet_controller_1a346a30c03fb8a585727600de5e51d1e1"/>    <section>
+    <title>speedx</title>
+<indexterm><primary>speedx</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>speedx</secondary></indexterm>
+<para><computeroutput>float BulletController.speedx</computeroutput></para><para>
+
+<para>Скорость по координате X. </para>
+</para>
+    </section><anchor xml:id="_class_bullet_controller_1a27fbfe3683c791f50f9d7847a6ad4d25"/>    <section>
+    <title>speedy</title>
+<indexterm><primary>speedy</primary><secondary>BulletController</secondary></indexterm>
+<indexterm><primary>BulletController</primary><secondary>speedy</secondary></indexterm>
+<para><computeroutput>float BulletController.speedy</computeroutput></para><para>
+
+<para>Скорость по координате Y. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Player/<link linkend="__bullet_controller_8cs">BulletController.cs</link></section>
+</section>

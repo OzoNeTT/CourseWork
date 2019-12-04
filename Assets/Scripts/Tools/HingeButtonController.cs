@@ -1,19 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HingeButtonController : MonoBehaviour {
+/// <summary>
+/// Класс кнопки.
+/// <remarks>Данный класс реализует нажатие кнопки при попадании пули игрока.</remarks>
+/// </summary>
+public class HingeButtonController : MonoBehaviour
+{
 
-    // Use this for initialization
+    /// <summary>
+    /// Объект двери.
+    /// </summary>
     public GameObject hinge;
+    /// <summary>
+    /// Величина сдвига при нажатии.
+    /// </summary>
     float x = -5f;
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    /// <summary>
+    /// Проверка на попадание в коллайдер некоторого объекта.
+    /// </summary>
+    /// <param name="other">Коллайдер другого объекта.</param>
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "PlayerBullet")

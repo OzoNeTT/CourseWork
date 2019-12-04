@@ -1,0 +1,574 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_dog_script">
+<title>DogScript Class Reference</title>
+<indexterm><primary>DogScript</primary></indexterm>
+<para>
+
+<para>Класс моба &quot;Собака&quot;. </para>
+ 
+</para>
+<para>Inheritance diagram for DogScript:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_dog_script.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_dog_script_1a82d8329db8baf998230db5160a92b16b">takeDamage</link> (int a)</para>
+
+<para>Функция получения урона. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dog_script_1a315072b85a2c577a4648f1a0e9215f40">Flip</link> ()</para>
+
+<para>Функция отражения модели моба по вертикали в зависимости от позиции игрока. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dog_script_1a94ea489526ae569f134f76a63886c437">Flip2</link> ()</para>
+
+<para>Функция отражения модели моба по вертикали в зависимости от достижения стенок. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_dog_script_1aa15132a699259cec10926659b82e9dae">moveSpeed</link></para>
+
+<para>Скорость передвижения. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_dog_script_1aa798f00c26cae772c192eea4bf1170dc">moveRight</link></para>
+
+<para>Направление движения. </para>
+</listitem>
+            <listitem><para>GameObject <link linkend="_class_dog_script_1acc4bd3a31b9974a52228ca01bb447b5d">hill</link></para>
+
+<para>Объект здоровье. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_dog_script_1a15c2b06db130ea3710d2615ec28fdaea">wallCheck</link></para>
+
+<para>Координаты точки для проверки стенок. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_dog_script_1a97523636fff111da587e4dc7c43249e6">wallCheckRadius</link></para>
+
+<para>Радиус проверки стенок. </para>
+</listitem>
+            <listitem><para>LayerMask <link linkend="_class_dog_script_1aaceba896d76f4f5fa53990838575c0d9">whatIsWall</link></para>
+
+<para>Слой, отвечающий за то, чем является стена. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_dog_script_1af1ff1177c7552ccf4053cd3c5ae8e1a6">walled</link></para>
+
+<para>Переменная, показывающая, достиг ли моб стены или нет. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_dog_script_1ad7543c3bd30e0205900b6dd7461699a3">egdeCheck</link></para>
+
+<para>Координаты точки для проверки на углы. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_dog_script_1ac09a9ab9481379a8e2b9f2755bbbac96">Radius</link></para>
+
+<para>Радиус поиска игрока. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_dog_script_1ad5e1428ef40ab9f8ded881f1343a54bf">playerCheck</link></para>
+
+<para>Координаты точки для отрисовки радиуса для проверки на нахождение в нем игрока. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_dog_script_1aa42b3290a2329074b997a67f197f8c56">playerCheckRadius</link></para>
+
+<para>Радиус проверки. </para>
+</listitem>
+            <listitem><para>LayerMask <link linkend="_class_dog_script_1a1270524d75241b9311d38caea7e069f6">whatIsPlayer</link></para>
+
+<para>Слой, показывающий, чем является объект &quot;Игрок&quot;. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_dog_script_1afce048f73f7823d7572f3abd9047e93e">playered</link></para>
+
+<para>Переменная, показывающая, достиг ли моб игрока. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_dog_script_1a184f773f30d125352fcf8a08c7ad2f91">isAttacking</link> = false</para>
+
+<para>Переменная, отвечающая за атаку моба. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_dog_script_1a232795be176a3f4d9319e634204ef732">Start</link> ()</para>
+
+<para>Функция для придания первоначального сотояния. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dog_script_1aaec4851d9babb2b868b544f2bd5662a2">Die</link> ()</para>
+
+<para>Функция обработки смерти моба. </para>
+</listitem>
+            <listitem><para>IEnumerator <link linkend="_class_dog_script_1a562758b7f51628df4890f6d90603d146">waitAttack</link> ()</para>
+
+<para>Корутина ожидания смерти. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dog_script_1aa775bffb105cf9a4df8c5478ec78631d">Update</link> ()</para>
+
+<para>Функция покадрового обновления, в ней происходит передвижения моба, поиск игрока, его атака и обработка звуков с анимациями. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dog_script_1a57cedc7ae6f5eb2617d0496603565414">OnTriggerEnter2D</link> (Collider2D collision)</para>
+
+<para>Проверка на попадание в тригерзону моба некоторого объекта. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dog_script_1abd44f6f4f3c6b10497de2c0d9baaad99">OnTriggerStay2D</link> (Collider2D collision)</para>
+
+<para>Проверка на нахождение в тригерзоне моба некоторого объекта. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dog_script_1a5664cff813d93c24953546bb8f534078">OnTriggerExit2D</link> (Collider2D collision)</para>
+
+<para>Проверка на выход из тригерзоны некоторого объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_dog_script_1a6663f8f033c3a4edaa96df45c5fd0984">health</link></para>
+
+<para>Количество здоровья. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_dog_script_1a7b519348fd9d3d06bd6af77a9979d1c3">notAtEdge</link></para>
+
+<para>Проверка на нахождения на угле. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_dog_script_1ad9805e451a7c1938135940b17bb1dba6">dtime</link></para>
+
+<para>Разница времени для атаки. </para>
+</listitem>
+            <listitem><para><link linkend="_class_player_control">PlayerControl</link> <link linkend="_class_dog_script_1a406caf915f615b71859616fc59201d5f">Player</link></para>
+
+<para>Переменная класса управления игроком. </para>
+</listitem>
+            <listitem><para>Animator <link linkend="_class_dog_script_1a3682731987a3fb753bf49b3221faaf8a">_anim</link></para>
+
+<para>Аниматор моба. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_dog_script_1ab3dcdee4ab8ee42275240ab41cf1878b">fx</link></para>
+
+<para>Координата Х. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_dog_script_1a7752d90cd2a587b02d1b1342120c447f">fy</link></para>
+
+<para>Координата У. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_dog_script_1aac7aef3e45aeb84c02a44c0b588aec19">fz</link></para>
+
+<para>Координата Z. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_dog_script_1a20c669df90a886acee19c097a167e961">OrigMoveSpeed</link></para>
+
+<para>Первоначальная скорость моба &quot;Собака&quot;. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_dog_script_1a1ecf29b0c3460bc4f8e89f9b43a91516">dies</link> = false</para>
+
+<para>Переменная показывающая состояния моба, жив или нет. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_dog_script_1abeac572721ea66e361640ae6773aba1e">canEnter</link> = true</para>
+
+<para>Вспомогательная переменная, для атаки. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс моба &quot;Собака&quot;. </para>
+
+
+
+<para>Данный класс описывает поведение моба &quot;Собака&quot; его патрулирование, поиск игрока и атаку.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_dog_script_1aaec4851d9babb2b868b544f2bd5662a2"/>    <section>
+    <title>Die()</title>
+<indexterm><primary>Die</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>Die</secondary></indexterm>
+<para><computeroutput>void DogScript.Die ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция обработки смерти моба. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a315072b85a2c577a4648f1a0e9215f40"/>    <section>
+    <title>Flip()</title>
+<indexterm><primary>Flip</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>Flip</secondary></indexterm>
+<para><computeroutput>void DogScript.Flip ( )</computeroutput></para><para>
+
+<para>Функция отражения модели моба по вертикали в зависимости от позиции игрока. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a94ea489526ae569f134f76a63886c437"/>    <section>
+    <title>Flip2()</title>
+<indexterm><primary>Flip2</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>Flip2</secondary></indexterm>
+<para><computeroutput>void DogScript.Flip2 ( )</computeroutput></para><para>
+
+<para>Функция отражения модели моба по вертикали в зависимости от достижения стенок. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a57cedc7ae6f5eb2617d0496603565414"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void DogScript.OnTriggerEnter2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на попадание в тригерзону моба некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_dog_script_1a5664cff813d93c24953546bb8f534078"/>    <section>
+    <title>OnTriggerExit2D()</title>
+<indexterm><primary>OnTriggerExit2D</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>OnTriggerExit2D</secondary></indexterm>
+<para><computeroutput>void DogScript.OnTriggerExit2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на выход из тригерзоны некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_dog_script_1abd44f6f4f3c6b10497de2c0d9baaad99"/>    <section>
+    <title>OnTriggerStay2D()</title>
+<indexterm><primary>OnTriggerStay2D</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>OnTriggerStay2D</secondary></indexterm>
+<para><computeroutput>void DogScript.OnTriggerStay2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на нахождение в тригерзоне моба некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоорого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_dog_script_1a232795be176a3f4d9319e634204ef732"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void DogScript.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция для придания первоначального сотояния. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a82d8329db8baf998230db5160a92b16b"/>    <section>
+    <title>takeDamage()</title>
+<indexterm><primary>takeDamage</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>takeDamage</secondary></indexterm>
+<para><computeroutput>void DogScript.takeDamage (int a)</computeroutput></para><para>
+
+<para>Функция получения урона. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>a</entry>
+                                <entry>
+<para>Количество урона.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_dog_script_1aa775bffb105cf9a4df8c5478ec78631d"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void DogScript.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления, в ней происходит передвижения моба, поиск игрока, его атака и обработка звуков с анимациями. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a562758b7f51628df4890f6d90603d146"/>    <section>
+    <title>waitAttack()</title>
+<indexterm><primary>waitAttack</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>waitAttack</secondary></indexterm>
+<para><computeroutput>IEnumerator DogScript.waitAttack ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Корутина ожидания смерти. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_dog_script_1a3682731987a3fb753bf49b3221faaf8a"/>    <section>
+    <title>_anim</title>
+<indexterm><primary>_anim</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>_anim</secondary></indexterm>
+<para><computeroutput>Animator DogScript._anim<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Аниматор моба. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1abeac572721ea66e361640ae6773aba1e"/>    <section>
+    <title>canEnter</title>
+<indexterm><primary>canEnter</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>canEnter</secondary></indexterm>
+<para><computeroutput>bool DogScript.canEnter = true<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Вспомогательная переменная, для атаки. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a1ecf29b0c3460bc4f8e89f9b43a91516"/>    <section>
+    <title>dies</title>
+<indexterm><primary>dies</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>dies</secondary></indexterm>
+<para><computeroutput>bool DogScript.dies = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная показывающая состояния моба, жив или нет. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1ad9805e451a7c1938135940b17bb1dba6"/>    <section>
+    <title>dtime</title>
+<indexterm><primary>dtime</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>dtime</secondary></indexterm>
+<para><computeroutput>float DogScript.dtime<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Разница времени для атаки. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1ad7543c3bd30e0205900b6dd7461699a3"/>    <section>
+    <title>egdeCheck</title>
+<indexterm><primary>egdeCheck</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>egdeCheck</secondary></indexterm>
+<para><computeroutput>Transform DogScript.egdeCheck</computeroutput></para><para>
+
+<para>Координаты точки для проверки на углы. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1ab3dcdee4ab8ee42275240ab41cf1878b"/>    <section>
+    <title>fx</title>
+<indexterm><primary>fx</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>fx</secondary></indexterm>
+<para><computeroutput>float DogScript.fx<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата Х. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a7752d90cd2a587b02d1b1342120c447f"/>    <section>
+    <title>fy</title>
+<indexterm><primary>fy</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>fy</secondary></indexterm>
+<para><computeroutput>float DogScript.fy<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата У. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1aac7aef3e45aeb84c02a44c0b588aec19"/>    <section>
+    <title>fz</title>
+<indexterm><primary>fz</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>fz</secondary></indexterm>
+<para><computeroutput>float DogScript.fz<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координата Z. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a6663f8f033c3a4edaa96df45c5fd0984"/>    <section>
+    <title>health</title>
+<indexterm><primary>health</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>health</secondary></indexterm>
+<para><computeroutput>int DogScript.health<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Количество здоровья. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1acc4bd3a31b9974a52228ca01bb447b5d"/>    <section>
+    <title>hill</title>
+<indexterm><primary>hill</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>hill</secondary></indexterm>
+<para><computeroutput>GameObject DogScript.hill</computeroutput></para><para>
+
+<para>Объект здоровье. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a184f773f30d125352fcf8a08c7ad2f91"/>    <section>
+    <title>isAttacking</title>
+<indexterm><primary>isAttacking</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>isAttacking</secondary></indexterm>
+<para><computeroutput>bool DogScript.isAttacking = false<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Переменная, отвечающая за атаку моба. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1aa798f00c26cae772c192eea4bf1170dc"/>    <section>
+    <title>moveRight</title>
+<indexterm><primary>moveRight</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>moveRight</secondary></indexterm>
+<para><computeroutput>bool DogScript.moveRight</computeroutput></para><para>
+
+<para>Направление движения. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1aa15132a699259cec10926659b82e9dae"/>    <section>
+    <title>moveSpeed</title>
+<indexterm><primary>moveSpeed</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>moveSpeed</secondary></indexterm>
+<para><computeroutput>float DogScript.moveSpeed</computeroutput></para><para>
+
+<para>Скорость передвижения. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a7b519348fd9d3d06bd6af77a9979d1c3"/>    <section>
+    <title>notAtEdge</title>
+<indexterm><primary>notAtEdge</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>notAtEdge</secondary></indexterm>
+<para><computeroutput>bool DogScript.notAtEdge<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на нахождения на угле. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a20c669df90a886acee19c097a167e961"/>    <section>
+    <title>OrigMoveSpeed</title>
+<indexterm><primary>OrigMoveSpeed</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>OrigMoveSpeed</secondary></indexterm>
+<para><computeroutput>float DogScript.OrigMoveSpeed<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Первоначальная скорость моба &quot;Собака&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a406caf915f615b71859616fc59201d5f"/>    <section>
+    <title>Player</title>
+<indexterm><primary>Player</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_player_control">PlayerControl</link> DogScript.Player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная класса управления игроком. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1ad5e1428ef40ab9f8ded881f1343a54bf"/>    <section>
+    <title>playerCheck</title>
+<indexterm><primary>playerCheck</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>playerCheck</secondary></indexterm>
+<para><computeroutput>Transform DogScript.playerCheck</computeroutput></para><para>
+
+<para>Координаты точки для отрисовки радиуса для проверки на нахождение в нем игрока. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1aa42b3290a2329074b997a67f197f8c56"/>    <section>
+    <title>playerCheckRadius</title>
+<indexterm><primary>playerCheckRadius</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>playerCheckRadius</secondary></indexterm>
+<para><computeroutput>float DogScript.playerCheckRadius</computeroutput></para><para>
+
+<para>Радиус проверки. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1afce048f73f7823d7572f3abd9047e93e"/>    <section>
+    <title>playered</title>
+<indexterm><primary>playered</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>playered</secondary></indexterm>
+<para><computeroutput>bool DogScript.playered</computeroutput></para><para>
+
+<para>Переменная, показывающая, достиг ли моб игрока. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1ac09a9ab9481379a8e2b9f2755bbbac96"/>    <section>
+    <title>Radius</title>
+<indexterm><primary>Radius</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>Radius</secondary></indexterm>
+<para><computeroutput>float DogScript.Radius</computeroutput></para><para>
+
+<para>Радиус поиска игрока. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a15c2b06db130ea3710d2615ec28fdaea"/>    <section>
+    <title>wallCheck</title>
+<indexterm><primary>wallCheck</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>wallCheck</secondary></indexterm>
+<para><computeroutput>Transform DogScript.wallCheck</computeroutput></para><para>
+
+<para>Координаты точки для проверки стенок. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a97523636fff111da587e4dc7c43249e6"/>    <section>
+    <title>wallCheckRadius</title>
+<indexterm><primary>wallCheckRadius</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>wallCheckRadius</secondary></indexterm>
+<para><computeroutput>float DogScript.wallCheckRadius</computeroutput></para><para>
+
+<para>Радиус проверки стенок. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1af1ff1177c7552ccf4053cd3c5ae8e1a6"/>    <section>
+    <title>walled</title>
+<indexterm><primary>walled</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>walled</secondary></indexterm>
+<para><computeroutput>bool DogScript.walled</computeroutput></para><para>
+
+<para>Переменная, показывающая, достиг ли моб стены или нет. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1a1270524d75241b9311d38caea7e069f6"/>    <section>
+    <title>whatIsPlayer</title>
+<indexterm><primary>whatIsPlayer</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>whatIsPlayer</secondary></indexterm>
+<para><computeroutput>LayerMask DogScript.whatIsPlayer</computeroutput></para><para>
+
+<para>Слой, показывающий, чем является объект &quot;Игрок&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_dog_script_1aaceba896d76f4f5fa53990838575c0d9"/>    <section>
+    <title>whatIsWall</title>
+<indexterm><primary>whatIsWall</primary><secondary>DogScript</secondary></indexterm>
+<indexterm><primary>DogScript</primary><secondary>whatIsWall</secondary></indexterm>
+<para><computeroutput>LayerMask DogScript.whatIsWall</computeroutput></para><para>
+
+<para>Слой, отвечающий за то, чем является стена. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/<link linkend="__dog_script_8cs">DogScript.cs</link></section>
+</section>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_main_menu">
+<title>MainMenu Class Reference</title>
+<indexterm><primary>MainMenu</primary></indexterm>
+<para>
+
+<para>Класс Главной игры. </para>
+ 
+</para>
+<para>Inheritance diagram for MainMenu:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_main_menu.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_main_menu_1ac2a74cb6e3c827e2a8db8c41141f0984">StartGame</link> ()</para>
+
+<para>Функция запуска игры. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_main_menu_1acde01c79443ef44e82d129f32a525952">ExitGame</link> ()</para>
+
+<para>Функция выхода из игры. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс Главной игры. </para>
+
+
+
+<para>Данный класс реализует главное меню.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_main_menu_1acde01c79443ef44e82d129f32a525952"/>    <section>
+    <title>ExitGame()</title>
+<indexterm><primary>ExitGame</primary><secondary>MainMenu</secondary></indexterm>
+<indexterm><primary>MainMenu</primary><secondary>ExitGame</secondary></indexterm>
+<para><computeroutput>void MainMenu.ExitGame ( )</computeroutput></para><para>
+
+<para>Функция выхода из игры. </para>
+</para>
+    </section><anchor xml:id="_class_main_menu_1ac2a74cb6e3c827e2a8db8c41141f0984"/>    <section>
+    <title>StartGame()</title>
+<indexterm><primary>StartGame</primary><secondary>MainMenu</secondary></indexterm>
+<indexterm><primary>MainMenu</primary><secondary>StartGame</secondary></indexterm>
+<para><computeroutput>void MainMenu.StartGame ( )</computeroutput></para><para>
+
+<para>Функция запуска игры. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Menu/<link linkend="__main_menu_8cs">MainMenu.cs</link></section>
+</section>

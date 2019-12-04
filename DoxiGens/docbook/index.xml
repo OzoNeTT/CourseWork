@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index">
+    <info>
+    <title>My Game</title>
+    </info>
+<chapter>
+    <title>Table of contents</title>
+    <xi:include href="mainpage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="class_background.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_background_loop.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_boss_bullet_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_boss_script.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_bullet_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_camera_follow.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_camera_shake.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_coin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_death_level.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_dog_script.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_enemy1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_enemy2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_enemy2_bullet_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_enemy_ghost_g_f_x.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_fade_in_out.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_free_parallax.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_free_parallax_demo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_free_parallax_element.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_free_parallax_element_reposition_logic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_game_over_menu.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_hinge_button_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_h_p.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classkey_to_gate.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_laser_script.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_main_menu.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_plater_stats.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_platform_movable.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_player_control.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_position_check.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_saw_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_scrolling_b_g1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_sound_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_spikes_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_teleporter_script.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="_background_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_background_loop_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_scrolling_b_g1_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_sound_manager_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_boss_bullet_controller_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_boss_script_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_dog_script_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_enemy1_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_enemy2_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_enemy2_bullet_controller_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_enemy_ghost_g_f_x_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_game_over_menu_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_main_menu_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_free_parallax_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_free_parallax_demo_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_bullet_controller_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_camera_follow_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_plater_stats_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_player_control_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_camera_shake_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_coin_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_death_level_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_fade_in_out_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_hinge_button_controller_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_h_p_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="key_to_gate_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_laser_script_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_platform_movable_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_position_check_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_saw_controller_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_spikes_controller_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_teleporter_script_8cs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_r_e_a_d_m_e_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

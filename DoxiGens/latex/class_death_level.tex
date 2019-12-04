@@ -1,0 +1,91 @@
+\hypertarget{class_death_level}{}\doxysection{Death\+Level Class Reference}
+\label{class_death_level}\index{DeathLevel@{DeathLevel}}
+
+
+Класс смертельной зону.  
+
+
+Inheritance diagram for Death\+Level\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_death_level}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_death_level_a1a1596e035f1d6b25da634f06f231873}{spawn\+Point}}
+\begin{DoxyCompactList}\small\item\em Координаты точки спавна. \end{DoxyCompactList}\item 
+Audio\+Source \mbox{\hyperlink{class_death_level_ac090397f210a1ed1e16bdfa98df5b504}{Death\+Sound}}
+\begin{DoxyCompactList}\small\item\em Источник звука, для воспроизведения звука смерти. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_death_level_a6d9dad0935fe114683dfdf9fcde05ea7}{On\+Collision\+Enter2D}} (Collision2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на попадание в коллайдер некоторого объекта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_control}{Player\+Control}} \mbox{\hyperlink{class_death_level_ae94c9660f385ae5a29a7b512c0eb4f37}{Player}}
+\begin{DoxyCompactList}\small\item\em Переменная класса управления игроком. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс смертельной зону. 
+
+Данный класс реализует зону, попадая в которую игрок автоматически умирает и возрождается в точке спавна.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_death_level_a6d9dad0935fe114683dfdf9fcde05ea7}\label{class_death_level_a6d9dad0935fe114683dfdf9fcde05ea7}} 
+\index{DeathLevel@{DeathLevel}!OnCollisionEnter2D@{OnCollisionEnter2D}}
+\index{OnCollisionEnter2D@{OnCollisionEnter2D}!DeathLevel@{DeathLevel}}
+\doxysubsubsection{\texorpdfstring{OnCollisionEnter2D()}{OnCollisionEnter2D()}}
+{\footnotesize\ttfamily void Death\+Level.\+On\+Collision\+Enter2D (\begin{DoxyParamCaption}\item[{Collision2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на попадание в коллайдер некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_death_level_ac090397f210a1ed1e16bdfa98df5b504}\label{class_death_level_ac090397f210a1ed1e16bdfa98df5b504}} 
+\index{DeathLevel@{DeathLevel}!DeathSound@{DeathSound}}
+\index{DeathSound@{DeathSound}!DeathLevel@{DeathLevel}}
+\doxysubsubsection{\texorpdfstring{DeathSound}{DeathSound}}
+{\footnotesize\ttfamily Audio\+Source Death\+Level.\+Death\+Sound}
+
+
+
+Источник звука, для воспроизведения звука смерти. 
+
+\mbox{\Hypertarget{class_death_level_ae94c9660f385ae5a29a7b512c0eb4f37}\label{class_death_level_ae94c9660f385ae5a29a7b512c0eb4f37}} 
+\index{DeathLevel@{DeathLevel}!Player@{Player}}
+\index{Player@{Player}!DeathLevel@{DeathLevel}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_control}{Player\+Control}} Death\+Level.\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная класса управления игроком. 
+
+\mbox{\Hypertarget{class_death_level_a1a1596e035f1d6b25da634f06f231873}\label{class_death_level_a1a1596e035f1d6b25da634f06f231873}} 
+\index{DeathLevel@{DeathLevel}!spawnPoint@{spawnPoint}}
+\index{spawnPoint@{spawnPoint}!DeathLevel@{DeathLevel}}
+\doxysubsubsection{\texorpdfstring{spawnPoint}{spawnPoint}}
+{\footnotesize\ttfamily Transform Death\+Level.\+spawn\+Point}
+
+
+
+Координаты точки спавна. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Tools/Death\+Level.\+cs\end{DoxyCompactItemize}

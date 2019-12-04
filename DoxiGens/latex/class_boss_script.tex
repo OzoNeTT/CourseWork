@@ -1,0 +1,394 @@
+\hypertarget{class_boss_script}{}\doxysection{Boss\+Script Class Reference}
+\label{class_boss_script}\index{BossScript@{BossScript}}
+
+
+Класс босса.  
+
+
+Inheritance diagram for Boss\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boss_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_boss_script_a13f257e355e57caf311b36ca292486c8}{Spawn\+Enemies}} ()
+\begin{DoxyCompactList}\small\item\em Функция, отвечающая за спавн врагов в разных позициях. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_script_a3c78bf505f27cc83719d744d83ed319d}{Flip}} ()
+\begin{DoxyCompactList}\small\item\em Функция отражения модели босса по вертикали в зависимости от позиции игрока. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_boss_script_abb445779efdb5a82192ada23c2d04f80}{points}}
+\begin{DoxyCompactList}\small\item\em Массив координат точек перемещения босса. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_boss_script_afeeb1a0dab39a7e11b5c9187820b2a9b}{firepoint}}
+\begin{DoxyCompactList}\small\item\em Координата точки выстрела. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_boss_script_a6f005cabff102ecf8d4217123f10ab8b}{Bullet}}
+\begin{DoxyCompactList}\small\item\em Объект пуля. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_boss_script_ae7de39345ce8fed356d3abb68798f825}{Enemies}}
+\begin{DoxyCompactList}\small\item\em Объект моб \char`\"{}Рыцарь\char`\"{}. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_boss_script_aa0f59c18eb458d43465919ef80e5549f}{Enemies2}}
+\begin{DoxyCompactList}\small\item\em Объект моб \char`\"{}Робот\char`\"{}. \end{DoxyCompactList}\item 
+Audio\+Source \mbox{\hyperlink{class_boss_script_a948e6a5a86fce838fc68bed1fae7e0c4}{sndM}}
+\begin{DoxyCompactList}\small\item\em Источник звука для воспроизведения клипов. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_boss_script_aa2c9f4cd56f94b1e6072073629fea577}{health}}
+\begin{DoxyCompactList}\small\item\em Количество здоровья босса. \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{class_boss_script_a79205ff9c977f07ffa8daf2f528ff0c0}{health\+UI}}
+\begin{DoxyCompactList}\small\item\em Отображение здоровья босса в худе. \end{DoxyCompactList}\item 
+Game\+Object\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_boss_script_a72239a9c108103ef94c812093d0ebf5f}{target\+\_\+2}}
+\begin{DoxyCompactList}\small\item\em Массив позиций для босса. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_boss_script_a6bf157ef7e2764c6f4b064db2fd942ea}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция для придания первоначального сотояния. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_script_a94f67d0dc728809000ee14a85c50e7fb}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Функция обработки смерти босса. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_boss_script_a7983c6a29fe117591142fdb53949f888}{wait\+Dies}} ()
+\begin{DoxyCompactList}\small\item\em Корутина для ожидания смерти. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_script_aa398db86d10e634b6841f0b5a2c58244}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция покадрового обновления, проверка на состояние и обновление показателя здоровья. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_script_afcb1fbfd8f9f83fa3fd5e32bcbc3dfc7}{On\+Trigger\+Enter2D}} (Collider2D other)
+\begin{DoxyCompactList}\small\item\em Проверка на попадание в коллайдер босса некоторого объекта. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_boss_script_ad752e5c5f1d9805d23d10f33103b5c7d}{boss}} ()
+\begin{DoxyCompactList}\small\item\em Корутина для обработки движения босса и вызова его атаки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_boss_script_ab76827c041ca8da0262ca50b2dce3afd}{Speed}}
+\begin{DoxyCompactList}\small\item\em Скорость перемещения. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_control}{Player\+Control}} \mbox{\hyperlink{class_boss_script_a2564db70a652a29a0acb4ea6630b73e8}{Player}}
+\begin{DoxyCompactList}\small\item\em Переменная класса управления игроком. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_boss_script_a3fc2b8b4eac09e8f894fb8cc322ad766}{Boss\+Sound}}
+\begin{DoxyCompactList}\small\item\em Звук атаки босса. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_boss_script_a654712f8ec2edc1eaeec2bc678132869}{fx}}
+\begin{DoxyCompactList}\small\item\em Координата Х. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_boss_script_a483d0b4507e29277a6a07a7ed3dc2a7e}{fy}}
+\begin{DoxyCompactList}\small\item\em Координата У. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_boss_script_a26c38204c52a193ada83108233f2b92d}{fz}}
+\begin{DoxyCompactList}\small\item\em Координата Z. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_boss_script_ad84319b566736644d003517aaae41623}{enter}} = true
+\begin{DoxyCompactList}\small\item\em Пременная, показывающая зашел ли босс в одну из позиций или нет. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_boss_script_abfa40628b1bfa41ff5cfb2642547d7c1}{point}} = 0
+\begin{DoxyCompactList}\small\item\em Следующая позиция босса. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_boss_script_a21dfa278d0c2e32d634641871992231a}{current\+Point}} = 0
+\begin{DoxyCompactList}\small\item\em Текущая позиция босса. \end{DoxyCompactList}\item 
+System.\+Random \mbox{\hyperlink{class_boss_script_a13051463ad4794b6c82cd28287292c4e}{rnd}}
+\begin{DoxyCompactList}\small\item\em Рандомайзер для определения следующей позиции. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_boss_script_aada4e0b98c6013f7ad67d2b002a7cedf}{dies}} = false
+\begin{DoxyCompactList}\small\item\em Переменная показывающая состояния босса, жив или нет. \end{DoxyCompactList}\item 
+Animator \mbox{\hyperlink{class_boss_script_ace948c2187399bed33ca50c42de46462}{\+\_\+anim}}
+\begin{DoxyCompactList}\small\item\em Аниматор текстур. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс босса. 
+
+Данный класс описывают движение босса, его атаку и взаимодействие с игроком.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_boss_script_ad752e5c5f1d9805d23d10f33103b5c7d}\label{class_boss_script_ad752e5c5f1d9805d23d10f33103b5c7d}} 
+\index{BossScript@{BossScript}!boss@{boss}}
+\index{boss@{boss}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{boss()}{boss()}}
+{\footnotesize\ttfamily I\+Enumerator Boss\+Script.\+boss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Корутина для обработки движения босса и вызова его атаки. 
+
+\mbox{\Hypertarget{class_boss_script_a94f67d0dc728809000ee14a85c50e7fb}\label{class_boss_script_a94f67d0dc728809000ee14a85c50e7fb}} 
+\index{BossScript@{BossScript}!Die@{Die}}
+\index{Die@{Die}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily void Boss\+Script.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция обработки смерти босса. 
+
+\mbox{\Hypertarget{class_boss_script_a3c78bf505f27cc83719d744d83ed319d}\label{class_boss_script_a3c78bf505f27cc83719d744d83ed319d}} 
+\index{BossScript@{BossScript}!Flip@{Flip}}
+\index{Flip@{Flip}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{Flip()}{Flip()}}
+{\footnotesize\ttfamily void Boss\+Script.\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция отражения модели босса по вертикали в зависимости от позиции игрока. 
+
+\mbox{\Hypertarget{class_boss_script_afcb1fbfd8f9f83fa3fd5e32bcbc3dfc7}\label{class_boss_script_afcb1fbfd8f9f83fa3fd5e32bcbc3dfc7}} 
+\index{BossScript@{BossScript}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily void Boss\+Script.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на попадание в коллайдер босса некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_boss_script_a13f257e355e57caf311b36ca292486c8}\label{class_boss_script_a13f257e355e57caf311b36ca292486c8}} 
+\index{BossScript@{BossScript}!SpawnEnemies@{SpawnEnemies}}
+\index{SpawnEnemies@{SpawnEnemies}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{SpawnEnemies()}{SpawnEnemies()}}
+{\footnotesize\ttfamily void Boss\+Script.\+Spawn\+Enemies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция, отвечающая за спавн врагов в разных позициях. 
+
+\mbox{\Hypertarget{class_boss_script_a6bf157ef7e2764c6f4b064db2fd942ea}\label{class_boss_script_a6bf157ef7e2764c6f4b064db2fd942ea}} 
+\index{BossScript@{BossScript}!Start@{Start}}
+\index{Start@{Start}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Boss\+Script.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция для придания первоначального сотояния. 
+
+\mbox{\Hypertarget{class_boss_script_aa398db86d10e634b6841f0b5a2c58244}\label{class_boss_script_aa398db86d10e634b6841f0b5a2c58244}} 
+\index{BossScript@{BossScript}!Update@{Update}}
+\index{Update@{Update}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Boss\+Script.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция покадрового обновления, проверка на состояние и обновление показателя здоровья. 
+
+\mbox{\Hypertarget{class_boss_script_a7983c6a29fe117591142fdb53949f888}\label{class_boss_script_a7983c6a29fe117591142fdb53949f888}} 
+\index{BossScript@{BossScript}!waitDies@{waitDies}}
+\index{waitDies@{waitDies}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{waitDies()}{waitDies()}}
+{\footnotesize\ttfamily I\+Enumerator Boss\+Script.\+wait\+Dies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Корутина для ожидания смерти. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_boss_script_ace948c2187399bed33ca50c42de46462}\label{class_boss_script_ace948c2187399bed33ca50c42de46462}} 
+\index{BossScript@{BossScript}!\_anim@{\_anim}}
+\index{\_anim@{\_anim}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{\_anim}{\_anim}}
+{\footnotesize\ttfamily Animator Boss\+Script.\+\_\+anim\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Аниматор текстур. 
+
+\mbox{\Hypertarget{class_boss_script_a3fc2b8b4eac09e8f894fb8cc322ad766}\label{class_boss_script_a3fc2b8b4eac09e8f894fb8cc322ad766}} 
+\index{BossScript@{BossScript}!BossSound@{BossSound}}
+\index{BossSound@{BossSound}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{BossSound}{BossSound}}
+{\footnotesize\ttfamily Audio\+Clip Boss\+Script.\+Boss\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук атаки босса. 
+
+\mbox{\Hypertarget{class_boss_script_a6f005cabff102ecf8d4217123f10ab8b}\label{class_boss_script_a6f005cabff102ecf8d4217123f10ab8b}} 
+\index{BossScript@{BossScript}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{Bullet}{Bullet}}
+{\footnotesize\ttfamily Game\+Object Boss\+Script.\+Bullet}
+
+
+
+Объект пуля. 
+
+\mbox{\Hypertarget{class_boss_script_a21dfa278d0c2e32d634641871992231a}\label{class_boss_script_a21dfa278d0c2e32d634641871992231a}} 
+\index{BossScript@{BossScript}!currentPoint@{currentPoint}}
+\index{currentPoint@{currentPoint}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{currentPoint}{currentPoint}}
+{\footnotesize\ttfamily int Boss\+Script.\+current\+Point = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Текущая позиция босса. 
+
+\mbox{\Hypertarget{class_boss_script_aada4e0b98c6013f7ad67d2b002a7cedf}\label{class_boss_script_aada4e0b98c6013f7ad67d2b002a7cedf}} 
+\index{BossScript@{BossScript}!dies@{dies}}
+\index{dies@{dies}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{dies}{dies}}
+{\footnotesize\ttfamily bool Boss\+Script.\+dies = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная показывающая состояния босса, жив или нет. 
+
+\mbox{\Hypertarget{class_boss_script_ae7de39345ce8fed356d3abb68798f825}\label{class_boss_script_ae7de39345ce8fed356d3abb68798f825}} 
+\index{BossScript@{BossScript}!Enemies@{Enemies}}
+\index{Enemies@{Enemies}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{Enemies}{Enemies}}
+{\footnotesize\ttfamily Game\+Object Boss\+Script.\+Enemies}
+
+
+
+Объект моб \char`\"{}Рыцарь\char`\"{}. 
+
+\mbox{\Hypertarget{class_boss_script_aa0f59c18eb458d43465919ef80e5549f}\label{class_boss_script_aa0f59c18eb458d43465919ef80e5549f}} 
+\index{BossScript@{BossScript}!Enemies2@{Enemies2}}
+\index{Enemies2@{Enemies2}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{Enemies2}{Enemies2}}
+{\footnotesize\ttfamily Game\+Object Boss\+Script.\+Enemies2}
+
+
+
+Объект моб \char`\"{}Робот\char`\"{}. 
+
+\mbox{\Hypertarget{class_boss_script_ad84319b566736644d003517aaae41623}\label{class_boss_script_ad84319b566736644d003517aaae41623}} 
+\index{BossScript@{BossScript}!enter@{enter}}
+\index{enter@{enter}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{enter}{enter}}
+{\footnotesize\ttfamily bool Boss\+Script.\+enter = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Пременная, показывающая зашел ли босс в одну из позиций или нет. 
+
+\mbox{\Hypertarget{class_boss_script_afeeb1a0dab39a7e11b5c9187820b2a9b}\label{class_boss_script_afeeb1a0dab39a7e11b5c9187820b2a9b}} 
+\index{BossScript@{BossScript}!firepoint@{firepoint}}
+\index{firepoint@{firepoint}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{firepoint}{firepoint}}
+{\footnotesize\ttfamily Transform Boss\+Script.\+firepoint}
+
+
+
+Координата точки выстрела. 
+
+\mbox{\Hypertarget{class_boss_script_a654712f8ec2edc1eaeec2bc678132869}\label{class_boss_script_a654712f8ec2edc1eaeec2bc678132869}} 
+\index{BossScript@{BossScript}!fx@{fx}}
+\index{fx@{fx}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{fx}{fx}}
+{\footnotesize\ttfamily float Boss\+Script.\+fx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата Х. 
+
+\mbox{\Hypertarget{class_boss_script_a483d0b4507e29277a6a07a7ed3dc2a7e}\label{class_boss_script_a483d0b4507e29277a6a07a7ed3dc2a7e}} 
+\index{BossScript@{BossScript}!fy@{fy}}
+\index{fy@{fy}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{fy}{fy}}
+{\footnotesize\ttfamily float Boss\+Script.\+fy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата У. 
+
+\mbox{\Hypertarget{class_boss_script_a26c38204c52a193ada83108233f2b92d}\label{class_boss_script_a26c38204c52a193ada83108233f2b92d}} 
+\index{BossScript@{BossScript}!fz@{fz}}
+\index{fz@{fz}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{fz}{fz}}
+{\footnotesize\ttfamily float Boss\+Script.\+fz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата Z. 
+
+\mbox{\Hypertarget{class_boss_script_aa2c9f4cd56f94b1e6072073629fea577}\label{class_boss_script_aa2c9f4cd56f94b1e6072073629fea577}} 
+\index{BossScript@{BossScript}!health@{health}}
+\index{health@{health}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int Boss\+Script.\+health}
+
+
+
+Количество здоровья босса. 
+
+\mbox{\Hypertarget{class_boss_script_a79205ff9c977f07ffa8daf2f528ff0c0}\label{class_boss_script_a79205ff9c977f07ffa8daf2f528ff0c0}} 
+\index{BossScript@{BossScript}!healthUI@{healthUI}}
+\index{healthUI@{healthUI}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{healthUI}{healthUI}}
+{\footnotesize\ttfamily Slider Boss\+Script.\+health\+UI}
+
+
+
+Отображение здоровья босса в худе. 
+
+\mbox{\Hypertarget{class_boss_script_a2564db70a652a29a0acb4ea6630b73e8}\label{class_boss_script_a2564db70a652a29a0acb4ea6630b73e8}} 
+\index{BossScript@{BossScript}!Player@{Player}}
+\index{Player@{Player}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_control}{Player\+Control}} Boss\+Script.\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная класса управления игроком. 
+
+\mbox{\Hypertarget{class_boss_script_abfa40628b1bfa41ff5cfb2642547d7c1}\label{class_boss_script_abfa40628b1bfa41ff5cfb2642547d7c1}} 
+\index{BossScript@{BossScript}!point@{point}}
+\index{point@{point}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{point}{point}}
+{\footnotesize\ttfamily int Boss\+Script.\+point = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Следующая позиция босса. 
+
+\mbox{\Hypertarget{class_boss_script_abb445779efdb5a82192ada23c2d04f80}\label{class_boss_script_abb445779efdb5a82192ada23c2d04f80}} 
+\index{BossScript@{BossScript}!points@{points}}
+\index{points@{points}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily Transform \mbox{[}$\,$\mbox{]} Boss\+Script.\+points}
+
+
+
+Массив координат точек перемещения босса. 
+
+\mbox{\Hypertarget{class_boss_script_a13051463ad4794b6c82cd28287292c4e}\label{class_boss_script_a13051463ad4794b6c82cd28287292c4e}} 
+\index{BossScript@{BossScript}!rnd@{rnd}}
+\index{rnd@{rnd}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{rnd}{rnd}}
+{\footnotesize\ttfamily System.\+Random Boss\+Script.\+rnd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Рандомайзер для определения следующей позиции. 
+
+\mbox{\Hypertarget{class_boss_script_a948e6a5a86fce838fc68bed1fae7e0c4}\label{class_boss_script_a948e6a5a86fce838fc68bed1fae7e0c4}} 
+\index{BossScript@{BossScript}!sndM@{sndM}}
+\index{sndM@{sndM}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{sndM}{sndM}}
+{\footnotesize\ttfamily Audio\+Source Boss\+Script.\+sndM}
+
+
+
+Источник звука для воспроизведения клипов. 
+
+\mbox{\Hypertarget{class_boss_script_ab76827c041ca8da0262ca50b2dce3afd}\label{class_boss_script_ab76827c041ca8da0262ca50b2dce3afd}} 
+\index{BossScript@{BossScript}!Speed@{Speed}}
+\index{Speed@{Speed}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily float Boss\+Script.\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Скорость перемещения. 
+
+\mbox{\Hypertarget{class_boss_script_a72239a9c108103ef94c812093d0ebf5f}\label{class_boss_script_a72239a9c108103ef94c812093d0ebf5f}} 
+\index{BossScript@{BossScript}!target\_2@{target\_2}}
+\index{target\_2@{target\_2}!BossScript@{BossScript}}
+\doxysubsubsection{\texorpdfstring{target\_2}{target\_2}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Boss\+Script.\+target\+\_\+2}
+
+
+
+Массив позиций для босса. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Enemy/Boss\+Script.\+cs\end{DoxyCompactItemize}

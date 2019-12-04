@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_laser_script">
+<title>LaserScript Class Reference</title>
+<indexterm><primary>LaserScript</primary></indexterm>
+<para>
+
+<para>Скрипт лазера. </para>
+ 
+</para>
+<para>Inheritance diagram for LaserScript:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_laser_script.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_laser_script_1a59cc576d6aa67b756022c5366ae7eb0f">radius</link></para>
+
+<para>Радиус обнаружения. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_laser_script_1a1ed5e2e08452555bf2932ad2753b5d13">Start</link> ()</para>
+
+<para>Функция задания првоначального состояния, установка анимации и обнаружение цели. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_laser_script_1a8e25599ee157047ceb68774195798811">Update</link> ()</para>
+
+<para>Функция покадрового обновления. Проверка на попадание в радиус действия и после попадания начало срабатывания. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_laser_script_1a031439a2218730c0714ce83a7a06846e">OnTriggerExit2D</link> (Collider2D collision)</para>
+
+<para>Проверка на выход из тригерзоны лазера некоторого объекта. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_laser_script_1acd99fbb973de821241c3b4cfb9496da5">OnTriggerStay2D</link> (Collider2D collision)</para>
+
+<para>Проверка на нахождение в тригерзоне лазера некоторого объекта. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_laser_script_1ac93cedf25714f89ba42e5729f4fed486">OnTriggerEnter2D</link> (Collider2D collision)</para>
+
+<para>Проверка на попадание в тригерзону лазера некоторого объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_laser_script_1a364c3e9fa3c6aae19f09b6c9c39c00ab">dtime</link> = 0</para>
+
+<para>Временной интервал между атакой лазера. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_laser_script_1a133e587249f5111c17650810e83997fa">target</link></para>
+
+<para>Координаты цели. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Скрипт лазера. </para>
+
+
+
+<para>Данный класс реализует лазер, его переодическое срабатывание и нанесение урона игроку.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_laser_script_1ac93cedf25714f89ba42e5729f4fed486"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>LaserScript</secondary></indexterm>
+<indexterm><primary>LaserScript</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void LaserScript.OnTriggerEnter2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на попадание в тригерзону лазера некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_laser_script_1a031439a2218730c0714ce83a7a06846e"/>    <section>
+    <title>OnTriggerExit2D()</title>
+<indexterm><primary>OnTriggerExit2D</primary><secondary>LaserScript</secondary></indexterm>
+<indexterm><primary>LaserScript</primary><secondary>OnTriggerExit2D</secondary></indexterm>
+<para><computeroutput>void LaserScript.OnTriggerExit2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на выход из тригерзоны лазера некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_laser_script_1acd99fbb973de821241c3b4cfb9496da5"/>    <section>
+    <title>OnTriggerStay2D()</title>
+<indexterm><primary>OnTriggerStay2D</primary><secondary>LaserScript</secondary></indexterm>
+<indexterm><primary>LaserScript</primary><secondary>OnTriggerStay2D</secondary></indexterm>
+<para><computeroutput>void LaserScript.OnTriggerStay2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на нахождение в тригерзоне лазера некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_laser_script_1a1ed5e2e08452555bf2932ad2753b5d13"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>LaserScript</secondary></indexterm>
+<indexterm><primary>LaserScript</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void LaserScript.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция задания првоначального состояния, установка анимации и обнаружение цели. </para>
+</para>
+    </section><anchor xml:id="_class_laser_script_1a8e25599ee157047ceb68774195798811"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>LaserScript</secondary></indexterm>
+<indexterm><primary>LaserScript</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void LaserScript.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления. Проверка на попадание в радиус действия и после попадания начало срабатывания. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_laser_script_1a364c3e9fa3c6aae19f09b6c9c39c00ab"/>    <section>
+    <title>dtime</title>
+<indexterm><primary>dtime</primary><secondary>LaserScript</secondary></indexterm>
+<indexterm><primary>LaserScript</primary><secondary>dtime</secondary></indexterm>
+<para><computeroutput>float LaserScript.dtime = 0<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Временной интервал между атакой лазера. </para>
+</para>
+    </section><anchor xml:id="_class_laser_script_1a59cc576d6aa67b756022c5366ae7eb0f"/>    <section>
+    <title>radius</title>
+<indexterm><primary>radius</primary><secondary>LaserScript</secondary></indexterm>
+<indexterm><primary>LaserScript</primary><secondary>radius</secondary></indexterm>
+<para><computeroutput>float LaserScript.radius</computeroutput></para><para>
+
+<para>Радиус обнаружения. </para>
+</para>
+    </section><anchor xml:id="_class_laser_script_1a133e587249f5111c17650810e83997fa"/>    <section>
+    <title>target</title>
+<indexterm><primary>target</primary><secondary>LaserScript</secondary></indexterm>
+<indexterm><primary>LaserScript</primary><secondary>target</secondary></indexterm>
+<para><computeroutput>Transform LaserScript.target<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координаты цели. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__laser_script_8cs">LaserScript.cs</link></section>
+</section>

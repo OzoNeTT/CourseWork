@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_free_parallax_demo">
+<title>FreeParallaxDemo Class Reference</title>
+<indexterm><primary>FreeParallaxDemo</primary></indexterm>
+<para>Inheritance diagram for FreeParallaxDemo:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_free_parallax_demo.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_free_parallax">FreeParallax</link> <link linkend="_class_free_parallax_demo_1a79940b210cd5fbc2430757d0712e6c40">parallax</link></para>
+</listitem>
+            <listitem><para>GameObject <link linkend="_class_free_parallax_demo_1a65c932a1f558f1da908e1197ad36cefd">cloud</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_free_parallax_demo_1aa1a8a006091e45065bcc3d4658d466c8">Start</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_free_parallax_demo_1a249d430153698f2c7b25f34bd7b6d6e1">Update</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_free_parallax_demo_1a5414b8978f3c278c6af0c2d49bc9d7bc">lname</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_free_parallax_demo_1aa1a8a006091e45065bcc3d4658d466c8"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>FreeParallaxDemo</secondary></indexterm>
+<indexterm><primary>FreeParallaxDemo</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void FreeParallaxDemo.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_free_parallax_demo_1a249d430153698f2c7b25f34bd7b6d6e1"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>FreeParallaxDemo</secondary></indexterm>
+<indexterm><primary>FreeParallaxDemo</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void FreeParallaxDemo.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_free_parallax_demo_1a65c932a1f558f1da908e1197ad36cefd"/>    <section>
+    <title>cloud</title>
+<indexterm><primary>cloud</primary><secondary>FreeParallaxDemo</secondary></indexterm>
+<indexterm><primary>FreeParallaxDemo</primary><secondary>cloud</secondary></indexterm>
+<para><computeroutput>GameObject FreeParallaxDemo.cloud</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_demo_1a5414b8978f3c278c6af0c2d49bc9d7bc"/>    <section>
+    <title>lname</title>
+<indexterm><primary>lname</primary><secondary>FreeParallaxDemo</secondary></indexterm>
+<indexterm><primary>FreeParallaxDemo</primary><secondary>lname</secondary></indexterm>
+<para><computeroutput>string FreeParallaxDemo.lname<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_free_parallax_demo_1a79940b210cd5fbc2430757d0712e6c40"/>    <section>
+    <title>parallax</title>
+<indexterm><primary>parallax</primary><secondary>FreeParallaxDemo</secondary></indexterm>
+<indexterm><primary>FreeParallaxDemo</primary><secondary>parallax</secondary></indexterm>
+<para><computeroutput><link linkend="_class_free_parallax">FreeParallax</link> FreeParallaxDemo.parallax</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Parallax/<link linkend="__free_parallax_demo_8cs">FreeParallaxDemo.cs</link></section>
+</section>

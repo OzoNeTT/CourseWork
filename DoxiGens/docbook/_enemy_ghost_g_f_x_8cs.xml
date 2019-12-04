@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__enemy_ghost_g_f_x_8cs">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/EnemyGhostGFX.cs File Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/EnemyGhostGFX.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_enemy_ghost_g_f_x">EnemyGhostGFX</link></para>
+
+<para>Класс моба &quot;Призрак&quot;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_saw_controller">
+<title>SawController Class Reference</title>
+<indexterm><primary>SawController</primary></indexterm>
+<para>
+
+<para>Класс Пилы. </para>
+ 
+</para>
+<para>Inheritance diagram for SawController:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_saw_controller.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_saw_controller_1add9f2be4f837e3a13dddf038a0fab453">damage</link> = 10</para>
+
+<para>Наносимый урон. </para>
+</listitem>
+            <listitem><para>AudioSource <link linkend="_class_saw_controller_1a260f575ac3ed32ac9d703fa7d6d41291">SawSound</link></para>
+
+<para>Источник звука для пилы. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_saw_controller_1a87d091d92d810781aeb229864eb20c93">OnTriggerEnter2D</link> (Collider2D other)</para>
+
+<para>Проверка на заход в тригерзону пилы некоторого объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс Пилы. </para>
+
+
+
+<para>Данный класс реализует поведения объекта &quot;пила&quot;, его вращение и нанесение урона.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_saw_controller_1a87d091d92d810781aeb229864eb20c93"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>SawController</secondary></indexterm>
+<indexterm><primary>SawController</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void SawController.OnTriggerEnter2D (Collider2D other)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на заход в тригерзону пилы некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>other</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_saw_controller_1add9f2be4f837e3a13dddf038a0fab453"/>    <section>
+    <title>damage</title>
+<indexterm><primary>damage</primary><secondary>SawController</secondary></indexterm>
+<indexterm><primary>SawController</primary><secondary>damage</secondary></indexterm>
+<para><computeroutput>int SawController.damage = 10</computeroutput></para><para>
+
+<para>Наносимый урон. </para>
+</para>
+    </section><anchor xml:id="_class_saw_controller_1a260f575ac3ed32ac9d703fa7d6d41291"/>    <section>
+    <title>SawSound</title>
+<indexterm><primary>SawSound</primary><secondary>SawController</secondary></indexterm>
+<indexterm><primary>SawController</primary><secondary>SawSound</secondary></indexterm>
+<para><computeroutput>AudioSource SawController.SawSound</computeroutput></para><para>
+
+<para>Источник звука для пилы. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__saw_controller_8cs">SawController.cs</link></section>
+</section>

@@ -1,0 +1,298 @@
+\hypertarget{class_enemy2}{}\doxysection{Enemy2 Class Reference}
+\label{class_enemy2}\index{Enemy2@{Enemy2}}
+
+
+Класс \char`\"{}Робота\char`\"{}.  
+
+
+Inheritance diagram for Enemy2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy2}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy2_a6716567cbcd9b923ba5ff9fdb78bdeb0}{Dies}} ()
+\begin{DoxyCompactList}\small\item\em Функция смерти. Уничтожение объекта и выпадание жизней с некоторым шансом. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy2_a8c89628d399adcae5c8114aff8e185bc}{Shoot}} ()
+\begin{DoxyCompactList}\small\item\em Функция стрельбы. Воспроизводит анимацию стрельбы и создает объект пулю. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy2_aabf013047dc4681e5eb9ab9d01447054}{Flip}} ()
+\begin{DoxyCompactList}\small\item\em Функция отражения по вертикали в зависимости от позиции игрока. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_enemy2_a53f6b7f626710eb59ca41631de5cf698}{hill}}
+\begin{DoxyCompactList}\small\item\em Объект здоровье. Может с некоторым шансом выпасть после смерти моба. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_enemy2_a99bd15f638564ea1e216a703ed9d3b4b}{fire\+Point}}
+\begin{DoxyCompactList}\small\item\em Координаты точки выстрела. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy2_a23c3d0f122ae945b66d4e27d10b09cd7}{Repeat\+Rate}}
+\begin{DoxyCompactList}\small\item\em Частота выстрелов. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_enemy2_a2a27587dfa96e6558be72170956ee19b}{Bullet}}
+\begin{DoxyCompactList}\small\item\em Объект пуля. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy2_a962f8760e81d18f2051b3a7c0a872d0b}{radius}}
+\begin{DoxyCompactList}\small\item\em Радиус поиска цели. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_enemy2_a589783a167b1cc7a87ba734045289f0a}{next\+Fire}} = -\/1.\+0f
+\begin{DoxyCompactList}\small\item\em Время следующего выстрела. \end{DoxyCompactList}\item 
+Audio\+Source \mbox{\hyperlink{class_enemy2_a92e91d63f0c7020f0e859b8ac2fc4395}{Shoot\+Sound}}
+\begin{DoxyCompactList}\small\item\em Звук выстрела. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy2_a671cb473ab5ccc23caab2bf7f2aae3cf}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция установки первоначального состояния. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy2_af4b75d4870a6674d2e596840cfdcc047}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция покадрового обновления. Поиск цели и в случае нахождения начало стрельбы. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy2_aefd0ea4923800198f32be8e6578e13d1}{On\+Trigger\+Enter2D}} (Collider2D other)
+\begin{DoxyCompactList}\small\item\em Проверка на попадание в коллайдер \char`\"{}Робота\char`\"{} некоторого объекта. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_enemy2_add1ee9ba824c763878417f4d76f290f6}{wait\+Dies}} ()
+\begin{DoxyCompactList}\small\item\em Корутина ожидания смерти объекта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_control}{Player\+Control}} \mbox{\hyperlink{class_enemy2_aa9082c0515d9a20f7237b5d8ba7064ec}{Player}}
+\begin{DoxyCompactList}\small\item\em Переменная класса управления персонажем. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_enemy2_a15533f3d1500ea9ade1f39c1067c5b42}{target}}
+\begin{DoxyCompactList}\small\item\em Координаты цели. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy2_a220c370900472dff70c9b41da624c190}{fx}}
+\begin{DoxyCompactList}\small\item\em Координата Х. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy2_af6cc1dc4ddcb2bcaf9e2b9e83321d597}{fy}}
+\begin{DoxyCompactList}\small\item\em Координата У. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy2_a578b8f96b1d20cf2d36964910a7657ba}{fz}}
+\begin{DoxyCompactList}\small\item\em Координата Z. \end{DoxyCompactList}\item 
+Animator \mbox{\hyperlink{class_enemy2_a3483f5c3304eb60f710e0d1a839c2896}{\+\_\+anim}}
+\begin{DoxyCompactList}\small\item\em Аниматор моба \char`\"{}Робот\char`\"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_enemy2_a189a57849415b8cfead6ea92f8d3806c}{dies}} = false
+\begin{DoxyCompactList}\small\item\em Проверка на смерть объекта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс \char`\"{}Робота\char`\"{}. 
+
+Данный класс реализует поведение и стрельбу \char`\"{}Робота\char`\"{}.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy2_a6716567cbcd9b923ba5ff9fdb78bdeb0}\label{class_enemy2_a6716567cbcd9b923ba5ff9fdb78bdeb0}} 
+\index{Enemy2@{Enemy2}!Dies@{Dies}}
+\index{Dies@{Dies}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{Dies()}{Dies()}}
+{\footnotesize\ttfamily void Enemy2.\+Dies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция смерти. Уничтожение объекта и выпадание жизней с некоторым шансом. 
+
+\mbox{\Hypertarget{class_enemy2_aabf013047dc4681e5eb9ab9d01447054}\label{class_enemy2_aabf013047dc4681e5eb9ab9d01447054}} 
+\index{Enemy2@{Enemy2}!Flip@{Flip}}
+\index{Flip@{Flip}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{Flip()}{Flip()}}
+{\footnotesize\ttfamily void Enemy2.\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция отражения по вертикали в зависимости от позиции игрока. 
+
+\mbox{\Hypertarget{class_enemy2_aefd0ea4923800198f32be8e6578e13d1}\label{class_enemy2_aefd0ea4923800198f32be8e6578e13d1}} 
+\index{Enemy2@{Enemy2}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily void Enemy2.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на попадание в коллайдер \char`\"{}Робота\char`\"{} некоторого объекта. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy2_a8c89628d399adcae5c8114aff8e185bc}\label{class_enemy2_a8c89628d399adcae5c8114aff8e185bc}} 
+\index{Enemy2@{Enemy2}!Shoot@{Shoot}}
+\index{Shoot@{Shoot}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{Shoot()}{Shoot()}}
+{\footnotesize\ttfamily void Enemy2.\+Shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция стрельбы. Воспроизводит анимацию стрельбы и создает объект пулю. 
+
+\mbox{\Hypertarget{class_enemy2_a671cb473ab5ccc23caab2bf7f2aae3cf}\label{class_enemy2_a671cb473ab5ccc23caab2bf7f2aae3cf}} 
+\index{Enemy2@{Enemy2}!Start@{Start}}
+\index{Start@{Start}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Enemy2.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция установки первоначального состояния. 
+
+\mbox{\Hypertarget{class_enemy2_af4b75d4870a6674d2e596840cfdcc047}\label{class_enemy2_af4b75d4870a6674d2e596840cfdcc047}} 
+\index{Enemy2@{Enemy2}!Update@{Update}}
+\index{Update@{Update}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Enemy2.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция покадрового обновления. Поиск цели и в случае нахождения начало стрельбы. 
+
+\mbox{\Hypertarget{class_enemy2_add1ee9ba824c763878417f4d76f290f6}\label{class_enemy2_add1ee9ba824c763878417f4d76f290f6}} 
+\index{Enemy2@{Enemy2}!waitDies@{waitDies}}
+\index{waitDies@{waitDies}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{waitDies()}{waitDies()}}
+{\footnotesize\ttfamily I\+Enumerator Enemy2.\+wait\+Dies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Корутина ожидания смерти объекта. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy2_a3483f5c3304eb60f710e0d1a839c2896}\label{class_enemy2_a3483f5c3304eb60f710e0d1a839c2896}} 
+\index{Enemy2@{Enemy2}!\_anim@{\_anim}}
+\index{\_anim@{\_anim}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{\_anim}{\_anim}}
+{\footnotesize\ttfamily Animator Enemy2.\+\_\+anim\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Аниматор моба \char`\"{}Робот\char`\"{}. 
+
+\mbox{\Hypertarget{class_enemy2_a2a27587dfa96e6558be72170956ee19b}\label{class_enemy2_a2a27587dfa96e6558be72170956ee19b}} 
+\index{Enemy2@{Enemy2}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{Bullet}{Bullet}}
+{\footnotesize\ttfamily Game\+Object Enemy2.\+Bullet}
+
+
+
+Объект пуля. 
+
+\mbox{\Hypertarget{class_enemy2_a189a57849415b8cfead6ea92f8d3806c}\label{class_enemy2_a189a57849415b8cfead6ea92f8d3806c}} 
+\index{Enemy2@{Enemy2}!dies@{dies}}
+\index{dies@{dies}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{dies}{dies}}
+{\footnotesize\ttfamily bool Enemy2.\+dies = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на смерть объекта. 
+
+\mbox{\Hypertarget{class_enemy2_a99bd15f638564ea1e216a703ed9d3b4b}\label{class_enemy2_a99bd15f638564ea1e216a703ed9d3b4b}} 
+\index{Enemy2@{Enemy2}!firePoint@{firePoint}}
+\index{firePoint@{firePoint}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{firePoint}{firePoint}}
+{\footnotesize\ttfamily Transform Enemy2.\+fire\+Point}
+
+
+
+Координаты точки выстрела. 
+
+\mbox{\Hypertarget{class_enemy2_a220c370900472dff70c9b41da624c190}\label{class_enemy2_a220c370900472dff70c9b41da624c190}} 
+\index{Enemy2@{Enemy2}!fx@{fx}}
+\index{fx@{fx}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{fx}{fx}}
+{\footnotesize\ttfamily float Enemy2.\+fx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата Х. 
+
+\mbox{\Hypertarget{class_enemy2_af6cc1dc4ddcb2bcaf9e2b9e83321d597}\label{class_enemy2_af6cc1dc4ddcb2bcaf9e2b9e83321d597}} 
+\index{Enemy2@{Enemy2}!fy@{fy}}
+\index{fy@{fy}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{fy}{fy}}
+{\footnotesize\ttfamily float Enemy2.\+fy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата У. 
+
+\mbox{\Hypertarget{class_enemy2_a578b8f96b1d20cf2d36964910a7657ba}\label{class_enemy2_a578b8f96b1d20cf2d36964910a7657ba}} 
+\index{Enemy2@{Enemy2}!fz@{fz}}
+\index{fz@{fz}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{fz}{fz}}
+{\footnotesize\ttfamily float Enemy2.\+fz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата Z. 
+
+\mbox{\Hypertarget{class_enemy2_a53f6b7f626710eb59ca41631de5cf698}\label{class_enemy2_a53f6b7f626710eb59ca41631de5cf698}} 
+\index{Enemy2@{Enemy2}!hill@{hill}}
+\index{hill@{hill}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{hill}{hill}}
+{\footnotesize\ttfamily Game\+Object Enemy2.\+hill}
+
+
+
+Объект здоровье. Может с некоторым шансом выпасть после смерти моба. 
+
+\mbox{\Hypertarget{class_enemy2_a589783a167b1cc7a87ba734045289f0a}\label{class_enemy2_a589783a167b1cc7a87ba734045289f0a}} 
+\index{Enemy2@{Enemy2}!nextFire@{nextFire}}
+\index{nextFire@{nextFire}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{nextFire}{nextFire}}
+{\footnotesize\ttfamily double Enemy2.\+next\+Fire = -\/1.\+0f}
+
+
+
+Время следующего выстрела. 
+
+\mbox{\Hypertarget{class_enemy2_aa9082c0515d9a20f7237b5d8ba7064ec}\label{class_enemy2_aa9082c0515d9a20f7237b5d8ba7064ec}} 
+\index{Enemy2@{Enemy2}!Player@{Player}}
+\index{Player@{Player}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_control}{Player\+Control}} Enemy2.\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная класса управления персонажем. 
+
+\mbox{\Hypertarget{class_enemy2_a962f8760e81d18f2051b3a7c0a872d0b}\label{class_enemy2_a962f8760e81d18f2051b3a7c0a872d0b}} 
+\index{Enemy2@{Enemy2}!radius@{radius}}
+\index{radius@{radius}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily float Enemy2.\+radius}
+
+
+
+Радиус поиска цели. 
+
+\mbox{\Hypertarget{class_enemy2_a23c3d0f122ae945b66d4e27d10b09cd7}\label{class_enemy2_a23c3d0f122ae945b66d4e27d10b09cd7}} 
+\index{Enemy2@{Enemy2}!RepeatRate@{RepeatRate}}
+\index{RepeatRate@{RepeatRate}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{RepeatRate}{RepeatRate}}
+{\footnotesize\ttfamily float Enemy2.\+Repeat\+Rate}
+
+
+
+Частота выстрелов. 
+
+\mbox{\Hypertarget{class_enemy2_a92e91d63f0c7020f0e859b8ac2fc4395}\label{class_enemy2_a92e91d63f0c7020f0e859b8ac2fc4395}} 
+\index{Enemy2@{Enemy2}!ShootSound@{ShootSound}}
+\index{ShootSound@{ShootSound}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{ShootSound}{ShootSound}}
+{\footnotesize\ttfamily Audio\+Source Enemy2.\+Shoot\+Sound}
+
+
+
+Звук выстрела. 
+
+\mbox{\Hypertarget{class_enemy2_a15533f3d1500ea9ade1f39c1067c5b42}\label{class_enemy2_a15533f3d1500ea9ade1f39c1067c5b42}} 
+\index{Enemy2@{Enemy2}!target@{target}}
+\index{target@{target}!Enemy2@{Enemy2}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily Transform Enemy2.\+target\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координаты цели. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Enemy/Enemy2.\+cs\end{DoxyCompactItemize}

@@ -1,18 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Класс монеты.
+/// <remarks>Данный класс нужен для обозначения объекта "монета", но не выполняет ничего большего.</remarks>
+/// </summary>
 public class Coin : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
 
-    // Update is called once per frame
+    }
     void Update()
     {
-        
+
     }
 }

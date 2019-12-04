@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3620f1fbfd25a84408cde18aecc6696b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hill: {fileID: 8100393169643788076, guid: 1cdcfb12f116cd044bfabc9a269f1fe6, type: 3}
   firePoint: {fileID: 2300754784989198075}
   RepeatRate: 1
   Bullet: {fileID: 8431824521399102094, guid: b96df98290fc6024a917b590e819a9ae, type: 3}

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_scrolling_b_g1">
+<title>ScrollingBG1 Class Reference</title>
+<indexterm><primary>ScrollingBG1</primary></indexterm>
+<para>
+
+<para>Класс движения фоновых изображений. </para>
+ 
+</para>
+<para>Inheritance diagram for ScrollingBG1:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_scrolling_b_g1.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_scrolling_b_g1_1a99d972878c87899015505ce3d5c8dd1e">backgroundSize</link></para>
+
+<para>Размер фонового изображения. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_scrolling_b_g1_1af39a754c81d40ccefd4d348e05f92645">Start</link> ()</para>
+
+<para>Функция придает первоначальное состояние. Установка координат, трансформирование и задание индексов для фоновых изображений. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_scrolling_b_g1_1af2441fdb9395eead61d6f62d5a9c6eb3">Update</link> ()</para>
+
+<para>Функция покадрового обновления. Перемещение фоновых изображений в зависимости от движения камеры. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_scrolling_b_g1_1a0e7311e551347ee8527d40fd42c4c936">ScrollLeft</link> ()</para>
+
+<para>Функция перемещения фоновых изображений влево. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_scrolling_b_g1_1aef57273f1eabc80fece9e26dc6093fb7">ScrollRight</link> ()</para>
+
+<para>Функция перемещения фоновых изображений вправо. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Transform <link linkend="_class_scrolling_b_g1_1a46b0bf259450da5f7a634ec2abd63fe6">cameraTransform</link></para>
+
+<para>Координаты камеры. </para>
+</listitem>
+            <listitem><para>Transform[] <link linkend="_class_scrolling_b_g1_1a387e7f1f260bd199426de76dfc94ba4f">layers</link></para>
+
+<para>Массив координат фоновых изображений </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_scrolling_b_g1_1acf8056afed4331d1c4ab7ac4b317e20e">viewZone</link> = 10</para>
+
+<para>Область видимости. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_scrolling_b_g1_1a53586469ff8f84fc8f16b8a617b3f83e">leftIndex</link></para>
+
+<para>Левый индекс (крайне левое изображение). </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_scrolling_b_g1_1a7cf2cf55a2982dce732a9ec539f2dca1">rightIndex</link></para>
+
+<para>Правый индекс (крайне правое изображение). </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс движения фоновых изображений. </para>
+
+
+
+<para>Данный класс реализует плавное движение фоновых изображений путем их склейки и трансформирования.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_scrolling_b_g1_1a0e7311e551347ee8527d40fd42c4c936"/>    <section>
+    <title>ScrollLeft()</title>
+<indexterm><primary>ScrollLeft</primary><secondary>ScrollingBG1</secondary></indexterm>
+<indexterm><primary>ScrollingBG1</primary><secondary>ScrollLeft</secondary></indexterm>
+<para><computeroutput>void ScrollingBG1.ScrollLeft ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция перемещения фоновых изображений влево. </para>
+</para>
+    </section><anchor xml:id="_class_scrolling_b_g1_1aef57273f1eabc80fece9e26dc6093fb7"/>    <section>
+    <title>ScrollRight()</title>
+<indexterm><primary>ScrollRight</primary><secondary>ScrollingBG1</secondary></indexterm>
+<indexterm><primary>ScrollingBG1</primary><secondary>ScrollRight</secondary></indexterm>
+<para><computeroutput>void ScrollingBG1.ScrollRight ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция перемещения фоновых изображений вправо. </para>
+</para>
+    </section><anchor xml:id="_class_scrolling_b_g1_1af39a754c81d40ccefd4d348e05f92645"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>ScrollingBG1</secondary></indexterm>
+<indexterm><primary>ScrollingBG1</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void ScrollingBG1.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция придает первоначальное состояние. Установка координат, трансформирование и задание индексов для фоновых изображений. </para>
+</para>
+    </section><anchor xml:id="_class_scrolling_b_g1_1af2441fdb9395eead61d6f62d5a9c6eb3"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>ScrollingBG1</secondary></indexterm>
+<indexterm><primary>ScrollingBG1</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void ScrollingBG1.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления. Перемещение фоновых изображений в зависимости от движения камеры. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_scrolling_b_g1_1a99d972878c87899015505ce3d5c8dd1e"/>    <section>
+    <title>backgroundSize</title>
+<indexterm><primary>backgroundSize</primary><secondary>ScrollingBG1</secondary></indexterm>
+<indexterm><primary>ScrollingBG1</primary><secondary>backgroundSize</secondary></indexterm>
+<para><computeroutput>float ScrollingBG1.backgroundSize</computeroutput></para><para>
+
+<para>Размер фонового изображения. </para>
+</para>
+    </section><anchor xml:id="_class_scrolling_b_g1_1a46b0bf259450da5f7a634ec2abd63fe6"/>    <section>
+    <title>cameraTransform</title>
+<indexterm><primary>cameraTransform</primary><secondary>ScrollingBG1</secondary></indexterm>
+<indexterm><primary>ScrollingBG1</primary><secondary>cameraTransform</secondary></indexterm>
+<para><computeroutput>Transform ScrollingBG1.cameraTransform<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Координаты камеры. </para>
+</para>
+    </section><anchor xml:id="_class_scrolling_b_g1_1a387e7f1f260bd199426de76dfc94ba4f"/>    <section>
+    <title>layers</title>
+<indexterm><primary>layers</primary><secondary>ScrollingBG1</secondary></indexterm>
+<indexterm><primary>ScrollingBG1</primary><secondary>layers</secondary></indexterm>
+<para><computeroutput>Transform [] ScrollingBG1.layers<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Массив координат фоновых изображений </para>
+</para>
+    </section><anchor xml:id="_class_scrolling_b_g1_1a53586469ff8f84fc8f16b8a617b3f83e"/>    <section>
+    <title>leftIndex</title>
+<indexterm><primary>leftIndex</primary><secondary>ScrollingBG1</secondary></indexterm>
+<indexterm><primary>ScrollingBG1</primary><secondary>leftIndex</secondary></indexterm>
+<para><computeroutput>int ScrollingBG1.leftIndex<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Левый индекс (крайне левое изображение). </para>
+</para>
+    </section><anchor xml:id="_class_scrolling_b_g1_1a7cf2cf55a2982dce732a9ec539f2dca1"/>    <section>
+    <title>rightIndex</title>
+<indexterm><primary>rightIndex</primary><secondary>ScrollingBG1</secondary></indexterm>
+<indexterm><primary>ScrollingBG1</primary><secondary>rightIndex</secondary></indexterm>
+<para><computeroutput>int ScrollingBG1.rightIndex<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Правый индекс (крайне правое изображение). </para>
+</para>
+    </section><anchor xml:id="_class_scrolling_b_g1_1acf8056afed4331d1c4ab7ac4b317e20e"/>    <section>
+    <title>viewZone</title>
+<indexterm><primary>viewZone</primary><secondary>ScrollingBG1</secondary></indexterm>
+<indexterm><primary>ScrollingBG1</primary><secondary>viewZone</secondary></indexterm>
+<para><computeroutput>float ScrollingBG1.viewZone = 10<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Область видимости. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Background/<link linkend="__scrolling_b_g1_8cs">ScrollingBG1.cs</link></section>
+</section>

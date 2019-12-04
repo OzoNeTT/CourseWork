@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_d3007fed70c33f3aa252f63ea0aaff6d">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts Directory Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_ee743ad248e92faf37cb28a09bdbc69a">Background</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_df595b76a8cc179580a7fbedd5412a27">Enemy</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_a74adf733c697e8e1cbbfc5535e54b8e">Menu</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_01d20cd57b62d0ecb1e7aaa248d0359f">Parallax</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_e9cc795c7d1186b27955cfe5f73ba0ac">Player</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_fbc14ac35b66196f06ede5bf50cbe3e0">Tools</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,24 +1,74 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+
+/// <summary>
+/// Класс "Робота".
+/// <remarks>Данный класс реализует поведение и стрельбу "Робота".</remarks>
+/// </summary>
 public class Enemy2 : MonoBehaviour {
 
     // Use this for initialization
+    /// <summary>
+    /// Объект здоровье. Может с некоторым шансом выпасть после смерти моба.
+    /// </summary>
     public GameObject hill;
+    /// <summary>
+    /// Координаты точки выстрела.
+    /// </summary>
     public Transform firePoint;
+    /// <summary>
+    /// Переменная класса управления персонажем.
+    /// </summary>
     private PlayerControl Player;
+    /// <summary>
+    /// Частота выстрелов.
+    /// </summary>
     public float RepeatRate; 
+    /// <summary>
+    /// Объект пуля.
+    /// </summary>
     public GameObject Bullet;
+    /// <summary>
+    /// Радиус поиска цели.
+    /// </summary>
     public float radius;
+    /// <summary>
+    /// Координаты цели.
+    /// </summary>
     private Transform target;
-    float fx, fy, fz;
+    /// <summary>
+    /// Координата Х.
+    /// </summary>
+    float fx;
+    /// <summary>
+    /// Координата У.
+    /// </summary>
+    float fy;
+    /// <summary>
+    /// Координата Z.
+    /// </summary>
+    float fz;
+    /// <summary>
+    /// Время следующего выстрела.
+    /// </summary>
     public double nextFire = -1.0f;
+    /// <summary>
+    /// Звук выстрела.
+    /// </summary>
     public AudioSource ShootSound;
+    /// <summary>
+    /// Аниматор моба "Робот".
+    /// </summary>
     Animator _anim;
+    /// <summary>
+    /// Проверка на смерть объекта.
+    /// </summary>
     bool dies = false;
+    /// <summary>
+    /// Функция установки первоначального состояния.
+    /// </summary>
     void Start () {
-        //  InvokeRepeating("Shoot", 0f, RepeatRate);
-        //  InvokeRepeating("Move", 0f, 0.1F);
         _anim = GetComponent<Animator>();
         nextFire = Time.time;
         Player = FindObjectOfType<PlayerControl>();
@@ -28,6 +78,9 @@ public class Enemy2 : MonoBehaviour {
         fz = transform.localScale.z;
         GetComponent<Animator>().Play("Enemy2_Idle");
     }
+    /// <summary>
+    /// Функция смерти. Уничтожение объекта и выпадание жизней с некоторым шансом.
+    /// </summary>
     public void Dies()
     {
         dies = true;
@@ -40,19 +93,18 @@ public class Enemy2 : MonoBehaviour {
         }
 
     }
-    // Update is called once per frame
+    /// <summary>
+    /// Функция покадрового обновления. Поиск цели и в случае нахождения начало стрельбы.
+    /// </summary>
     void Update () {
         if (GameObject.Find("Player 1") != null)
         {
             if (Vector2.Distance(transform.position, target.position) > radius )
             {
-                //GetComponent<Animator>().Play("Enemy2_Idle");
-                //_anim.SetBool("shooting", false);
+
             }
             if (Vector2.Distance(transform.position, target.position) < radius && !dies)
             {
-                
-                //transform.position = new Vector3(Vector3.MoveTowards(transform.position, Player.transform.position, MoveSpeed * Time.deltaTime).x, transform.position.y);
                 Flip();
                 if (Time.time >= nextFire && !_anim.GetBool("dies"))
                 {
@@ -64,24 +116,20 @@ public class Enemy2 : MonoBehaviour {
             }
         }
     }
+    /// <summary>
+    /// Функция стрельбы. Воспроизводит анимацию стрельбы и создает объект пулю.
+    /// </summary>
     public void Shoot()
     {
-        //GetComponent<Animator>().Play("Enemy2_Shoot");
         ShootSound.pitch = 2f;
         ShootSound.Play();
         GetComponent<Animator>().Play("Enemy2_Shoot");
         GameObject bullet = (GameObject)Instantiate(Bullet, firePoint.position, firePoint.rotation);
-        
-        //if (this.transform.rotation.y == 0)
-        //    bullet.GetComponent<Enemy2BulletController>().speed = 20;
-        //else
-        //    bullet.GetComponent<Enemy2BulletController>().speed = -20;
-
     }
-    //public void Move()
-    //{
-    //    this.transform.position = new Vector3(Vector3.MoveTowards(this.transform.position, Player.transform.position, 10 * Time.deltaTime).x, this.transform.position.y);
-    //}
+    /// <summary>
+    /// Проверка на попадание в коллайдер "Робота" некоторого объекта.
+    /// </summary>
+    /// <param name="other">Коллайдер некоторого объекта.</param>
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player" && !dies)
@@ -95,6 +143,9 @@ public class Enemy2 : MonoBehaviour {
                 Player.KnockFromRight = false;
         }
     }
+    /// <summary>
+    /// Функция отражения по вертикали в зависимости от позиции игрока.
+    /// </summary>
     public void Flip()
     {
 
@@ -103,6 +154,9 @@ public class Enemy2 : MonoBehaviour {
         else if (Player.transform.position.x > transform.position.x)
             transform.localScale = new Vector3(fx, fy, fz);
     }
+    /// <summary>
+    /// Корутина ожидания смерти объекта.
+    /// </summary>
     private IEnumerator waitDies()
     {
         _anim.SetBool("dies", true);

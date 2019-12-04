@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_free_parallax">
+<title>FreeParallax Class Reference</title>
+<indexterm><primary>FreeParallax</primary></indexterm>
+<para>Inheritance diagram for FreeParallax:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_free_parallax.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_free_parallax_1a63e4108e93895434c8086a97250e6b3c">Reset</link> ()</para>
+
+<para>Reset the parallax to default state </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_free_parallax_1a51820b353d78150ed41d00ae262ae169">SetupElements</link> ()</para>
+
+<para>Initialize each element </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_free_parallax_1aa4d09e2808fe0b865ed6bededc65bc13">AddElement</link> (<link linkend="_class_free_parallax_element">FreeParallaxElement</link> e)</para>
+
+<para>Add a new element to the parallax </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_free_parallax_1a0f858570229aed9f5ac6a6afe06cd512">SetPosition</link> (GameObject obj, Renderer r, float x, float y)</para>
+
+<para>Set the position of an object such that the bottom left of the object ends up being x and y </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Camera <link linkend="_class_free_parallax_1a4eac3efb90ce3262681171c90c672436">parallaxCamera</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_free_parallax_1a7434fa366429c0ac4d84dc38f256229c">Speed</link> = 2.0f</para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_free_parallax_element">FreeParallaxElement</link> &gt; <link linkend="_class_free_parallax_1ab4dfefcf64563cf16b54fb961ed5f9fe">Elements</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_free_parallax_1addc1335489e13c64e3e9209932091c06">IsHorizontal</link> = true</para>
+</listitem>
+            <listitem><para>float <link linkend="_class_free_parallax_1a2ce293a2a962660aa689759995f1e8e1">WrapOverlap</link> = 0.0f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_free_parallax_1ac344355e308d90081910f5d222dcb2bd">SetupElementAtIndex</link> (int i)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_free_parallax_1af639b698b0d1ba652113b62ab0bbd268">Start</link> ()</para>
+</listitem>
+            <listitem><para>IEnumerator <link linkend="_class_free_parallax_1ae6676210d0800cc59c06c0c38ade3156">InitializeAfterSlightDelay</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_free_parallax_1a6aeb8135d001ea66402e43b255995067">Update</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_free_parallax_1aa4d09e2808fe0b865ed6bededc65bc13"/>    <section>
+    <title>AddElement()</title>
+<indexterm><primary>AddElement</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>AddElement</secondary></indexterm>
+<para><computeroutput>void FreeParallax.AddElement (<link linkend="_class_free_parallax_element">FreeParallaxElement</link> e)</computeroutput></para><para>
+
+<para>Add a new element to the parallax </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>e</entry>
+                                <entry>
+<para>Element to add</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_free_parallax_1ae6676210d0800cc59c06c0c38ade3156"/>    <section>
+    <title>InitializeAfterSlightDelay()</title>
+<indexterm><primary>InitializeAfterSlightDelay</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>InitializeAfterSlightDelay</secondary></indexterm>
+<para><computeroutput>IEnumerator FreeParallax.InitializeAfterSlightDelay ( )<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_free_parallax_1a63e4108e93895434c8086a97250e6b3c"/>    <section>
+    <title>Reset()</title>
+<indexterm><primary>Reset</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>Reset</secondary></indexterm>
+<para><computeroutput>void FreeParallax.Reset ( )</computeroutput></para><para>
+
+<para>Reset the parallax to default state </para>
+</para>
+    </section><anchor xml:id="_class_free_parallax_1a0f858570229aed9f5ac6a6afe06cd512"/>    <section>
+    <title>SetPosition()</title>
+<indexterm><primary>SetPosition</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>SetPosition</secondary></indexterm>
+<para><computeroutput>static void FreeParallax.SetPosition (GameObject obj, Renderer r, float x, float y)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Set the position of an object such that the bottom left of the object ends up being x and y </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>obj</entry>
+                                <entry>
+<para>Object</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>Renderer</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>x bottom left</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>y bottom left</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_free_parallax_1ac344355e308d90081910f5d222dcb2bd"/>    <section>
+    <title>SetupElementAtIndex()</title>
+<indexterm><primary>SetupElementAtIndex</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>SetupElementAtIndex</secondary></indexterm>
+<para><computeroutput>void FreeParallax.SetupElementAtIndex (int i)<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_free_parallax_1a51820b353d78150ed41d00ae262ae169"/>    <section>
+    <title>SetupElements()</title>
+<indexterm><primary>SetupElements</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>SetupElements</secondary></indexterm>
+<para><computeroutput>void FreeParallax.SetupElements ( )</computeroutput></para><para>
+
+<para>Initialize each element </para>
+</para>
+    </section><anchor xml:id="_class_free_parallax_1af639b698b0d1ba652113b62ab0bbd268"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void FreeParallax.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para>    </section><anchor xml:id="_class_free_parallax_1a6aeb8135d001ea66402e43b255995067"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void FreeParallax.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_free_parallax_1ab4dfefcf64563cf16b54fb961ed5f9fe"/>    <section>
+    <title>Elements</title>
+<indexterm><primary>Elements</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>Elements</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_free_parallax_element">FreeParallaxElement</link>&gt; FreeParallax.Elements</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_1addc1335489e13c64e3e9209932091c06"/>    <section>
+    <title>IsHorizontal</title>
+<indexterm><primary>IsHorizontal</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>IsHorizontal</secondary></indexterm>
+<para><computeroutput>bool FreeParallax.IsHorizontal = true</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_1a4eac3efb90ce3262681171c90c672436"/>    <section>
+    <title>parallaxCamera</title>
+<indexterm><primary>parallaxCamera</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>parallaxCamera</secondary></indexterm>
+<para><computeroutput>Camera FreeParallax.parallaxCamera</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_1a7434fa366429c0ac4d84dc38f256229c"/>    <section>
+    <title>Speed</title>
+<indexterm><primary>Speed</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>Speed</secondary></indexterm>
+<para><computeroutput>float FreeParallax.Speed = 2.0f</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_1a2ce293a2a962660aa689759995f1e8e1"/>    <section>
+    <title>WrapOverlap</title>
+<indexterm><primary>WrapOverlap</primary><secondary>FreeParallax</secondary></indexterm>
+<indexterm><primary>FreeParallax</primary><secondary>WrapOverlap</secondary></indexterm>
+<para><computeroutput>float FreeParallax.WrapOverlap = 0.0f</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Parallax/<link linkend="__free_parallax_8cs">FreeParallax.cs</link></section>
+</section>

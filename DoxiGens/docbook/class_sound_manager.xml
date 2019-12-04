@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_sound_manager">
+<title>SoundManager Class Reference</title>
+<indexterm><primary>SoundManager</primary></indexterm>
+<para>
+
+<para>Класс воспроизведения музыки. </para>
+ 
+</para>
+<para>Inheritance diagram for SoundManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_sound_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_sound_manager_1a40bd62d1ab65a66b23c647268cbf0451">PlayKeyWav</link> ()</para>
+
+<para>Одноразвое воспроизведение звука подбора ключей. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1a23fa6e2f97fcf482ba339a2d43cbfb42">PlayDrinkHP</link> ()</para>
+
+<para>Одноразвое воспроизведение звука пополнения здоровья. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1a9cfbc7de056e4881d41995072a087814">PlayDogDeath</link> ()</para>
+
+<para>Одноразвое воспроизведение звука смерти собаки. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1aaaca08e0bf92bc10c01001cc153d601b">PlayBark</link> ()</para>
+
+<para>Одноразвое воспроизведение звука лая. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1a16862fa2ef54ad26fdd8c50e5ddec0fc">PlayCoinSound</link> ()</para>
+
+<para>Одноразвое воспроизведение звука подбора монеты. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1afd3e579848b462c3019486a50fba91d4">PlaySword</link> ()</para>
+
+<para>Одноразвое воспроизведение звука удара мечом. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1a0bfa682daee6770b4967ecddc0357b7d">PlayHitSound</link> ()</para>
+
+<para>Одноразвое воспроизведение звука попадания пули персонажа и запуск &quot;тряски&quot; камеры. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1aeb178d71f27ea4c280de1334baaacb6c">PlayEnemy2hitSound</link> ()</para>
+
+<para>Одноразвое воспроизведение звука попадание пули &quot;Врага2&quot;. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1a15626fec0156657a82527fb1ff64f12c">PlayDeathSound</link> ()</para>
+
+<para>Одноразвое воспроизведение звука смерти. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1a14d6f3846e7844c337f98ae5e320ebfc">PlayDoorOpening</link> ()</para>
+
+<para>Одноразвое воспроизведение звука открытия двери. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1ae7ecf2e675bdf63ecd5f0e3e38c66d2e">PlayExplosion</link> ()</para>
+
+<para>Одноразвое воспроизведение звука взрыва и запуск &quot;тряски&quot; камеры. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1a0a937652613eb42c56d1951cf727391f">PlayRunning</link> ()</para>
+
+<para>Одноразвое воспроизведение звука шагов. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sound_manager_1a0e5bb199f6813fb9817ff3a79b7e200f">PlayLaser</link> ()</para>
+
+<para>Одноразвое воспроизведение звука лазера и запуск &quot;тряски&quot; камеры. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_camera_shake">CameraShake</link> <link linkend="_class_sound_manager_1a14d3f27b42e469f0c4de1b1ef015a305">camShake</link></para>
+
+<para>Переменная класса &quot;тряски&quot; камеры. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_sound_manager">SoundManager</link> <link linkend="_class_sound_manager_1a540fcf67d0b9a8e6b40cc41033226037">sndMan</link></para>
+
+<para>Основная переменная класса, служит для воспроизведения аудиоклипов из других классов. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_sound_manager_1adfe146914a2614dd76f8278c29f6a74f">Start</link> ()</para>
+
+<para>В данном методе происходит инициализация всех переменных. В том числе и привязка звуковых эффектов из корневой дирректории. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>AudioSource <link linkend="_class_sound_manager_1a3ade143f449dca67726224808a5392d8">audioSrc</link></para>
+
+<para>Источник звука. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1ab7fea96a3449c7aa5e22765e66a547eb">coinSound</link></para>
+
+<para>Звук подбора монеты. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1a449dae73b0862d2f29fa34e02bfd6b13">hitSound</link></para>
+
+<para>Звук попадание пули персонажа. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1a98a32803fe69571ad2b9372f393ed810">Enemy2hitSound</link></para>
+
+<para>Звук попадания пули &quot;Врага2&quot;. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1a1566be4c7a19666dfb70143eb393df2e">deathSound</link></para>
+
+<para>Звук смерти. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1ad01a0f409c584fadebcb2ec08dbabb8c">doorOpen</link></para>
+
+<para>Звук открытия двери. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1a1f1d4fae3c21b93bd24ac2c02452819d">explosion</link></para>
+
+<para>Звук взрыва. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1a5c56a89d8a0e721fb1554c22441dc900">runningSteps</link></para>
+
+<para>Звук шагов. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1acfda3e3911d23a50a0a703ffe0ce5f9d">LaserSound</link></para>
+
+<para>Звук лазера. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1a8294f352e77b0289fb9cc0c7d0ff1b60">drinkHP</link></para>
+
+<para>Звук пополнения здоровья. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1ab93cc7e74b773da7b05c6c094a7429be">keywav</link></para>
+
+<para>Звук подбора ключей. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1a07e81c8b4ef1c07c53ce4ed880fe7182">SwordSound</link></para>
+
+<para>Звук меча. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1acb9240f05024f189400b30fbdaf02c50">Bark</link></para>
+
+<para>Звук лая. </para>
+</listitem>
+            <listitem><para>AudioClip <link linkend="_class_sound_manager_1acda20efa9afa65a856ea39be0f28e258">DogDeath</link></para>
+
+<para>Звук смерти собаки. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс воспроизведения музыки. </para>
+
+
+
+<para>Данный класс служит для воспроизведения звуковых эффектов тех объектов, которые могут быть уничтожены. А также в данном классе применяется эффект &quot;тряски&quot; камеры.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_sound_manager_1aaaca08e0bf92bc10c01001cc153d601b"/>    <section>
+    <title>PlayBark()</title>
+<indexterm><primary>PlayBark</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayBark</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayBark ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука лая. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a16862fa2ef54ad26fdd8c50e5ddec0fc"/>    <section>
+    <title>PlayCoinSound()</title>
+<indexterm><primary>PlayCoinSound</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayCoinSound</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayCoinSound ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука подбора монеты. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a15626fec0156657a82527fb1ff64f12c"/>    <section>
+    <title>PlayDeathSound()</title>
+<indexterm><primary>PlayDeathSound</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayDeathSound</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayDeathSound ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука смерти. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a9cfbc7de056e4881d41995072a087814"/>    <section>
+    <title>PlayDogDeath()</title>
+<indexterm><primary>PlayDogDeath</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayDogDeath</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayDogDeath ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука смерти собаки. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a14d6f3846e7844c337f98ae5e320ebfc"/>    <section>
+    <title>PlayDoorOpening()</title>
+<indexterm><primary>PlayDoorOpening</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayDoorOpening</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayDoorOpening ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука открытия двери. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a23fa6e2f97fcf482ba339a2d43cbfb42"/>    <section>
+    <title>PlayDrinkHP()</title>
+<indexterm><primary>PlayDrinkHP</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayDrinkHP</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayDrinkHP ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука пополнения здоровья. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1aeb178d71f27ea4c280de1334baaacb6c"/>    <section>
+    <title>PlayEnemy2hitSound()</title>
+<indexterm><primary>PlayEnemy2hitSound</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayEnemy2hitSound</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayEnemy2hitSound ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука попадание пули &quot;Врага2&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1ae7ecf2e675bdf63ecd5f0e3e38c66d2e"/>    <section>
+    <title>PlayExplosion()</title>
+<indexterm><primary>PlayExplosion</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayExplosion</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayExplosion ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука взрыва и запуск &quot;тряски&quot; камеры. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a0bfa682daee6770b4967ecddc0357b7d"/>    <section>
+    <title>PlayHitSound()</title>
+<indexterm><primary>PlayHitSound</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayHitSound</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayHitSound ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука попадания пули персонажа и запуск &quot;тряски&quot; камеры. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a40bd62d1ab65a66b23c647268cbf0451"/>    <section>
+    <title>PlayKeyWav()</title>
+<indexterm><primary>PlayKeyWav</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayKeyWav</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayKeyWav ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука подбора ключей. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a0e5bb199f6813fb9817ff3a79b7e200f"/>    <section>
+    <title>PlayLaser()</title>
+<indexterm><primary>PlayLaser</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayLaser</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayLaser ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука лазера и запуск &quot;тряски&quot; камеры. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a0a937652613eb42c56d1951cf727391f"/>    <section>
+    <title>PlayRunning()</title>
+<indexterm><primary>PlayRunning</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlayRunning</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlayRunning ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука шагов. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1afd3e579848b462c3019486a50fba91d4"/>    <section>
+    <title>PlaySword()</title>
+<indexterm><primary>PlaySword</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>PlaySword</secondary></indexterm>
+<para><computeroutput>void SoundManager.PlaySword ( )</computeroutput></para><para>
+
+<para>Одноразвое воспроизведение звука удара мечом. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1adfe146914a2614dd76f8278c29f6a74f"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void SoundManager.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>В данном методе происходит инициализация всех переменных. В том числе и привязка звуковых эффектов из корневой дирректории. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_sound_manager_1a3ade143f449dca67726224808a5392d8"/>    <section>
+    <title>audioSrc</title>
+<indexterm><primary>audioSrc</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>audioSrc</secondary></indexterm>
+<para><computeroutput>AudioSource SoundManager.audioSrc<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Источник звука. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1acb9240f05024f189400b30fbdaf02c50"/>    <section>
+    <title>Bark</title>
+<indexterm><primary>Bark</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>Bark</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.Bark<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук лая. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a14d3f27b42e469f0c4de1b1ef015a305"/>    <section>
+    <title>camShake</title>
+<indexterm><primary>camShake</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>camShake</secondary></indexterm>
+<para><computeroutput><link linkend="_class_camera_shake">CameraShake</link> SoundManager.camShake</computeroutput></para><para>
+
+<para>Переменная класса &quot;тряски&quot; камеры. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1ab7fea96a3449c7aa5e22765e66a547eb"/>    <section>
+    <title>coinSound</title>
+<indexterm><primary>coinSound</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>coinSound</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.coinSound<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук подбора монеты. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a1566be4c7a19666dfb70143eb393df2e"/>    <section>
+    <title>deathSound</title>
+<indexterm><primary>deathSound</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>deathSound</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.deathSound<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук смерти. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1acda20efa9afa65a856ea39be0f28e258"/>    <section>
+    <title>DogDeath</title>
+<indexterm><primary>DogDeath</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>DogDeath</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.DogDeath<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук смерти собаки. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1ad01a0f409c584fadebcb2ec08dbabb8c"/>    <section>
+    <title>doorOpen</title>
+<indexterm><primary>doorOpen</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>doorOpen</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.doorOpen<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук открытия двери. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a8294f352e77b0289fb9cc0c7d0ff1b60"/>    <section>
+    <title>drinkHP</title>
+<indexterm><primary>drinkHP</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>drinkHP</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.drinkHP<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук пополнения здоровья. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a98a32803fe69571ad2b9372f393ed810"/>    <section>
+    <title>Enemy2hitSound</title>
+<indexterm><primary>Enemy2hitSound</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>Enemy2hitSound</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.Enemy2hitSound<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук попадания пули &quot;Врага2&quot;. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a1f1d4fae3c21b93bd24ac2c02452819d"/>    <section>
+    <title>explosion</title>
+<indexterm><primary>explosion</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>explosion</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.explosion<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук взрыва. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a449dae73b0862d2f29fa34e02bfd6b13"/>    <section>
+    <title>hitSound</title>
+<indexterm><primary>hitSound</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>hitSound</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.hitSound<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук попадание пули персонажа. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1ab93cc7e74b773da7b05c6c094a7429be"/>    <section>
+    <title>keywav</title>
+<indexterm><primary>keywav</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>keywav</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.keywav<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук подбора ключей. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1acfda3e3911d23a50a0a703ffe0ce5f9d"/>    <section>
+    <title>LaserSound</title>
+<indexterm><primary>LaserSound</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>LaserSound</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.LaserSound<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук лазера. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a5c56a89d8a0e721fb1554c22441dc900"/>    <section>
+    <title>runningSteps</title>
+<indexterm><primary>runningSteps</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>runningSteps</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.runningSteps<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук шагов. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a540fcf67d0b9a8e6b40cc41033226037"/>    <section>
+    <title>sndMan</title>
+<indexterm><primary>sndMan</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>sndMan</secondary></indexterm>
+<para><computeroutput><link linkend="_class_sound_manager">SoundManager</link> SoundManager.sndMan<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Основная переменная класса, служит для воспроизведения аудиоклипов из других классов. </para>
+</para>
+    </section><anchor xml:id="_class_sound_manager_1a07e81c8b4ef1c07c53ce4ed880fe7182"/>    <section>
+    <title>SwordSound</title>
+<indexterm><primary>SwordSound</primary><secondary>SoundManager</secondary></indexterm>
+<indexterm><primary>SoundManager</primary><secondary>SwordSound</secondary></indexterm>
+<para><computeroutput>AudioClip SoundManager.SwordSound<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Звук меча. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Background/<link linkend="__sound_manager_8cs">SoundManager.cs</link></section>
+</section>

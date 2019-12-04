@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_boss_bullet_controller">
+<title>BossBulletController Class Reference</title>
+<indexterm><primary>BossBulletController</primary></indexterm>
+<para>
+
+<para>Класс управления пулей босса. </para>
+ 
+</para>
+<para>Inheritance diagram for BossBulletController:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_boss_bullet_controller.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_boss_bullet_controller_1a9ebef34dcb5a2a0c55783a524d0aa89f">MoveSpeed</link> = 50</para>
+
+<para>Скорость движения пули. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_boss_bullet_controller_1a961a11da843882951ef7dec35d1f37ed">damage</link> = 5</para>
+
+<para>Урон от пули. </para>
+</listitem>
+            <listitem><para>Vector3 <link linkend="_class_boss_bullet_controller_1a5f04b6b74c0abf25653cd4e53627a01c">oldplayerpos</link></para>
+
+<para>Одноразовая позиция игрока. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_boss_bullet_controller_1ac49a0d5fea582fa190bc88e7a2685f78">Start</link> ()</para>
+
+<para>Функция установки первоначальных значений. Определяет позицию игрока. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_boss_bullet_controller_1af98ac2c13db474773e6a09a328e0e4dc">Update</link> ()</para>
+
+<para>Функция покадрового обновления. Описывает движения пули в направлении игрока, а по достижению координат уничтожает объект &quot;Пуля&quot;. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_boss_bullet_controller_1a4119517113443f4643b3dde206637e3c">OnTriggerEnter2D</link> (Collider2D other)</para>
+
+<para>Проверка на попадание в тригерзону пули некоторого объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_player_control">PlayerControl</link> <link linkend="_class_boss_bullet_controller_1adc6c4217cec1e89d99741a19a5585b9c">Player</link></para>
+
+<para>Переменная класса статистики игрока. </para>
+</listitem>
+            <listitem><para>Rigidbody2D <link linkend="_class_boss_bullet_controller_1a534401643273fd53650fe18ddddda690">rb</link></para>
+
+<para>Физический Rigidbody2D для описания движения объекта &quot;пуля&quot;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс управления пулей босса. </para>
+
+
+
+<para>Данный класс описывает движение пули, выпущенной атакой босса, ее наносимый урон и направление движения.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_boss_bullet_controller_1a4119517113443f4643b3dde206637e3c"/>    <section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>BossBulletController</secondary></indexterm>
+<indexterm><primary>BossBulletController</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void BossBulletController.OnTriggerEnter2D (Collider2D other)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на попадание в тригерзону пули некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>other</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_boss_bullet_controller_1ac49a0d5fea582fa190bc88e7a2685f78"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>BossBulletController</secondary></indexterm>
+<indexterm><primary>BossBulletController</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void BossBulletController.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция установки первоначальных значений. Определяет позицию игрока. </para>
+</para>
+    </section><anchor xml:id="_class_boss_bullet_controller_1af98ac2c13db474773e6a09a328e0e4dc"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>BossBulletController</secondary></indexterm>
+<indexterm><primary>BossBulletController</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void BossBulletController.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления. Описывает движения пули в направлении игрока, а по достижению координат уничтожает объект &quot;Пуля&quot;. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_boss_bullet_controller_1a961a11da843882951ef7dec35d1f37ed"/>    <section>
+    <title>damage</title>
+<indexterm><primary>damage</primary><secondary>BossBulletController</secondary></indexterm>
+<indexterm><primary>BossBulletController</primary><secondary>damage</secondary></indexterm>
+<para><computeroutput>int BossBulletController.damage = 5</computeroutput></para><para>
+
+<para>Урон от пули. </para>
+</para>
+    </section><anchor xml:id="_class_boss_bullet_controller_1a9ebef34dcb5a2a0c55783a524d0aa89f"/>    <section>
+    <title>MoveSpeed</title>
+<indexterm><primary>MoveSpeed</primary><secondary>BossBulletController</secondary></indexterm>
+<indexterm><primary>BossBulletController</primary><secondary>MoveSpeed</secondary></indexterm>
+<para><computeroutput>float BossBulletController.MoveSpeed = 50</computeroutput></para><para>
+
+<para>Скорость движения пули. </para>
+</para>
+    </section><anchor xml:id="_class_boss_bullet_controller_1a5f04b6b74c0abf25653cd4e53627a01c"/>    <section>
+    <title>oldplayerpos</title>
+<indexterm><primary>oldplayerpos</primary><secondary>BossBulletController</secondary></indexterm>
+<indexterm><primary>BossBulletController</primary><secondary>oldplayerpos</secondary></indexterm>
+<para><computeroutput>Vector3 BossBulletController.oldplayerpos</computeroutput></para><para>
+
+<para>Одноразовая позиция игрока. </para>
+</para>
+    </section><anchor xml:id="_class_boss_bullet_controller_1adc6c4217cec1e89d99741a19a5585b9c"/>    <section>
+    <title>Player</title>
+<indexterm><primary>Player</primary><secondary>BossBulletController</secondary></indexterm>
+<indexterm><primary>BossBulletController</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_player_control">PlayerControl</link> BossBulletController.Player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная класса статистики игрока. </para>
+</para>
+    </section><anchor xml:id="_class_boss_bullet_controller_1a534401643273fd53650fe18ddddda690"/>    <section>
+    <title>rb</title>
+<indexterm><primary>rb</primary><secondary>BossBulletController</secondary></indexterm>
+<indexterm><primary>BossBulletController</primary><secondary>rb</secondary></indexterm>
+<para><computeroutput>Rigidbody2D BossBulletController.rb<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Физический Rigidbody2D для описания движения объекта &quot;пуля&quot;. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/<link linkend="__boss_bullet_controller_8cs">BossBulletController.cs</link></section>
+</section>

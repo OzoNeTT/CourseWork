@@ -1,0 +1,178 @@
+\hypertarget{class_enemy2_bullet_controller}{}\doxysection{Enemy2\+Bullet\+Controller Class Reference}
+\label{class_enemy2_bullet_controller}\index{Enemy2BulletController@{Enemy2BulletController}}
+
+
+Класс управления пули \char`\"{}Робота\char`\"{}.  
+
+
+Inheritance diagram for Enemy2\+Bullet\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy2_bullet_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy2_bullet_controller_a70725d71e6227bbec605041a153a3f6a}{Flip}} ()
+\begin{DoxyCompactList}\small\item\em Функция отражения по вертикали в зависимости от позиции игрока. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_enemy2_bullet_controller_ac19884ed18dc695cf0beb9244872f7c1}{speedx}}
+\begin{DoxyCompactList}\small\item\em Скорость движения по координате Х. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy2_bullet_controller_af28af6af1468c9d180e42a11a39b36bd}{speedy}} = 0
+\begin{DoxyCompactList}\small\item\em Скорость движения по координате У. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_enemy2_bullet_controller_a4f7d76fd0324f99a9e11a1eb5f020153}{damage}}
+\begin{DoxyCompactList}\small\item\em Наносимый урон. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy2_bullet_controller_a526a73c9616be321efcc9e08f4998329}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция придания первоначального состояния. Определение направления движения пули. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy2_bullet_controller_ae7f060f1ec5b3997d379f8c26a29b387}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция покадрового обновления. Движение пули. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy2_bullet_controller_af3a722f16a072d25bd191ec3488d5597}{On\+Trigger\+Enter2D}} (Collider2D other)
+\begin{DoxyCompactList}\small\item\em Функция проверки на попадание в коллайдер пули. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_control}{Player\+Control}} \mbox{\hyperlink{class_enemy2_bullet_controller_ad8c95cb057d4e55509402247dc93e10d}{Player}}
+\begin{DoxyCompactList}\small\item\em Объект игрок. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy2_bullet_controller_adfa75e9c812c625b85be6b92121b8ade}{fx}}
+\begin{DoxyCompactList}\small\item\em Координата по Х. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy2_bullet_controller_a0b4c8cc98370046907949527ea64f65f}{fy}}
+\begin{DoxyCompactList}\small\item\em Координата по У. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy2_bullet_controller_a01ef99a8c3f5ec63005eb5bbc7d32a15}{fz}}
+\begin{DoxyCompactList}\small\item\em Координата по Z. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс управления пули \char`\"{}Робота\char`\"{}. 
+
+Данный класс реализует движение пули и ее попадание в некоторый объект.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy2_bullet_controller_a70725d71e6227bbec605041a153a3f6a}\label{class_enemy2_bullet_controller_a70725d71e6227bbec605041a153a3f6a}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!Flip@{Flip}}
+\index{Flip@{Flip}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{Flip()}{Flip()}}
+{\footnotesize\ttfamily void Enemy2\+Bullet\+Controller.\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция отражения по вертикали в зависимости от позиции игрока. 
+
+\mbox{\Hypertarget{class_enemy2_bullet_controller_af3a722f16a072d25bd191ec3488d5597}\label{class_enemy2_bullet_controller_af3a722f16a072d25bd191ec3488d5597}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily void Enemy2\+Bullet\+Controller.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция проверки на попадание в коллайдер пули. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy2_bullet_controller_a526a73c9616be321efcc9e08f4998329}\label{class_enemy2_bullet_controller_a526a73c9616be321efcc9e08f4998329}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!Start@{Start}}
+\index{Start@{Start}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Enemy2\+Bullet\+Controller.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция придания первоначального состояния. Определение направления движения пули. 
+
+\mbox{\Hypertarget{class_enemy2_bullet_controller_ae7f060f1ec5b3997d379f8c26a29b387}\label{class_enemy2_bullet_controller_ae7f060f1ec5b3997d379f8c26a29b387}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!Update@{Update}}
+\index{Update@{Update}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Enemy2\+Bullet\+Controller.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция покадрового обновления. Движение пули. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy2_bullet_controller_a4f7d76fd0324f99a9e11a1eb5f020153}\label{class_enemy2_bullet_controller_a4f7d76fd0324f99a9e11a1eb5f020153}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!damage@{damage}}
+\index{damage@{damage}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily int Enemy2\+Bullet\+Controller.\+damage}
+
+
+
+Наносимый урон. 
+
+\mbox{\Hypertarget{class_enemy2_bullet_controller_adfa75e9c812c625b85be6b92121b8ade}\label{class_enemy2_bullet_controller_adfa75e9c812c625b85be6b92121b8ade}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!fx@{fx}}
+\index{fx@{fx}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{fx}{fx}}
+{\footnotesize\ttfamily float Enemy2\+Bullet\+Controller.\+fx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата по Х. 
+
+\mbox{\Hypertarget{class_enemy2_bullet_controller_a0b4c8cc98370046907949527ea64f65f}\label{class_enemy2_bullet_controller_a0b4c8cc98370046907949527ea64f65f}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!fy@{fy}}
+\index{fy@{fy}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{fy}{fy}}
+{\footnotesize\ttfamily float Enemy2\+Bullet\+Controller.\+fy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата по У. 
+
+\mbox{\Hypertarget{class_enemy2_bullet_controller_a01ef99a8c3f5ec63005eb5bbc7d32a15}\label{class_enemy2_bullet_controller_a01ef99a8c3f5ec63005eb5bbc7d32a15}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!fz@{fz}}
+\index{fz@{fz}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{fz}{fz}}
+{\footnotesize\ttfamily float Enemy2\+Bullet\+Controller.\+fz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Координата по Z. 
+
+\mbox{\Hypertarget{class_enemy2_bullet_controller_ad8c95cb057d4e55509402247dc93e10d}\label{class_enemy2_bullet_controller_ad8c95cb057d4e55509402247dc93e10d}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!Player@{Player}}
+\index{Player@{Player}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_control}{Player\+Control}} Enemy2\+Bullet\+Controller.\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объект игрок. 
+
+\mbox{\Hypertarget{class_enemy2_bullet_controller_ac19884ed18dc695cf0beb9244872f7c1}\label{class_enemy2_bullet_controller_ac19884ed18dc695cf0beb9244872f7c1}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!speedx@{speedx}}
+\index{speedx@{speedx}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{speedx}{speedx}}
+{\footnotesize\ttfamily float Enemy2\+Bullet\+Controller.\+speedx}
+
+
+
+Скорость движения по координате Х. 
+
+\mbox{\Hypertarget{class_enemy2_bullet_controller_af28af6af1468c9d180e42a11a39b36bd}\label{class_enemy2_bullet_controller_af28af6af1468c9d180e42a11a39b36bd}} 
+\index{Enemy2BulletController@{Enemy2BulletController}!speedy@{speedy}}
+\index{speedy@{speedy}!Enemy2BulletController@{Enemy2BulletController}}
+\doxysubsubsection{\texorpdfstring{speedy}{speedy}}
+{\footnotesize\ttfamily float Enemy2\+Bullet\+Controller.\+speedy = 0}
+
+
+
+Скорость движения по координате У. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Enemy/Enemy2\+Bullet\+Controller.\+cs\end{DoxyCompactItemize}

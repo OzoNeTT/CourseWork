@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__free_parallax_8cs">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Parallax/FreeParallax.cs File Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Parallax/FreeParallax.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_free_parallax">FreeParallax</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_free_parallax_element_reposition_logic">FreeParallaxElementRepositionLogic</link></para>
+
+<para>Contains parameters that repositions an object when it leaves the screen </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_free_parallax_element">FreeParallaxElement</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4ce">FreeParallaxPositionMode</link> { 
+<link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4cea7aa3137f00a83f1cf5a28841ec22bdc9">FreeParallaxPositionMode.WrapAnchorTop</link>, 
+<link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4cea348f533801aa954f0de46fa30894b6da">FreeParallaxPositionMode.WrapAnchorBottom</link>, 
+<link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4cea8e440abe125c9d39c597a28a50d29e3e">FreeParallaxPositionMode.IndividualStartOffScreen</link>, 
+<link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4cea53fb334d4ca691db05d44c6e4dacb9b1">FreeParallaxPositionMode.IndividualStartOnScreen</link>, 
+
+<link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4ceaabc46fe826a1dbe29e7cdb335a4fa568">FreeParallaxPositionMode.WrapAnchorNone</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>delegate void <link linkend="__free_parallax_8cs_1ace7b5c2ae64f4936381aa86993fc5c33">FreeParallaxElementRepositionLogicFunction</link> (<link linkend="_class_free_parallax">FreeParallax</link> p, <link linkend="_class_free_parallax_element">FreeParallaxElement</link> element, float amount, GameObject obj, Renderer r)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4ce"/>    <section>
+    <title>FreeParallaxPositionMode</title>
+<indexterm><primary>FreeParallaxPositionMode</primary><secondary>FreeParallax.cs</secondary></indexterm>
+<indexterm><primary>FreeParallax.cs</primary><secondary>FreeParallaxPositionMode</secondary></indexterm>
+<para><computeroutput>enum <link linkend="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4ce">FreeParallaxPositionMode</link><computeroutput>[strong]</computeroutput></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>WrapAnchorTop</primary><secondary>FreeParallax.cs</secondary></indexterm>
+<indexterm><primary>FreeParallax.cs</primary><secondary>WrapAnchorTop</secondary></indexterm>
+<anchor xml:id="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4cea7aa3137f00a83f1cf5a28841ec22bdc9"/>WrapAnchorTop</entry><entry></entry></row><row><entry><indexterm><primary>WrapAnchorBottom</primary><secondary>FreeParallax.cs</secondary></indexterm>
+<indexterm><primary>FreeParallax.cs</primary><secondary>WrapAnchorBottom</secondary></indexterm>
+<anchor xml:id="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4cea348f533801aa954f0de46fa30894b6da"/>WrapAnchorBottom</entry><entry></entry></row><row><entry><indexterm><primary>IndividualStartOffScreen</primary><secondary>FreeParallax.cs</secondary></indexterm>
+<indexterm><primary>FreeParallax.cs</primary><secondary>IndividualStartOffScreen</secondary></indexterm>
+<anchor xml:id="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4cea8e440abe125c9d39c597a28a50d29e3e"/>IndividualStartOffScreen</entry><entry></entry></row><row><entry><indexterm><primary>IndividualStartOnScreen</primary><secondary>FreeParallax.cs</secondary></indexterm>
+<indexterm><primary>FreeParallax.cs</primary><secondary>IndividualStartOnScreen</secondary></indexterm>
+<anchor xml:id="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4cea53fb334d4ca691db05d44c6e4dacb9b1"/>IndividualStartOnScreen</entry><entry></entry></row><row><entry><indexterm><primary>WrapAnchorNone</primary><secondary>FreeParallax.cs</secondary></indexterm>
+<indexterm><primary>FreeParallax.cs</primary><secondary>WrapAnchorNone</secondary></indexterm>
+<anchor xml:id="__free_parallax_8cs_1a31aea1be7d68de973779538d93fdc4ceaabc46fe826a1dbe29e7cdb335a4fa568"/>WrapAnchorNone</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__free_parallax_8cs_1ace7b5c2ae64f4936381aa86993fc5c33"/>    <section>
+    <title>FreeParallaxElementRepositionLogicFunction()</title>
+<indexterm><primary>FreeParallaxElementRepositionLogicFunction</primary><secondary>FreeParallax.cs</secondary></indexterm>
+<indexterm><primary>FreeParallax.cs</primary><secondary>FreeParallaxElementRepositionLogicFunction</secondary></indexterm>
+<para><computeroutput>delegate void FreeParallaxElementRepositionLogicFunction (<link linkend="_class_free_parallax">FreeParallax</link> p, <link linkend="_class_free_parallax_element">FreeParallaxElement</link> element, float amount, GameObject obj, Renderer r)</computeroutput></para></section>
+</section>
+</section>

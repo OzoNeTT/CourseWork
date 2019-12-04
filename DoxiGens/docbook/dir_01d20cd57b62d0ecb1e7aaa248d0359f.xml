@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_01d20cd57b62d0ecb1e7aaa248d0359f">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Parallax Directory Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Parallax Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__free_parallax_8cs">FreeParallax.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__free_parallax_demo_8cs">FreeParallaxDemo.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

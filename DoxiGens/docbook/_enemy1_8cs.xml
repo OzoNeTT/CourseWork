@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__enemy1_8cs">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/Enemy1.cs File Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Enemy/Enemy1.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_enemy1">Enemy1</link></para>
+
+<para>Класс моба &quot;Рыцарь&quot;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

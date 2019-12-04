@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_death_level">
+<title>DeathLevel Class Reference</title>
+<indexterm><primary>DeathLevel</primary></indexterm>
+<para>
+
+<para>Класс смертельной зону. </para>
+ 
+</para>
+<para>Inheritance diagram for DeathLevel:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_death_level.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Transform <link linkend="_class_death_level_1a1a1596e035f1d6b25da634f06f231873">spawnPoint</link></para>
+
+<para>Координаты точки спавна. </para>
+</listitem>
+            <listitem><para>AudioSource <link linkend="_class_death_level_1ac090397f210a1ed1e16bdfa98df5b504">DeathSound</link></para>
+
+<para>Источник звука, для воспроизведения звука смерти. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_death_level_1a6d9dad0935fe114683dfdf9fcde05ea7">OnCollisionEnter2D</link> (Collision2D collision)</para>
+
+<para>Проверка на попадание в коллайдер некоторого объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_player_control">PlayerControl</link> <link linkend="_class_death_level_1ae94c9660f385ae5a29a7b512c0eb4f37">Player</link></para>
+
+<para>Переменная класса управления игроком. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс смертельной зону. </para>
+
+
+
+<para>Данный класс реализует зону, попадая в которую игрок автоматически умирает и возрождается в точке спавна.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_death_level_1a6d9dad0935fe114683dfdf9fcde05ea7"/>    <section>
+    <title>OnCollisionEnter2D()</title>
+<indexterm><primary>OnCollisionEnter2D</primary><secondary>DeathLevel</secondary></indexterm>
+<indexterm><primary>DeathLevel</primary><secondary>OnCollisionEnter2D</secondary></indexterm>
+<para><computeroutput>void DeathLevel.OnCollisionEnter2D (Collision2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Проверка на попадание в коллайдер некоторого объекта. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>collision</entry>
+                                <entry>
+<para>Коллайдер некоторого объекта.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_death_level_1ac090397f210a1ed1e16bdfa98df5b504"/>    <section>
+    <title>DeathSound</title>
+<indexterm><primary>DeathSound</primary><secondary>DeathLevel</secondary></indexterm>
+<indexterm><primary>DeathLevel</primary><secondary>DeathSound</secondary></indexterm>
+<para><computeroutput>AudioSource DeathLevel.DeathSound</computeroutput></para><para>
+
+<para>Источник звука, для воспроизведения звука смерти. </para>
+</para>
+    </section><anchor xml:id="_class_death_level_1ae94c9660f385ae5a29a7b512c0eb4f37"/>    <section>
+    <title>Player</title>
+<indexterm><primary>Player</primary><secondary>DeathLevel</secondary></indexterm>
+<indexterm><primary>DeathLevel</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_player_control">PlayerControl</link> DeathLevel.Player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная класса управления игроком. </para>
+</para>
+    </section><anchor xml:id="_class_death_level_1a1a1596e035f1d6b25da634f06f231873"/>    <section>
+    <title>spawnPoint</title>
+<indexterm><primary>spawnPoint</primary><secondary>DeathLevel</secondary></indexterm>
+<indexterm><primary>DeathLevel</primary><secondary>spawnPoint</secondary></indexterm>
+<para><computeroutput>Transform DeathLevel.spawnPoint</computeroutput></para><para>
+
+<para>Координаты точки спавна. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__death_level_8cs">DeathLevel.cs</link></section>
+</section>

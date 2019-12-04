@@ -1,14 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameOverMenu : MonoBehaviour {
-
-	// Use this for initialization
+/// <summary>
+/// Класс конца игры.
+/// <remarks>Данный класс реализует </remarks>
+/// </summary>
+public class GameOverMenu : MonoBehaviour
+{
+    /// <summary>
+    /// Номер уровня.
+    /// </summary>
     public static int levelnumber;
+    /// <summary>
+    /// экземпляр класса.
+    /// </summary>
     public static GameOverMenu instance = null;
-	void Start () {
-	
-	}
+    /// <summary>
+    /// Функция вызывающаяся при запуске сцены.
+    /// </summary>
     void Awake()
     {
         if (instance == null)
@@ -19,14 +28,16 @@ public class GameOverMenu : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
 
     }
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    /// <summary>
+    /// Функция "Перезапуска игры".
+    /// </summary>
     public void StartGame()
     {
         Application.LoadLevel(levelnumber);
     }
+    /// <summary>
+    /// Нажатие на кнопку "Выход из игры".
+    /// </summary>
     public void ExitGame()
     {
         Application.Quit();

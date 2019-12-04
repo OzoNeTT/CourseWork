@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_free_parallax_element">
+<title>FreeParallaxElement Class Reference</title>
+<indexterm><primary>FreeParallaxElement</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_free_parallax_element_1ab0a70811e5df0d6f742a23d73b722b07">SetupState</link> (<link linkend="_class_free_parallax">FreeParallax</link> p, Camera c, int index)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_free_parallax_element_1ac2a2700ee0b0aa4fef77bc38fdf5726e">SetupScale</link> (<link linkend="_class_free_parallax">FreeParallax</link> p, Camera c, int index)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_free_parallax_element_1ac472f623dcb77a67a62f30f998fbf91f">SetupPosition</link> (<link linkend="_class_free_parallax">FreeParallax</link> p, Camera c, int index)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_free_parallax_element_1a4087b1529d0bee8376f277824da9fdad">Update</link> (<link linkend="_class_free_parallax">FreeParallax</link> p, float t, Camera c)</para>
+
+<para>Update the element given a distance of parallax move, t </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>List&lt; GameObject &gt; <link linkend="_class_free_parallax_element_1aa1ed0b6296c45c45e3e596f366c54bfe">GameObjects</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_free_parallax_element_1a925111d85fc23279be0f8e05eb99684d">SpeedRatio</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_free_parallax_element_reposition_logic">FreeParallaxElementRepositionLogic</link> <link linkend="_class_free_parallax_element_1aaf0fca16f7a6056face4831cbabc3ef9">RepositionLogic</link></para>
+</listitem>
+            <listitem><para><link linkend="__free_parallax_8cs_1ace7b5c2ae64f4936381aa86993fc5c33">FreeParallaxElementRepositionLogicFunction</link> <link linkend="_class_free_parallax_element_1aef58991180f652da8958e58df6066dc4">RepositionLogicFunction</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_free_parallax_element_1ac472f623dcb77a67a62f30f998fbf91f"/>    <section>
+    <title>SetupPosition()</title>
+<indexterm><primary>SetupPosition</primary><secondary>FreeParallaxElement</secondary></indexterm>
+<indexterm><primary>FreeParallaxElement</primary><secondary>SetupPosition</secondary></indexterm>
+<para><computeroutput>void FreeParallaxElement.SetupPosition (<link linkend="_class_free_parallax">FreeParallax</link> p, Camera c, int index)</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_1ac2a2700ee0b0aa4fef77bc38fdf5726e"/>    <section>
+    <title>SetupScale()</title>
+<indexterm><primary>SetupScale</primary><secondary>FreeParallaxElement</secondary></indexterm>
+<indexterm><primary>FreeParallaxElement</primary><secondary>SetupScale</secondary></indexterm>
+<para><computeroutput>void FreeParallaxElement.SetupScale (<link linkend="_class_free_parallax">FreeParallax</link> p, Camera c, int index)</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_1ab0a70811e5df0d6f742a23d73b722b07"/>    <section>
+    <title>SetupState()</title>
+<indexterm><primary>SetupState</primary><secondary>FreeParallaxElement</secondary></indexterm>
+<indexterm><primary>FreeParallaxElement</primary><secondary>SetupState</secondary></indexterm>
+<para><computeroutput>void FreeParallaxElement.SetupState (<link linkend="_class_free_parallax">FreeParallax</link> p, Camera c, int index)</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_1a4087b1529d0bee8376f277824da9fdad"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>FreeParallaxElement</secondary></indexterm>
+<indexterm><primary>FreeParallaxElement</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void FreeParallaxElement.Update (<link linkend="_class_free_parallax">FreeParallax</link> p, float t, Camera c)</computeroutput></para><para>
+
+<para>Update the element given a distance of parallax move, t </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>p</entry>
+                                <entry>
+<para>Parallax container</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>t</entry>
+                                <entry>
+<para>Total amount the parallax moved. Elements will move a percetage of this distance.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_free_parallax_element_1aa1ed0b6296c45c45e3e596f366c54bfe"/>    <section>
+    <title>GameObjects</title>
+<indexterm><primary>GameObjects</primary><secondary>FreeParallaxElement</secondary></indexterm>
+<indexterm><primary>FreeParallaxElement</primary><secondary>GameObjects</secondary></indexterm>
+<para><computeroutput>List&lt;GameObject&gt; FreeParallaxElement.GameObjects</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_1aaf0fca16f7a6056face4831cbabc3ef9"/>    <section>
+    <title>RepositionLogic</title>
+<indexterm><primary>RepositionLogic</primary><secondary>FreeParallaxElement</secondary></indexterm>
+<indexterm><primary>FreeParallaxElement</primary><secondary>RepositionLogic</secondary></indexterm>
+<para><computeroutput><link linkend="_class_free_parallax_element_reposition_logic">FreeParallaxElementRepositionLogic</link> FreeParallaxElement.RepositionLogic</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_1aef58991180f652da8958e58df6066dc4"/>    <section>
+    <title>RepositionLogicFunction</title>
+<indexterm><primary>RepositionLogicFunction</primary><secondary>FreeParallaxElement</secondary></indexterm>
+<indexterm><primary>FreeParallaxElement</primary><secondary>RepositionLogicFunction</secondary></indexterm>
+<para><computeroutput><link linkend="__free_parallax_8cs_1ace7b5c2ae64f4936381aa86993fc5c33">FreeParallaxElementRepositionLogicFunction</link> FreeParallaxElement.RepositionLogicFunction</computeroutput></para>    </section><anchor xml:id="_class_free_parallax_element_1a925111d85fc23279be0f8e05eb99684d"/>    <section>
+    <title>SpeedRatio</title>
+<indexterm><primary>SpeedRatio</primary><secondary>FreeParallaxElement</secondary></indexterm>
+<indexterm><primary>FreeParallaxElement</primary><secondary>SpeedRatio</secondary></indexterm>
+<para><computeroutput>float FreeParallaxElement.SpeedRatio</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Parallax/<link linkend="__free_parallax_8cs">FreeParallax.cs</link></section>
+</section>

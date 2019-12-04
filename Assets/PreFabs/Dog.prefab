@@ -185,6 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   moveRight: 0
+  hill: {fileID: 8100393169643788076, guid: 1cdcfb12f116cd044bfabc9a269f1fe6, type: 3}
   wallCheck: {fileID: 6196883198073439084}
   wallCheckRadius: 0
   whatIsWall:

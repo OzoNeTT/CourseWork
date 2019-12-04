@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__background_loop_8cs">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Background/BackgroundLoop.cs File Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Background/BackgroundLoop.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_background_loop">BackgroundLoop</link></para>
+
+<para>Класс зацикливания изображения. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

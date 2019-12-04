@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_plater_stats">
+<title>PlaterStats Class Reference</title>
+<indexterm><primary>PlaterStats</primary></indexterm>
+<para>
+
+<para>Класс статистики персонажа. </para>
+ 
+</para>
+<para>Inheritance diagram for PlaterStats:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_plater_stats.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_plater_stats_1a115bb5dcf75f0ed27b8ba6a1438791e4">TakeDamage</link> (int damage)</para>
+
+<para>Функция получения урона </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_plater_stats_1a37a386676696200a5fcb0964f5b51556">CollectCoin</link> (int coinValue)</para>
+
+<para>Функция сбора монеты. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_plater_stats_1aef5b8c7373351da4a0aa6d3db887805c">get_health</link> ()</para>
+
+<para>Функция получения количества здоровья. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_plater_stats_1ae8d3f49904db05ceaa0fac378304469e">flickerDuration</link> = 0.1f</para>
+
+<para>Время моргания персонажа. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_plater_stats_1a7b116fe44b6dc0b16924ba9bc3c0a0e7">isImmune</link> = false</para>
+
+<para>Проверка на нахождение в режиме неуязвимости. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_plater_stats_1a4a2b442cd27ede5bb505dda6246c8360">immunityDuraction</link> = 1f</para>
+
+<para>Длительность режима неуязвимости. </para>
+</listitem>
+            <listitem><para>Text <link linkend="_class_plater_stats_1a23d18b2ce3298092d5700fca9b724e4b">scoreUI</link></para>
+
+<para>Очки для отображения в худе. </para>
+</listitem>
+            <listitem><para>Text <link linkend="_class_plater_stats_1a1caa00c912e67a4d22fb19cc40d71207">LiveUI</link></para>
+
+<para>Жизни для отображения в худе. </para>
+</listitem>
+            <listitem><para>Slider <link linkend="_class_plater_stats_1a5d744291fbc9a245f98983f60c8fa47a">healthUI</link></para>
+
+<para>Здоровье для отображения в худе. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static int <link linkend="_class_plater_stats_1afc593979fb1b304f77c3068ff9292310">health</link> = 10</para>
+
+<para>Здоровье игрока. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_plater_stats_1a576e23f23c90198237eecb3b5d90e0c7">lives</link> = 3</para>
+
+<para>Жизни игрока. </para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_plater_stats_1a9e9a5ac75a67faebd2c4472a7537f328">collectedCoins</link> = 0</para>
+
+<para>Количество собранных монет. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_plater_stats_1af8f6550983ffcf13a41d8e710c3b4986">Start</link> ()</para>
+
+<para>Функция придает первоначальное состояние. Получения объекта &quot;SpriteRenderer&quot; от игрока. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_plater_stats_1a18ede61fd39e3c2bd107bf7b881fafc9">Update</link> ()</para>
+
+<para>Функция обновления каждый фрейм. В ней происходит обновление худа и проверки на то, жив ли игрок или нет. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_plater_stats_1aaf75605304678141b811923392a2c746">SpriteFlicker</link> ()</para>
+
+<para>Функция моргания игрока. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_plater_stats_1a29394c9abad3fbad0f82e12a0f5d3881">PlayHitReaction</link> ()</para>
+
+<para>Функция прорисовки получения урона. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_plater_stats_1a94f62515bff3a95df6fc1ef708561d4a">flickerTime</link> = 0f</para>
+
+<para>Время нахождения в режиме моргания. </para>
+</listitem>
+            <listitem><para>SpriteRenderer <link linkend="_class_plater_stats_1af2763ef6889b57d14935d5270b5251d0">spriteRenderer</link></para>
+
+<para>Переменная класса рендеринга текстур. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_plater_stats_1a95af0473337df00e54ee03524c5cf818">immunityTime</link> = 0f</para>
+
+<para>Время нахождения в режиме неуязвимости. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_plater_stats_1af000608e4c364414e0c3abca6fcf8580">spawnPoint</link></para>
+
+<para>Точка спавна персонажа. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс статистики персонажа. </para>
+
+
+
+<para>Класс, предназначенный для хранения информации об игроке (количество жизней, здоровье, очки, неуязвимость)</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_plater_stats_1a37a386676696200a5fcb0964f5b51556"/>    <section>
+    <title>CollectCoin()</title>
+<indexterm><primary>CollectCoin</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>CollectCoin</secondary></indexterm>
+<para><computeroutput>void PlaterStats.CollectCoin (int coinValue)</computeroutput></para><para>
+
+<para>Функция сбора монеты. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>coinValue</entry>
+                                <entry>
+<para>Количество монет.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_plater_stats_1aef5b8c7373351da4a0aa6d3db887805c"/>    <section>
+    <title>get_health()</title>
+<indexterm><primary>get_health</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>get_health</secondary></indexterm>
+<para><computeroutput>int PlaterStats.get_health ( )</computeroutput></para><para>
+
+<para>Функция получения количества здоровья. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Возвращает текущее здоровье.</para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1a29394c9abad3fbad0f82e12a0f5d3881"/>    <section>
+    <title>PlayHitReaction()</title>
+<indexterm><primary>PlayHitReaction</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>PlayHitReaction</secondary></indexterm>
+<para><computeroutput>void PlaterStats.PlayHitReaction ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция прорисовки получения урона. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1aaf75605304678141b811923392a2c746"/>    <section>
+    <title>SpriteFlicker()</title>
+<indexterm><primary>SpriteFlicker</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>SpriteFlicker</secondary></indexterm>
+<para><computeroutput>void PlaterStats.SpriteFlicker ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция моргания игрока. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1af8f6550983ffcf13a41d8e710c3b4986"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void PlaterStats.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция придает первоначальное состояние. Получения объекта &quot;SpriteRenderer&quot; от игрока. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1a115bb5dcf75f0ed27b8ba6a1438791e4"/>    <section>
+    <title>TakeDamage()</title>
+<indexterm><primary>TakeDamage</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>TakeDamage</secondary></indexterm>
+<para><computeroutput>void PlaterStats.TakeDamage (int damage)</computeroutput></para><para>
+
+<para>Функция получения урона </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>damage</entry>
+                                <entry>
+<para>Урон, наносимый игроку.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_plater_stats_1a18ede61fd39e3c2bd107bf7b881fafc9"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void PlaterStats.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция обновления каждый фрейм. В ней происходит обновление худа и проверки на то, жив ли игрок или нет. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_plater_stats_1a9e9a5ac75a67faebd2c4472a7537f328"/>    <section>
+    <title>collectedCoins</title>
+<indexterm><primary>collectedCoins</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>collectedCoins</secondary></indexterm>
+<para><computeroutput>int PlaterStats.collectedCoins = 0<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Количество собранных монет. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1ae8d3f49904db05ceaa0fac378304469e"/>    <section>
+    <title>flickerDuration</title>
+<indexterm><primary>flickerDuration</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>flickerDuration</secondary></indexterm>
+<para><computeroutput>float PlaterStats.flickerDuration = 0.1f</computeroutput></para><para>
+
+<para>Время моргания персонажа. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1a94f62515bff3a95df6fc1ef708561d4a"/>    <section>
+    <title>flickerTime</title>
+<indexterm><primary>flickerTime</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>flickerTime</secondary></indexterm>
+<para><computeroutput>float PlaterStats.flickerTime = 0f<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Время нахождения в режиме моргания. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1afc593979fb1b304f77c3068ff9292310"/>    <section>
+    <title>health</title>
+<indexterm><primary>health</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>health</secondary></indexterm>
+<para><computeroutput>int PlaterStats.health = 10<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Здоровье игрока. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1a5d744291fbc9a245f98983f60c8fa47a"/>    <section>
+    <title>healthUI</title>
+<indexterm><primary>healthUI</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>healthUI</secondary></indexterm>
+<para><computeroutput>Slider PlaterStats.healthUI</computeroutput></para><para>
+
+<para>Здоровье для отображения в худе. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1a4a2b442cd27ede5bb505dda6246c8360"/>    <section>
+    <title>immunityDuraction</title>
+<indexterm><primary>immunityDuraction</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>immunityDuraction</secondary></indexterm>
+<para><computeroutput>float PlaterStats.immunityDuraction = 1f</computeroutput></para><para>
+
+<para>Длительность режима неуязвимости. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1a95af0473337df00e54ee03524c5cf818"/>    <section>
+    <title>immunityTime</title>
+<indexterm><primary>immunityTime</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>immunityTime</secondary></indexterm>
+<para><computeroutput>float PlaterStats.immunityTime = 0f<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Время нахождения в режиме неуязвимости. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1a7b116fe44b6dc0b16924ba9bc3c0a0e7"/>    <section>
+    <title>isImmune</title>
+<indexterm><primary>isImmune</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>isImmune</secondary></indexterm>
+<para><computeroutput>bool PlaterStats.isImmune = false</computeroutput></para><para>
+
+<para>Проверка на нахождение в режиме неуязвимости. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1a576e23f23c90198237eecb3b5d90e0c7"/>    <section>
+    <title>lives</title>
+<indexterm><primary>lives</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>lives</secondary></indexterm>
+<para><computeroutput>int PlaterStats.lives = 3<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Жизни игрока. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1a1caa00c912e67a4d22fb19cc40d71207"/>    <section>
+    <title>LiveUI</title>
+<indexterm><primary>LiveUI</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>LiveUI</secondary></indexterm>
+<para><computeroutput>Text PlaterStats.LiveUI</computeroutput></para><para>
+
+<para>Жизни для отображения в худе. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1a23d18b2ce3298092d5700fca9b724e4b"/>    <section>
+    <title>scoreUI</title>
+<indexterm><primary>scoreUI</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>scoreUI</secondary></indexterm>
+<para><computeroutput>Text PlaterStats.scoreUI</computeroutput></para><para>
+
+<para>Очки для отображения в худе. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1af000608e4c364414e0c3abca6fcf8580"/>    <section>
+    <title>spawnPoint</title>
+<indexterm><primary>spawnPoint</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>spawnPoint</secondary></indexterm>
+<para><computeroutput>Transform PlaterStats.spawnPoint<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Точка спавна персонажа. </para>
+</para>
+    </section><anchor xml:id="_class_plater_stats_1af2763ef6889b57d14935d5270b5251d0"/>    <section>
+    <title>spriteRenderer</title>
+<indexterm><primary>spriteRenderer</primary><secondary>PlaterStats</secondary></indexterm>
+<indexterm><primary>PlaterStats</primary><secondary>spriteRenderer</secondary></indexterm>
+<para><computeroutput>SpriteRenderer PlaterStats.spriteRenderer<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Переменная класса рендеринга текстур. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Player/<link linkend="__plater_stats_8cs">PlaterStats.cs</link></section>
+</section>

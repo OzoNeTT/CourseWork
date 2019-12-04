@@ -1,21 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Класс движения платформы.
+/// <remarks>Данный класс реализует движение платформы в вертикальном или горизонтальном направлениях с определенной скоростью.</remarks>
+/// </summary>
 public class PlatformMovable : MonoBehaviour
 {
+    /// <summary>
+    /// Скорость передвижения.
+    /// </summary>
     public float speed;
+    /// <summary>
+    /// Координаты левой точки.
+    /// </summary>
     public Transform left;
+    /// <summary>
+    /// Координаты правой точки.
+    /// </summary>
     public Transform right;
+    /// <summary>
+    /// Направление движения.
+    /// </summary>
     public bool isHorizontal;
+    /// <summary>
+    /// Текущая скорость движения.
+    /// </summary>
     float MoveSpeed;
+    /// <summary>
+    /// Функция задания первоначального состояния. Задается скорость движения платформы.
+    /// </summary>
     void Start()
     {
         //speed = 7f;
         MoveSpeed = speed;
-       
-    }
 
+    }
+    /// <summary>
+    /// Функция покадрового обновления. Реализация движения к точкам.
+    /// </summary>
     void Update()
     {
         if (isHorizontal)
@@ -47,7 +70,10 @@ public class PlatformMovable : MonoBehaviour
             }
         }
     }
-
+    /// <summary>
+    /// Функция возвращающая скорость движения платформы.
+    /// </summary>
+    /// <returns>Текущая скорость.</returns>
     public float get_Global_speed()
     {
         return MoveSpeed;

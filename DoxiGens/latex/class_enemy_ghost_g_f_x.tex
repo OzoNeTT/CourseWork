@@ -1,0 +1,342 @@
+\hypertarget{class_enemy_ghost_g_f_x}{}\doxysection{Enemy\+Ghost\+G\+FX Class Reference}
+\label{class_enemy_ghost_g_f_x}\index{EnemyGhostGFX@{EnemyGhostGFX}}
+
+
+Класс моба \char`\"{}Призрак\char`\"{}.  
+
+
+Inheritance diagram for Enemy\+Ghost\+G\+FX\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy_ghost_g_f_x}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_ghost_g_f_x_ae6bf8839901b940e8c8730b4041430e7}{Dies}} ()
+\begin{DoxyCompactList}\small\item\em Функция смерти призрака. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_enemy_ghost_g_f_x_ae456b8eb61bb83d5764b23407c3f4652}{target}}
+\begin{DoxyCompactList}\small\item\em Координаты цели. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy_ghost_g_f_x_a8610a1da9bc5d50ee0b3685ca1bdb808}{speed}} = 400f
+\begin{DoxyCompactList}\small\item\em Скорость движения. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy_ghost_g_f_x_a89e0ca5c93f5d7199d16b38d31a94276}{next\+Waypoint\+Distance}} = 3f
+\begin{DoxyCompactList}\small\item\em Дистанция до следующей точки. \end{DoxyCompactList}\item 
+Animator \mbox{\hyperlink{class_enemy_ghost_g_f_x_a6c84423036a0a2cd2774c90dbe8f1682}{\+\_\+anim}}
+\begin{DoxyCompactList}\small\item\em Аниматор для призрака. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy_ghost_g_f_x_ae1cd3db0eefdd57925eeaa1d6f11eed7}{Player\+Radius}} = 50
+\begin{DoxyCompactList}\small\item\em Дистанция сканирования цели. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_ghost_g_f_x_ae3b47de006d0c0d8daa5966b27c537ac}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Функция установки первоначальных состояний. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ghost_g_f_x_affdb034477242a0b806c6ebe8f871584}{Update\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Обновление критического пути до цели. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ghost_g_f_x_a6cf551261ad815f7c2949b165dd69f23}{On\+Path\+Complete}} (Path p)
+\begin{DoxyCompactList}\small\item\em Функция, вызывающаяся если достигнут конец пути. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ghost_g_f_x_a5869641dd4b9de7f2d157ea305818625}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Функция покадрового обновления для физический объектов. В ней происходит поиск наилучшего пути до цели, следование по нему и атака персонажа. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_enemy_ghost_g_f_x_ac351bb916c5f00462a2e0252aa3d3838}{wait\+Attack}} ()
+\begin{DoxyCompactList}\small\item\em Корутина ожидания смерти после атаки персонажа. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ghost_g_f_x_ad0691a7bc25ced99167ca05de19f327c}{On\+Collision\+Enter2D}} (Collision2D collision)
+\begin{DoxyCompactList}\small\item\em Проверка на попадание некоторого объекта в коллайдер призрака. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Path \mbox{\hyperlink{class_enemy_ghost_g_f_x_a61a9d438c6f670161da9863e24621a5b}{path}}
+\begin{DoxyCompactList}\small\item\em Переменная пути, для определения траектории движения до цели. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_enemy_ghost_g_f_x_a65202d8a20139daf88064786b2383f64}{current\+Waypoint}} = 0
+\begin{DoxyCompactList}\small\item\em Текущая точка. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_enemy_ghost_g_f_x_a0dbb9265fb3d43a85353f9c4c981ac73}{reached\+End\+Of\+Path}} = false
+\begin{DoxyCompactList}\small\item\em Переменная для проверки на достиженя конца пути. \end{DoxyCompactList}\item 
+Seeker \mbox{\hyperlink{class_enemy_ghost_g_f_x_a436c42d1de48ebf01fcf90ca31ba473b}{seeker}}
+\begin{DoxyCompactList}\small\item\em Поисковик кратчайшего пути. \end{DoxyCompactList}\item 
+Rigidbody2D \mbox{\hyperlink{class_enemy_ghost_g_f_x_a7cda095172a6c790026a4276c0ae16d0}{rb}}
+\begin{DoxyCompactList}\small\item\em Rigidbody2d который установлен на призраке. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy_ghost_g_f_x_afbfcb5deca65b25664eec2f71403b129}{dtime}}
+\begin{DoxyCompactList}\small\item\em Промежуток времени для воспроизведения звука. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy_ghost_g_f_x_adcf40f58f42e56530b1f9b62de5db3ab}{deltatime}}
+\begin{DoxyCompactList}\small\item\em Промежуток времени для атаки. \end{DoxyCompactList}\item 
+Audio\+Source \mbox{\hyperlink{class_enemy_ghost_g_f_x_aeeaf6bdf3cb2e8a8a554602cc0b863d3}{snd}}
+\begin{DoxyCompactList}\small\item\em Источник звука призрака. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_enemy_ghost_g_f_x_a7b34f81e1b7d4781feac30e5930415d9}{Ghost\+Sound}}
+\begin{DoxyCompactList}\small\item\em Звук призрака. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_enemy_ghost_g_f_x_a06198f5fc3ae9a529033350d45a420bf}{is\+Alive}} = true
+\begin{DoxyCompactList}\small\item\em Является ли объект живым. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_enemy_ghost_g_f_x_a65303ca50a2b1398357f5fb6ec39622d}{damage}} = 2
+\begin{DoxyCompactList}\small\item\em Наносимый урон. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_enemy_ghost_g_f_x_ae6e4259544edd143d0e191d41f80248a}{sound\+Paused}} = false
+\begin{DoxyCompactList}\small\item\em Пауза воспроизведения звука. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс моба \char`\"{}Призрак\char`\"{}. 
+
+Данный класс реализует пведение моба \char`\"{}Призрак\char`\"{}, его атаку и передвижение.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_ae6bf8839901b940e8c8730b4041430e7}\label{class_enemy_ghost_g_f_x_ae6bf8839901b940e8c8730b4041430e7}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!Dies@{Dies}}
+\index{Dies@{Dies}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{Dies()}{Dies()}}
+{\footnotesize\ttfamily void Enemy\+Ghost\+G\+F\+X.\+Dies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция смерти призрака. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a5869641dd4b9de7f2d157ea305818625}\label{class_enemy_ghost_g_f_x_a5869641dd4b9de7f2d157ea305818625}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Enemy\+Ghost\+G\+F\+X.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция покадрового обновления для физический объектов. В ней происходит поиск наилучшего пути до цели, следование по нему и атака персонажа. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_ad0691a7bc25ced99167ca05de19f327c}\label{class_enemy_ghost_g_f_x_ad0691a7bc25ced99167ca05de19f327c}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!OnCollisionEnter2D@{OnCollisionEnter2D}}
+\index{OnCollisionEnter2D@{OnCollisionEnter2D}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{OnCollisionEnter2D()}{OnCollisionEnter2D()}}
+{\footnotesize\ttfamily void Enemy\+Ghost\+G\+F\+X.\+On\+Collision\+Enter2D (\begin{DoxyParamCaption}\item[{Collision2D}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка на попадание некоторого объекта в коллайдер призрака. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Коллайдер некоторого объекта.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a6cf551261ad815f7c2949b165dd69f23}\label{class_enemy_ghost_g_f_x_a6cf551261ad815f7c2949b165dd69f23}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!OnPathComplete@{OnPathComplete}}
+\index{OnPathComplete@{OnPathComplete}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{OnPathComplete()}{OnPathComplete()}}
+{\footnotesize\ttfamily void Enemy\+Ghost\+G\+F\+X.\+On\+Path\+Complete (\begin{DoxyParamCaption}\item[{Path}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция, вызывающаяся если достигнут конец пути. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Некоторый путь.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_ae3b47de006d0c0d8daa5966b27c537ac}\label{class_enemy_ghost_g_f_x_ae3b47de006d0c0d8daa5966b27c537ac}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!Start@{Start}}
+\index{Start@{Start}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Enemy\+Ghost\+G\+F\+X.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Функция установки первоначальных состояний. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_affdb034477242a0b806c6ebe8f871584}\label{class_enemy_ghost_g_f_x_affdb034477242a0b806c6ebe8f871584}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!UpdatePath@{UpdatePath}}
+\index{UpdatePath@{UpdatePath}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{UpdatePath()}{UpdatePath()}}
+{\footnotesize\ttfamily void Enemy\+Ghost\+G\+F\+X.\+Update\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обновление критического пути до цели. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_ac351bb916c5f00462a2e0252aa3d3838}\label{class_enemy_ghost_g_f_x_ac351bb916c5f00462a2e0252aa3d3838}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!waitAttack@{waitAttack}}
+\index{waitAttack@{waitAttack}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{waitAttack()}{waitAttack()}}
+{\footnotesize\ttfamily I\+Enumerator Enemy\+Ghost\+G\+F\+X.\+wait\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Корутина ожидания смерти после атаки персонажа. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a6c84423036a0a2cd2774c90dbe8f1682}\label{class_enemy_ghost_g_f_x_a6c84423036a0a2cd2774c90dbe8f1682}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!\_anim@{\_anim}}
+\index{\_anim@{\_anim}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{\_anim}{\_anim}}
+{\footnotesize\ttfamily Animator Enemy\+Ghost\+G\+F\+X.\+\_\+anim}
+
+
+
+Аниматор для призрака. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a65202d8a20139daf88064786b2383f64}\label{class_enemy_ghost_g_f_x_a65202d8a20139daf88064786b2383f64}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!currentWaypoint@{currentWaypoint}}
+\index{currentWaypoint@{currentWaypoint}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{currentWaypoint}{currentWaypoint}}
+{\footnotesize\ttfamily int Enemy\+Ghost\+G\+F\+X.\+current\+Waypoint = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Текущая точка. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a65303ca50a2b1398357f5fb6ec39622d}\label{class_enemy_ghost_g_f_x_a65303ca50a2b1398357f5fb6ec39622d}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!damage@{damage}}
+\index{damage@{damage}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily int Enemy\+Ghost\+G\+F\+X.\+damage = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Наносимый урон. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_adcf40f58f42e56530b1f9b62de5db3ab}\label{class_enemy_ghost_g_f_x_adcf40f58f42e56530b1f9b62de5db3ab}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!deltatime@{deltatime}}
+\index{deltatime@{deltatime}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{deltatime}{deltatime}}
+{\footnotesize\ttfamily float Enemy\+Ghost\+G\+F\+X.\+deltatime\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Промежуток времени для атаки. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_afbfcb5deca65b25664eec2f71403b129}\label{class_enemy_ghost_g_f_x_afbfcb5deca65b25664eec2f71403b129}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!dtime@{dtime}}
+\index{dtime@{dtime}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{dtime}{dtime}}
+{\footnotesize\ttfamily float Enemy\+Ghost\+G\+F\+X.\+dtime\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Промежуток времени для воспроизведения звука. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a7b34f81e1b7d4781feac30e5930415d9}\label{class_enemy_ghost_g_f_x_a7b34f81e1b7d4781feac30e5930415d9}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!GhostSound@{GhostSound}}
+\index{GhostSound@{GhostSound}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{GhostSound}{GhostSound}}
+{\footnotesize\ttfamily Audio\+Clip Enemy\+Ghost\+G\+F\+X.\+Ghost\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук призрака. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a06198f5fc3ae9a529033350d45a420bf}\label{class_enemy_ghost_g_f_x_a06198f5fc3ae9a529033350d45a420bf}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{isAlive}{isAlive}}
+{\footnotesize\ttfamily bool Enemy\+Ghost\+G\+F\+X.\+is\+Alive = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Является ли объект живым. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a89e0ca5c93f5d7199d16b38d31a94276}\label{class_enemy_ghost_g_f_x_a89e0ca5c93f5d7199d16b38d31a94276}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!nextWaypointDistance@{nextWaypointDistance}}
+\index{nextWaypointDistance@{nextWaypointDistance}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{nextWaypointDistance}{nextWaypointDistance}}
+{\footnotesize\ttfamily float Enemy\+Ghost\+G\+F\+X.\+next\+Waypoint\+Distance = 3f}
+
+
+
+Дистанция до следующей точки. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a61a9d438c6f670161da9863e24621a5b}\label{class_enemy_ghost_g_f_x_a61a9d438c6f670161da9863e24621a5b}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!path@{path}}
+\index{path@{path}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily Path Enemy\+Ghost\+G\+F\+X.\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная пути, для определения траектории движения до цели. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_ae1cd3db0eefdd57925eeaa1d6f11eed7}\label{class_enemy_ghost_g_f_x_ae1cd3db0eefdd57925eeaa1d6f11eed7}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!PlayerRadius@{PlayerRadius}}
+\index{PlayerRadius@{PlayerRadius}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{PlayerRadius}{PlayerRadius}}
+{\footnotesize\ttfamily float Enemy\+Ghost\+G\+F\+X.\+Player\+Radius = 50}
+
+
+
+Дистанция сканирования цели. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a7cda095172a6c790026a4276c0ae16d0}\label{class_enemy_ghost_g_f_x_a7cda095172a6c790026a4276c0ae16d0}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!rb@{rb}}
+\index{rb@{rb}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{rb}{rb}}
+{\footnotesize\ttfamily Rigidbody2D Enemy\+Ghost\+G\+F\+X.\+rb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rigidbody2d который установлен на призраке. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a0dbb9265fb3d43a85353f9c4c981ac73}\label{class_enemy_ghost_g_f_x_a0dbb9265fb3d43a85353f9c4c981ac73}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!reachedEndOfPath@{reachedEndOfPath}}
+\index{reachedEndOfPath@{reachedEndOfPath}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{reachedEndOfPath}{reachedEndOfPath}}
+{\footnotesize\ttfamily bool Enemy\+Ghost\+G\+F\+X.\+reached\+End\+Of\+Path = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переменная для проверки на достиженя конца пути. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a436c42d1de48ebf01fcf90ca31ba473b}\label{class_enemy_ghost_g_f_x_a436c42d1de48ebf01fcf90ca31ba473b}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!seeker@{seeker}}
+\index{seeker@{seeker}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{seeker}{seeker}}
+{\footnotesize\ttfamily Seeker Enemy\+Ghost\+G\+F\+X.\+seeker\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Поисковик кратчайшего пути. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_aeeaf6bdf3cb2e8a8a554602cc0b863d3}\label{class_enemy_ghost_g_f_x_aeeaf6bdf3cb2e8a8a554602cc0b863d3}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!snd@{snd}}
+\index{snd@{snd}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{snd}{snd}}
+{\footnotesize\ttfamily Audio\+Source Enemy\+Ghost\+G\+F\+X.\+snd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Источник звука призрака. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_ae6e4259544edd143d0e191d41f80248a}\label{class_enemy_ghost_g_f_x_ae6e4259544edd143d0e191d41f80248a}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!soundPaused@{soundPaused}}
+\index{soundPaused@{soundPaused}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{soundPaused}{soundPaused}}
+{\footnotesize\ttfamily bool Enemy\+Ghost\+G\+F\+X.\+sound\+Paused = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Пауза воспроизведения звука. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_a8610a1da9bc5d50ee0b3685ca1bdb808}\label{class_enemy_ghost_g_f_x_a8610a1da9bc5d50ee0b3685ca1bdb808}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!speed@{speed}}
+\index{speed@{speed}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Enemy\+Ghost\+G\+F\+X.\+speed = 400f}
+
+
+
+Скорость движения. 
+
+\mbox{\Hypertarget{class_enemy_ghost_g_f_x_ae456b8eb61bb83d5764b23407c3f4652}\label{class_enemy_ghost_g_f_x_ae456b8eb61bb83d5764b23407c3f4652}} 
+\index{EnemyGhostGFX@{EnemyGhostGFX}!target@{target}}
+\index{target@{target}!EnemyGhostGFX@{EnemyGhostGFX}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily Transform Enemy\+Ghost\+G\+F\+X.\+target}
+
+
+
+Координаты цели. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Enemy/Enemy\+Ghost\+G\+F\+X.\+cs\end{DoxyCompactItemize}

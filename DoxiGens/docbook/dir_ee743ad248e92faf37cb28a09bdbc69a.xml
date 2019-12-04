@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_ee743ad248e92faf37cb28a09bdbc69a">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Background Directory Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Background Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__background_8cs">Background.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__background_loop_8cs">BackgroundLoop.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__scrolling_b_g1_8cs">ScrollingBG1.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__sound_manager_8cs">SoundManager.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

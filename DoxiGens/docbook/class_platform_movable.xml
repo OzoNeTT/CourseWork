@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_platform_movable">
+<title>PlatformMovable Class Reference</title>
+<indexterm><primary>PlatformMovable</primary></indexterm>
+<para>
+
+<para>Класс движения платформы. </para>
+ 
+</para>
+<para>Inheritance diagram for PlatformMovable:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_platform_movable.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_platform_movable_1a01e408566172b902f7e317c6488579c5">get_Global_speed</link> ()</para>
+
+<para>Функция возвращающая скорость движения платформы. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_platform_movable_1a6fe47e6f7f33faf8caf3b0c298bf79f6">speed</link></para>
+
+<para>Скорость передвижения. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_platform_movable_1a925d5f346227517f68f9f831ae731f26">left</link></para>
+
+<para>Координаты левой точки. </para>
+</listitem>
+            <listitem><para>Transform <link linkend="_class_platform_movable_1a747e9b8d44e706d24c4699b1ce153203">right</link></para>
+
+<para>Координаты правой точки. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_platform_movable_1a0e9727df117889ba8fc6b421cb07d068">isHorizontal</link></para>
+
+<para>Направление движения. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_platform_movable_1a21159033b53e9abb14d2a679159f9551">Start</link> ()</para>
+
+<para>Функция задания первоначального состояния. Задается скорость движения платформы. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_platform_movable_1a8949c4b4545de62e7418af57f9e026e4">Update</link> ()</para>
+
+<para>Функция покадрового обновления. Реализация движения к точкам. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_platform_movable_1a7257932efbfb6ae53352820718745732">MoveSpeed</link></para>
+
+<para>Текущая скорость движения. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс движения платформы. </para>
+
+
+
+<para>Данный класс реализует движение платформы в вертикальном или горизонтальном направлениях с определенной скоростью.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_platform_movable_1a01e408566172b902f7e317c6488579c5"/>    <section>
+    <title>get_Global_speed()</title>
+<indexterm><primary>get_Global_speed</primary><secondary>PlatformMovable</secondary></indexterm>
+<indexterm><primary>PlatformMovable</primary><secondary>get_Global_speed</secondary></indexterm>
+<para><computeroutput>float PlatformMovable.get_Global_speed ( )</computeroutput></para><para>
+
+<para>Функция возвращающая скорость движения платформы. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Текущая скорость.</para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_platform_movable_1a21159033b53e9abb14d2a679159f9551"/>    <section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>PlatformMovable</secondary></indexterm>
+<indexterm><primary>PlatformMovable</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void PlatformMovable.Start ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция задания первоначального состояния. Задается скорость движения платформы. </para>
+</para>
+    </section><anchor xml:id="_class_platform_movable_1a8949c4b4545de62e7418af57f9e026e4"/>    <section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>PlatformMovable</secondary></indexterm>
+<indexterm><primary>PlatformMovable</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void PlatformMovable.Update ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Функция покадрового обновления. Реализация движения к точкам. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_platform_movable_1a0e9727df117889ba8fc6b421cb07d068"/>    <section>
+    <title>isHorizontal</title>
+<indexterm><primary>isHorizontal</primary><secondary>PlatformMovable</secondary></indexterm>
+<indexterm><primary>PlatformMovable</primary><secondary>isHorizontal</secondary></indexterm>
+<para><computeroutput>bool PlatformMovable.isHorizontal</computeroutput></para><para>
+
+<para>Направление движения. </para>
+</para>
+    </section><anchor xml:id="_class_platform_movable_1a925d5f346227517f68f9f831ae731f26"/>    <section>
+    <title>left</title>
+<indexterm><primary>left</primary><secondary>PlatformMovable</secondary></indexterm>
+<indexterm><primary>PlatformMovable</primary><secondary>left</secondary></indexterm>
+<para><computeroutput>Transform PlatformMovable.left</computeroutput></para><para>
+
+<para>Координаты левой точки. </para>
+</para>
+    </section><anchor xml:id="_class_platform_movable_1a7257932efbfb6ae53352820718745732"/>    <section>
+    <title>MoveSpeed</title>
+<indexterm><primary>MoveSpeed</primary><secondary>PlatformMovable</secondary></indexterm>
+<indexterm><primary>PlatformMovable</primary><secondary>MoveSpeed</secondary></indexterm>
+<para><computeroutput>float PlatformMovable.MoveSpeed<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Текущая скорость движения. </para>
+</para>
+    </section><anchor xml:id="_class_platform_movable_1a747e9b8d44e706d24c4699b1ce153203"/>    <section>
+    <title>right</title>
+<indexterm><primary>right</primary><secondary>PlatformMovable</secondary></indexterm>
+<indexterm><primary>PlatformMovable</primary><secondary>right</secondary></indexterm>
+<para><computeroutput>Transform PlatformMovable.right</computeroutput></para><para>
+
+<para>Координаты правой точки. </para>
+</para>
+    </section><anchor xml:id="_class_platform_movable_1a6fe47e6f7f33faf8caf3b0c298bf79f6"/>    <section>
+    <title>speed</title>
+<indexterm><primary>speed</primary><secondary>PlatformMovable</secondary></indexterm>
+<indexterm><primary>PlatformMovable</primary><secondary>speed</secondary></indexterm>
+<para><computeroutput>float PlatformMovable.speed</computeroutput></para><para>
+
+<para>Скорость передвижения. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Tools/<link linkend="__platform_movable_8cs">PlatformMovable.cs</link></section>
+</section>

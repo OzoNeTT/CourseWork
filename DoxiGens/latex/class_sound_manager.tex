@@ -1,0 +1,404 @@
+\hypertarget{class_sound_manager}{}\doxysection{Sound\+Manager Class Reference}
+\label{class_sound_manager}\index{SoundManager@{SoundManager}}
+
+
+Класс воспроизведения музыки.  
+
+
+Inheritance diagram for Sound\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sound_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sound_manager_a40bd62d1ab65a66b23c647268cbf0451}{Play\+Key\+Wav}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука подбора ключей. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_a23fa6e2f97fcf482ba339a2d43cbfb42}{Play\+Drink\+HP}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука пополнения здоровья. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_a9cfbc7de056e4881d41995072a087814}{Play\+Dog\+Death}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука смерти собаки. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_aaaca08e0bf92bc10c01001cc153d601b}{Play\+Bark}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука лая. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_a16862fa2ef54ad26fdd8c50e5ddec0fc}{Play\+Coin\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука подбора монеты. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_afd3e579848b462c3019486a50fba91d4}{Play\+Sword}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука удара мечом. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_a0bfa682daee6770b4967ecddc0357b7d}{Play\+Hit\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука попадания пули персонажа и запуск \char`\"{}тряски\char`\"{} камеры. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_aeb178d71f27ea4c280de1334baaacb6c}{Play\+Enemy2hit\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука попадание пули \char`\"{}Врага2\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_a15626fec0156657a82527fb1ff64f12c}{Play\+Death\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука смерти. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_a14d6f3846e7844c337f98ae5e320ebfc}{Play\+Door\+Opening}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука открытия двери. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_ae7ecf2e675bdf63ecd5f0e3e38c66d2e}{Play\+Explosion}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука взрыва и запуск \char`\"{}тряски\char`\"{} камеры. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_a0a937652613eb42c56d1951cf727391f}{Play\+Running}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука шагов. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_manager_a0e5bb199f6813fb9817ff3a79b7e200f}{Play\+Laser}} ()
+\begin{DoxyCompactList}\small\item\em Одноразвое воспроизведение звука лазера и запуск \char`\"{}тряски\char`\"{} камеры. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_shake}{Camera\+Shake}} \mbox{\hyperlink{class_sound_manager_a14d3f27b42e469f0c4de1b1ef015a305}{cam\+Shake}}
+\begin{DoxyCompactList}\small\item\em Переменная класса \char`\"{}тряски\char`\"{} камеры. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sound_manager}{Sound\+Manager}} \mbox{\hyperlink{class_sound_manager_a540fcf67d0b9a8e6b40cc41033226037}{snd\+Man}}
+\begin{DoxyCompactList}\small\item\em Основная переменная класса, служит для воспроизведения аудиоклипов из других классов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sound_manager_adfe146914a2614dd76f8278c29f6a74f}{Start}} ()
+\begin{DoxyCompactList}\small\item\em В данном методе происходит инициализация всех переменных. В том числе и привязка звуковых эффектов из корневой дирректории. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Source \mbox{\hyperlink{class_sound_manager_a3ade143f449dca67726224808a5392d8}{audio\+Src}}
+\begin{DoxyCompactList}\small\item\em Источник звука. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_ab7fea96a3449c7aa5e22765e66a547eb}{coin\+Sound}}
+\begin{DoxyCompactList}\small\item\em Звук подбора монеты. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_a449dae73b0862d2f29fa34e02bfd6b13}{hit\+Sound}}
+\begin{DoxyCompactList}\small\item\em Звук попадание пули персонажа. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_a98a32803fe69571ad2b9372f393ed810}{Enemy2hit\+Sound}}
+\begin{DoxyCompactList}\small\item\em Звук попадания пули \char`\"{}Врага2\char`\"{}. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_a1566be4c7a19666dfb70143eb393df2e}{death\+Sound}}
+\begin{DoxyCompactList}\small\item\em Звук смерти. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_ad01a0f409c584fadebcb2ec08dbabb8c}{door\+Open}}
+\begin{DoxyCompactList}\small\item\em Звук открытия двери. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_a1f1d4fae3c21b93bd24ac2c02452819d}{explosion}}
+\begin{DoxyCompactList}\small\item\em Звук взрыва. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_a5c56a89d8a0e721fb1554c22441dc900}{running\+Steps}}
+\begin{DoxyCompactList}\small\item\em Звук шагов. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_acfda3e3911d23a50a0a703ffe0ce5f9d}{Laser\+Sound}}
+\begin{DoxyCompactList}\small\item\em Звук лазера. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_a8294f352e77b0289fb9cc0c7d0ff1b60}{drink\+HP}}
+\begin{DoxyCompactList}\small\item\em Звук пополнения здоровья. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_ab93cc7e74b773da7b05c6c094a7429be}{keywav}}
+\begin{DoxyCompactList}\small\item\em Звук подбора ключей. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_a07e81c8b4ef1c07c53ce4ed880fe7182}{Sword\+Sound}}
+\begin{DoxyCompactList}\small\item\em Звук меча. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_acb9240f05024f189400b30fbdaf02c50}{Bark}}
+\begin{DoxyCompactList}\small\item\em Звук лая. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_sound_manager_acda20efa9afa65a856ea39be0f28e258}{Dog\+Death}}
+\begin{DoxyCompactList}\small\item\em Звук смерти собаки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс воспроизведения музыки. 
+
+Данный класс служит для воспроизведения звуковых эффектов тех объектов, которые могут быть уничтожены. А также в данном классе применяется эффект \char`\"{}тряски\char`\"{} камеры.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sound_manager_aaaca08e0bf92bc10c01001cc153d601b}\label{class_sound_manager_aaaca08e0bf92bc10c01001cc153d601b}} 
+\index{SoundManager@{SoundManager}!PlayBark@{PlayBark}}
+\index{PlayBark@{PlayBark}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayBark()}{PlayBark()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Bark (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука лая. 
+
+\mbox{\Hypertarget{class_sound_manager_a16862fa2ef54ad26fdd8c50e5ddec0fc}\label{class_sound_manager_a16862fa2ef54ad26fdd8c50e5ddec0fc}} 
+\index{SoundManager@{SoundManager}!PlayCoinSound@{PlayCoinSound}}
+\index{PlayCoinSound@{PlayCoinSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayCoinSound()}{PlayCoinSound()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Coin\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука подбора монеты. 
+
+\mbox{\Hypertarget{class_sound_manager_a15626fec0156657a82527fb1ff64f12c}\label{class_sound_manager_a15626fec0156657a82527fb1ff64f12c}} 
+\index{SoundManager@{SoundManager}!PlayDeathSound@{PlayDeathSound}}
+\index{PlayDeathSound@{PlayDeathSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayDeathSound()}{PlayDeathSound()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Death\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука смерти. 
+
+\mbox{\Hypertarget{class_sound_manager_a9cfbc7de056e4881d41995072a087814}\label{class_sound_manager_a9cfbc7de056e4881d41995072a087814}} 
+\index{SoundManager@{SoundManager}!PlayDogDeath@{PlayDogDeath}}
+\index{PlayDogDeath@{PlayDogDeath}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayDogDeath()}{PlayDogDeath()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Dog\+Death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука смерти собаки. 
+
+\mbox{\Hypertarget{class_sound_manager_a14d6f3846e7844c337f98ae5e320ebfc}\label{class_sound_manager_a14d6f3846e7844c337f98ae5e320ebfc}} 
+\index{SoundManager@{SoundManager}!PlayDoorOpening@{PlayDoorOpening}}
+\index{PlayDoorOpening@{PlayDoorOpening}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayDoorOpening()}{PlayDoorOpening()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Door\+Opening (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука открытия двери. 
+
+\mbox{\Hypertarget{class_sound_manager_a23fa6e2f97fcf482ba339a2d43cbfb42}\label{class_sound_manager_a23fa6e2f97fcf482ba339a2d43cbfb42}} 
+\index{SoundManager@{SoundManager}!PlayDrinkHP@{PlayDrinkHP}}
+\index{PlayDrinkHP@{PlayDrinkHP}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayDrinkHP()}{PlayDrinkHP()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Drink\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука пополнения здоровья. 
+
+\mbox{\Hypertarget{class_sound_manager_aeb178d71f27ea4c280de1334baaacb6c}\label{class_sound_manager_aeb178d71f27ea4c280de1334baaacb6c}} 
+\index{SoundManager@{SoundManager}!PlayEnemy2hitSound@{PlayEnemy2hitSound}}
+\index{PlayEnemy2hitSound@{PlayEnemy2hitSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayEnemy2hitSound()}{PlayEnemy2hitSound()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Enemy2hit\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука попадание пули \char`\"{}Врага2\char`\"{}. 
+
+\mbox{\Hypertarget{class_sound_manager_ae7ecf2e675bdf63ecd5f0e3e38c66d2e}\label{class_sound_manager_ae7ecf2e675bdf63ecd5f0e3e38c66d2e}} 
+\index{SoundManager@{SoundManager}!PlayExplosion@{PlayExplosion}}
+\index{PlayExplosion@{PlayExplosion}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayExplosion()}{PlayExplosion()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Explosion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука взрыва и запуск \char`\"{}тряски\char`\"{} камеры. 
+
+\mbox{\Hypertarget{class_sound_manager_a0bfa682daee6770b4967ecddc0357b7d}\label{class_sound_manager_a0bfa682daee6770b4967ecddc0357b7d}} 
+\index{SoundManager@{SoundManager}!PlayHitSound@{PlayHitSound}}
+\index{PlayHitSound@{PlayHitSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayHitSound()}{PlayHitSound()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Hit\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука попадания пули персонажа и запуск \char`\"{}тряски\char`\"{} камеры. 
+
+\mbox{\Hypertarget{class_sound_manager_a40bd62d1ab65a66b23c647268cbf0451}\label{class_sound_manager_a40bd62d1ab65a66b23c647268cbf0451}} 
+\index{SoundManager@{SoundManager}!PlayKeyWav@{PlayKeyWav}}
+\index{PlayKeyWav@{PlayKeyWav}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayKeyWav()}{PlayKeyWav()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Key\+Wav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука подбора ключей. 
+
+\mbox{\Hypertarget{class_sound_manager_a0e5bb199f6813fb9817ff3a79b7e200f}\label{class_sound_manager_a0e5bb199f6813fb9817ff3a79b7e200f}} 
+\index{SoundManager@{SoundManager}!PlayLaser@{PlayLaser}}
+\index{PlayLaser@{PlayLaser}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayLaser()}{PlayLaser()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Laser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука лазера и запуск \char`\"{}тряски\char`\"{} камеры. 
+
+\mbox{\Hypertarget{class_sound_manager_a0a937652613eb42c56d1951cf727391f}\label{class_sound_manager_a0a937652613eb42c56d1951cf727391f}} 
+\index{SoundManager@{SoundManager}!PlayRunning@{PlayRunning}}
+\index{PlayRunning@{PlayRunning}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlayRunning()}{PlayRunning()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука шагов. 
+
+\mbox{\Hypertarget{class_sound_manager_afd3e579848b462c3019486a50fba91d4}\label{class_sound_manager_afd3e579848b462c3019486a50fba91d4}} 
+\index{SoundManager@{SoundManager}!PlaySword@{PlaySword}}
+\index{PlaySword@{PlaySword}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{PlaySword()}{PlaySword()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Play\+Sword (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Одноразвое воспроизведение звука удара мечом. 
+
+\mbox{\Hypertarget{class_sound_manager_adfe146914a2614dd76f8278c29f6a74f}\label{class_sound_manager_adfe146914a2614dd76f8278c29f6a74f}} 
+\index{SoundManager@{SoundManager}!Start@{Start}}
+\index{Start@{Start}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Sound\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+В данном методе происходит инициализация всех переменных. В том числе и привязка звуковых эффектов из корневой дирректории. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sound_manager_a3ade143f449dca67726224808a5392d8}\label{class_sound_manager_a3ade143f449dca67726224808a5392d8}} 
+\index{SoundManager@{SoundManager}!audioSrc@{audioSrc}}
+\index{audioSrc@{audioSrc}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{audioSrc}{audioSrc}}
+{\footnotesize\ttfamily Audio\+Source Sound\+Manager.\+audio\+Src\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Источник звука. 
+
+\mbox{\Hypertarget{class_sound_manager_acb9240f05024f189400b30fbdaf02c50}\label{class_sound_manager_acb9240f05024f189400b30fbdaf02c50}} 
+\index{SoundManager@{SoundManager}!Bark@{Bark}}
+\index{Bark@{Bark}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{Bark}{Bark}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+Bark\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук лая. 
+
+\mbox{\Hypertarget{class_sound_manager_a14d3f27b42e469f0c4de1b1ef015a305}\label{class_sound_manager_a14d3f27b42e469f0c4de1b1ef015a305}} 
+\index{SoundManager@{SoundManager}!camShake@{camShake}}
+\index{camShake@{camShake}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{camShake}{camShake}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera_shake}{Camera\+Shake}} Sound\+Manager.\+cam\+Shake}
+
+
+
+Переменная класса \char`\"{}тряски\char`\"{} камеры. 
+
+\mbox{\Hypertarget{class_sound_manager_ab7fea96a3449c7aa5e22765e66a547eb}\label{class_sound_manager_ab7fea96a3449c7aa5e22765e66a547eb}} 
+\index{SoundManager@{SoundManager}!coinSound@{coinSound}}
+\index{coinSound@{coinSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{coinSound}{coinSound}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+coin\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук подбора монеты. 
+
+\mbox{\Hypertarget{class_sound_manager_a1566be4c7a19666dfb70143eb393df2e}\label{class_sound_manager_a1566be4c7a19666dfb70143eb393df2e}} 
+\index{SoundManager@{SoundManager}!deathSound@{deathSound}}
+\index{deathSound@{deathSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{deathSound}{deathSound}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+death\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук смерти. 
+
+\mbox{\Hypertarget{class_sound_manager_acda20efa9afa65a856ea39be0f28e258}\label{class_sound_manager_acda20efa9afa65a856ea39be0f28e258}} 
+\index{SoundManager@{SoundManager}!DogDeath@{DogDeath}}
+\index{DogDeath@{DogDeath}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{DogDeath}{DogDeath}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+Dog\+Death\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук смерти собаки. 
+
+\mbox{\Hypertarget{class_sound_manager_ad01a0f409c584fadebcb2ec08dbabb8c}\label{class_sound_manager_ad01a0f409c584fadebcb2ec08dbabb8c}} 
+\index{SoundManager@{SoundManager}!doorOpen@{doorOpen}}
+\index{doorOpen@{doorOpen}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{doorOpen}{doorOpen}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+door\+Open\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук открытия двери. 
+
+\mbox{\Hypertarget{class_sound_manager_a8294f352e77b0289fb9cc0c7d0ff1b60}\label{class_sound_manager_a8294f352e77b0289fb9cc0c7d0ff1b60}} 
+\index{SoundManager@{SoundManager}!drinkHP@{drinkHP}}
+\index{drinkHP@{drinkHP}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{drinkHP}{drinkHP}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+drink\+HP\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук пополнения здоровья. 
+
+\mbox{\Hypertarget{class_sound_manager_a98a32803fe69571ad2b9372f393ed810}\label{class_sound_manager_a98a32803fe69571ad2b9372f393ed810}} 
+\index{SoundManager@{SoundManager}!Enemy2hitSound@{Enemy2hitSound}}
+\index{Enemy2hitSound@{Enemy2hitSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{Enemy2hitSound}{Enemy2hitSound}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+Enemy2hit\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук попадания пули \char`\"{}Врага2\char`\"{}. 
+
+\mbox{\Hypertarget{class_sound_manager_a1f1d4fae3c21b93bd24ac2c02452819d}\label{class_sound_manager_a1f1d4fae3c21b93bd24ac2c02452819d}} 
+\index{SoundManager@{SoundManager}!explosion@{explosion}}
+\index{explosion@{explosion}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{explosion}{explosion}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+explosion\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук взрыва. 
+
+\mbox{\Hypertarget{class_sound_manager_a449dae73b0862d2f29fa34e02bfd6b13}\label{class_sound_manager_a449dae73b0862d2f29fa34e02bfd6b13}} 
+\index{SoundManager@{SoundManager}!hitSound@{hitSound}}
+\index{hitSound@{hitSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{hitSound}{hitSound}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+hit\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук попадание пули персонажа. 
+
+\mbox{\Hypertarget{class_sound_manager_ab93cc7e74b773da7b05c6c094a7429be}\label{class_sound_manager_ab93cc7e74b773da7b05c6c094a7429be}} 
+\index{SoundManager@{SoundManager}!keywav@{keywav}}
+\index{keywav@{keywav}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{keywav}{keywav}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+keywav\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук подбора ключей. 
+
+\mbox{\Hypertarget{class_sound_manager_acfda3e3911d23a50a0a703ffe0ce5f9d}\label{class_sound_manager_acfda3e3911d23a50a0a703ffe0ce5f9d}} 
+\index{SoundManager@{SoundManager}!LaserSound@{LaserSound}}
+\index{LaserSound@{LaserSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{LaserSound}{LaserSound}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+Laser\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук лазера. 
+
+\mbox{\Hypertarget{class_sound_manager_a5c56a89d8a0e721fb1554c22441dc900}\label{class_sound_manager_a5c56a89d8a0e721fb1554c22441dc900}} 
+\index{SoundManager@{SoundManager}!runningSteps@{runningSteps}}
+\index{runningSteps@{runningSteps}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{runningSteps}{runningSteps}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+running\+Steps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук шагов. 
+
+\mbox{\Hypertarget{class_sound_manager_a540fcf67d0b9a8e6b40cc41033226037}\label{class_sound_manager_a540fcf67d0b9a8e6b40cc41033226037}} 
+\index{SoundManager@{SoundManager}!sndMan@{sndMan}}
+\index{sndMan@{sndMan}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{sndMan}{sndMan}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sound_manager}{Sound\+Manager}} Sound\+Manager.\+snd\+Man\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Основная переменная класса, служит для воспроизведения аудиоклипов из других классов. 
+
+\mbox{\Hypertarget{class_sound_manager_a07e81c8b4ef1c07c53ce4ed880fe7182}\label{class_sound_manager_a07e81c8b4ef1c07c53ce4ed880fe7182}} 
+\index{SoundManager@{SoundManager}!SwordSound@{SwordSound}}
+\index{SwordSound@{SwordSound}!SoundManager@{SoundManager}}
+\doxysubsubsection{\texorpdfstring{SwordSound}{SwordSound}}
+{\footnotesize\ttfamily Audio\+Clip Sound\+Manager.\+Sword\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Звук меча. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alexe/\+Desktop/\+My\+Game2d — копия/\+Assets/\+Scripts/\+Background/Sound\+Manager.\+cs\end{DoxyCompactItemize}

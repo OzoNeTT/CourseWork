@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_a74adf733c697e8e1cbbfc5535e54b8e">
+<title>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Menu Directory Reference</title>
+<indexterm><primary>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/Scripts/Menu Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__game_over_menu_8cs">GameOverMenu.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__main_menu_8cs">MainMenu.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>
