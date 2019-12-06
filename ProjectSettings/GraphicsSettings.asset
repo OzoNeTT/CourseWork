@@ -34,11 +34,21 @@ GraphicsSettings:
   - {fileID: 16000, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 16001, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 17000, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 4800000, guid: cf5fd84d5967d15429b0d90fb61432f4, type: 3}
+  - {fileID: 4800000, guid: 3e2092ac98840f84a90d3dc0e72d7991, type: 3}
+  - {fileID: 4800000, guid: 99fd33029232b8444a60a01e27b081ee, type: 3}
+  - {fileID: 4800000, guid: 5245ae2adfce6f04f91ba1b0be78d711, type: 3}
+  - {fileID: 4800000, guid: a27eb994ddf5ad04d97a5b481b4c3e6c, type: 3}
+  - {fileID: 4800000, guid: 7f6208329cc2ee549851cd92239bd121, type: 3}
+  - {fileID: 4800000, guid: d516e86d66a0799408aedd0699e6bb12, type: 3}
+  - {fileID: 4800000, guid: 08f50f7d2b3184142a0a78662a5716a9, type: 3}
+  - {fileID: 4800000, guid: 766dc1c42357441429d869f67de2c722, type: 3}
+  - {fileID: 4800000, guid: 856b4500bfe5c90468a915b263e6e338, type: 3}
   m_PreloadedShaders: []
   m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000,
     type: 0}
   m_CustomRenderPipeline: {fileID: 0}
-  m_TransparencySortMode: 0
+  m_TransparencySortMode: 2
   m_TransparencySortAxis: {x: 0, y: 0, z: 1}
   m_DefaultRenderingPath: 1
   m_DefaultMobileRenderingPath: 1

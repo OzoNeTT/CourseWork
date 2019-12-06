@@ -33,7 +33,6 @@ public class FadeInOut : MonoBehaviour
         _image.enabled = true;
         sceneStarting = true;
         sceneEnd = false;
-        Cursor.visible = false;
     }
     /// <summary>
     /// По кадровое обновление. Проверка на начало или конец сцены.
@@ -55,7 +54,6 @@ public class FadeInOut : MonoBehaviour
             _image.color = Color.clear;
             _image.enabled = false;
             sceneStarting = false;
-            Cursor.visible = true;
         }
     }
     /// <summary>
@@ -68,7 +66,6 @@ public class FadeInOut : MonoBehaviour
 
         if (_image.color.a >= 0.95f)
         {
-            Cursor.visible = false;
             _image.color = Color.black;
         }
     }
