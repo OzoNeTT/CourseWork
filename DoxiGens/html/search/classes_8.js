@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['laserscript_306',['LaserScript',['../class_laser_script.html',1,'']]]
+  ['laserscript_260',['LaserScript',['../class_laser_script.html',1,'']]],
+  ['loadlevel_261',['LoadLevel',['../class_load_level.html',1,'']]]
 ];

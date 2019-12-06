@@ -135,7 +135,7 @@ public class Enemy2 : MonoBehaviour {
         if (other.tag == "Player" && !dies)
         {
             
-            FindObjectOfType<PlaterStats>().TakeDamage(10);
+            FindObjectOfType<PlaterStats>().TakeDamage(2);
             Player.KnockBackCount = 0.2f;
             if (other.transform.position.x < transform.position.x)
                 Player.KnockFromRight = true;

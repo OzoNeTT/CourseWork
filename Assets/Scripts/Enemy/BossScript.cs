@@ -158,8 +158,9 @@ public class BossScript : MonoBehaviour
     void Die()
     {
         dies = true;
-        SceneManager.LoadScene("WinScene");
         StartCoroutine("waitDies");
+        SceneManager.LoadScene("WinScene");
+        
         
     }
     /// <summary>
@@ -330,13 +331,13 @@ public class BossScript : MonoBehaviour
 
                 SpawnEnemies();
 
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(2);
                 while (i < 10)
                 {
 
                     Instantiate(Bullet, firepoint.position, firepoint.rotation);
                     i++;
-                    yield return new WaitForSeconds(.5f);
+                    yield return new WaitForSeconds(1f);
                 }
             }
             //4

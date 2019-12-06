@@ -1,10 +1,18 @@
 var searchData=
 [
-  ['oncollisionenter2d_367',['OnCollisionEnter2D',['../class_enemy_ghost_g_f_x.html#ad0691a7bc25ced99167ca05de19f327c',1,'EnemyGhostGFX.OnCollisionEnter2D()'],['../class_player_control.html#aa88e16243633144bed2dd5114a300ce8',1,'PlayerControl.OnCollisionEnter2D()'],['../class_death_level.html#a6d9dad0935fe114683dfdf9fcde05ea7',1,'DeathLevel.OnCollisionEnter2D()']]],
-  ['oncollisionexit2d_368',['OnCollisionExit2D',['../class_player_control.html#aa7439d13a002395fafaf51c36efc02ae',1,'PlayerControl']]],
-  ['oncollisionstay2d_369',['OnCollisionStay2D',['../class_player_control.html#aab2939f87a244e116143453413bd73b8',1,'PlayerControl']]],
-  ['onpathcomplete_370',['OnPathComplete',['../class_enemy_ghost_g_f_x.html#a6cf551261ad815f7c2949b165dd69f23',1,'EnemyGhostGFX']]],
-  ['ontriggerenter2d_371',['OnTriggerEnter2D',['../class_boss_bullet_controller.html#a4119517113443f4643b3dde206637e3c',1,'BossBulletController.OnTriggerEnter2D()'],['../class_boss_script.html#afcb1fbfd8f9f83fa3fd5e32bcbc3dfc7',1,'BossScript.OnTriggerEnter2D()'],['../class_dog_script.html#a57cedc7ae6f5eb2617d0496603565414',1,'DogScript.OnTriggerEnter2D()'],['../class_enemy1.html#ae8dadb0210f4fe0b48cfd52ac1fe7c82',1,'Enemy1.OnTriggerEnter2D()'],['../class_enemy2.html#aefd0ea4923800198f32be8e6578e13d1',1,'Enemy2.OnTriggerEnter2D()'],['../class_enemy2_bullet_controller.html#af3a722f16a072d25bd191ec3488d5597',1,'Enemy2BulletController.OnTriggerEnter2D()'],['../class_bullet_controller.html#adf9caae04663ec1a70d4e5a543b95b50',1,'BulletController.OnTriggerEnter2D()'],['../class_player_control.html#ab9af114c4eb6f67d37cf8902163119fe',1,'PlayerControl.OnTriggerEnter2D()'],['../class_hinge_button_controller.html#add7fe36255950b96416db529b8d0e4db',1,'HingeButtonController.OnTriggerEnter2D()'],['../class_h_p.html#a96810623866fe541509b6ed5ad3c59ae',1,'HP.OnTriggerEnter2D()'],['../classkey_to_gate.html#a69ba7db369cf0be1c5a9f8819233233f',1,'keyToGate.OnTriggerEnter2D()'],['../class_laser_script.html#ac93cedf25714f89ba42e5729f4fed486',1,'LaserScript.OnTriggerEnter2D()'],['../class_saw_controller.html#a87d091d92d810781aeb229864eb20c93',1,'SawController.OnTriggerEnter2D()'],['../class_teleporter_script.html#a1116f3ea9b0d5c20e3be71ec86d373ac',1,'TeleporterScript.OnTriggerEnter2D()']]],
-  ['ontriggerexit2d_372',['OnTriggerExit2D',['../class_dog_script.html#a5664cff813d93c24953546bb8f534078',1,'DogScript.OnTriggerExit2D()'],['../class_enemy1.html#a34a56c7d33f62a4c141f670dca3d24ba',1,'Enemy1.OnTriggerExit2D()'],['../class_laser_script.html#a031439a2218730c0714ce83a7a06846e',1,'LaserScript.OnTriggerExit2D()'],['../class_position_check.html#a2b1882de01b3e5204d23de10ff8d99a0',1,'PositionCheck.OnTriggerExit2D()']]],
-  ['ontriggerstay2d_373',['OnTriggerStay2D',['../class_dog_script.html#abd44f6f4f3c6b10497de2c0d9baaad99',1,'DogScript.OnTriggerStay2D()'],['../class_enemy1.html#a02ad5e3dc1310f4093c13da2522494ab',1,'Enemy1.OnTriggerStay2D()'],['../class_laser_script.html#acd99fbb973de821241c3b4cfb9496da5',1,'LaserScript.OnTriggerStay2D()'],['../class_position_check.html#ae4af24aad28768e29aa49f87a302fefc',1,'PositionCheck.OnTriggerStay2D()'],['../class_spikes_controller.html#abdbd2760f9f123bcc4c09b667b7bea83',1,'SpikesController.OnTriggerStay2D()']]]
+  ['pause_302',['Pause',['../class_pause_menu.html#a712dac1268693262de144337e2835ea7',1,'PauseMenu']]],
+  ['playbark_303',['PlayBark',['../class_sound_manager.html#aaaca08e0bf92bc10c01001cc153d601b',1,'SoundManager']]],
+  ['playcoinsound_304',['PlayCoinSound',['../class_sound_manager.html#a16862fa2ef54ad26fdd8c50e5ddec0fc',1,'SoundManager']]],
+  ['playdeathsound_305',['PlayDeathSound',['../class_sound_manager.html#a15626fec0156657a82527fb1ff64f12c',1,'SoundManager']]],
+  ['playdogdeath_306',['PlayDogDeath',['../class_sound_manager.html#a9cfbc7de056e4881d41995072a087814',1,'SoundManager']]],
+  ['playdooropening_307',['PlayDoorOpening',['../class_sound_manager.html#a14d6f3846e7844c337f98ae5e320ebfc',1,'SoundManager']]],
+  ['playdrinkhp_308',['PlayDrinkHP',['../class_sound_manager.html#a23fa6e2f97fcf482ba339a2d43cbfb42',1,'SoundManager']]],
+  ['playenemy2hitsound_309',['PlayEnemy2hitSound',['../class_sound_manager.html#aeb178d71f27ea4c280de1334baaacb6c',1,'SoundManager']]],
+  ['playexplosion_310',['PlayExplosion',['../class_sound_manager.html#ae7ecf2e675bdf63ecd5f0e3e38c66d2e',1,'SoundManager']]],
+  ['playhitreaction_311',['PlayHitReaction',['../class_plater_stats.html#a29394c9abad3fbad0f82e12a0f5d3881',1,'PlaterStats']]],
+  ['playhitsound_312',['PlayHitSound',['../class_sound_manager.html#a0bfa682daee6770b4967ecddc0357b7d',1,'SoundManager']]],
+  ['playkeywav_313',['PlayKeyWav',['../class_sound_manager.html#a40bd62d1ab65a66b23c647268cbf0451',1,'SoundManager']]],
+  ['playlaser_314',['PlayLaser',['../class_sound_manager.html#a0e5bb199f6813fb9817ff3a79b7e200f',1,'SoundManager']]],
+  ['playrunning_315',['PlayRunning',['../class_sound_manager.html#a0a937652613eb42c56d1951cf727391f',1,'SoundManager']]],
+  ['playsword_316',['PlaySword',['../class_sound_manager.html#afd3e579848b462c3019486a50fba91d4',1,'SoundManager']]]
 ];

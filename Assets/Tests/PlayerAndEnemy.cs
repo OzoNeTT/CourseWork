@@ -11,7 +11,9 @@ namespace Tests
     {
         PlayerControl Player;
         PlaterStats PlayerStats;
-        [UnitySetUp]
+
+
+        [UnitySetUp] // <--- Подготовка к тестированию
         public IEnumerator SceneLoad()
         {
             SceneManager.LoadScene("TestScene1");
@@ -19,6 +21,16 @@ namespace Tests
             Player = FindObjectOfType<PlayerControl>();
             PlayerStats = FindObjectOfType<PlaterStats>();
         }
+        [UnityTest] // <--- Тестирование
+        public IEnumerator DieWithSaw()
+        {
+            int HealthPoint = PlaterStats.lives;
+            GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(-50, -18, 0);
+            yield return new WaitForSeconds(2f);
+            Assert.AreEqual(--HealthPoint, PlaterStats.lives);
+        }
+
+
         [UnityTest]
         public IEnumerator CheckGhostMoving()
         {
@@ -29,14 +41,7 @@ namespace Tests
             Assert.AreNotSame(OldGhostPosition.position, NewGhostPosition.position);
         }
 
-        [UnityTest]
-        public IEnumerator DieWithSaw()
-        {
-            int HP = PlayerStats.get_health();
-            GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(-50, -18, 0);
-            yield return new WaitForSeconds(2f);
-            Assert.AreEqual(HP--, PlayerStats.get_health());
-        }
+       
         [Test]
         public void DogMove()
         {

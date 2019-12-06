@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6DCCC2B1-0E4C-4379-56FB-3529E31F7235}</ProjectGuid>
+    <ProjectGuid>{01E9928C-0C2F-D3E6-7A48-A430E8205037}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>GameAssembly</AssemblyName>
@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Enemy\Enemy2BulletController.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyGhostGFX.cs" />
     <Compile Include="Assets\Scripts\Menu\GameOverMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu\LoadLevel.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\VolumeControl.cs" />
@@ -97,13 +98,13 @@
     <Compile Include="Assets\Scripts\Tools\SpikesController.cs" />
     <Compile Include="Assets\Scripts\Tools\TeleporterScript.cs" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Alexe/Desktop/MyGame2d — копия/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Alexe/Desktop/MyGame2d/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Alexe/Desktop/MyGame2d — копия/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/Alexe/Desktop/MyGame2d/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Alexe/Desktop/MyGame2d — копия/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Alexe/Desktop/MyGame2d/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -298,7 +299,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>C:/Users/Alexe/Desktop/MyGame2d — копия/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>C:/Users/Alexe/Desktop/MyGame2d/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -648,11 +649,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AstarPathfindingProject.csproj">
-      <Project>{A43A9FA8-834F-8C21-FD64-55CB2E2F5698}</Project>
+      <Project>{C89CC6DF-E0FB-FDC5-534C-1B8426544D14}</Project>
       <Name>AstarPathfindingProject</Name>
     </ProjectReference>
     <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
-      <Project>{30A32F1F-8791-BDCB-5409-E96E4995E493}</Project>
+      <Project>{4236D186-102D-74C4-3C69-A276E6E3D20A}</Project>
       <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>

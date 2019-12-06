@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 /// <summary>
 /// Класс Главной игры.
 /// <remarks>Данный класс реализует главное меню.</remarks>
@@ -11,7 +12,7 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void StartGame()
     {
-        Application.LoadLevel("Level0");
+        SceneManager.LoadScene("Level0");
     }
     /// <summary>
     /// Функция выхода из игры.
@@ -19,5 +20,10 @@ public class MainMenu : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void ChooseLevel()
+    {
+        SceneManager.LoadScene("LevelSelectScene");
     }
 }

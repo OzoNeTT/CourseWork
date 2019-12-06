@@ -187,6 +187,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300754783006105510, guid: 7af78d944e062244b96f07a9b37a3e83,
+        type: 3}
+      propertyPath: radius
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7af78d944e062244b96f07a9b37a3e83, type: 3}
 --- !u!4 &26223469 stripped
@@ -3150,6 +3155,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300754783006105510, guid: 7af78d944e062244b96f07a9b37a3e83,
+        type: 3}
+      propertyPath: radius
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7af78d944e062244b96f07a9b37a3e83, type: 3}
 --- !u!4 &1198405036 stripped
@@ -4631,6 +4641,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300754783006105510, guid: 7af78d944e062244b96f07a9b37a3e83,
+        type: 3}
+      propertyPath: radius
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7af78d944e062244b96f07a9b37a3e83, type: 3}
 --- !u!1001 &1703987437
@@ -6000,7 +6015,7 @@ PrefabInstance:
     - target: {fileID: 2300754783006105510, guid: 7af78d944e062244b96f07a9b37a3e83,
         type: 3}
       propertyPath: radius
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2300754783006105510, guid: 7af78d944e062244b96f07a9b37a3e83,
         type: 3}
@@ -6245,7 +6260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1009970733, guid: 83fb94a39ea5d884fa0042e4458ea002, type: 3}
       propertyPath: fadeSpeed
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83fb94a39ea5d884fa0042e4458ea002, type: 3}

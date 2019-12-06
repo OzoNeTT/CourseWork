@@ -4583,7 +4583,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1009970733, guid: 83fb94a39ea5d884fa0042e4458ea002, type: 3}
       propertyPath: fadeSpeed
-      value: 0.5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477818066050523018, guid: 83fb94a39ea5d884fa0042e4458ea002,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83fb94a39ea5d884fa0042e4458ea002, type: 3}
